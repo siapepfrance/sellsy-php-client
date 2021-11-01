@@ -2761,7 +2761,7 @@
         }
       },
     },
-    "/Addresses.XYZ": {
+    "/Addresses.getList": {
       "post": {
         "tags": [
           "Addresses"
@@ -2778,7 +2778,7 @@
             "description": "params",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/AddressesXYZRequest"
+              "$ref": "#/definitions/AddressesGetListRequest"
             }
           }
         ],
@@ -2786,7 +2786,7 @@
           "200": {
             "description": "Request executed successfully",
             "schema": {
-              "$ref": "#/definitions/AddressesXYZResponse"
+              "$ref": "#/definitions/AddressesGetListResponse"
             }
           },
           "400": {
@@ -2804,7 +2804,7 @@
         }
       },
     },
-    "/Addresses.XYZ": {
+    "/Addresses.getOne": {
       "post": {
         "tags": [
           "Addresses"
@@ -2821,7 +2821,7 @@
             "description": "params",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/AddressesXYZRequest"
+              "$ref": "#/definitions/AddressesGetOneRequest"
             }
           }
         ],
@@ -2829,7 +2829,7 @@
           "200": {
             "description": "Request executed successfully",
             "schema": {
-              "$ref": "#/definitions/AddressesXYZResponse"
+              "$ref": "#/definitions/AddressesGetOneResponse"
             }
           },
           "400": {
@@ -2847,7 +2847,7 @@
         }
       },
     },
-    "/Addresses.XYZ": {
+    "/Addresses.create": {
       "post": {
         "tags": [
           "Addresses"
@@ -2864,7 +2864,7 @@
             "description": "params",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/AddressesXYZRequest"
+              "$ref": "#/definitions/AddressesCreateRequest"
             }
           }
         ],
@@ -2872,7 +2872,7 @@
           "200": {
             "description": "Request executed successfully",
             "schema": {
-              "$ref": "#/definitions/AddressesXYZResponse"
+              "$ref": "#/definitions/AddressesCreateResponse"
             }
           },
           "400": {
@@ -2890,7 +2890,7 @@
         }
       },
     },
-    "/Addresses.XYZ": {
+    "/Addresses.update": {
       "post": {
         "tags": [
           "Addresses"
@@ -2907,7 +2907,7 @@
             "description": "params",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/AddressesXYZRequest"
+              "$ref": "#/definitions/AddressesUpdateRequest"
             }
           }
         ],
@@ -2915,7 +2915,7 @@
           "200": {
             "description": "Request executed successfully",
             "schema": {
-              "$ref": "#/definitions/AddressesXYZResponse"
+              "$ref": "#/definitions/AddressesUpdateResponse"
             }
           },
           "400": {
@@ -2933,7 +2933,7 @@
         }
       },
     },
-    "/Addresses.XYZ": {
+    "/Addresses.delete": {
       "post": {
         "tags": [
           "Addresses"
@@ -2950,7 +2950,7 @@
             "description": "params",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/AddressesXYZRequest"
+              "$ref": "#/definitions/AddressesDeleteRequest"
             }
           }
         ],
@@ -2958,7 +2958,222 @@
           "200": {
             "description": "Request executed successfully",
             "schema": {
-              "$ref": "#/definitions/AddressesXYZResponse"
+              "$ref": "#/definitions/AddressesDeleteResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Agenda.getList": {
+      "post": {
+        "tags": [
+          "Agenda"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AgendaGetListRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AgendaGetListResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Agenda.getOne": {
+      "post": {
+        "tags": [
+          "Agenda"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AgendaGetOneRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AgendaGetOneResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Agenda.create": {
+      "post": {
+        "tags": [
+          "Agenda"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AgendaCreateRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AgendaCreateResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Agenda.update": {
+      "post": {
+        "tags": [
+          "Agenda"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AgendaUpdateRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AgendaUpdateResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Agenda.delete": {
+      "post": {
+        "tags": [
+          "Agenda"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AgendaDeleteRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AgendaDeleteResponse"
             }
           },
           "400": {
@@ -2979,7 +3194,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3022,7 +3237,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3065,7 +3280,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3108,7 +3323,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3151,7 +3366,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3194,7 +3409,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3237,7 +3452,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3280,222 +3495,7 @@
     "/Agenda.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
-        ],
-        "summary": "",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "params",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Request executed successfully",
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZResponse"
-            }
-          },
-          "400": {
-            "description": "Error : bad parameters or missing parameters"
-          },
-          "401": {
-            "description": "Error : User is not authenticated"
-          },
-          "403": {
-            "description": "Error : User has not enought rights"
-          },
-          "500": {
-            "description": "Error : account is disabled"
-          }
-        }
-      },
-    },
-    "/Agenda.XYZ": {
-      "post": {
-        "tags": [
-          "Addresses"
-        ],
-        "summary": "",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "params",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Request executed successfully",
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZResponse"
-            }
-          },
-          "400": {
-            "description": "Error : bad parameters or missing parameters"
-          },
-          "401": {
-            "description": "Error : User is not authenticated"
-          },
-          "403": {
-            "description": "Error : User has not enought rights"
-          },
-          "500": {
-            "description": "Error : account is disabled"
-          }
-        }
-      },
-    },
-    "/Agenda.XYZ": {
-      "post": {
-        "tags": [
-          "Addresses"
-        ],
-        "summary": "",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "params",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Request executed successfully",
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZResponse"
-            }
-          },
-          "400": {
-            "description": "Error : bad parameters or missing parameters"
-          },
-          "401": {
-            "description": "Error : User is not authenticated"
-          },
-          "403": {
-            "description": "Error : User has not enought rights"
-          },
-          "500": {
-            "description": "Error : account is disabled"
-          }
-        }
-      },
-    },
-    "/Agenda.XYZ": {
-      "post": {
-        "tags": [
-          "Addresses"
-        ],
-        "summary": "",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "params",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Request executed successfully",
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZResponse"
-            }
-          },
-          "400": {
-            "description": "Error : bad parameters or missing parameters"
-          },
-          "401": {
-            "description": "Error : User is not authenticated"
-          },
-          "403": {
-            "description": "Error : User has not enought rights"
-          },
-          "500": {
-            "description": "Error : account is disabled"
-          }
-        }
-      },
-    },
-    "/Agenda.XYZ": {
-      "post": {
-        "tags": [
-          "Addresses"
-        ],
-        "summary": "",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "params",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Request executed successfully",
-            "schema": {
-              "$ref": "#/definitions/AgendaXYZResponse"
-            }
-          },
-          "400": {
-            "description": "Error : bad parameters or missing parameters"
-          },
-          "401": {
-            "description": "Error : User is not authenticated"
-          },
-          "403": {
-            "description": "Error : User has not enought rights"
-          },
-          "500": {
-            "description": "Error : account is disabled"
-          }
-        }
-      },
-    },
-    "/Agenda.XYZ": {
-      "post": {
-        "tags": [
-          "Addresses"
+          "Agenda"
         ],
         "summary": "",
         "description": "",
@@ -3538,7 +3538,7 @@
     "/Annotations.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Annotations"
         ],
         "summary": "",
         "description": "",
@@ -3581,7 +3581,7 @@
     "/Annotations.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Annotations"
         ],
         "summary": "",
         "description": "",
@@ -3624,7 +3624,7 @@
     "/Annotations.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Annotations"
         ],
         "summary": "",
         "description": "",
@@ -3667,7 +3667,7 @@
     "/Annotations.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Annotations"
         ],
         "summary": "",
         "description": "",
@@ -3710,7 +3710,7 @@
     "/Annotations.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Annotations"
         ],
         "summary": "",
         "description": "",
@@ -3753,7 +3753,7 @@
     "/Annotations.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "Annotations"
         ],
         "summary": "",
         "description": "",
@@ -3796,7 +3796,7 @@
     "/BankAccount.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "BankAccount"
         ],
         "summary": "",
         "description": "",
@@ -3839,7 +3839,7 @@
     "/BankAccount.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "BankAccount"
         ],
         "summary": "",
         "description": "",
@@ -3882,7 +3882,7 @@
     "/BankAccount.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "BankAccount"
         ],
         "summary": "",
         "description": "",
@@ -3925,7 +3925,7 @@
     "/BankAccount.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "BankAccount"
         ],
         "summary": "",
         "description": "",
@@ -3968,7 +3968,7 @@
     "/BankAccount.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "BankAccount"
         ],
         "summary": "",
         "description": "",
@@ -4011,7 +4011,7 @@
     "/BankDeposit.XYZ": {
       "post": {
         "tags": [
-          "Addresses"
+          "BankDeposit"
         ],
         "summary": "",
         "description": "",

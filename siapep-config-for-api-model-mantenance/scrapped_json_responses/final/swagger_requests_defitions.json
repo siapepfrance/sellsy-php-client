@@ -1224,25 +1224,185 @@
       }
   },
   "AddressesGetListRequest": {
-
+      "type": "object",
+      "properties": {
+        "pagination": {
+          "type": "object",
+          "properties": {
+              "pagenum": {
+                "type": "string"
+              },
+              "nbperpage": {
+                "type": "string"
+              }
+          }
+        },
+        "search": {
+          "type": "object",
+          "properties": {
+              "linkedType": {
+                "type": "string"
+              },
+              "linkedIDs": {
+                "type": "string"
+              }
+          }
+        }
+      }
   },
   "AddressesGetOneRequest": {
-
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
   },
   "AddressesCreateRequest": {
-
+      "type": "object",
+      "properties": {
+        "linkedtype": {
+          "type": "string"
+        },
+        "linkedid": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "part1": {
+          "type": "string"
+        },
+        "part2": {
+          "type": "string"
+        },
+        "part3": {
+          "type": "string"
+        },
+        "part4": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "town": {
+          "type": "string"
+        },
+        "countrycode": {
+          "type": "string"
+        },
+        "isMain": {
+          "type": "string"
+        },
+        "isMainDeliv": {
+          "type": "string"
+        }
+      }
   },
   "AddressesUpdateRequest": {
-
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "linkedtype": {
+          "type": "string"
+        },
+        "linkedid": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "part1": {
+          "type": "string"
+        },
+        "part2": {
+          "type": "string"
+        },
+        "part3": {
+          "type": "string"
+        },
+        "part4": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "town": {
+          "type": "string"
+        },
+        "countrycode": {
+          "type": "string"
+        },
+        "isMain": {
+          "type": "string"
+        },
+        "isMainDeliv": {
+          "type": "string"
+        }
+      }
   },
   "AddressesDeleteRequest": {
-
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
   },
   "AgendaGetListRequest": {
-
+      "type": "object",
+      "properties": {
+        "order": {
+          "type": "object",
+          "properties": {
+              "direction": {
+                "type": "string"
+              }
+          }
+        },
+        "search": {
+          "type": "object",
+          "properties": {
+              "type": {
+                "type": "string"
+              },
+              "period": {
+                "type": "string"
+              },
+              "labels": {
+                "type": "string"
+              },
+              "ownerType": {
+                "type": "string"
+              },
+              "ownerId": {
+                "type": "string"
+              },
+              "relatedType": {
+                "type": "string"
+              },
+              "relatedId": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "includeRecurring": {
+                "type": "string"
+              }
+          }
+        }
+      }
   },
   "AgendaGetOneRequest": {
-
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
   },
   "AgendaCreateRequest": {
 
