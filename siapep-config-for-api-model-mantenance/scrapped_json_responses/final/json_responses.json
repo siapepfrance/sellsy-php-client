@@ -1,0 +1,6707 @@
+{
+  "InfosGetInfosResponse": {
+    "response": {
+      "consumerdatas": {
+        "status": "enabled",
+        "infos": {
+          "consumer_i_id": "8",
+          "consumer_i_cid": "7",
+          "consumer_i_app_name": "Application Mobile",
+          "consumer_i_owner_name": "Rémy Neuter",
+          "consumer_i_owner_tel": "0601020304",
+          "consumer_i_owner_mail": ".com",
+          "consumer_i_owner_web": "https://mobile.sellsy.com",
+          "consumer_i_css": "default",
+          "consumer_i_public_image": ""
+        },
+        "traffic": {
+          "consumer_t_id": "7",
+          "consumer_t_cid": "7",
+          "consumer_t_nb_requests": "39342",
+          "consumer_t_nb_max_request": "100000",
+          "consumer_t_alert": "0",
+          "consumer_t_more": "",
+          "consumer_t_start_timestamp": "1340613096"
+        }
+      },
+      "userdatas": {
+        "accountlevel": "gold",
+        "isAdmin": "1",
+        "fullName": "M. Rémy Neuter",
+        "hasvat": "Y",
+        "uilang": "fr",
+        "setuplang": "fr",
+        "corpName": "EasyBill",
+        "plugins": [
+          {
+            "id": "31",
+            "qt": "1",
+            "label": "ttbilling",
+            "type": "plugin",
+            "description": "Refacturation d'heures",
+            "img": "",
+            "longdesc": "",
+            "level": "",
+            "start": "0000-00-00 00:00:00",
+            "end": "0000-00-00 00:00:00",
+            "rank": "1",
+            "isDefault": "N",
+            "onlyFromRetailer": "N",
+            "amountTaxFree": "0",
+            "formatted_amountTaxFree": "0,00 €",
+            "amountTaxInc": "0",
+            "currencySymbol": "€",
+            "currencyId": "1",
+            "penabled": "N",
+            "access": "full"
+          }
+        ]
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetTaxesResponse": {
+    "response": [
+      {
+        "id": "70",
+        "corpid": "2",
+        "list": "units",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "Y",
+        "syscode": "",
+        "rank": "1",
+        "value": "forfaitaire"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetTaxeResponse": {
+    "response": {
+      "id": "4882",
+      "corpid": "43",
+      "list": "taxes",
+      "status": "ok",
+      "isEnabled": "Y",
+      "isWriteabled": "Y",
+      "syscode": "",
+      "rank": "0",
+      "value": "19.6"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreateTaxeResponse": {
+    "response": {
+      "taxeid": 4892
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasUpdateTaxeResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasDeleteTaxeResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetUnitsResponse": {
+    "response": [
+      {
+        "id": "70",
+        "corpid": "2",
+        "list": "units",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "Y",
+        "syscode": "",
+        "rank": "1",
+        "value": "forfaitaire"
+      },
+      {
+        "id": "71",
+        "corpid": "2",
+        "list": "units",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "Y",
+        "syscode": "",
+        "rank": "2",
+        "value": "m2"
+      },
+      {
+        "id": "72",
+        "corpid": "2",
+        "list": "units",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "Y",
+        "syscode": "",
+        "rank": "3",
+        "value": "m3"
+      },
+      {
+        "id": "73",
+        "corpid": "2",
+        "list": "units",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "Y",
+        "syscode": "",
+        "rank": "4",
+        "value": "kg"
+      },
+      {
+        "id": "74",
+        "corpid": "2",
+        "list": "units",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "Y",
+        "syscode": "",
+        "rank": "5",
+        "value": "tonne"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetUnitResponse": {
+    "response": {
+      "id": "70",
+      "corpid": "2",
+      "list": "units",
+      "status": "ok",
+      "isEnabled": "Y",
+      "isWriteabled": "Y",
+      "syscode": "",
+      "rank": "1",
+      "value": "forfaitaire"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreateUnitResponse": {
+    "response": {
+      "unitid": 4893
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreateUnitsResponse": {
+    "response": {
+      "unitid": 4893
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreatePayMediumsResponse": {
+    "response": {
+      "unitid": 4893
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreateTaxesResponse": {
+    "response": {
+      "ids": [
+        1,
+        2
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasUpdateTaxesResponse": {
+    "response": {
+      "ids": [
+        1,
+        2
+      ]
+    }
+  },
+  "AccountdatasUpdateShippingsResponse": {
+    "response": {
+      "ids": [
+        123,
+        1234
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreateShippingsResponse": {
+    "response": {
+      "ids": [
+        4893,
+        4894
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasUpdatePackagingsResponse": {
+    "response": {
+      "ids": [
+        123,
+        1234
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreatePackagingsResponse": {
+    "response": {
+      "ids": [
+        4893,
+        4894
+      ],
+      "error": "",
+      "status": "success"
+    }
+  },
+  "AccountdatasUpdateUnitResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasUpdatePayMediumsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasUpdateUnitsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasDeleteUnitResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetPackagingListResponse": {
+    "response": [
+      {
+        "type": "packaging",
+        "corpid": "138",
+        "owwnerid": "317",
+        "status": "ok",
+        "isEnabled": "Y",
+        "rank": "1",
+        "name": "packaging",
+        "notes": "packaging",
+        "unitAmount": "3.990000000",
+        "unitamountIsTaxesFree": "Y",
+        "unitid": "4728",
+        "unit": "",
+        "qt": "4.000000000",
+        "taxid": "4724",
+        "taxrate": "0.000000000",
+        "purchaseAmount": "0.00000000",
+        "stock": "0",
+        "createAt": "0000-00-00 00:00:00",
+        "updatedAt": "2012-06-19 10:40:26",
+        "id": "139596",
+        "typeLabel": "emballage",
+        "nameSample": "packaging",
+        "notesSample": "packaging",
+        "notesHTMLSample": "packaging",
+        "isTaxesFree": "HT",
+        "unitAmountTaxesFree": "3.990000000",
+        "formatted_unitAmount": "3.990000000",
+        "formatted_unitAmount_ht": "3.990000000",
+        "formatted_unitAmount_ttc": "3.99",
+        "formatted_qt": "4.000000000",
+        "formatted_taxrate": "0.000000000",
+        "formatted_full_qt": "4.000000000",
+        "formatted_full_unitAmount": "3.990000000"
+      },
+      {
+        "type": "packaging",
+        "corpid": "138",
+        "owwnerid": "317",
+        "status": "ok",
+        "isEnabled": "Y",
+        "rank": "2",
+        "name": "pack",
+        "notes": "packaging",
+        "unitAmount": "29.990000000",
+        "unitamountIsTaxesFree": "Y",
+        "unitid": "4728",
+        "unit": "",
+        "qt": "1.000000000",
+        "taxid": "4724",
+        "taxrate": "0.000000000",
+        "purchaseAmount": "0.00000000",
+        "stock": "0",
+        "createAt": "0000-00-00 00:00:00",
+        "updatedAt": "2012-06-19 10:27:38",
+        "id": "139597",
+        "typeLabel": "emballage",
+        "nameSample": "pack",
+        "notesSample": "packaging",
+        "notesHTMLSample": "packaging",
+        "isTaxesFree": "HT",
+        "unitAmountTaxesFree": "29.990000000",
+        "formatted_unitAmount": "29.990000000",
+        "formatted_unitAmount_ht": "29.990000000",
+        "formatted_unitAmount_ttc": "29.99",
+        "formatted_qt": "1.000000000",
+        "formatted_taxrate": "0.000000000",
+        "formatted_full_qt": "1.000000000",
+        "formatted_full_unitAmount": "29.990000000"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetPackagingResponse": {
+    "response": {
+      "type": "packaging",
+      "corpid": "138",
+      "owwnerid": "317",
+      "status": "ok",
+      "isEnabled": "Y",
+      "rank": "1",
+      "name": "packaging",
+      "notes": "packaging",
+      "unitAmount": "3.990000000",
+      "unitamountIsTaxesFree": "Y",
+      "unitid": "4728",
+      "unit": "",
+      "qt": "4.000000000",
+      "taxid": "4724",
+      "taxrate": "0.000000000",
+      "purchaseAmount": "0.00000000",
+      "stock": "0",
+      "createAt": "0000-00-00 00:00:00",
+      "updatedAt": "2012-06-19 10:40:26",
+      "id": "139596",
+      "typeLabel": "emballage",
+      "nameSample": "packaging",
+      "notesSample": "packaging",
+      "notesHTMLSample": "packaging",
+      "isTaxesFree": "HT",
+      "unitAmountTaxesFree": "3.990000000",
+      "formatted_unitAmount": "3.990000000",
+      "formatted_unitAmount_ht": "3.990000000",
+      "formatted_unitAmount_ttc": "3.99",
+      "formatted_qt": "4.000000000",
+      "formatted_taxrate": "0.000000000",
+      "formatted_full_qt": "4.000000000",
+      "formatted_full_unitAmount": "3.990000000"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasRecordPackagingResponse": {
+    "response": {
+      "id": "139596"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasDeletePackagingResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetShippingListResponse": {
+    "response": [
+      {
+        "type": "shipping",
+        "corpid": "138",
+        "owwnerid": "317",
+        "status": "ok",
+        "isEnabled": "Y",
+        "rank": "0",
+        "name": "shipping",
+        "notes": "shipping",
+        "unitAmount": "20.000000000",
+        "unitamountIsTaxesFree": "Y",
+        "unitid": "0",
+        "unit": "",
+        "qt": "1.000000000",
+        "taxid": "4724",
+        "taxrate": "0.000000000",
+        "purchaseAmount": "0.00000000",
+        "stock": "0",
+        "createAt": "2012-06-18 17:57:40",
+        "updatedAt": "2012-06-19 10:43:19",
+        "id": "139654",
+        "typeLabel": "transport",
+        "nameSample": "shipping",
+        "notesSample": "shipping",
+        "notesHTMLSample": "shipping",
+        "isTaxesFree": "HT",
+        "unitAmountTaxesFree": "20.000000000",
+        "formatted_unitAmount": "20.000000000",
+        "formatted_unitAmount_ht": "20.000000000",
+        "formatted_unitAmount_ttc": "20",
+        "formatted_qt": "1.000000000",
+        "formatted_taxrate": "0.000000000",
+        "formatted_full_qt": "1.000000000",
+        "formatted_full_unitAmount": "20.000000000"
+      },
+      {
+        "type": "shipping",
+        "corpid": "138",
+        "owwnerid": "317",
+        "status": "ok",
+        "isEnabled": "Y",
+        "rank": "2",
+        "name": "ship",
+        "notes": "shipping",
+        "unitAmount": "1.000000000",
+        "unitamountIsTaxesFree": "Y",
+        "unitid": "0",
+        "unit": "",
+        "qt": "1.000000000",
+        "taxid": "4724",
+        "taxrate": "0.000000000",
+        "purchaseAmount": "0.00000000",
+        "stock": "0",
+        "createAt": "2012-06-18 18:04:19",
+        "updatedAt": "2012-06-18 18:04:19",
+        "id": "139655",
+        "typeLabel": "transport",
+        "nameSample": "",
+        "notesSample": "",
+        "notesHTMLSample": "",
+        "isTaxesFree": "HT",
+        "unitAmountTaxesFree": "1.000000000",
+        "formatted_unitAmount": "1.000000000",
+        "formatted_unitAmount_ht": "1.000000000",
+        "formatted_unitAmount_ttc": "1",
+        "formatted_qt": "1.000000000",
+        "formatted_taxrate": "0.000000000",
+        "formatted_full_qt": "1.000000000",
+        "formatted_full_unitAmount": "1.000000000"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetShippingResponse": {
+    "response": {
+      "type": "shipping",
+      "corpid": "138",
+      "owwnerid": "317",
+      "status": "ok",
+      "isEnabled": "Y",
+      "rank": "0",
+      "name": "shipping",
+      "notes": "shipping",
+      "unitAmount": "20.000000000",
+      "unitamountIsTaxesFree": "Y",
+      "unitid": "0",
+      "unit": "",
+      "qt": "1.000000000",
+      "taxid": "4724",
+      "taxrate": "0.000000000",
+      "purchaseAmount": "0.00000000",
+      "stock": "0",
+      "createAt": "2012-06-18 17:57:40",
+      "updatedAt": "2012-06-19 10:43:19",
+      "id": "139654",
+      "typeLabel": "transport",
+      "nameSample": "shipping",
+      "notesSample": "shipping",
+      "notesHTMLSample": "shipping",
+      "isTaxesFree": "HT",
+      "unitAmountTaxesFree": "20.000000000",
+      "formatted_unitAmount": "20.000000000",
+      "formatted_unitAmount_ht": "20.000000000",
+      "formatted_unitAmount_ttc": "20",
+      "formatted_qt": "1.000000000",
+      "formatted_taxrate": "0.000000000",
+      "formatted_full_qt": "1.000000000",
+      "formatted_full_unitAmount": "20.000000000"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasRecordShippingResponse": {
+    "response": {
+      "id": "139654"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasDeleteShippingResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetPayMediumsResponse": {
+    "response": [
+      {
+        "id": "4744",
+        "corpid": "138",
+        "list": "paymediums",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "N",
+        "syscode": "check",
+        "rank": "1",
+        "value": "ch\u00e8que"
+      },
+      {
+        "id": "4745",
+        "corpid": "138",
+        "list": "paymediums",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "N",
+        "syscode": "transfer",
+        "rank": "2",
+        "value": "virement bancaire"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetPayMediumResponse": {
+    "response": {
+      "id": "4744",
+      "corpid": "138",
+      "list": "paymediums",
+      "status": "ok",
+      "isEnabled": "Y",
+      "isWriteabled": "N",
+      "syscode": "check",
+      "rank": "1",
+      "value": "chèque"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasCreatePayMediumResponse": {
+    "response": {
+      "mediumid": "5881"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasUpdatePayMediumResponse": {
+    "response": {
+      "mediumid": "5881"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasDeletePayMediumResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetRateCategoriesResponse": {
+    "response": [
+      {
+        "id": "10",
+        "corpid": "138",
+        "name": "Autres",
+        "hasTaxesInc": "N",
+        "isDefault": "N",
+        "status": "ok"
+      },
+      {
+        "id": "50",
+        "corpid": "138",
+        "name": "Particuliers",
+        "hasTaxesInc": "Y",
+        "isDefault": "Y",
+        "status": "ok"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetRateCategoryResponse": {
+    "response": {
+      "id": "50",
+      "corpid": "138",
+      "name": "Particuliers",
+      "hasTaxesInc": "Y",
+      "isDefault": "Y",
+      "status": "ok"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetDocLayoutsResponse": {
+    "response": {
+      "layouts": [
+        {
+          "corpid": "1033",
+          "ownerid": "1677",
+          "status": "ok",
+          "isdefault": "Y",
+          "name": "Mod\u00e8le 2",
+          "headerMode": "all",
+          "footerMode": "all",
+          "logoMode": "first",
+          "useBg": "custom",
+          "bgMode": "all",
+          "bgFile": "custom",
+          "bgCustomFile": "",
+          "hideTopPart": "N",
+          "hideBottomSeparator": "N",
+          "hideFill": "N",
+          "colorFill": "000000",
+          "hideDepositRecap": "N",
+          "colorText": "000000",
+          "colorHeaderRow": "000000",
+          "colorNotes": "000000",
+          "colorDiscreet": "000000",
+          "colorHeaderFooter": "000000",
+          "font": "opensans",
+          "fontsize": "10",
+          "language": "FR",
+          "timeformat": "dmy",
+          "txts": "a:67:{s:3:\"tel\";s:5:\"Tel.:\";s:3:\"fax\";s:5:\"Fax.:\";s:6:\"mobile\";s:8:\"Mobile.:\";s:5:\"email\";s:7:\"Email.:\";s:15:\"document-parent\";s:15:\"Document parent\";s:8:\"term-ref\";s:19:\"R\u00e9f\u00e9rence interne\";s:10:\"en-date-du\";s:10:\"En date du\";s:9:\"tva-intra\";s:22:\"TVA Intracommunautaire\";s:10:\"ref-client\";s:12:\"R\u00e9f. client\";s:6:\"object\";s:5:\"Objet\";s:5:\"image\";s:5:\"Image\";s:8:\"nom-code\";s:10:\"Nom \/ Code\";s:11:\"description\";s:11:\"Description\";s:8:\"quantite\";s:3:\"Qte\";s:2:\"pu\";s:2:\"PU\";s:12:\"remise-ligne\";s:6:\"Remise\";s:5:\"pu-ht\";s:5:\"PU HT\";s:6:\"pu-ttc\";s:6:\"PU TTC\";s:3:\"tax\";s:3:\"TVA\";s:4:\"tax2\";s:3:\"TVA\";s:8:\"total-ht\";s:8:\"Total HT\";s:9:\"total-ttc\";s:9:\"Total TTC\";s:5:\"total\";s:5:\"Total\";s:9:\"en-option\";s:9:\"En option\";s:16:\"nb-item-document\";s:30:\"Nombre de produits du document\";s:10:\"sous-total\";s:10:\"Sous total\";s:14:\"sous-total-ttc\";s:14:\"Sous total TTC\";s:15:\"frais-emballage\";s:17:\"Frais d'emballage\";s:10:\"frais-port\";s:13:\"Frais de port\";s:17:\"adresse-livraison\";s:20:\"Adresse de livraison\";s:5:\"notes\";s:5:\"Notes\";s:11:\"tax-deposit\";s:34:\"R\u00e9capitulatif des TVA d\u2018acompte\";s:27:\"signature-cachet-entreprise\";s:35:\"Signature et cachet de l'entreprise\";s:28:\"signature-client-lu-approuve\";s:80:\"Signature du client pr\u00e9c\u00e9d\u00e9e de la mention 'Lu et approuv\u00e9, bon pour accord'\";s:15:\"moyen-reglement\";s:19:\"Moyen de r\u00e8glement\";s:15:\"delai-reglement\";s:20:\"D\u00e9lai de r\u00e8glement\";s:1:\"a\";s:2:\"\u00e0\";s:11:\"fin-de-mois\";s:11:\"fin de mois\";s:13:\"date-validite\";s:17:\"Date de validit\u00e9\";s:20:\"coordonnes-bancaires\";s:22:\"Coordonn\u00e9es bancaires\";s:24:\"coordonnes-bancaires-bic\";s:3:\"BIC\";s:25:\"coordonnes-bancaires-iban\";s:4:\"IBAN\";s:21:\"date-limite-reglement\";s:25:\"Date limite de r\u00e8glement\";s:9:\"url-suivi\";s:12:\"Url de suivi\";s:12:\"numero-suivi\";s:16:\"Num\u00e9ro de suivi\";s:12:\"nombre-colis\";s:15:\"Nombre de colis\";s:10:\"poid-total\";s:10:\"Poid total\";s:6:\"volume\";s:6:\"Volume\";s:14:\"libelle-cheque\";s:19:\"Libell\u00e9 du ch\u00e8que\";s:14:\"prochaine-date\";s:28:\"Date de la prochaine facture\";s:9:\"total-net\";s:9:\"Total Net\";s:12:\"total-net-ht\";s:12:\"Total net HT\";s:13:\"total-net-ttc\";s:13:\"Total net TTC\";s:12:\"reduction-ht\";s:12:\"Reduction HT\";s:9:\"reduction\";s:10:\"R\u00e9duction\";s:25:\"total-net-apres-reduction\";s:27:\"Total net apr\u00e8s r\u00e9duction\";s:9:\"remise-ht\";s:9:\"Remise HT\";s:10:\"remise-ttc\";s:10:\"Remise TTC\";s:6:\"remise\";s:6:\"Remise\";s:22:\"total-net-apres-remise\";s:23:\"Total net apr\u00e8s remise\";s:9:\"tax-total\";s:9:\"Total Tva\";s:17:\"montant-total-ttc\";s:17:\"Montant total TTC\";s:16:\"montant-total-ht\";s:16:\"Montant total HT\";s:13:\"montant-total\";s:13:\"Montant total\";s:22:\"total-frais-emaballage\";s:23:\"Total frais d'emballage\";s:16:\"total-frais-port\";s:19:\"Total frais de port\";s:14:\"total-a-regler\";s:16:\"Total \u00e0 r\u00e9gler\";}",
+          "customName": "",
+          "id": "1550"
+        },
+        {
+          "corpid": "1033",
+          "ownerid": "1675",
+          "status": "ok",
+          "isdefault": "N",
+          "name": "Mod\u00e8le par d\u00e9faut",
+          "headerMode": "all",
+          "footerMode": "all",
+          "logoMode": "first",
+          "useBg": "system",
+          "bgMode": "all",
+          "bgFile": "",
+          "bgCustomFile": "",
+          "hideTopPart": "N",
+          "hideBottomSeparator": "N",
+          "hideFill": "N",
+          "colorFill": "000000",
+          "hideDepositRecap": "N",
+          "colorText": "000000",
+          "colorHeaderRow": "000000",
+          "colorNotes": "000000",
+          "colorDiscreet": "000000",
+          "colorHeaderFooter": "000000",
+          "font": "helvetica",
+          "fontsize": "10",
+          "language": "FR",
+          "timeformat": "dmy",
+          "txts": "",
+          "customName": "",
+          "id": "1158"
+        }
+      ],
+      "default": "1550"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetPayDatesResponse": {
+    "response": {
+      "payDates": [
+        {
+          "id": "60623",
+          "corpid": "1033",
+          "list": "paydates",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "custom",
+          "rank": "1",
+          "value": "capouet",
+          "more": ""
+        },
+        {
+          "id": "60624",
+          "corpid": "1033",
+          "list": "paydates",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "onorder",
+          "rank": "3",
+          "value": "\u00e0 la commande",
+          "more": ""
+        }
+      ],
+      "default": "60624"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountdatasGetTranslationLanguagesResponse": {
+    "response": [
+      {
+        "id": "53",
+        "corpid": "1033",
+        "status": "ok",
+        "lang": "English",
+        "flag": "us"
+      },
+      {
+        "id": "136",
+        "corpid": "1033",
+        "status": "ok",
+        "lang": "Italian",
+        "flag": "it"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsGetCorpInfosResponse": {
+    "response": {
+      "linkedtype": "corp",
+      "linkedid": "138",
+      "prefsid": "15287",
+      "accountingPrefsId": "0",
+      "logo": "",
+      "name": "Activane",
+      "email": "contact@activane.com",
+      "web": "http://api.sellsy.com",
+      "tel": "01234564789",
+      "mobile": "0612345678",
+      "fax": "0123456789",
+      "siret": "123 456 789 00001",
+      "vat": "FR 17 123 456 789",
+      "apenaf": "52.11Z",
+      "rcs": "La Rochelle 123 456 789",
+      "type": "SARL",
+      "capital": "30000",
+      "mainaddressid": "36834",
+      "id": "2918"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsUpdateCorpInfosResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsGetAddressListResponse": {
+    "response": [
+      {
+        "id": "36834",
+        "corpid": "138",
+        "status": "ok",
+        "rank": "0",
+        "name": "EASYBILL",
+        "part1": "1 Rue Flemming",
+        "part2": "",
+        "zip": "17000",
+        "town": "La Rochelle",
+        "townid": "3834604",
+        "countrycode": "FR",
+        "originalid": "0",
+        "isMain": "Y",
+        "toHTML": "1 Rue Flemming 17000 - La Rochelle France"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsGetAddressResponse": {
+    "response": {
+      "corpid": "138",
+      "linkedtype": "corp",
+      "linkedid": "138",
+      "status": "ok",
+      "rank": "0",
+      "name": "EASYBILL",
+      "part1": "1 Rue Flemming",
+      "part2": "",
+      "zip": "17000",
+      "town": "La Rochelle",
+      "townid": "3834604",
+      "countrycode": "FR",
+      "originalid": "0",
+      "id": "36834",
+      "partsToDisplay": [
+        {
+          "txt": "1 Rue Flemming"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsCreateAddressResponse": {
+    "response": {
+      "addressid": "{{addressid}}"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsUpdateAddressResponse": {
+    "response": {
+      "addressid": "{{addressid}}"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsDeleteAddressResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsGetStaffInfosResponse": {
+    "response": {
+      "corpid": "138",
+      "ownerid": "0",
+      "linkedtype": "staff",
+      "linkedid": "317",
+      "status": "ok",
+      "rank": "0",
+      "gender": "",
+      "civil": "man",
+      "forename": "Jacques",
+      "name": "Dupont",
+      "email": "contact@activane.com",
+      "web": "",
+      "tel": "0123456789",
+      "mobile": "0612345678",
+      "fax": "0123456789",
+      "position": "",
+      "pic": "",
+      "sign": "",
+      "birthdate": "0000-00-00",
+      "id": "3328",
+      "fullName": "M. Jacques Dupont"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsUpdateStaffInfosResponse": {
+    "response": {
+      "corpid": "138",
+      "ownerid": "0",
+      "linkedtype": "staff",
+      "linkedid": "317",
+      "status": "ok",
+      "rank": "0",
+      "gender": "",
+      "civil": "man",
+      "forename": "Jacques",
+      "name": "Dupont",
+      "email": "contact@activane.com",
+      "web": "",
+      "tel": "0123456789",
+      "mobile": "0612345678",
+      "fax": "0123456789",
+      "position": "",
+      "pic": "",
+      "sign": "",
+      "birthdate": "0000-00-00",
+      "id": "3328",
+      "fullName": "M. Jacques Dupont"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsSetNumberFormatResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsUpdateDefaultPayMediumsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsGetLogoPublicLinkResponse": {
+    "response": "?_f=file&id={{hash_public_link}}",
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsUpdateLogoResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsDeleteLogoResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsGetCurrenciesResponse": {
+    "response": [
+      {
+        "name": "EUR",
+        "symbol": "\u20ac",
+        "rank": "1",
+        "mercacode": "978",
+        "enabled": "Y",
+        "id": "1"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsGetCurrencyResponse": {
+    "response": {
+      "name": "EUR",
+      "symbol": "\u20ac",
+      "rank": "1",
+      "mercacode": "978",
+      "enabled": "Y",
+      "id": "1"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsSetCurrencyResponse": {
+    "response": {
+      "currency_id": "1"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AccountPrefsSetLanguageResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 20,
+        "nbpages": 1,
+        "pagenum": "1",
+        "nbtotal": "1"
+      },
+      "result": [
+        {
+          "id": "1304",
+          "corpid": "1641",
+          "ownerid": "2542",
+          "corpname": "Sellsy",
+          "purdocmapid": "1415",
+          "prefsid": "1452",
+          "linkedtype": "purInvoice",
+          "linkedid": "316",
+          "parentid": "0",
+          "thirdid": "119304",
+          "thirdname": "Activane",
+          "thirdvatnum": "",
+          "hasVat": "Y",
+          "status": "ok",
+          "fileid": "27291",
+          "filename": "F-INV-20140911-00001_1410450530.9155",
+          "nbpages": "1",
+          "ident": "F_INV-20140911-00001",
+          "thirdident": "",
+          "created": "2014-09-11 17:48:50",
+          "displayedDate": "2014-09-11",
+          "currencysymbol": "\u20ac",
+          "docspeakerText": "Votre contact",
+          "docspeakerStaffId": "0",
+          "docspeakerStaffFullName": "",
+          "ownerFullName": "R\u00e9my Neuter",
+          "subject": "Achat rapide",
+          "corpaddressid": "105361",
+          "thirdaddressid": "105362",
+          "shipaddresstype": "corp",
+          "shipthirdid": "0",
+          "shipaddressid": "105363",
+          "rowsAmount": "2.970000000",
+          "discountPercent": "0.000000000",
+          "discountAmount": "0.000000000",
+          "rowsAmountDiscounted": "0.000000000",
+          "offerAmount": "0.000000000",
+          "rowsAmountAllInc": "2.970000000",
+          "packagingsAmount": "0.000000000",
+          "shippingsAmount": "0.000000000",
+          "totalAmountTaxesFree": "2.970000000",
+          "taxesAmountSum": "0.590000000",
+          "taxesAmountDetails": "a:1:{i:86718;s:11:\"0.590000000\";}",
+          "totalAmount": "3.560000000",
+          "totalEcoTaxFree": "0.000000000",
+          "totalEcoTaxInc": "0.000000000",
+          "ecoTaxId": "86821",
+          "payDateText": "capouet",
+          "payDateCustom": "2014-09-11",
+          "payMediumsText": "a:1:{i:0;s:6:\"Paypal\";}",
+          "payCheckOrderText": "",
+          "payBankAccountText": "",
+          "shippingNbParcels": "0",
+          "shippingWeight": "0.000000000",
+          "shippingWeightUnit": "g",
+          "shippingVolume": "0.000000000",
+          "shippingTrackingNumber": "",
+          "shippingTrackingUrl": "",
+          "shippingDate": "0000-00-00",
+          "displayShipAddress": "N",
+          "saveThirdPrefs": "N",
+          "contactId": "0",
+          "contactName": "",
+          "analyticsCode": "",
+          "recordable": "N",
+          "recorded": "N",
+          "rateCategory": "0",
+          "isTaxesInc": "N",
+          "stockImpact": "Y",
+          "isFromPresta": "N",
+          "oldid": "0",
+          "thirdRelationType": "supplier",
+          "doctypeid": "316",
+          "step": "paid",
+          "deliverystep": "wait",
+          "isDeposit": "N",
+          "posId": "0",
+          "dueAmount": "0.000000000",
+          "externalident": "",
+          "currencyid": "1",
+          "currencyposition": "right",
+          "numberformat": "fr",
+          "numberdecimals": ",",
+          "numberthousands": " ",
+          "numberprecision": "2",
+          "step_color": "primary-50",
+          "step_hex": "#0B5CE1",
+          "step_label": "Pay\u00e9",
+          "step_css": "colorPaid",
+          "step_banner": "paid",
+          "step_id": "paid",
+          "deliverystep_color": "pink",
+          "deliverystep_hex": "#C033DA",
+          "deliverystep_label": "En attente",
+          "deliverystep_css": "colorDraft",
+          "deliverystep_banner": "wait",
+          "deliverystep_id": "wait",
+          "canBeSharedByLoggedStaff": "Y",
+          "displayed_payMediumsText": "Paypal",
+          "formatted_totalAmount": "3,56 \u20ac",
+          "formatted_totalAmountTaxesFree": "2,97 \u20ac",
+          "formatted_displayedDate": "11\/09\/2014",
+          "formatted_payDateCustom": "11\/09\/2014",
+          "noedit": "N"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseGetOneResponse": {
+    "response": {
+      "id": "1304",
+      "corpid": "1641",
+      "ownerid": "2542",
+      "purdocmapid": "1415",
+      "prefsid": "1452",
+      "linkedtype": "purInvoice",
+      "linkedid": "316",
+      "parentid": "0",
+      "thirdid": "119304",
+      "hasVat": "Y",
+      "status": "ok",
+      "fileid": "27291",
+      "filename": "F-INV-20140911-00001_1410450530.9155",
+      "nbpages": "1",
+      "ident": "F_INV-20140911-00001",
+      "thirdident": "",
+      "created": "2014-09-11 17:48:50",
+      "displayedDate": "11\/09\/2014",
+      "currencysymbol": "\u20ac",
+      "docspeakerStaffId": "0",
+      "docspeakerStaffFullName": "",
+      "ownerFullName": "R\u00e9my Neuter",
+      "subject": "Achat rapide",
+      "corpaddressid": "105361",
+      "thirdaddressid": "105362",
+      "shipaddresstype": "corp",
+      "shipthirdid": "0",
+      "shipaddressid": "105363",
+      "rowsAmount": "2.970000000",
+      "discountPercent": "0.000000000",
+      "discountAmount": "0.000000000",
+      "rowsAmountDiscounted": "0.000000000",
+      "offerAmount": "0.000000000",
+      "rowsAmountAllInc": "2.970000000",
+      "packagingsAmount": "0.000000000",
+      "shippingsAmount": "0.000000000",
+      "totalAmountTaxesFree": "2.970000000",
+      "taxesAmountSum": "0.590000000",
+      "taxesAmountDetails": "a:1:{i:86718;s:11:\"0.590000000\";}",
+      "totalAmount": "3.560000000",
+      "totalEcoTaxFree": "0.000000000",
+      "totalEcoTaxInc": "0.000000000",
+      "ecoTaxId": "86821",
+      "shippingNbParcels": "0",
+      "shippingWeight": "0.000000000",
+      "shippingWeightUnit": "g",
+      "shippingVolume": "0.000000000",
+      "shippingTrackingNumber": "",
+      "shippingTrackingUrl": "",
+      "shippingDate": "0000-00-00",
+      "displayShipAddress": "N",
+      "saveThirdPrefs": "N",
+      "contactId": "0",
+      "contactName": "",
+      "analyticsCode": "",
+      "recordable": "N",
+      "recorded": "N",
+      "rateCategory": "0",
+      "isTaxesInc": "N",
+      "stockImpact": "Y",
+      "isFromPresta": "N",
+      "oldid": "0",
+      "doctypeid": "316",
+      "step": "paid",
+      "deliverystep": "wait",
+      "isDeposit": "N",
+      "posId": "0",
+      "dueAmount": "0.000000000",
+      "externalident": "",
+      "countrycode": "FR",
+      "defaultAddressCountry": "FR",
+      "globalDiscount": "0.000000000",
+      "globalDiscountUnit": "percent",
+      "globalOffer": "0.000000000",
+      "useDeposit": "N",
+      "discountByRows": "N",
+      "addPdfToEmail": "Y",
+      "addGtuToEmail": "Y",
+      "addSenderToEmail": "N",
+      "hideColumnName": "N",
+      "hideColumnNotes": "N",
+      "hideColumnUnit": "N",
+      "hideColumnTaxFree": "N",
+      "hideColumnTax": "N",
+      "hideColumnTaxInc": "N",
+      "hideColumnQt": "N",
+      "hideColumnImage": "N",
+      "hideColumnDiscount": "",
+      "hideTotalTaxesFree": "N",
+      "hideTotal": "N",
+      "hidePayment": "N",
+      "hidePricesOnDelivery": "N",
+      "hideTaxes": "N",
+      "hasPenaltyRetardWarning": "Y",
+      "penaltyRetardWarningText": "",
+      "showContactOnPdf": "N",
+      "showParentOnPdf": "",
+      "hasCorpAgree": "N",
+      "hasThirdAgree": "N",
+      "notes": "",
+      "nbExpireDays": "30",
+      "displayAmounts": "Y",
+      "display_footer": "Y",
+      "display_ident": "Y",
+      "display_email": "Y",
+      "display_tel": "Y",
+      "display_mobile": "Y",
+      "display_fax": "Y",
+      "display_addresse": "Y",
+      "displayBankAccount": "Y",
+      "displayIBAN": "Y",
+      "displayBIC": "Y",
+      "hideTips": "N",
+      "hideOrdersDocs": "N",
+      "hideDeliveriesDocs": "N",
+      "hideProformaDocs": "N",
+      "emailsSentFromCorp": "Y",
+      "hasEmailBaseline": "Y",
+      "sendRawEmails": "N",
+      "forceDisplayBankAccount": "",
+      "forceDisplayCheckOrder": "",
+      "showUnitIn": "unitamountcolumn",
+      "addBarCodeToDesc": "",
+      "addBarCodeImageToDesc": "",
+      "showNbItemOnPdf": "N",
+      "isdefault": "Y",
+      "name": "Apparence par d\u00e9faut",
+      "headerMode": "all",
+      "footerMode": "all",
+      "logoMode": "first",
+      "useBg": "system",
+      "bgMode": "all",
+      "bgFile": "",
+      "bgCustomFile": "",
+      "hideTopPart": "N",
+      "hideBottomSeparator": "N",
+      "documentIdentOnLeft": "N",
+      "hideFill": "N",
+      "colorFill": "000000",
+      "hideDepositRecap": "N",
+      "colorText": "000000",
+      "colorHeaderRow": "000000",
+      "colorNotes": "000000",
+      "colorDiscreet": "000000",
+      "colorHeaderFooter": "000000",
+      "font": "helvetica",
+      "fontsize": "10",
+      "language": "FR",
+      "timeformat": "dmy",
+      "txts": "",
+      "customName": "",
+      "topMargin": "35",
+      "documentAddressOnLeft": "N",
+      "documentFormat": "A4",
+      "context": "update",
+      "type": "purInvoice",
+      "relateds": [
+        {
+          "relatedId": "1184",
+          "relatedType": "payment",
+          "relatedDate": "2014-09-11",
+          "relatedAmount": "3.560000000",
+          "relatedMedium": "86707",
+          "relatedMediumTxt": "esp\u00e8ces",
+          "relatedIdent": "0001",
+          "relatedNotes": "",
+          "docid": "1304",
+          "doctype": "purInvoice",
+          "formatted_relatedAmount": "3,56 \u20ac",
+          "formatted_relatedDate": "11\/09\/2014",
+          "html_relatedNotes": "",
+          "relatedTypeText": false,
+          "relatedFullLabel": " N\u00b0 0001"
+        }
+      ],
+      "relateds_amount": "3.560000000",
+      "corpAddress": {
+        "id": "105361",
+        "name": "",
+        "part1": "",
+        "part2": "",
+        "part3": "",
+        "part4": "",
+        "zip": "",
+        "town": "",
+        "state": "",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "lat": null,
+        "lng": null,
+        "partsToDisplay": [
+          {
+            "txt": " "
+          }
+        ]
+      },
+      "hasThird": "Y",
+      "thirdType": "corporation",
+      "thirdAddress": {
+        "id": "105362",
+        "name": "",
+        "part1": "",
+        "part2": "",
+        "part3": "",
+        "part4": "",
+        "zip": "",
+        "town": "",
+        "state": "",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "lat": null,
+        "lng": null,
+        "partsToDisplay": [
+          {
+            "txt": " "
+          }
+        ]
+      },
+      "shipAddress": {
+        "id": "105363",
+        "name": "",
+        "part1": "",
+        "part2": "",
+        "part3": "",
+        "part4": "",
+        "zip": "",
+        "town": "",
+        "state": "",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "lat": null,
+        "lng": null,
+        "partsToDisplay": [
+          {
+            "txt": " "
+          }
+        ]
+      },
+      "canWriteDocNamespace": "Y",
+      "logoFile": "",
+      "logoFile_system": "",
+      "logoHeight": 0,
+      "logoWidth": 0,
+      "label": "Facture fournisseur",
+      "fullIdent": "Facture fournisseur N\u00b0 F_INV-20140911-00001",
+      "numformat": {
+        "name": "fr",
+        "decimals": ",",
+        "thousands": " ",
+        "currencypos": "right",
+        "currencysymbol": "\u20ac",
+        "precision": "2"
+      },
+      "numformats": [
+        {
+          "label": "fran\u00e7ais [1 234,57 #]",
+          "decimals": ",",
+          "thousands": " ",
+          "currencypos": "right",
+          "name": "fr"
+        }
+      ],
+      "precisions": [
+        {
+          "value": 0
+        }
+      ],
+      "currencies": [
+        {
+          "name": "EUR",
+          "longname": "Euro",
+          "symbol": "\u20ac",
+          "rank": "1",
+          "mercacode": "978",
+          "paypalcode": "EUR",
+          "enabled": "Y",
+          "id": "1",
+          "selected": "Y"
+        }
+      ],
+      "currencypositions": [
+        {
+          "value": "both",
+          "label": "gauche et droite"
+        }
+      ],
+      "hasRelateds": "Y",
+      "corpName": "Sellsy",
+      "thirdName": "Activane",
+      "thirdVatNum": "",
+      "docspeaker_text": "Votre contact",
+      "paydate_text": "capouet",
+      "paydate_custom": "11\/09\/2014",
+      "paymediums_text": "a:1:{i:0;s:6:\"Paypal\";}",
+      "paycheckorder_text": "",
+      "paybankaccount_text": "",
+      "currency": "1",
+      "num_currencypos": "right",
+      "docspeaker": "86714",
+      "doclayout": "1801",
+      "num_name": "fr",
+      "num_decimals": ",",
+      "num_thousands": " ",
+      "num_precision": "2",
+      "defaultTax": "86718",
+      "defaultTax2": "0",
+      "defaultUnit": "86680",
+      "defaultShipping": "280833",
+      "defaultPackaging": "280831",
+      "paydate": "86694",
+      "paydate_xdays": "0",
+      "paydate_endmonth": "N",
+      "paydate_scaledDetails": "",
+      "paymediums": [
+        {
+          "id": "86703",
+          "corpid": "1641",
+          "list": "paymediums",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "0",
+          "value": "Paypal",
+          "more": "",
+          "checked": "Y"
+        }
+      ],
+      "paymedium_other": "",
+      "paycheckorder": "86716",
+      "paybankaccount": "0",
+      "weightUnits": [
+        {
+          "value": "mg"
+        }
+      ],
+      "hideableColumns": [
+        {
+          "id": "name",
+          "name": "hideColumnName",
+          "label": "Masquer la colonne \"R\u00e9f\u00e9rence\"",
+          "checked": "N"
+        }
+      ],
+      "doclayouts": [
+        {
+          "corpid": "1641",
+          "ownerid": "2542",
+          "status": "ok",
+          "isdefault": "Y",
+          "name": "Apparence par d\u00e9faut",
+          "headerMode": "all",
+          "footerMode": "all",
+          "logoMode": "first",
+          "useBg": "system",
+          "bgMode": "all",
+          "bgFile": "",
+          "bgCustomFile": "",
+          "hideTopPart": "N",
+          "hideBottomSeparator": "N",
+          "documentIdentOnLeft": "N",
+          "hideFill": "N",
+          "colorFill": "000000",
+          "hideDepositRecap": "N",
+          "colorText": "000000",
+          "colorHeaderRow": "000000",
+          "colorNotes": "000000",
+          "colorDiscreet": "000000",
+          "colorHeaderFooter": "000000",
+          "font": "helvetica",
+          "fontsize": "10",
+          "language": "FR",
+          "timeformat": "dmy",
+          "txts": "",
+          "customName": "",
+          "topMargin": "35",
+          "documentAddressOnLeft": "N",
+          "documentFormat": "A4",
+          "id": "1801"
+        }
+      ],
+      "currencyleft": "",
+      "currencyright": "\u20ac",
+      "discountUnits": [
+        {
+          "value": "amount",
+          "label": "\u20ac"
+        }
+      ],
+      "taxes": [
+        {
+          "id": "86718",
+          "corpid": "1641",
+          "list": "taxes",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "20,00",
+          "more": ""
+        }
+      ],
+      "shippings": [
+        {
+          "id": "280833",
+          "type": "shipping",
+          "corpid": "1641",
+          "ownerid": "2542",
+          "status": "ok",
+          "actif": "Y",
+          "isEnabled": "Y",
+          "inPos": "N",
+          "rank": "1",
+          "name": "DHL",
+          "tradename": "",
+          "tradenametonote": "N",
+          "notes": "shipping",
+          "unitAmount": "13.900000000",
+          "unitAmountIsTaxesFree": "Y",
+          "useEcoTax": "N",
+          "ecoTax": "0.000000000",
+          "unitid": "86680",
+          "unit": "unit\u00e9",
+          "qt": "1.000000000",
+          "taxid": "86718",
+          "taxrate": "20,00",
+          "purchaseAmount": "0.000000000",
+          "costPerHour": "0.000000000",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "useDeclination": "N",
+          "decl_id": 0,
+          "declid": 0,
+          "analyticsCode": null,
+          "accountingPurchaseCode": "",
+          "accountingCode": "",
+          "typeLabel": "transport",
+          "nameSample": "DHL",
+          "notesSample": "shipping",
+          "notesFormated": "shipping",
+          "notesHTMLSample": "shipping",
+          "isTaxesFree": "HT",
+          "isTaxesFreeBool": "Y",
+          "purchaseAmountTaxesInc": "0.000000000",
+          "unitAmountTaxesInc": "13.900000000",
+          "defaultImage": {
+            "file": {
+              "public_path": "?_f=file&id=JTJDJUIzJUFGJUM1JUI5JTFEJUFEJUUzNSU3RWglMDElRjclRTlIJUI4JUY5JTk0aiVDRDZoJUVFJUQ0JUQxJTdGJUE2JUU1aXklRUUlQzhFJUE1JUIyJTA2JTIxJUE5JUEwJTg2JUJEJUVCJTNCJTA1JTlGJTVCJTlFZVNmJUI5JTA4JUY4JUExJUM2RiVDQk0lRDglRTElRDUlMUJqJUVFJThCJUY5JTk2JTBGJTVCJTNBcyVBMCUxNSVFN01xJUM0aiU0MCVEMiU3RSUwRSVDOVolOTdrJUVCJTNBJTA3JUQ1TyUxQ1IlMjIlRkElRkM=&key=59af994019d6d07d308bd6badb789409"
+            }
+          },
+          "canBeSharedByLoggedStaff": "N",
+          "accounting_id": null
+        }
+      ],
+      "packagings": [
+        {
+          "id": "280831",
+          "type": "packaging",
+          "corpid": "1641",
+          "ownerid": "2542",
+          "status": "ok",
+          "actif": "Y",
+          "isEnabled": "Y",
+          "inPos": "N",
+          "rank": "1",
+          "name": "cartons",
+          "tradename": "",
+          "tradenametonote": "N",
+          "notes": "packaging",
+          "unitAmount": "3.990000000",
+          "unitAmountIsTaxesFree": "Y",
+          "useEcoTax": "N",
+          "ecoTax": "0.000000000",
+          "unitid": "86680",
+          "unit": "unit\u00e9",
+          "qt": "4.000000000",
+          "taxid": "86718",
+          "taxrate": "20,00",
+          "purchaseAmount": "0.000000000",
+          "costPerHour": "0.000000000",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "useDeclination": "N",
+          "decl_id": 0,
+          "declid": 0,
+          "analyticsCode": null,
+          "accountingPurchaseCode": "",
+          "accountingCode": "",
+          "typeLabel": "emballage",
+          "nameSample": "cartons",
+          "notesSample": "packaging",
+          "notesFormated": "packaging",
+          "notesHTMLSample": "packaging",
+          "isTaxesFree": "HT",
+          "isTaxesFreeBool": "Y",
+          "purchaseAmountTaxesInc": "0.000000000",
+          "unitAmountTaxesInc": "3.990000000",
+          "defaultImage": {
+            "file": {
+              "public_path": "?_f=file&id=JTJDJUIzJUFGJUM1JUI5JTFEJUFEJUUzNSU3RWglMDElRjclRTlIJUI4JUY5JTk0aiVDRDZoJUVFJUQ0JUQxJTdGJUE2JUU1aXklRUUlQzhFJUE1JUIyJTA2JTIxJUE5JUEwJTg2JUJEJUVCJTNCJTA1JTlGJTVCJTlFZVNmJUI5JTA4JUY4JUExJUM2RiVDQk0lRDglRTElRDUlMUJqJUVFJThCJUY5JTk2JTBGJTVCJTNBcyVBMCUxNSVFN01xJUM0aiU0MCVEMiU3RSUwRSVDOVolOTdrJUVCJTNBJTA3JUQ1TyUxQ1IlMjIlRkElRkM=&key=59af994019d6d07d308bd6badb789409"
+            }
+          },
+          "canBeSharedByLoggedStaff": "N",
+          "accounting_id": null
+        }
+      ],
+      "units": [
+        {
+          "id": "86680",
+          "corpid": "1641",
+          "list": "units",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "0",
+          "value": "unit\u00e9",
+          "more": ""
+        }
+      ],
+      "canWriteShippings": "Y",
+      "canWritePackagings": "Y",
+      "canWriteUnits": "Y",
+      "canWriteTaxes": "Y",
+      "canWritePaydates": "Y",
+      "paydates": [
+        {
+          "id": "86694",
+          "corpid": "1641",
+          "list": "paydates",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "custom",
+          "rank": "1",
+          "value": "capouet",
+          "more": ""
+        }
+      ],
+      "canWritePaymediums": "Y",
+      "canWritePayCheckOrders": "Y",
+      "paycheckorders": [
+        {
+          "id": "86713",
+          "corpid": "1641",
+          "list": "paycheckorders",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Service comptabilit\u00e9",
+          "more": ""
+        }
+      ],
+      "bankaccounts": [
+
+      ],
+      "canWriteDocSpeakers": "Y",
+      "docspeakers": [
+        {
+          "id": "86714",
+          "corpid": "1641",
+          "list": "docspeakers",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Votre contact",
+          "more": ""
+        }
+      ],
+      "ecoTaxes": [
+        {
+          "id": "86820",
+          "corpid": "1641",
+          "list": "taxes",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "ecotax196",
+          "rank": "0",
+          "value": "19.6",
+          "more": "Eco taxe"
+        }
+      ],
+      "ecoTaxRate": "20",
+      "ecoTaxLabel": "Eco taxe",
+      "totalEcoTaxFreeDisplay": "0.000000000",
+      "formatted_totalEcoTaxFreeDisplay": "0,00 \u20ac",
+      "totalEcoTaxIncDisplay": "0.000000000",
+      "formatted_totalEcoTaxIncDisplay": "0,00 \u20ac",
+      "formatted_rowsAmount": "2,97 \u20ac",
+      "formatted_discountPercent": "0,00",
+      "formatted_discountAmount": "0,00 \u20ac",
+      "formatted_rowsAmountDiscounted": "0,00 \u20ac",
+      "formatted_offerAmount": "0,00 \u20ac",
+      "formatted_rowsAmountAllInc": "2,97 \u20ac",
+      "formatted_packagingsAmount": "0,00 \u20ac",
+      "formatted_shippingsAmount": "0,00 \u20ac",
+      "formatted_totalAmountTaxesFree": "2,97 \u20ac",
+      "formatted_taxesAmountSum": "0,59 \u20ac",
+      "formatted_totalAmount": "3,56 \u20ac",
+      "formatted_shippingWeight": "0,00 \u20ac",
+      "formatted_shippingVolume": "0,00 \u20ac",
+      "formatted_globalDiscount": "0,00",
+      "formatted_globalOffer": "0,00",
+      "formatted_deposit": "0,00 \u20ac",
+      "formatted_dueAmount": "0,00 \u20ac",
+      "formatted_totalEcoTaxDisplay": "0,00 \u20ac",
+      "tel": "0512346789",
+      "fax": "",
+      "email": ".com",
+      "mobile": "",
+      "formatted_taxesAmountDetails": "a:1:{i:86718;s:8:\"0,59 \u20ac\";}",
+      "corpFooter": "Sellsy - B\u00e2timent ARPAE - Avenue Jean Monnet - 17000 La Rochelle - France Tel : 0512346789 - Email : .com",
+      "map": {
+        "purdocid": "1304",
+        "id": "1415",
+        "rows": [
+          {
+            "purdocmapid": "1415",
+            "parentid": "0",
+            "status": "ok",
+            "rank": "1",
+            "type": "once",
+            "linkedid": "0",
+            "declid": "0",
+            "name": "Pack d'eau",
+            "notes": "",
+            "unitAmount": "2.970000000",
+            "unitAmountTaxesInc": "2.970000000",
+            "ecoTax": "0.000000000",
+            "useEcoTax": "N",
+            "unitid": "86680",
+            "unitText": "unit\u00e9",
+            "qt": "1.000000000",
+            "discount": "0.000000000",
+            "discountUnit": "",
+            "taxid": "86718",
+            "taxrate": "20.000000000",
+            "tax2id": "0",
+            "tax2rate": "0.000000000",
+            "isOption": "N",
+            "totalAmount": "2.970000000",
+            "totalAmountTaxesInc": "2.970000000",
+            "taxAmount": "0.590000000",
+            "tax2Amount": "0.000000000",
+            "purchaseAmount": "0.000000000",
+            "accountingCode": "",
+            "analyticsCode": "",
+            "tteid": "0",
+            "whid": "0",
+            "serialid": "0",
+            "tmpbc": "",
+            "id": "2267",
+            "discountPercent": "0,           00",
+            "formatted_unitAmount": "2,           97",
+            "formatted_qt": "1,           00",
+            "formatted_discount": "0,           00",
+            "formatted_taxrate": "20,           00",
+            "formatted_tax2rate": "0,           00",
+            "formatted_totalAmount": "2,           97",
+            "formatted_totalAmountTaxesInc": "2,           97",
+            "formatted_taxAmount": "0,           59",
+            "formatted_tax2Amount": "0,           00",
+            "formatted_unitAmountTaxesInc": "2,           97",
+            "formatted_discountPercent": "0,           00",
+            "purchaseTotalAmount": "0.000000000",
+            "formatted_purchaseAmount": "0,           00",
+            "formatted_purchaseTotalAmount": "0,           00",
+            "tauxMarque": "100.000000000",
+            "tauxMarge": "0.000000000",
+            "formatted_tauxMarque": "100,           00",
+            "formatted_tauxMarge": "0,           00",
+            "ecoTaxDisplay": "0.00",
+            "totalEcoTaxAmount": "0.000000000",
+            "totalEcoTaxAmountDisplay": "0.000000000",
+            "formatted_totalEcoTaxAmount": "0,           00"
+          }
+        ]
+      },
+      "vatSummary": [
+
+      ],
+      "prefs": {
+        "linkedtype": "doc",
+        "linkedid": "1304",
+        "countrycode": "FR",
+        "defaultAddressCountry": "FR",
+        "currencyid": "1",
+        "currencyposition": "right",
+        "numberformat": "fr",
+        "numberdecimals": ",           ",
+        "numberthousands": "",
+        "numberprecision": "2",
+        "docspeakerid": "86714",
+        "defaultTaxid": "86718",
+        "defaultTax2id": "0",
+        "defaultUnitid": "86680",
+        "defaultShippingid": "280833",
+        "defaultPackagingid": "280831",
+        "payDateid": "86694",
+        "payDateXDays": "0",
+        "payDateEndMonth": "N",
+        "payDateScaledDetails": "",
+        "payMediums": "a: 1: {             i: 0;i: 86703;           }",
+        "payMediumOther": "",
+        "payCheckOrderid": "86716",
+        "bankAccountid": "0",
+        "globalDiscount": "0.000000000",
+        "globalDiscountUnit": "percent",
+        "globalOffer": "0.000000000",
+        "discountByRows": "N",
+        "addPdfToEmail": "Y",
+        "addGtuToEmail": "Y",
+        "addSenderToEmail": "N",
+        "hideColumnName": "N",
+        "hideColumnNotes": "N",
+        "hideColumnUnit": "N",
+        "hideColumnTaxFree": "N",
+        "hideColumnTax": "N",
+        "hideColumnTaxInc": "N",
+        "hideColumnQt": "N",
+        "hideColumnImage": "N",
+        "hideColumnDiscount": "",
+        "hideTotalTaxesFree": "N",
+        "hideTotal": "N",
+        "hidePayment": "N",
+        "hidePricesOnDelivery": "N",
+        "hideTaxes": "N",
+        "hasPenaltyRetardWarning": "Y",
+        "penaltyRetardWarningText": "",
+        "showContactOnPdf": "N",
+        "showParentOnPdf": "",
+        "hasCorpAgree": "N",
+        "hasThirdAgree": "N",
+        "notes": "",
+        "nbExpireDays": "30",
+        "displayAmounts": "Y",
+        "doclayoutid": "1801",
+        "display_footer": "Y",
+        "display_ident": "",
+        "display_email": "",
+        "display_tel": "",
+        "display_mobile": "",
+        "display_fax": "",
+        "display_addresse": "",
+        "displayBankAccount": "Y",
+        "displayIBAN": "Y",
+        "displayBIC": "Y",
+        "hideTips": "N",
+        "hideOrdersDocs": "N",
+        "hideDeliveriesDocs": "N",
+        "hideProformaDocs": "N",
+        "emailsSentFromCorp": "Y",
+        "hasEmailBaseline": "Y",
+        "sendRawEmails": "N",
+        "forceDisplayBankAccount": "",
+        "forceDisplayCheckOrder": "",
+        "showUnitIn": "unitamountcolumn",
+        "addBarCodeToDesc": "",
+        "addBarCodeImageToDesc": "",
+        "showNbItemOnPdf": "N",
+        "id": "1452"
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseCreateResponse": {
+    "response": {
+      "purchaseID": "string"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseUpdateResponse": {
+    "response": {
+      "purchaseID": "string"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseUpdateStepResponse": {
+    "response": {
+      "oldStep": "",
+      "newStep": ""
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseUpdateDeliveryStepResponse": {
+    "response": {
+      "oldStep": "",
+      "newStep": ""
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseUploadRelatedFileResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseGetPublicLinkResponse": {
+    "response": {
+      "filename": "aaaaa",
+      "pdf": "ddd",
+      "jpg": "sdsd"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseGetNextIdentResponse": {
+    "response": {
+      "ident": "ident"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseGetPaymentsResponse": {
+    "response": [
+      {
+        "relatedId": 1184,
+        "relatedType": "payment",
+        "relatedDate": "2014-09-1100: 00: 00",
+        "relatedAmount": 3.560000000,
+        "relatedMedium": 86707,
+        "relatedMediumTxt": "espèces",
+        "relatedIdent": "0001",
+        "relatedNotes": "",
+        "docid": 1304,
+        "doctype": "purInvoice",
+        "id": 1173,
+        "formatted_relatedAmount": "3,           56€",
+        "formatted_relatedDate": "11/09/2014",
+        "html_relatedNotes": "",
+        "relatedTypeText": "",
+        "relatedFullLabel": "N°0001"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "PurchaseUpdateSharingGroupsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "AddressesGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 1,
+        "nbpages": 88,
+        "pagenum": "1",
+        "nbtotal": "88"
+      },
+      "result": [
+        {
+          "id": "133744",
+          "corpid": "1033",
+          "linkedtype": "third",
+          "linkedid": "115955",
+          "status": "ok",
+          "rank": "0",
+          "name": "Work",
+          "part1": "AvenueJeanMonnet",
+          "part2": "EasyBill",
+          "part3": "",
+          "part4": "",
+          "zip": "17000",
+          "town": "LaRochelle",
+          "state": "",
+          "townid": "0",
+          "countrycode": "FR",
+          "originalid": "0",
+          "lat": null,
+          "lng": null
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AddressesGetOneResponse": {
+    "response": {
+      "id": "133744",
+      "corpid": "1033",
+      "linkedtype": "third",
+      "linkedid": "115955",
+      "status": "ok",
+      "rank": "0",
+      "name": "Work",
+      "part1": "AvenueJeanMonnet",
+      "part2": "EasyBill",
+      "part3": "",
+      "part4": "",
+      "zip": "17000",
+      "town": "LaRochelle",
+      "state": "",
+      "townid": "0",
+      "countrycode": "FR",
+      "originalid": "0",
+      "lat": null,
+      "lng": null,
+      "partsToDisplay": [
+        {
+          "txt": "AvenueJeanMonnet"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AddressesCreateResponse": {
+    "response": {
+      "id": "addressID"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AddressesUpdateResponse": {
+    "response": {
+      "id": "addressID"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AddressesDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AgendaGetListResponse": {
+    "response": {
+      "result": [
+        {
+          "id": "14240",
+          "status": "ok",
+          "type": "event",
+          "corpid": "2502",
+          "ownertype": "staff",
+          "ownerid": "4119",
+          "created": "2017-03-27 10:29:36",
+          "updated": "2017-03-27 11:02:56",
+          "start": "2017-03-14 00:00:00",
+          "end": "2017-03-14 00:00:00",
+          "timestampStart": "1489446000",
+          "timestampEnd": "1489446000",
+          "title": "",
+          "description": "Modification de la note",
+          "relatedtype": "agenda",
+          "relatedid": "0",
+          "isPrivate": "N",
+          "allDay": "Y",
+          "labelid": "0",
+          "recurring": "Y",
+          "recurring_start": "1489446000",
+          "recurring_end": "0",
+          "recurring_params": "{\"frequency\":\"daily\",\"periodicity\":\"1\",\"week_mode\":[\"2\"],\"month_mode\":\"numDay\",\"start_date\":1489485776,\"end_mode\":\"occurences\",\"end_value\":\"4\",\"exceptions\":[\"1489532400\"]}",
+          "ownername": "Boudot",
+          "ownerforename": "Romain",
+          "owneremail": "rboudot@sellsy.com",
+          "isOwner": "Y",
+          "editable": "Y",
+          "ownerfullname": "Boudot",
+          "ownerEmail": "rboudot@sellsy.com",
+          "startFormatted": "03\/14\/2017",
+          "endFormatted": "",
+          "state": "",
+          "linkedCleanUrl": "\/home",
+          "thirdurl": "",
+          "nbAnnotations": {
+            "main": 0,
+            "sub": 0
+          },
+          "descriptionHtml": "Modification de la note",
+          "rrule": "FREQ=daily;INTERVAL=1;WKST=MO;EXDATE=20170315T000000Z;COUNT=4;"
+        }
+      ],
+      "error": "",
+      "status": "success"
+    }
+  },
+  "AgendaGetOneResponse": {
+    "response": {
+      "result": {
+        "id": "136",
+        "corpid": "191",
+        "ownerid": "400",
+        "created": "2012-09-26 11:55:17",
+        "type": "task",
+        "datefrom": "2012-09-26 15:00:00",
+        "dateto": "2012-09-26 16:00:00",
+        "title": "Alerte",
+        "description": "API",
+        "alerttype": "none",
+        "alertdatetime": "0000-00-00 00:00:00",
+        "status": "ok",
+        "receiver": "",
+        "linked": "http:\/\/kevin-v2.myfacture.typhon.net\/api\/client\/0\/index.php?do=agenda",
+        "relatedtype": "none",
+        "relatedid": "0",
+        "isPrivate": "Y",
+        "allDay": "N",
+        "labelid": "6444",
+        "labelname": "R\u00e9union",
+        "labelcolor": "B1F0AF",
+        "isStaffLinked": "N",
+        "hasEmailAlert": "Y",
+        "tags": [
+
+        ],
+        "collab": [
+
+        ],
+        "icon": "\/img\/common\/people.jpg",
+        "ownerfullname": "R\u00e9my Neuter (Admin)",
+        "datefromFormated": "le 26\/09\/2012, de 15:00 \u00e0 16:00",
+        "timestatus": "today",
+        "rappels": [
+          {
+            "id": "169",
+            "agendataskid": "136",
+            "datetime": "2012-09-26 15:00:00",
+            "alerttype": "instant",
+            "formated": "#sp#Le jour m\u00eame#sp# (_full_1)"
+          }
+        ]
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AgendaCreateResponse": {
+    "response": {
+      "taskid": 140
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AgendaUpdateResponse": {
+    "response": {
+      "taskid": 140
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AgendaDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AgendaUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AgendaUpdateStatusResponse": {
+    "response": {
+      "taskid": "142",
+      "newstatus": "complete"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AgendaGetAvailableRappelsResponse": {
+    "response": {
+      "instant": "Le jour m\u00eame",
+      "prevHour": "Une heure",
+      "prevDay": "Un jour",
+      "prevWeek": "Une semaine",
+      "prevMonth": "Un mois"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AgendaGetAvailableLabelsResponse": {
+    "response": [
+      {
+        "id": "11685",
+        "corpid": "138",
+        "list": "labels",
+        "status": "ok",
+        "isEnabled": "Y",
+        "isWriteabled": "Y",
+        "syscode": "",
+        "rank": "1",
+        "value": "D\u00e9jeuner",
+        "more": "1B87E0"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "AgendaGetLabelResponse": {
+    "response": {
+      "corpid": "138",
+      "list": "labels",
+      "status": "ok",
+      "isEnabled": "Y",
+      "isWriteabled": "Y",
+      "syscode": "",
+      "rank": "1",
+      "value": "D\u00e9jeuner",
+      "more": "1B87E0",
+      "id": "11685"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AgendaCreateLabelResponse": {
+    "response": "11685",
+    "error": "",
+    "status": "success"
+  },
+  "AgendaUpdateLabelResponse": {
+    "response": "11685",
+    "error": "",
+    "status": "success"
+  },
+  "AgendaDeleteLabelResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AnnotationsGetListResponse": {
+    "response": {
+      "result": [
+        {
+          "datas": {
+            "ownerid": "317",
+            "id": "1728",
+            "relatedtype": "dashboard",
+            "relatedid": "1",
+            "canEdit": "Y",
+            "parentid": "0",
+            "date": "06\/11\/2012, 14h41",
+            "title": "R\u00e9my Neut'",
+            "annotation": "http:\/\/www.sellsy.com",
+            "icon": "\/img\/common\/people.jpg",
+            "embedurl": "",
+            "embedthumb": "",
+            "embedtitle": "",
+            "embeddesc": "",
+            "embed": "",
+            "isMine": "Y",
+            "annotationHtmlFormated": "http:\/\/www.sellsy.com",
+            "relatedname": ""
+          },
+          "subannots": {
+            "1729": {
+              "ownerid": "317",
+              "id": "1729",
+              "relatedtype": "dashboard",
+              "relatedid": "1",
+              "canEdit": "Y",
+              "parentid": "1728",
+              "date": "06\/11\/2012, 14h42",
+              "title": "R\u00e9my Neut'",
+              "annotation": "test",
+              "icon": "\/img\/common\/people.jpg",
+              "embedurl": "",
+              "embedthumb": "",
+              "embedtitle": "",
+              "embeddesc": "",
+              "embed": "",
+              "isMine": "Y",
+              "annotationHtmlFormated": "test"
+            }
+          }
+        },
+        {
+          "datas": {
+            "ownerid": "317",
+            "id": "1327",
+            "relatedtype": "dashboard",
+            "relatedid": "1",
+            "canEdit": "Y",
+            "parentid": "0",
+            "date": "20\/07\/2012, 17h53",
+            "title": "R\u00e9my Neut'",
+            "annotation": "Test new",
+            "icon": "\/img\/common\/people.jpg",
+            "embedurl": "",
+            "embedthumb": "",
+            "embedtitle": "",
+            "embeddesc": "",
+            "embed": "",
+            "isMine": "Y",
+            "annotationHtmlFormated": "Test new",
+            "relatedname": ""
+          },
+          "subannots": {
+            "1328": {
+              "ownerid": "317",
+              "id": "1328",
+              "relatedtype": "dashboard",
+              "relatedid": "1",
+              "canEdit": "Y",
+              "parentid": "1327",
+              "date": "20\/07\/2012, 17h53",
+              "title": "R\u00e9my Neut'",
+              "annotation": "blablabla",
+              "icon": "\/img\/common\/people.jpg",
+              "embedurl": "",
+              "embedthumb": "",
+              "embedtitle": "",
+              "embeddesc": "",
+              "embed": "",
+              "isMine": "Y",
+              "annotationHtmlFormated": "blablabla"
+            }
+          }
+        }
+      ],
+      "alerts": {
+
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AnnotationsGetOneResponse": {
+    "response": {
+      "datas": {
+        "ownerid": "317",
+        "id": "2481",
+        "relatedtype": "invoice",
+        "relatedid": "14072",
+        "canEdit": "Y",
+        "parentid": "0",
+        "date": "Aujourd'hui 15h34",
+        "title": "R\u00e9my Neut'",
+        "annotation": "Grosse facture, surveiller ce client",
+        "icon": "\/img\/common\/people.jpg",
+        "embedurl": "",
+        "embedthumb": "",
+        "embedtitle": "",
+        "embeddesc": "",
+        "embed": "",
+        "isMine": "Y",
+        "annotationHtmlFormated": "Grosse facture, surveiller ce client"
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AnnotationsCreateResponse": {
+    "response": 2482,
+    "error": "",
+    "status": "success"
+  },
+  "AnnotationsUpdateResponse": {
+    "response": {
+      "annotid": "1291"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "AnnotationsDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "AnnotationsUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "BankAccountCreateResponse": {
+    "response": {
+      "id": "bankAccountid"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "BankAccountUpdateResponse": {
+    "response": {
+      "id": "bankAccountid"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "BankAccountMassCreateResponse": {
+    "response": {
+      "ids": [
+        1,
+        2
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "BankAccountMassUpdateResponse": {
+    "response": {
+      "ids": [
+        1,
+        2
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "BankAccountDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "BankDepositCreateResponse": {
+    "response": {
+      "id": "bankDepositID"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueGetOneResponse": {
+    "response": {
+      "id": "249439",
+      "type": "item",
+      "corpid": "138",
+      "ownerid": "317",
+      "status": "ok",
+      "isEnabled": "Y",
+      "rank": "0",
+      "name": "1st",
+      "tradename": "PRODUIT 1",
+      "notes": "GO Piezofeuerzeug Frosty",
+      "unitAmount": "7.692307692",
+      "unitAmountIsTaxesFree": "N",
+      "unitid": "26592",
+      "unit": "forfaitourino",
+      "qt": "1.000000000",
+      "taxid": "26594",
+      "taxrate": "30.000000000",
+      "purchaseAmount": "0.000000000",
+      "costPerHour": "0.000000000",
+      "stock": "0",
+      "createdAt": "2013-02-22 11:02:30",
+      "updatedAt": "2013-03-07 12:20:59",
+      "typeLabel": "produit",
+      "nameSample": "1st",
+      "notesSample": "GO Piezofeuerzeug Frosty",
+      "notesHTMLSample": "GO Piezofeuerzeug Frosty",
+      "isTaxesFree": "TTC",
+      "unitAmountTaxesInc": "10.000000000",
+      "purchaseAmountTaxesInc": "0.000000000",
+      "formatted_unitAmount": "7,69 \u20ac",
+      "formatted_unitAmountTaxesInc": "10,00 \u20ac",
+      "formatted_purchaseAmount": "0,00 \u20ac",
+      "formatted_purchaseAmountTaxesInc": "0,00 \u20ac",
+      "formatted_qt": "1,00",
+      "formatted_taxrate": "30,00",
+      "tags": {
+        "id": "251",
+        "corpid": "138",
+        "category": "catalogue",
+        "created": "2012-10-11 11:07:50",
+        "word": "KPPLATTNER"
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueGetOneByRefResponse": {
+    "response": {
+      "id": "249439",
+      "type": "item",
+      "corpid": "138",
+      "ownerid": "317",
+      "status": "ok",
+      "isEnabled": "Y",
+      "rank": "0",
+      "name": "1st",
+      "tradename": "PRODUIT 1",
+      "notes": "GO Piezofeuerzeug Frosty",
+      "unitAmount": "7.692307692",
+      "unitAmountIsTaxesFree": "N",
+      "unitid": "26592",
+      "unit": "forfaitourino",
+      "qt": "1.000000000",
+      "taxid": "26594",
+      "taxrate": "30.000000000",
+      "purchaseAmount": "0.000000000",
+      "costPerHour": "0.000000000",
+      "stock": "0",
+      "createdAt": "2013-02-22 11:02:30",
+      "updatedAt": "2013-03-07 12:20:59",
+      "typeLabel": "produit",
+      "nameSample": "1st",
+      "notesSample": "GO Piezofeuerzeug Frosty",
+      "notesHTMLSample": "GO Piezofeuerzeug Frosty",
+      "isTaxesFree": "TTC",
+      "unitAmountTaxesInc": "10.000000000",
+      "purchaseAmountTaxesInc": "0.000000000",
+      "formatted_unitAmount": "7,69 \u20ac",
+      "formatted_unitAmountTaxesInc": "10,00 \u20ac",
+      "formatted_purchaseAmount": "0,00 \u20ac",
+      "formatted_purchaseAmountTaxesInc": "0,00 \u20ac",
+      "formatted_qt": "1,00",
+      "formatted_taxrate": "30,00",
+      "tags": {
+        "id": "251",
+        "corpid": "138",
+        "category": "catalogue",
+        "created": "2012-10-11 11:07:50",
+        "word": "KPPLATTNER"
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueCreateResponse": {
+    "response": {
+      "item_id": "itemid"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueCreateCategoryResponse": {
+    "response": {
+      "item_id": "category_id"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueUpdateCategoryResponse": {
+    "response": {
+      "id": "category_id"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueDeleteCategoryResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueAddPictureToGalleryResponse": {
+    "response": {
+      "name": "pictureStaff2854_b.jpg",
+      "public_path": "?_f=file&id=JUQ4RiVEQm0lMTIyJUNGJUVFJTlEJUNGJThBJUJEJUMwJUVCJThBJUI5JTA5JUQ1JUQzJUUzJUVGJTJBJTE0UyVFNTEyZ3MyJUIzJTlCJTA5JTExJTA3JTA1JTE3JThCJUJEJUYwJUQxYiUzQiU4MyVBNyUxQiU0MGglRTclMTAwJUJEJTAzLiUxOCVGRSVERSU1QyUxRiUyOCUwNyVBQTQlRTAlQUUlMkYlMTMlODMlMEYlRTZTJTE1JTA2JTEwJTE1UkJNJTFEJUZEJTA0JTlDeiUwRCVGNyVCQyU4N1IlQjAlMDklREIlM0NRJUU5QWM==&key=4ebcc74bb180ccfeb515c978eeeaae15",
+      "extension": "jpg"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueUpdateTranslationsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "CatalogueUpdateSharingGroupsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 2,
+        "pagenum": 1,
+        "nbtotal": "13"
+      },
+      "result": [
+        {
+          "id": "188",
+          "corpid": "644",
+          "ownerid": "1174",
+          "status": "ok",
+          "type": "boolean",
+          "name": "Boolean name",
+          "code": "boolean",
+          "showIn_list": "Y",
+          "showIn_filter": "Y",
+          "showOn_pdf": "N",
+          "showOn_desc": "N",
+          "useOn_document": "N",
+          "useOn_people": "N",
+          "useOn_client": "N",
+          "useOn_prospect": "N",
+          "useOn_supplier": "N",
+          "useOn_item": "Y",
+          "useOn_service": "Y",
+          "useOn_ticket": "N",
+          "useOn_task": "N",
+          "useOn_purchase": "N",
+          "useOn_opportunity": "N",
+          "useOn_staff": "N",
+          "cfid": "188",
+          "isRequired": "N",
+          "description": "Boolean description",
+          "min": "",
+          "max": "",
+          "defaultValue": "Y",
+          "listType": "",
+          "listId": "0",
+          "groupid": null,
+          "groupname": null,
+          "rank": null,
+          "formatted_type": "Yes \/ No",
+          "prefsList": [
+
+          ]
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsGetOneResponse": {
+    "response": {
+      "id": "583",
+      "corpid": "1466",
+      "ownerid": "2319",
+      "status": "ok",
+      "type": "unit",
+      "name": "unite",
+      "code": "unite",
+      "showIn_list": "Y",
+      "showIn_filter": "Y",
+      "showOn_pdf": "N",
+      "showOn_desc": "N",
+      "useOn_document": "N",
+      "useOn_people": "N",
+      "useOn_client": "Y",
+      "useOn_prospect": "N",
+      "useOn_supplier": "N",
+      "useOn_item": "Y",
+      "useOn_service": "Y",
+      "useOn_ticket": "N",
+      "useOn_task": "N",
+      "useOn_purchase": "N",
+      "useOn_opportunity": "N",
+      "useOn_staff": "N",
+      "useOn_project": "N",
+      "preferences": {
+        "id": "566",
+        "status": "ok",
+        "corpid": "1466",
+        "cfid": "583",
+        "isRequired": "N",
+        "description": "unit\u00e9 de mesure",
+        "min": "0.000000000",
+        "max": "100.000000000",
+        "defaultValue": "12.000000000",
+        "listType": "unit",
+        "listId": "79079",
+        "formatted_min": "0.00",
+        "formatted_max": "100.00",
+        "formatted_defaultValue": "12.00"
+      },
+      "preferencesList": [
+
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsCreateResponse": {
+    "response": "74",
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsUpdateResponse": {
+    "response": "74",
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsRecordValuesResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsGetGroupsListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "2"
+      },
+      "result": [
+        {
+          "id": "59",
+          "corpid": "1466",
+          "ownerid": "2319",
+          "status": "ok",
+          "name": "Contact principal",
+          "code": "contact_principal"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsCreateGroupResponse": {
+    "response": "74",
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsUpdateGroupResponse": {
+    "response": "72",
+    "error": "",
+    "status": "success"
+  },
+  "CustomFieldsDeleteGroupResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": "1",
+        "nbtotal": "1"
+      },
+      "result": [
+        {
+          "contactType": "corporation",
+          "status": "ok",
+          "contactId": "2739",
+          "contactDetails": "corporation",
+          "name": "",
+          "fullName": "TESTDOCUMENTATION",
+          "position": "",
+          "pic": "",
+          "tel": "",
+          "fax": "",
+          "email": "",
+          "id": "corporation_2739",
+          "contactMore": ""
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientGetOneResponse": {
+    "response": {
+      "client": {
+        "detailsid": "2850",
+        "corpid": "2",
+        "ownerid": "2",
+        "joindate": "2012-04-03 09:58:36",
+        "type": "corporation",
+        "relationType": "client",
+        "status": "ok",
+        "maincontactid": "0",
+        "ident": "",
+        "id": "2739",
+        "name": "TESTDOCUMENTATION"
+      },
+      "corporation": {
+        "linkedtype": "third",
+        "linkedid": "2739",
+        "prefsid": "14855",
+        "logo": "",
+        "name": "TESTDOCUMENTATION",
+        "email": "",
+        "web": "",
+        "tel": "",
+        "mobile": "",
+        "fax": "",
+        "siret": "",
+        "vat": "",
+        "apenaf": "",
+        "rcs": "",
+        "type": "",
+        "capital": "",
+        "mainaddressid": "0",
+        "id": "2850"
+      },
+      "contacts": [
+
+      ],
+      "address": [
+
+      ],
+      "tags": [
+
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientGetAddressResponse": {
+    "response": {
+      "corpid": "2",
+      "linkedtype": "third",
+      "linkedid": "2739",
+      "status": "ok",
+      "rank": "0",
+      "name": "TestNom",
+      "part1": "19 rue du test",
+      "part2": "",
+      "zip": "17000",
+      "town": "La Rochelle",
+      "townid": "3834604",
+      "countrycode": "FR",
+      "originalid": "0",
+      "id": "36134",
+      "partsToDisplay": [
+        {
+          "txt": "19 rue du test"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientGetContactResponse": {
+    "response": {
+      "corpid": "2",
+      "ownerid": "2",
+      "linkedtype": "thirdcontact",
+      "linkedid": "2961",
+      "status": "ok",
+      "rank": "0",
+      "gender": "",
+      "civil": "man",
+      "forename": "Testcontact",
+      "name": "ANTOINE",
+      "email": "aloux@sellsy.com",
+      "web": "www.sellsy.com",
+      "tel": "",
+      "mobile": "",
+      "fax": "",
+      "position": "",
+      "pic": "",
+      "sign": "",
+      "birthdate": "0000-00-00",
+      "id": "3233",
+      "fullName": "M. Testcontact ANTOINE",
+      "isBillingContact": "N"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientGetBillingContactResponse": {
+    "response": {
+      "corpid": "2",
+      "ownerid": "2",
+      "linkedtype": "thirdcontact",
+      "linkedid": "2961",
+      "status": "ok",
+      "rank": "0",
+      "gender": "",
+      "civil": "man",
+      "forename": "Testcontact",
+      "name": "ANTOINE",
+      "email": "aloux@sellsy.com",
+      "web": "www.sellsy.com",
+      "tel": "",
+      "mobile": "",
+      "fax": "",
+      "position": "",
+      "pic": "",
+      "sign": "",
+      "birthdate": "0000-00-00",
+      "id": "3233",
+      "fullName": "M. Testcontact ANTOINE",
+      "isBillingContact": "Y"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientCreateResponse": {
+    "response": {
+      "client_id": "id_new_client"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateResponse": {
+    "response": {
+      "id": "id_new_client"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientAddContactResponse": {
+    "response": {
+      "contact_id": "contact_id"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateAddressResponse": {
+    "response": {
+      "address_id": "{{addressid}}"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateContactResponse": {
+    "response": {
+      "contact_id": "{{contactid}}"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientDeleteAddressResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientTransformToProspectResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientGetBankAccountListResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientSendContactPwdResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientDeleteContactResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateContactPictureResponse": {
+    "response": "?_f=file&id=JTBDJUM1UkwlMjJGJTVCViVBNyVDNiVCMXglQzIlQjQlMjglN0YlRUQlMTElNUMlMDUlOEQlQjElMEZuJUQ1JUVCJUYzJTlBJUI1JUJFcFpKbyVFQSU5RWclQzJLayVFQSUwOSU3QyUxRiVBNCU4RCt5UCUzRlUlQUElRTElREQlRTglOUQlMDglOUYlRTElRUMlMTIlMjUlMTgrJUY4eCU4MyUxQS4lRTRqRyU5NiUxRCUwNyVCOWMlRkElRUUlREElQUUlRTElMEZRUyU3RCVBRiVGOSU4NSUyMSVCNiVEMiVEMWolRURQJUFGJUJEJTI2JTkxJTNFJUUwJUY1VyVGRCVBM1ltJUFBJTkxJTA5JUVCJUQ3JTQwJUUzJUEyJTI5JTgxJTdGJTAwbCU1RWl3JTg2JTNENCVCQg==&key=8fe3022967cf1073a8aefa32f3b70248",
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdatePrefsResponse": {
+    "response": {
+      "prefsId": "111294"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateThirdPictureResponse": {
+    "response": {
+      "name": "1-apple-desk-designer-display-1.jpg",
+      "public_path": "?_f=file&id=JUQ4RiVEQm0lMTIyJUNGJUVFJTlEJUNGJThBJUJEJUMwJUVCJThBJUI5JTA5JUQ1JUQzJUUzJUVGJTJBJTE0UyVFNTEyZ3MyJUIzJTlCJUZBdCVGQyVBNXglRTIlMjklRjMlQUMlNUQ0JTdGJUU0JUNFJTYwJUM2JTg4JTdDJUE1JTI5JTA0JTFGJUUwJUMzcCVDMSVGMyU3RiVDNiU5NiU4RCVBQyU5NCVDOSU1REwlNUUlNjAlRTMlQkElREQlM0FaOCVCME9pJTg2SiVFQiUxMyVENyU5MiUxMCVGRCU5MSUzQyVCRiUxRSUwRXAlQjYlOTUlRDQ==&key=ad49d4d6a54e1a722c7946f27c200554",
+      "extension": "image\/jpeg"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateSharingGroupsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "ClientUpdateSharingStaffsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "ClientGetMarginResponse": {
+    "response": {
+      "globalMarge": 70,
+      "globalMargePercent": 35
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PeoplesUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "PeoplesUnlinkThirdsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "PeoplesUpdateSharingGroupsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "PeoplesUpdateSharingStaffsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetOneResponse": {
+    "response": {
+      "id": "11027",
+      "ownerFullName": "M. Antoine Loux",
+      "status": "ok",
+      "filename": "FACT-20120321-00098_1333530803.5021",
+      "fileid": "2157",
+      "nbpages": "1",
+      "ident": "FACT-20120321-00098",
+      "thirdident": "",
+      "thirdid": "2655",
+      "contactId": "0",
+      "contactName": "",
+      "displayedDate": "04/04/2012",
+      "currencysymbol": "€",
+      "subject": "test objet",
+      "corpaddressid": "36059",
+      "thirdaddressid": "36060",
+      "shipaddressid": "36061",
+      "rowsAmount": "191.725000000",
+      "discountPercent": "0.000000000",
+      "discountAmount": "0.000000000",
+      "rowsAmountDiscounted": "191.725000000",
+      "offerAmount": "0.000000000",
+      "rowsAmountAllInc": "191.725000000",
+      "packagingsAmount": "49.900000000",
+      "shippingsAmount": "60.000000000",
+      "totalAmountTaxesFree": "301.625000000",
+      "taxesAmountSum": "59.118500000",
+      "taxesAmountDetails": "a:1:{s:12:\"19.600000000\";s:12:\"59.118500000\";}",
+      "totalAmount": "360.743500000",
+      "shippingNbParcels": "0",
+      "shippingWeight": "0.000000000",
+      "shippingWeightUnit": "g",
+      "shippingVolume": "0.000000000",
+      "shippingTrackingNumber": "",
+      "shippingTrackingUrl": "",
+      "saveThirdPrefs": "N",
+      "displayShipAddress": "N",
+      "corpid": "2",
+      "ownerid": "2",
+      "linkedtype": "invoice",
+      "linkedid": "9516",
+      "created": "2012-03-21 14:43:18",
+      "prefsid": "14683",
+      "parentid": "0",
+      "docmapid": "11603",
+      "hasVat": "Y",
+      "doctypeid": "9516",
+      "step": "draft",
+      "isDeposit": "N",
+      "dueAmount": "360.743500000",
+      "countrycode": "FR",
+      "globalDiscount": "0.000000000",
+      "globalDiscountUnit": "percent",
+      "globalOffer": "0.000000000",
+      "useDeposit": "N",
+      "deposit": "0.000000000",
+      "depositUnit": "percent",
+      "discountByRows": "N",
+      "addPdfToEmail": "Y",
+      "addGtuToEmail": "Y",
+      "addSenderToEmail": "N",
+      "hideColumnName": "N",
+      "hideColumnNotes": "N",
+      "hideColumnUnit": "N",
+      "hideColumnTaxFree": "N",
+      "hideColumnTax": "N",
+      "hideColumnTaxInc": "N",
+      "hideColumnQt": "N",
+      "hideTotalTaxesFree": "N",
+      "hideTotal": "N",
+      "hidePayment": "N",
+      "hideTaxes": "N",
+      "hasPenaltyRetardWarning": "Y",
+      "penaltyRetardWarningText": "La loi n°92/1442 du 31 décembre 1992...",
+      "showContactOnPdf": "N",
+      "hasCorpAgree": "N",
+      "hasThirdAgree": "N",
+      "notes": "test note",
+      "nbExpireDays": "30",
+      "displayAmounts": "Y",
+      "display_footer": "Y",
+      "display_ident": "Y",
+      "display_email": "Y",
+      "display_tel": "Y",
+      "display_mobile": "Y",
+      "display_fax": "Y",
+      "displayBankAccount": "Y",
+      "displayIBAN": "Y",
+      "displayBIC": "Y",
+      "hideTips": "N",
+      "hideOrdersDocs": "N",
+      "hideDeliveriesDocs": "N",
+      "hideProformaDocs": "N",
+      "emailsSentFromCorp": "Y",
+      "isdefault": "Y",
+      "name": "default",
+      "headerMode": "all",
+      "footerMode": "all",
+      "logoMode": "first",
+      "useBg": "custom",
+      "bgMode": "all",
+      "bgFile": "custom",
+      "bgCustomFile": "",
+      "hideTopPart": "N",
+      "hideFill": "N",
+      "colorFill": "000000",
+      "colorText": "000000",
+      "colorHeaderRow": "000000",
+      "colorNotes": "000000",
+      "colorDiscreet": "000000",
+      "colorHeaderFooter": "000000",
+      "font": "helvetica",
+      "type": "invoice",
+      "map": {
+        "docid": "11027",
+        "id": "11603",
+        "rows": [
+          {
+            "parentid": "0",
+            "status": "ok",
+            "rank": "1",
+            "type": "packaging",
+            "linkedid": "0",
+            "name": "",
+            "notes": "",
+            "unitAmount": "4.990000000",
+            "unitid": "2750",
+            "unitText": "",
+            "qt": "10.000000000",
+            "discount": "0.000000000",
+            "discountUnit": "percent",
+            "taxid": "66",
+            "taxrate": "19.600000000",
+            "isOption": "N",
+            "totalAmount": "49.900000000",
+            "taxAmount": "9.780400000",
+            "purchaseAmount": "0.000000000",
+            "id": "16562",
+            "discountPercent": "0.000000000",
+            "formatted_unitAmount": "4,99",
+            "formatted_qt": "10,00",
+            "formatted_discount": "0,00",
+            "formatted_taxrate": "19,60",
+            "formatted_totalAmount": "49,90 €",
+            "formatted_taxAmount": "9,78",
+            "formatted_discountPercent": "0,00"
+          }
+        ]
+      },
+      "relateds_amount": "0.000000000",
+      "corpAddress": {
+        "name": "Rue du four",
+        "part1": "10 rue du four",
+        "part2": "",
+        "zip": "79200",
+        "town": "Adilly",
+        "townid": "3835224",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36059",
+        "partsToDisplay": [
+          {
+            "txt": "10 rue du four"
+          }
+        ]
+      },
+      "hasThird": "Y",
+      "thirdType": "corporation",
+      "thirdAddress": {
+        "name": "test2",
+        "part1": "2 rue du moulin",
+        "part2": "",
+        "zip": "17000",
+        "town": "la rochelle",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36060",
+        "partsToDisplay": [
+          {
+            "txt": "2 rue du moulin"
+          }
+        ]
+      },
+      "shipAddress": {
+        "name": "",
+        "part1": "",
+        "part2": "",
+        "zip": "",
+        "town": "",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36061",
+        "partsToDisplay": [
+          {
+            "txt": ""
+          }
+        ]
+      },
+      "canWriteDocNamespace": "Y",
+      "logoFile": "",
+      "logoFile_system": "",
+      "logoHeight": 0,
+      "logoWidth": 0,
+      "label": "Facture",
+      "fullIdent": "Facture N° FACT-20120321-00098",
+      "numformat": {
+        "name": "fr",
+        "decimals": ",",
+        "thousands": " ",
+        "currencypos": "right",
+        "currencysymbol": "€",
+        "precision": "2"
+      },
+      "numformats": [
+        {
+          "label": "français [1 234,57 #]",
+          "decimals": ",",
+          "thousands": " ",
+          "currencypos": "right",
+          "name": "fr"
+        }
+      ],
+      "precisions": [
+        {
+          "value": 0
+        }
+      ],
+      "currencies": [
+        {
+          "name": "EUR",
+          "symbol": "€",
+          "rank": "1",
+          "enabled": "Y",
+          "id": "1"
+        }
+      ],
+      "currencypositions": [
+        {
+          "value": "both",
+          "label": "gauche et droite"
+        }
+      ],
+      "hasRelateds": "Y",
+      "corpName": "Antoine Loux",
+      "thirdName": "Alain",
+      "thirdVatNum": "",
+      "docspeaker_text": "Votre contact",
+      "paydate_text": "à 90 jours",
+      "paydate_custom": "03/07/2012",
+      "paymediums_text": "a:1:{i:0;s:7:\"chèque\";}",
+      "paycheckorder_text": "Service comptabilité",
+      "paybankaccount_text": "",
+      "currency": "1",
+      "num_currencypos": "right",
+      "docspeaker": "95",
+      "doclayout": "2",
+      "num_name": "fr",
+      "num_decimals": ",",
+      "num_thousands": " ",
+      "num_precision": "2",
+      "defaultTax": "66",
+      "defaultUnit": "70",
+      "defaultShipping": "17",
+      "defaultPackaging": "15",
+      "paydate": "81",
+      "paydate_xdays": "0",
+      "paydate_endmonth": "N",
+      "paydate_scaledDetails": "",
+      "paymediums": [
+        {
+          "id": "86",
+          "corpid": "2",
+          "list": "paymediums",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "check",
+          "rank": "1",
+          "value": "chèque",
+          "checked": "Y"
+        }
+      ],
+      "paymedium_other": "",
+      "paycheckorder": "89",
+      "paybankaccount": "0",
+      "weightUnits": [
+        {
+          "value": "mg"
+        }
+      ],
+      "hideableColumns": [
+        {
+          "id": "name",
+          "name": "hideColumnName",
+          "label": "Masquer la colonne \"Nom/Code\"",
+          "checked": "N"
+        }
+      ],
+      "doclayouts": [
+        {
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isdefault": "Y",
+          "name": "default",
+          "headerMode": "all",
+          "footerMode": "all",
+          "logoMode": "first",
+          "useBg": "custom",
+          "bgMode": "all",
+          "bgFile": "custom",
+          "bgCustomFile": "",
+          "hideTopPart": "N",
+          "hideFill": "N",
+          "colorFill": "000000",
+          "colorText": "000000",
+          "colorHeaderRow": "000000",
+          "colorNotes": "000000",
+          "colorDiscreet": "000000",
+          "colorHeaderFooter": "000000",
+          "font": "helvetica",
+          "id": "2"
+        }
+      ],
+      "currencyleft": "",
+      "currencyright": "€",
+      "discountUnits": [
+        {
+          "value": "percent",
+          "label": "%"
+        }
+      ],
+      "taxes": [
+        {
+          "id": "66",
+          "corpid": "2",
+          "list": "taxes",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "20,00"
+        }
+      ],
+      "shippings": [
+        {
+          "type": "shipping",
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isEnabled": "Y",
+          "rank": "1",
+          "name": "shipping",
+          "notes": "shipping",
+          "unitAmount": "13.900000000",
+          "unitAmountIsTaxesFree": "Y",
+          "unitid": "70",
+          "unit": "",
+          "qt": "1.000000000",
+          "taxid": "66",
+          "taxrate": "0.000000000",
+          "purchaseAmount": "0.000000000",
+          "stock": "0",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "id": "17",
+          "typeLabel": "transport",
+          "nameSample": "shipping",
+          "notesSample": "shipping",
+          "notesHTMLSample": "shipping",
+          "isTaxesFree": "HT",
+          "unitAmountTaxesFree": "13.900000000",
+          "formatted_unitAmount": "13.900000000",
+          "formatted_unitAmount_ht": "13.900000000",
+          "formatted_unitAmount_ttc": 13.9,
+          "formatted_qt": "1.000000000",
+          "formatted_taxrate": "0.000000000",
+          "formatted_full_qt": "1.000000000 ",
+          "formatted_full_unitAmount": "13.900000000"
+        }
+      ],
+      "packagings": [
+        {
+          "type": "packaging",
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isEnabled": "Y",
+          "rank": "1",
+          "name": "packaging",
+          "notes": "packaging",
+          "unitAmount": "3.990000000",
+          "unitAmountIsTaxesFree": "Y",
+          "unitid": "70",
+          "unit": "",
+          "qt": "4.000000000",
+          "taxid": "66",
+          "taxrate": "0.000000000",
+          "purchaseAmount": "0.000000000",
+          "stock": "0",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "id": "15",
+          "typeLabel": "emballage",
+          "nameSample": "packaging",
+          "notesSample": "packaging",
+          "notesHTMLSample": "packaging",
+          "isTaxesFree": "HT",
+          "unitAmountTaxesFree": "3.990000000",
+          "formatted_unitAmount": "3.990000000",
+          "formatted_unitAmount_ht": "3.990000000",
+          "formatted_unitAmount_ttc": 3.99,
+          "formatted_qt": "4.000000000",
+          "formatted_taxrate": "0.000000000",
+          "formatted_full_qt": "4.000000000 ",
+          "formatted_full_unitAmount": "3.990000000"
+        }
+      ],
+      "units": [
+        {
+          "id": "70",
+          "corpid": "2",
+          "list": "units",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "forfaitaire"
+        }
+      ],
+      "canWriteShippings": "Y",
+      "canWritePackagings": "Y",
+      "canWriteUnits": "Y",
+      "canWriteTaxes": "Y",
+      "canWritePaydates": "Y",
+      "paydates": [
+        {
+          "id": "75",
+          "corpid": "2",
+          "list": "paydates",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "custom",
+          "rank": "1",
+          "value": "à date"
+        }
+      ],
+      "canWritePaymediums": "Y",
+      "canWritePayCheckOrders": "Y",
+      "paycheckorders": [
+        {
+          "id": "94",
+          "corpid": "2",
+          "list": "paycheckorders",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Service comptabilité"
+        }
+      ],
+      "bankaccounts": {
+        "_xml_childtag": "bankaccount"
+      },
+      "canWriteDocSpeakers": "Y",
+      "docspeakers": [
+        {
+          "id": "95",
+          "corpid": "2",
+          "list": "docspeakers",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Votre contact"
+        }
+      ],
+      "formatted_rowsAmount": "191,73 €",
+      "formatted_discountPercent": "0,00",
+      "formatted_discountAmount": "0,00 €",
+      "formatted_rowsAmountDiscounted": "191,73 €",
+      "formatted_offerAmount": "0,00 €",
+      "formatted_rowsAmountAllInc": "191,73 €",
+      "formatted_packagingsAmount": "49,90 €",
+      "formatted_shippingsAmount": "60,00 €",
+      "formatted_totalAmountTaxesFree": "301,63 €",
+      "formatted_taxesAmountSum": "59,12 €",
+      "formatted_totalAmount": "360,74 €",
+      "formatted_shippingWeight": "0,00 €",
+      "formatted_shippingVolume": "0,00 €",
+      "formatted_globalDiscount": "0,00 €",
+      "formatted_globalOffer": "0,00",
+      "formatted_deposit": "0,00 €",
+      "formatted_dueAmount": "360,74 €",
+      "tel": "0620365895",
+      "fax": "",
+      "email": "aloux@myfacture.com",
+      "mobile": "",
+      "formatted_taxesAmountDetails": "a:1:{s:5:\"19,60\";s:9:\"59,12 €\";}",
+      "corpFooter": "Antoine Louxaloux@myfacture.comLoux",
+      "tags": [
+        {
+          "id": "112",
+          "corpid": "2",
+          "category": "doc",
+          "created": "2012-04-04 11:13:29",
+          "word": "tags_test"
+        }
+      ],
+      "amountToBeBilled": 200.00
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetPublicLinkResponse": {
+    "response": "?_f=file&id={{hash_public_link}}",
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetPublicLink_v2Response": {
+    "response": {
+      "pdf": "?_f=file\u0026id=JUQ4RiVEQm0lMTIyJUNGJUVFJTlEJUNGJThBJUJEJUMwJUVCJThBJUI5JTA5JUQ1JUQzJUUzJUVGJTJBJTE0UyVFNTEyZ3MyJUIzJTlCJUE5JUE3NSVCMCVCMSVFNiVFOCUxNCVDN0clMEUlMDclMEMlOEYlQkIlOTAlRTFFRyVENiUxNCU5QyUzQ0slMEMlN0IlOEQlRjAlQTIlM0ElRDIlRUYlRUElMUElQUUlNUMlQUQlQ0YlQTAlRTUlRDQlNUIlQjV1XyVCQyVEOCVCRTUlQkMlMEMlMUV6JTA3JUE3JUVFJUM4JUQ4RVglOUIlMEQlQUElQ0E==\u0026key=db25d9658c4911b086e69f629ddfde9e"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetNextIdentResponse": {
+    "response": "DEV-20160428-00179",
+    "error": "",
+    "status": "success"
+  },
+  "DocumentCreateResponse": {
+    "response": {
+      "doc_id": "docid"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentUpdateResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentUpdateDeadlinesResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentUpdateFieldsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetLinkedDocumentsResponse": {
+    "response": [
+      {
+        "corpid": "1869",
+        "status": "ok",
+        "parenttype": "invoice",
+        "parentid": "955649",
+        "childtype": "creditnote",
+        "childid": "955650",
+        "more": "{\"linkedAmount\":\"10\"}",
+        "id": "955650",
+        "ident": "AVR-20151116-00056",
+        "linkedtype": "creditnote",
+        "displayedDate": "2015-11-16",
+        "thirdid": "127242",
+        "thirdname": "ANPES",
+        "totalAmount": "50.000000000",
+        "currencysymbol": "\u20ac",
+        "created": "2015-11-16 17:59:31",
+        "subject": "",
+        "dpid": "3998",
+        "step": "",
+        "doctype": "creditnote"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetTreeResponse": {
+    "response": [
+      {
+        "id": "957599",
+        "doctype": "estimate",
+        "level": 0,
+        "json_parents": "[\"0\"]",
+        "left": 30,
+        "top": 30
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "DocumentUpdateStepResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentValidateResponse": {
+    "response": {
+      "ident": "FACT-OOO1"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentUpdateDeliveryStepResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentSendDocByMailResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetPaymentListResponse": {
+    "response": {
+
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetForCopyResponse": {
+    "response": {
+      "id": "11027",
+      "ownerFullName": "M. Antoine Loux",
+      "status": "ok",
+      "filename": "FACT-20120321-00098_1333530803.5021",
+      "fileid": "2157",
+      "nbpages": "1",
+      "ident": "FACT-20120321-00098",
+      "thirdident": "",
+      "thirdid": "2655",
+      "contactId": "0",
+      "contactName": "",
+      "displayedDate": "04\/04\/2012",
+      "currencysymbol": "\u20ac",
+      "subject": "test objet",
+      "corpaddressid": "36059",
+      "thirdaddressid": "36060",
+      "shipaddressid": "36061",
+      "rowsAmount": "191.725000000",
+      "discountPercent": "0.000000000",
+      "discountAmount": "0.000000000",
+      "rowsAmountDiscounted": "191.725000000",
+      "offerAmount": "0.000000000",
+      "rowsAmountAllInc": "191.725000000",
+      "packagingsAmount": "49.900000000",
+      "shippingsAmount": "60.000000000",
+      "totalAmountTaxesFree": "301.625000000",
+      "taxesAmountSum": "59.118500000",
+      "taxesAmountDetails": "a:1:{s:12:\"19.600000000\";s:12:\"59.118500000\";}",
+      "totalAmount": "360.743500000",
+      "shippingNbParcels": "0",
+      "shippingWeight": "0.000000000",
+      "shippingWeightUnit": "g",
+      "shippingVolume": "0.000000000",
+      "shippingTrackingNumber": "",
+      "shippingTrackingUrl": "",
+      "saveThirdPrefs": "N",
+      "displayShipAddress": "N",
+      "corpid": "2",
+      "ownerid": "2",
+      "linkedtype": "invoice",
+      "linkedid": "9516",
+      "created": "2012-03-21 14:43:18",
+      "prefsid": "14683",
+      "parentid": "0",
+      "docmapid": "11603",
+      "hasVat": "Y",
+      "doctypeid": "9516",
+      "step": "draft",
+      "isDeposit": "N",
+      "dueAmount": "360.743500000",
+      "countrycode": "FR",
+      "globalDiscount": "0.000000000",
+      "globalDiscountUnit": "percent",
+      "globalOffer": "0.000000000",
+      "useDeposit": "N",
+      "deposit": "0.000000000",
+      "depositUnit": "percent",
+      "discountByRows": "N",
+      "addPdfToEmail": "Y",
+      "addGtuToEmail": "Y",
+      "addSenderToEmail": "N",
+      "hideColumnName": "N",
+      "hideColumnNotes": "N",
+      "hideColumnUnit": "N",
+      "hideColumnTaxFree": "N",
+      "hideColumnTax": "N",
+      "hideColumnTaxInc": "N",
+      "hideColumnQt": "N",
+      "hideTotalTaxesFree": "N",
+      "hideTotal": "N",
+      "hidePayment": "N",
+      "hideTaxes": "N",
+      "hasPenaltyRetardWarning": "Y",
+      "penaltyRetardWarningText": "La loi n\u00b092\/1442 du 31 d\u00e9cembre 1992 nous fait l'obligation de vous indiquer que le non respect des conditions de paiement entra\u00eene des int\u00e9r\u00eats de retard suivant modalit\u00e9s et taux minima d\u00e9finis par la loi.",
+      "showContactOnPdf": "N",
+      "hasCorpAgree": "N",
+      "hasThirdAgree": "N",
+      "notes": "test note",
+      "nbExpireDays": "30",
+      "displayAmounts": "Y",
+      "display_footer": "Y",
+      "display_ident": "Y",
+      "display_email": "Y",
+      "display_tel": "Y",
+      "display_mobile": "Y",
+      "display_fax": "Y",
+      "displayBankAccount": "Y",
+      "displayIBAN": "Y",
+      "displayBIC": "Y",
+      "hideTips": "N",
+      "hideOrdersDocs": "N",
+      "hideDeliveriesDocs": "N",
+      "hideProformaDocs": "N",
+      "emailsSentFromCorp": "Y",
+      "isdefault": "Y",
+      "name": "default",
+      "headerMode": "all",
+      "footerMode": "all",
+      "logoMode": "first",
+      "useBg": "custom",
+      "bgMode": "all",
+      "bgFile": "custom",
+      "bgCustomFile": "",
+      "hideTopPart": "N",
+      "hideFill": "N",
+      "colorFill": "000000",
+      "colorText": "000000",
+      "colorHeaderRow": "000000",
+      "colorNotes": "000000",
+      "colorDiscreet": "000000",
+      "colorHeaderFooter": "000000",
+      "font": "helvetica",
+      "type": "invoice",
+      "map": {
+        "docid": "11027",
+        "id": "11603",
+        "rows": [
+          {
+            "parentid": "0",
+            "status": "ok",
+            "rank": "1",
+            "type": "packaging",
+            "linkedid": "0",
+            "name": "",
+            "notes": "",
+            "unitAmount": "4.990000000",
+            "unitid": "2750",
+            "unitText": "",
+            "qt": "10.000000000",
+            "discount": "0.000000000",
+            "discountUnit": "percent",
+            "taxid": "66",
+            "taxrate": "19.600000000",
+            "isOption": "N",
+            "totalAmount": "49.900000000",
+            "taxAmount": "9.780400000",
+            "purchaseAmount": "0.000000000",
+            "id": "16562",
+            "discountPercent": "0.000000000",
+            "formatted_unitAmount": "4,99",
+            "formatted_qt": "10,00",
+            "formatted_discount": "0,00",
+            "formatted_taxrate": "19,60",
+            "formatted_totalAmount": "49,90 \u20ac",
+            "formatted_taxAmount": "9,78",
+            "formatted_discountPercent": "0,00"
+          }
+        ]
+      },
+      "relateds_amount": "0.000000000",
+      "relateds": {
+        "_xml_childtag": "related"
+      },
+      "corpAddress": {
+        "name": "Rue du four",
+        "part1": "10 rue du four",
+        "part2": "",
+        "zip": "79200",
+        "town": "Adilly",
+        "townid": "3835224",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36059",
+        "partsToDisplay": [
+          {
+            "txt": "10 rue du four"
+          }
+        ]
+      },
+      "hasThird": "Y",
+      "thirdType": "corporation",
+      "thirdAddress": {
+        "name": "test2",
+        "part1": "2 rue du moulin",
+        "part2": "",
+        "zip": "17000",
+        "town": "la rochelle",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36060",
+        "partsToDisplay": [
+          {
+            "txt": "2 rue du moulin"
+          }
+        ]
+      },
+      "shipAddress": {
+        "name": "",
+        "part1": "",
+        "part2": "",
+        "zip": "",
+        "town": "",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36061",
+        "partsToDisplay": [
+          {
+            "txt": ""
+          }
+        ]
+      },
+      "canWriteDocNamespace": "Y",
+      "logoFile": "",
+      "logoFile_system": "",
+      "logoHeight": 0,
+      "logoWidth": 0,
+      "label": "Facture",
+      "fullIdent": "Facture N\u00b0 FACT-20120321-00098",
+      "numformat": {
+        "name": "fr",
+        "decimals": ",",
+        "thousands": " ",
+        "currencypos": "right",
+        "currencysymbol": "\u20ac",
+        "precision": "2"
+      },
+      "numformats": [
+        {
+          "label": "fran\u00e7ais [1 234,57 #]",
+          "decimals": ",",
+          "thousands": " ",
+          "currencypos": "right",
+          "name": "fr"
+        }
+      ],
+      "precisions": [
+        {
+          "value": 0
+        },
+        {
+          "value": 1
+        }
+      ],
+      "currencies": [
+        {
+          "name": "EUR",
+          "symbol": "\u20ac",
+          "rank": "1",
+          "enabled": "Y",
+          "id": "1"
+        }
+      ],
+      "currencypositions": [
+        {
+          "value": "both",
+          "label": "gauche et droite"
+        }
+      ],
+      "hasRelateds": "Y",
+      "corpName": "Antoine Loux",
+      "thirdName": "Alain",
+      "thirdVatNum": "",
+      "docspeaker_text": "Votre contact",
+      "paydate_text": "\u00e0 90 jours",
+      "paydate_custom": "03\/07\/2012",
+      "paymediums_text": "a:1:{i:0;s:7:\"ch\u00e8que\";}",
+      "paycheckorder_text": "Service comptabilit\u00e9",
+      "paybankaccount_text": "",
+      "currency": "1",
+      "num_currencypos": "right",
+      "docspeaker": "95",
+      "doclayout": "2",
+      "num_name": "fr",
+      "num_decimals": ",",
+      "num_thousands": " ",
+      "num_precision": "2",
+      "defaultTax": "66",
+      "defaultUnit": "70",
+      "defaultShipping": "17",
+      "defaultPackaging": "15",
+      "paydate": "81",
+      "paydate_xdays": "0",
+      "paydate_endmonth": "N",
+      "paydate_scaledDetails": "",
+      "paymediums": [
+        {
+          "id": "86",
+          "corpid": "2",
+          "list": "paymediums",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "check",
+          "rank": "1",
+          "value": "ch\u00e8que",
+          "checked": "Y"
+        }
+      ],
+      "paymedium_other": "",
+      "paycheckorder": "94",
+      "paybankaccount": "0",
+      "weightUnits": [
+        {
+          "value": "mg"
+        }
+      ],
+      "hideableColumns": [
+        {
+          "id": "name",
+          "name": "hideColumnName",
+          "label": "Masquer la colonne \"Nom\/Code\"",
+          "checked": "N"
+        }
+      ],
+      "doclayouts": [
+        {
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isdefault": "Y",
+          "name": "default",
+          "headerMode": "all",
+          "footerMode": "all",
+          "logoMode": "first",
+          "useBg": "custom",
+          "bgMode": "all",
+          "bgFile": "custom",
+          "bgCustomFile": "",
+          "hideTopPart": "N",
+          "hideFill": "N",
+          "colorFill": "000000",
+          "colorText": "000000",
+          "colorHeaderRow": "000000",
+          "colorNotes": "000000",
+          "colorDiscreet": "000000",
+          "colorHeaderFooter": "000000",
+          "font": "helvetica",
+          "id": "2"
+        }
+      ],
+      "currencyleft": "",
+      "currencyright": "\u20ac",
+      "discountUnits": [
+        {
+          "value": "percent",
+          "label": "%"
+        }
+      ],
+      "taxes": [
+        {
+          "id": "66",
+          "corpid": "2",
+          "list": "taxes",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "19,60"
+        }
+      ],
+      "shippings": [
+        {
+          "type": "shipping",
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isEnabled": "Y",
+          "rank": "1",
+          "name": "shipping",
+          "notes": "shipping",
+          "unitAmount": "13.900000000",
+          "unitAmountIsTaxesFree": "Y",
+          "unitid": "70",
+          "unit": "",
+          "qt": "1.000000000",
+          "taxid": "66",
+          "taxrate": "0.000000000",
+          "purchaseAmount": "0.000000000",
+          "stock": "0",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "id": "17",
+          "typeLabel": "transport",
+          "nameSample": "shipping",
+          "notesSample": "shipping",
+          "notesHTMLSample": "shipping",
+          "isTaxesFree": "HT",
+          "unitAmountTaxesFree": "13.900000000",
+          "formatted_unitAmount": "13.900000000",
+          "formatted_unitAmount_ht": "13.900000000",
+          "formatted_unitAmount_ttc": 13.9,
+          "formatted_qt": "1.000000000",
+          "formatted_taxrate": "0.000000000",
+          "formatted_full_qt": "1.000000000 ",
+          "formatted_full_unitAmount": "13.900000000"
+        }
+      ],
+      "packagings": [
+        {
+          "type": "packaging",
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isEnabled": "Y",
+          "rank": "1",
+          "name": "packaging",
+          "notes": "packaging",
+          "unitAmount": "3.990000000",
+          "unitAmountIsTaxesFree": "Y",
+          "unitid": "70",
+          "unit": "",
+          "qt": "4.000000000",
+          "taxid": "66",
+          "taxrate": "0.000000000",
+          "purchaseAmount": "0.000000000",
+          "stock": "0",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "id": "15",
+          "typeLabel": "emballage",
+          "nameSample": "packaging",
+          "notesSample": "packaging",
+          "notesHTMLSample": "packaging",
+          "isTaxesFree": "HT",
+          "unitAmountTaxesFree": "3.990000000",
+          "formatted_unitAmount": "3.990000000",
+          "formatted_unitAmount_ht": "3.990000000",
+          "formatted_unitAmount_ttc": 3.99,
+          "formatted_qt": "4.000000000",
+          "formatted_taxrate": "0.000000000",
+          "formatted_full_qt": "4.000000000 ",
+          "formatted_full_unitAmount": "3.990000000"
+        }
+      ],
+      "units": [
+        {
+          "id": "70",
+          "corpid": "2",
+          "list": "units",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "forfaitaire"
+        }
+      ],
+      "canWriteShippings": "Y",
+      "canWritePackagings": "Y",
+      "canWriteUnits": "Y",
+      "canWriteTaxes": "Y",
+      "canWritePaydates": "Y",
+      "paydates": [
+        {
+          "id": "75",
+          "corpid": "2",
+          "list": "paydates",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "custom",
+          "rank": "1",
+          "value": "\u00e0 date"
+        }
+      ],
+      "canWritePaymediums": "Y",
+      "canWritePayCheckOrders": "Y",
+      "paycheckorders": [
+        {
+          "id": "94",
+          "corpid": "2",
+          "list": "paycheckorders",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Service comptabilit\u00e9"
+        }
+      ],
+      "bankaccounts": {
+        "_xml_childtag": "bankaccount"
+      },
+      "canWriteDocSpeakers": "Y",
+      "docspeakers": [
+        {
+          "id": "95",
+          "corpid": "2",
+          "list": "docspeakers",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Votre contact"
+        }
+      ],
+      "formatted_rowsAmount": "191,73 \u20ac",
+      "formatted_discountPercent": "0,00",
+      "formatted_discountAmount": "0,00 \u20ac",
+      "formatted_rowsAmountDiscounted": "191,73 \u20ac",
+      "formatted_offerAmount": "0,00 \u20ac",
+      "formatted_rowsAmountAllInc": "191,73 \u20ac",
+      "formatted_packagingsAmount": "49,90 \u20ac",
+      "formatted_shippingsAmount": "60,00 \u20ac",
+      "formatted_totalAmountTaxesFree": "301,63 \u20ac",
+      "formatted_taxesAmountSum": "59,12 \u20ac",
+      "formatted_totalAmount": "360,74 \u20ac",
+      "formatted_shippingWeight": "0,00 \u20ac",
+      "formatted_shippingVolume": "0,00 \u20ac",
+      "formatted_globalDiscount": "0,00 \u20ac",
+      "formatted_globalOffer": "0,00",
+      "formatted_deposit": "0,00 \u20ac",
+      "formatted_dueAmount": "360,74 \u20ac",
+      "tel": "0620365895",
+      "fax": "",
+      "email": "aloux@myfacture.com",
+      "mobile": "",
+      "formatted_taxesAmountDetails": "a:1:{s:5:\"19,60\";s:9:\"59,12 \u20ac\";}",
+      "corpFooter": "Antoine Louxaloux@myfacture.comLoux",
+      "tags": [
+        {
+          "id": "112",
+          "corpid": "2",
+          "category": "doc",
+          "created": "2012-04-04 11:13:29",
+          "word": "tags_test"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetModelResponse": {
+    "response": {
+      "id": "11027",
+      "ownerFullName": "M. Antoine Loux",
+      "status": "ok",
+      "filename": "FACT-20120321-00098_1333530803.5021",
+      "fileid": "2157",
+      "nbpages": "1",
+      "ident": "FACT-20120321-00098",
+      "thirdident": "",
+      "thirdid": "2655",
+      "contactId": "0",
+      "contactName": "",
+      "displayedDate": "04\/04\/2012",
+      "currencysymbol": "\u20ac",
+      "subject": "test objet",
+      "corpaddressid": "36059",
+      "thirdaddressid": "36060",
+      "shipaddressid": "36061",
+      "rowsAmount": "191.725000000",
+      "discountPercent": "0.000000000",
+      "discountAmount": "0.000000000",
+      "rowsAmountDiscounted": "191.725000000",
+      "offerAmount": "0.000000000",
+      "rowsAmountAllInc": "191.725000000",
+      "packagingsAmount": "49.900000000",
+      "shippingsAmount": "60.000000000",
+      "totalAmountTaxesFree": "301.625000000",
+      "taxesAmountSum": "59.118500000",
+      "taxesAmountDetails": "a:1:{s:12:\"19.600000000\";s:12:\"59.118500000\";}",
+      "totalAmount": "360.743500000",
+      "shippingNbParcels": "0",
+      "shippingWeight": "0.000000000",
+      "shippingWeightUnit": "g",
+      "shippingVolume": "0.000000000",
+      "shippingTrackingNumber": "",
+      "shippingTrackingUrl": "",
+      "saveThirdPrefs": "N",
+      "displayShipAddress": "N",
+      "corpid": "2",
+      "ownerid": "2",
+      "linkedtype": "invoice",
+      "linkedid": "9516",
+      "created": "2012-03-21 14:43:18",
+      "prefsid": "14683",
+      "parentid": "0",
+      "docmapid": "11603",
+      "hasVat": "Y",
+      "doctypeid": "9516",
+      "step": "draft",
+      "isDeposit": "N",
+      "dueAmount": "360.743500000",
+      "countrycode": "FR",
+      "globalDiscount": "0.000000000",
+      "globalDiscountUnit": "percent",
+      "globalOffer": "0.000000000",
+      "useDeposit": "N",
+      "deposit": "0.000000000",
+      "depositUnit": "percent",
+      "discountByRows": "N",
+      "addPdfToEmail": "Y",
+      "addGtuToEmail": "Y",
+      "addSenderToEmail": "N",
+      "hideColumnName": "N",
+      "hideColumnNotes": "N",
+      "hideColumnUnit": "N",
+      "hideColumnTaxFree": "N",
+      "hideColumnTax": "N",
+      "hideColumnTaxInc": "N",
+      "hideColumnQt": "N",
+      "hideTotalTaxesFree": "N",
+      "hideTotal": "N",
+      "hidePayment": "N",
+      "hideTaxes": "N",
+      "hasPenaltyRetardWarning": "Y",
+      "penaltyRetardWarningText": "La loi n\u00b092\/1442 du 31 d\u00e9cembre 1992 nous fait l'obligation de vous indiquer que le non respect des conditions de paiement entra\u00eene des int\u00e9r\u00eats de retard suivant modalit\u00e9s et taux minima d\u00e9finis par la loi.",
+      "showContactOnPdf": "N",
+      "hasCorpAgree": "N",
+      "hasThirdAgree": "N",
+      "notes": "test note",
+      "nbExpireDays": "30",
+      "displayAmounts": "Y",
+      "display_footer": "Y",
+      "display_ident": "Y",
+      "display_email": "Y",
+      "display_tel": "Y",
+      "display_mobile": "Y",
+      "display_fax": "Y",
+      "displayBankAccount": "Y",
+      "displayIBAN": "Y",
+      "displayBIC": "Y",
+      "hideTips": "N",
+      "hideOrdersDocs": "N",
+      "hideDeliveriesDocs": "N",
+      "hideProformaDocs": "N",
+      "emailsSentFromCorp": "Y",
+      "isdefault": "Y",
+      "name": "default",
+      "headerMode": "all",
+      "footerMode": "all",
+      "logoMode": "first",
+      "useBg": "custom",
+      "bgMode": "all",
+      "bgFile": "custom",
+      "bgCustomFile": "",
+      "hideTopPart": "N",
+      "hideFill": "N",
+      "colorFill": "000000",
+      "colorText": "000000",
+      "colorHeaderRow": "000000",
+      "colorNotes": "000000",
+      "colorDiscreet": "000000",
+      "colorHeaderFooter": "000000",
+      "font": "helvetica",
+      "type": "invoice",
+      "map": {
+        "docid": "11027",
+        "id": "11603",
+        "rows": [
+          {
+            "parentid": "0",
+            "status": "ok",
+            "rank": "1",
+            "type": "packaging",
+            "linkedid": "0",
+            "name": "",
+            "notes": "",
+            "unitAmount": "4.990000000",
+            "unitid": "2750",
+            "unitText": "",
+            "qt": "10.000000000",
+            "discount": "0.000000000",
+            "discountUnit": "percent",
+            "taxid": "66",
+            "taxrate": "19.600000000",
+            "isOption": "N",
+            "totalAmount": "49.900000000",
+            "taxAmount": "9.780400000",
+            "purchaseAmount": "0.000000000",
+            "id": "16562",
+            "discountPercent": "0.000000000",
+            "formatted_unitAmount": "4,99",
+            "formatted_qt": "10,00",
+            "formatted_discount": "0,00",
+            "formatted_taxrate": "19,60",
+            "formatted_totalAmount": "49,90 \u20ac",
+            "formatted_taxAmount": "9,78",
+            "formatted_discountPercent": "0,00"
+          }
+        ]
+      },
+      "relateds_amount": "0.000000000",
+      "relateds": {
+        "_xml_childtag": "related"
+      },
+      "corpAddress": {
+        "name": "Rue du four",
+        "part1": "10 rue du four",
+        "part2": "",
+        "zip": "79200",
+        "town": "Adilly",
+        "townid": "3835224",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36059",
+        "partsToDisplay": [
+          {
+            "txt": "10 rue du four"
+          }
+        ]
+      },
+      "hasThird": "Y",
+      "thirdType": "corporation",
+      "thirdAddress": {
+        "name": "test2",
+        "part1": "2 rue du moulin",
+        "part2": "",
+        "zip": "17000",
+        "town": "la rochelle",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36060",
+        "partsToDisplay": [
+          {
+            "txt": "2 rue du moulin"
+          }
+        ]
+      },
+      "shipAddress": {
+        "name": "",
+        "part1": "",
+        "part2": "",
+        "zip": "",
+        "town": "",
+        "townid": "0",
+        "countrycode": "FR",
+        "originalid": "0",
+        "id": "36061",
+        "partsToDisplay": [
+          {
+            "txt": ""
+          }
+        ]
+      },
+      "canWriteDocNamespace": "Y",
+      "logoFile": "",
+      "logoFile_system": "",
+      "logoHeight": 0,
+      "logoWidth": 0,
+      "label": "Facture",
+      "fullIdent": "Facture N\u00b0 FACT-20120321-00098",
+      "numformat": {
+        "name": "fr",
+        "decimals": ",",
+        "thousands": " ",
+        "currencypos": "right",
+        "currencysymbol": "\u20ac",
+        "precision": "2"
+      },
+      "numformats": [
+        {
+          "label": "fran\u00e7ais [1 234,57 #]",
+          "decimals": ",",
+          "thousands": " ",
+          "currencypos": "right",
+          "name": "fr"
+        }
+      ],
+      "precisions": [
+        {
+          "value": 0
+        }
+      ],
+      "currencies": [
+        {
+          "name": "EUR",
+          "symbol": "\u20ac",
+          "rank": "1",
+          "enabled": "Y",
+          "id": "1"
+        }
+      ],
+      "currencypositions": [
+        {
+          "value": "both",
+          "label": "gauche et droite"
+        }
+      ],
+      "hasRelateds": "Y",
+      "corpName": "Antoine Loux",
+      "thirdName": "Alain",
+      "thirdVatNum": "",
+      "docspeaker_text": "Votre contact",
+      "paydate_text": "\u00e0 90 jours",
+      "paydate_custom": "03\/07\/2012",
+      "paymediums_text": "a:1:{i:0;s:7:\"ch\u00e8que\";}",
+      "paycheckorder_text": "Service comptabilit\u00e9",
+      "paybankaccount_text": "",
+      "currency": "1",
+      "num_currencypos": "right",
+      "docspeaker": "95",
+      "doclayout": "2",
+      "num_name": "fr",
+      "num_decimals": ",",
+      "num_thousands": " ",
+      "num_precision": "2",
+      "defaultTax": "66",
+      "defaultUnit": "70",
+      "defaultShipping": "17",
+      "defaultPackaging": "15",
+      "paydate": "81",
+      "paydate_xdays": "0",
+      "paydate_endmonth": "N",
+      "paydate_scaledDetails": "",
+      "paymediums": [
+        {
+          "id": "86",
+          "corpid": "2",
+          "list": "paymediums",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "check",
+          "rank": "1",
+          "value": "ch\u00e8que",
+          "checked": "Y"
+        }
+      ],
+      "paymedium_other": "",
+      "paycheckorder": "94",
+      "paybankaccount": "0",
+      "weightUnits": [
+        {
+          "value": "mg"
+        }
+      ],
+      "hideableColumns": [
+        {
+          "id": "name",
+          "name": "hideColumnName",
+          "label": "Masquer la colonne \"Nom\/Code\"",
+          "checked": "N"
+        }
+      ],
+      "doclayouts": [
+        {
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isdefault": "Y",
+          "name": "default",
+          "headerMode": "all",
+          "footerMode": "all",
+          "logoMode": "first",
+          "useBg": "custom",
+          "bgMode": "all",
+          "bgFile": "custom",
+          "bgCustomFile": "",
+          "hideTopPart": "N",
+          "hideFill": "N",
+          "colorFill": "000000",
+          "colorText": "000000",
+          "colorHeaderRow": "000000",
+          "colorNotes": "000000",
+          "colorDiscreet": "000000",
+          "colorHeaderFooter": "000000",
+          "font": "helvetica",
+          "id": "2"
+        }
+      ],
+      "currencyleft": "",
+      "currencyright": "\u20ac",
+      "discountUnits": [
+        {
+          "value": "percent",
+          "label": "%"
+        }
+      ],
+      "taxes": [
+        {
+          "id": "66",
+          "corpid": "2",
+          "list": "taxes",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "19,60"
+        }
+      ],
+      "shippings": [
+        {
+          "type": "shipping",
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isEnabled": "Y",
+          "rank": "1",
+          "name": "shipping",
+          "notes": "shipping",
+          "unitAmount": "13.900000000",
+          "unitAmountIsTaxesFree": "Y",
+          "unitid": "70",
+          "unit": "",
+          "qt": "1.000000000",
+          "taxid": "66",
+          "taxrate": "0.000000000",
+          "purchaseAmount": "0.000000000",
+          "stock": "0",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "id": "17",
+          "typeLabel": "transport",
+          "nameSample": "shipping",
+          "notesSample": "shipping",
+          "notesHTMLSample": "shipping",
+          "isTaxesFree": "HT",
+          "unitAmountTaxesFree": "13.900000000",
+          "formatted_unitAmount": "13.900000000",
+          "formatted_unitAmount_ht": "13.900000000",
+          "formatted_unitAmount_ttc": 13.9,
+          "formatted_qt": "1.000000000",
+          "formatted_taxrate": "0.000000000",
+          "formatted_full_qt": "1.000000000 ",
+          "formatted_full_unitAmount": "13.900000000"
+        }
+      ],
+      "packagings": [
+        {
+          "type": "packaging",
+          "corpid": "2",
+          "ownerid": "2",
+          "status": "ok",
+          "isEnabled": "Y",
+          "rank": "1",
+          "name": "packaging",
+          "notes": "packaging",
+          "unitAmount": "3.990000000",
+          "unitAmountIsTaxesFree": "Y",
+          "unitid": "70",
+          "unit": "",
+          "qt": "4.000000000",
+          "taxid": "66",
+          "taxrate": "0.000000000",
+          "purchaseAmount": "0.000000000",
+          "stock": "0",
+          "createdAt": "0000-00-00 00:00:00",
+          "updatedAt": "0000-00-00 00:00:00",
+          "id": "15",
+          "typeLabel": "emballage",
+          "nameSample": "packaging",
+          "notesSample": "packaging",
+          "notesHTMLSample": "packaging",
+          "isTaxesFree": "HT",
+          "unitAmountTaxesFree": "3.990000000",
+          "formatted_unitAmount": "3.990000000",
+          "formatted_unitAmount_ht": "3.990000000",
+          "formatted_unitAmount_ttc": 3.99,
+          "formatted_qt": "4.000000000",
+          "formatted_taxrate": "0.000000000",
+          "formatted_full_qt": "4.000000000 ",
+          "formatted_full_unitAmount": "3.990000000"
+        }
+      ],
+      "units": [
+        {
+          "id": "70",
+          "corpid": "2",
+          "list": "units",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "forfaitaire"
+        }
+      ],
+      "canWriteShippings": "Y",
+      "canWritePackagings": "Y",
+      "canWriteUnits": "Y",
+      "canWriteTaxes": "Y",
+      "canWritePaydates": "Y",
+      "paydates": [
+        {
+          "id": "75",
+          "corpid": "2",
+          "list": "paydates",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "N",
+          "syscode": "custom",
+          "rank": "1",
+          "value": "\u00e0 date"
+        }
+      ],
+      "canWritePaymediums": "Y",
+      "canWritePayCheckOrders": "Y",
+      "paycheckorders": [
+        {
+          "id": "94",
+          "corpid": "2",
+          "list": "paycheckorders",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Service comptabilit\u00e9"
+        }
+      ],
+      "bankaccounts": {
+        "_xml_childtag": "bankaccount"
+      },
+      "canWriteDocSpeakers": "Y",
+      "docspeakers": [
+        {
+          "id": "95",
+          "corpid": "2",
+          "list": "docspeakers",
+          "status": "ok",
+          "isEnabled": "Y",
+          "isWriteabled": "Y",
+          "syscode": "",
+          "rank": "1",
+          "value": "Votre contact"
+        }
+      ],
+      "formatted_rowsAmount": "191,73 \u20ac",
+      "formatted_discountPercent": "0,00",
+      "formatted_discountAmount": "0,00 \u20ac",
+      "formatted_rowsAmountDiscounted": "191,73 \u20ac",
+      "formatted_offerAmount": "0,00 \u20ac",
+      "formatted_rowsAmountAllInc": "191,73 \u20ac",
+      "formatted_packagingsAmount": "49,90 \u20ac",
+      "formatted_shippingsAmount": "60,00 \u20ac",
+      "formatted_totalAmountTaxesFree": "301,63 \u20ac",
+      "formatted_taxesAmountSum": "59,12 \u20ac",
+      "formatted_totalAmount": "360,74 \u20ac",
+      "formatted_shippingWeight": "0,00 \u20ac",
+      "formatted_shippingVolume": "0,00 \u20ac",
+      "formatted_globalDiscount": "0,00 \u20ac",
+      "formatted_globalOffer": "0,00",
+      "formatted_deposit": "0,00 \u20ac",
+      "formatted_dueAmount": "360,74 \u20ac",
+      "tel": "0620365895",
+      "fax": "",
+      "email": "aloux@myfacture.com",
+      "mobile": "",
+      "formatted_taxesAmountDetails": "a:1:{s:5:\"19,60\";s:9:\"59,12 \u20ac\";}",
+      "corpFooter": "Antoine Louxaloux@myfacture.comLoux",
+      "tags": [
+        {
+          "id": "112",
+          "corpid": "2",
+          "category": "doc",
+          "created": "2012-04-04 11:13:29",
+          "word": "tags_test"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetPaymentResponse": {
+    "response": {
+      "status": "ok",
+      "date": "2012-07-04",
+      "amount": "380951.680000000",
+      "medium": "4744",
+      "mediumTxt": "ch\u00e8que",
+      "ident": "0156489",
+      "notes": "il a pay\u00e9 cher",
+      "corpid": "138",
+      "ownerid": "317",
+      "docid": "11359",
+      "id": "7793",
+      "formatted_displayedDate": "04\/07\/2012",
+      "dueAmount": "381850.680000000"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentCreatePaymentResponse": {
+    "response": "payid",
+    "error": "",
+    "status": "success"
+  },
+  "DocumentDeletePaymentResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "DocumentGetPaymentUrlResponse": {
+    "response": {
+      "url": "payment_url"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentLinkPurchaseResponse": {
+    "response": {
+      "url": "payment_url"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "DocumentUpdateSharingGroupsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "DocumentEnablePublicLinkResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "DocumentDisablePublicLinkResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "ElectronicSignCreateResponse": {
+    "response": {
+      "created": true,
+      "esign": {
+        "id": "{{id}}",
+        "corpid": "{{corpid}}",
+        "ownerid": "{{userid}}",
+        "linkedid": "{{documentId}}",
+        "linkedtype": "{{documentType}}",
+        "demandid": "{{external_id}}",
+        "authMode": "mail",
+        "cosigners": [
+          {
+            "token": "{{token}}",
+            "mail": "{{email}}",
+            "url": "{{urlToSign}}"
+          }
+        ],
+        "step": "pending",
+        "status": "ok",
+        "apiUpdate": "0",
+        "quotaSpentLogId": "9"
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ElectronicSignDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ElectronicSignGetStatusResponse": {
+    "response": {
+      "status": "pending||processing||partially_signed||signed||cancelled"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ElectronicSignGetForDocResponse": {
+    "response": {
+      "esign": {
+        "id": "id",
+        "corpid": "corpid",
+        "ownerid": "ownerid",
+        "linkedid": "docid",
+        "linkedtype": "doctype",
+        "demandid": "{{external_id}}",
+        "authMode": "mail",
+        "cosigners": [
+          {
+            "token": "{{token}}",
+            "mail": "{{email}}",
+            "url": "{{urlToSign}}"
+          }
+        ],
+        "step": "pending",
+        "status": "ok",
+        "apiUpdate": "0",
+        "quotaSpentLogId": "11"
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MailsGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "1"
+      },
+      "result": [
+        {
+          "id": "3928",
+          "parentid": "0",
+          "corpid": "1033",
+          "ownerid": "1677",
+          "linkedtype": "system",
+          "linkedid": "0",
+          "relatedtype": "alert",
+          "relatedid": "662",
+          "box": "inbox",
+          "sender": [
+            {
+              "email": "alerts@sellsy.com",
+              "name": "Alerte Sellsy"
+            }
+          ],
+          "recipients": [
+            {
+              "email": ".com",
+              "name": "",
+              "datetime": "30\/03\/2014, 10:00",
+              "copy": false
+            }
+          ],
+          "cc": "",
+          "bcc": "",
+          "attachment": "a:0:{}",
+          "subject": "Nouvelle alerte Sellsy. Synaptech",
+          "message": "",
+          "scheduled_date": "0000-00-00 00:00:00",
+          "scheduled_timestamp": "0",
+          "created_date": "1400497965",
+          "updated_date": "0",
+          "sent_date": "0",
+          "step": "unread",
+          "status": "ok",
+          "star": "N",
+          "chase": "N",
+          "owner": "Remy Neuter",
+          "picurl": "?_f=file&id=JUY1JUZEcSUxNzklOUQlN0UlMkIlQjclQTIlRjElQzRUJUNEK0V5JUFCYyU4N3klQjQlRDAlQTQlMUMlQzUlQTklMkZsJUQxJUE3JThBJTg0JTg5JTlBekclQTRmJTExJTNBaUglMjlGJUE5ZyUwNyVCOFAlMjZmJUU0JTVEWiVEOSVERSVEQSVBNSVDMSU5MyU4RSUxNyVGNzVOJTA4JUM3JUNDJTk5JUU1WiUzRCUyNHMlMjIlMDYlOUZxaHclRTFEJTVDJTI5JUM4JUY1dyUxMjQlODUlMEUlREMlMUQlQkMlQTQ=&key=08996b8a1a46bf535f187bab05462561",
+          "linked": "Non affect\u00e9",
+          "related": "",
+          "attachments": {
+            "_xml_childtag": "file"
+          },
+          "lastEvent": "",
+          "snippet_message": "\nAlerte email\nBonjour, voici votre alerte sur Synaptech\nNote sur la t\u00e2che ...",
+          "snippetmini_message": "\nAlerte email\nBonjour, voici votre alert...",
+          "formatted_date": "19\/05\/2014, 13:12",
+          "computed_date": "19\/05\/2014, 13:12",
+          "formatted_scheduled_date": "01\/01\/1970, 01:00",
+          "recipients_formatted": ".com",
+          "sender_formatted": "Alerte Sellsy",
+          "lastEventIcon": ""
+        }
+      ],
+      "error": "",
+      "status": "success"
+    }
+  },
+  "MailsSendOneResponse": {
+    "response": "42",
+    "error": "",
+    "status": "success"
+  },
+  "MailsGetCustomTemplatesResponse": {
+    "response": {
+      "models": [
+        {
+          "id": "105",
+          "corpid": "1869",
+          "ownerid": "2854",
+          "name": "test",
+          "subject": "",
+          "message": "",
+          "status": "ok"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MailsDeleteResponse": {
+    "response": "42",
+    "error": "",
+    "status": "success"
+  },
+  "MailsGetOneResponse": {
+    "response": {
+      "id": "3928",
+      "parentid": "0",
+      "corpid": "1033",
+      "ownerid": "1677",
+      "linkedtype": "system",
+      "linkedid": "0",
+      "relatedtype": "alert",
+      "relatedid": "662",
+      "box": "inbox",
+      "sender": "a:2:{s:5:\"email\";s:17:\"alerts@sellsy.com\";s:4:\"name\";s:13:\"Alerte Sellsy\";}",
+      "recipients": "a:1:{i:0;a:4:{s:5:\"email\";s:18:\".com\";s:4:\"name\";s:0:\"\";s:8:\"datetime\";s:17:\"30\/03\/2014, 10:00\";s:4:\"copy\";b:0;}}",
+      "cc": "",
+      "bcc": "",
+      "attachment": "a:0:{}",
+      "subject": "Nouvelle alerte Sellsy. Synaptech",
+      "message": "Alerte email Bonjour, voici votre alerte sur Synaptech Note sur la t\u00e2che :Rappeler le client Collaborateurs associ\u00e9s \u00e0 cette alerte : Remy Neuter Alerte envoy\u00e9e le 30\/04\/2014, 10:00",
+      "scheduled_date": "0000-00-00 00:00:00",
+      "scheduled_timestamp": "0",
+      "created_date": "1400497965",
+      "updated_date": "0",
+      "sent_date": "0",
+      "step": "unread",
+      "status": "ok",
+      "star": "N",
+      "chase": "N"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MailsGetAttachmentsResponse": {
+    "response": [
+      {
+        "ownerid": "",
+        "ownertype": "",
+        "id": "",
+        "name": "",
+        "size": "",
+        "created": "",
+        "public_url": ""
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "MailsGetCustomTagsResponse": {
+    "response": [
+      {
+        "name": "corpName",
+        "label": "",
+        "value": ""
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "MailsCreateCustomTemplateResponse": {
+    "response": {
+      "template_id": "id"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MailsUpdateCustomTemplateResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "MailsDeleteCustomTemplateResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "MailsGetCustomTemplateResponse": {
+    "response": {
+      "id": "",
+      "corpid": "",
+      "ownerid": "",
+      "name": "",
+      "subject": "",
+      "message": "",
+      "attachments": [
+        "",
+        ""
+      ],
+      "status": "ok"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "EventGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 20,
+        "pagenum": 1
+      },
+      "result": [
+        {
+          "id": "97643",
+          "logType": "peopleLog",
+          "relatedtype": "people",
+          "relatedid": "90817",
+          "timestamp": "1426589009",
+          "date": "17\/03\/2015, 11:43",
+          "avatar": "",
+          "owner": "Valentin Navarrete",
+          "related": "212 RESTAURANT<\/a>",
+          "relatedLabel": "contact",
+          "relatedFa": " fa-user ",
+          "fa": "fa-repeat",
+          "action": "a modifi\u00e9 le contact",
+          "relatedNoLink": "212 RESTAURANT",
+          "upperRelatedLabel": "Contact"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ExpenseGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "1"
+      },
+      "result": [
+        {
+          "id": "562",
+          "corpid": "1641",
+          "ownerid": "2542",
+          "corpname": "Sellsy",
+          "prefsid": "0",
+          "thirdid": "119304",
+          "thirdname": "Activane",
+          "hasVat": "Y",
+          "status": "ok",
+          "step": "draft",
+          "fileid": "0",
+          "filename": "",
+          "nbpages": "1",
+          "ident": "EXP-20140912-00001",
+          "externalIdent": "",
+          "created": "2014-09-12 16:20:50",
+          "displayedDate": "2014-09-12",
+          "currencysymbol": "\u20ac",
+          "docspeakerText": "",
+          "docspeakerStaffId": "2542",
+          "docspeakerStaffFullName": "R\u00e9my Neuter",
+          "ownerFullName": "R\u00e9my Neuter",
+          "subject": "",
+          "corpaddressid": "0",
+          "thirdaddressid": "0",
+          "rowsAmount": "58.330000000",
+          "discountPercent": "0.000000000",
+          "discountAmount": "0.000000000",
+          "rowsAmountDiscounted": "0.000000000",
+          "offerAmount": "0.000000000",
+          "rowsAmountAllInc": "58.330000000",
+          "packagingsAmount": "0.000000000",
+          "shippingsAmount": "0.000000000",
+          "totalAmountTaxesFree": "58.330000000",
+          "taxesAmountSum": "11.670000000",
+          "taxesAmountDetails": "a:1:{i:86718;s:12:\"11.670000000\";}",
+          "totalAmount": "70.000000000",
+          "totalEcoTaxFree": "0.000000000",
+          "totalEcoTaxInc": "0.000000000",
+          "ecoTaxId": "0",
+          "payDateText": "",
+          "payDateCustom": "0000-00-00",
+          "payMediumsText": "",
+          "payCheckOrderText": "",
+          "payBankAccountText": "",
+          "contactId": "0",
+          "contactName": "",
+          "analyticsCode": "",
+          "recordable": "N",
+          "recorded": "N",
+          "isTaxesInc": "N",
+          "hasDoubleVat": "N",
+          "isFromPresta": "N",
+          "oldid": "0",
+          "note": "",
+          "nbPay": "0",
+          "step_color": "pink",
+          "step_hex": "#C033DA",
+          "step_label": "\u00c0 valider",
+          "step_css": "colorDraft",
+          "step_banner": "draft",
+          "step_id": "draft",
+          "formatted_totalAmount": "70.00 \u20ac",
+          "formatted_totalAmountTaxesFree": "58.33 \u20ac",
+          "formatted_displayedDate": "12\/09\/2014",
+          "staff_name": "R\u00e9my Neuter",
+          "staff_img": "\/ressources\/logged\/img\/common\/people.jpg"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ExpenseGetOneResponse": {
+    "response": {
+      "id": "562",
+      "corpid": "1641",
+      "ownerid": "2542",
+      "corpname": "Sellsy",
+      "prefsid": "0",
+      "thirdid": "119304",
+      "thirdname": "Activane",
+      "hasVat": "Y",
+      "status": "ok",
+      "step": "draft",
+      "fileid": "0",
+      "filename": "",
+      "nbpages": "1",
+      "ident": "EXP-20140912-00001",
+      "externalIdent": "",
+      "created": "2014-09-12 16:20:50",
+      "displayedDate": "2014-09-12",
+      "currencysymbol": "\u20ac",
+      "docspeakerText": "",
+      "docspeakerStaffId": "2542",
+      "docspeakerStaffFullName": "R\u00e9my Neuter",
+      "ownerFullName": "R\u00e9my Neuter",
+      "subject": "",
+      "corpaddressid": "0",
+      "thirdaddressid": "0",
+      "rowsAmount": "58.330000000",
+      "discountPercent": "0.000000000",
+      "discountAmount": "0.000000000",
+      "rowsAmountDiscounted": "0.000000000",
+      "offerAmount": "0.000000000",
+      "rowsAmountAllInc": "58.330000000",
+      "packagingsAmount": "0.000000000",
+      "shippingsAmount": "0.000000000",
+      "totalAmountTaxesFree": "58.330000000",
+      "taxesAmountSum": "11.670000000",
+      "taxesAmountDetails": "a:1:{i:86718;s:12:\"11.670000000\";}",
+      "totalAmount": "70.000000000",
+      "totalEcoTaxFree": "0.000000000",
+      "totalEcoTaxInc": "0.000000000",
+      "ecoTaxId": "0",
+      "payDateText": "",
+      "payDateCustom": "0000-00-00",
+      "payMediumsText": "",
+      "payCheckOrderText": "",
+      "payBankAccountText": "",
+      "contactId": "0",
+      "contactName": "",
+      "analyticsCode": "",
+      "recordable": "N",
+      "recorded": "N",
+      "isTaxesInc": "N",
+      "hasDoubleVat": "N",
+      "isFromPresta": "N",
+      "oldid": "0",
+      "note": "",
+      "rows": [
+        {
+          "parentid": "0",
+          "expid": "562",
+          "status": "ok",
+          "rank": "1",
+          "type": "once",
+          "linkedid": "0",
+          "declid": "0",
+          "name": "Essence",
+          "notes": "Plein du v\u00e9hicule de service CP-0001",
+          "unitAmount": "58.330000000",
+          "unitAmountTaxesInc": "69.996000000",
+          "ecoTax": "0.000000000",
+          "useEcoTax": "N",
+          "unitid": "86680",
+          "unitText": "unit\u00e9",
+          "qt": "1.000000000",
+          "discount": "0.000000000",
+          "discountUnit": "percent",
+          "taxid": "86718",
+          "taxrate": "20.000000000",
+          "tax2id": "0",
+          "tax2rate": "0.000000000",
+          "isOption": "N",
+          "totalAmount": "58.330000000",
+          "totalAmountTaxesInc": "70.000000000",
+          "taxAmount": "11.670000000",
+          "tax2Amount": "0.000000000",
+          "accountingCode": "",
+          "analyticsCode": "",
+          "id": "1061",
+          "discountPercent": "0,00",
+          "formatted_unitAmount": "58,33",
+          "formatted_qt": "1,00",
+          "formatted_discount": "0,00",
+          "formatted_taxrate": "20,00",
+          "formatted_tax2rate": "0,00",
+          "formatted_totalAmount": "58,33",
+          "formatted_totalAmountTaxesInc": "70,00",
+          "formatted_taxAmount": "11,67",
+          "formatted_tax2Amount": "0,00",
+          "formatted_unitAmountTaxesInc": "70,00",
+          "formatted_discountPercent": "0,00",
+          "ecoTaxDisplay": "0.00",
+          "totalEcoTaxAmount": "0.000000000",
+          "totalEcoTaxAmountDisplay": "0.000000000",
+          "formatted_totalEcoTaxAmount": "0,00"
+        }
+      ],
+      "justif": [
+
+      ],
+      "formatted_displayedDate": "12\/09\/2014",
+      "formatted_totalAmount": "70.00"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ExpenseCreateResponse": {
+    "response": "expenseID",
+    "error": "",
+    "status": "success"
+  },
+  "ExpenseUpdateResponse": {
+    "response": "expenseID",
+    "error": "",
+    "status": "success"
+  },
+  "ExpenseDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ExpenseGetNextIdentResponse": {
+    "response": "{{ident}}",
+    "error": "",
+    "status": "success"
+  },
+  "ExpenseUploadRelatedFileResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ListingSettingGetSavedSearchesResponse": {
+    "response": {
+      "results": "saved_searches"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingGetMailingListsResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "2"
+      },
+      "result": [
+        {
+          "id": "74",
+          "corpid": "1033",
+          "ownerid": "1851",
+          "name": "name",
+          "createdDate": "1428583671",
+          "updatedDate": "0",
+          "status": "ok",
+          "ownerFullName": "R\u00e9my Neuter",
+          "ownerEmail": ".com",
+          "nbContacts": "1",
+          "formattedCreatedDate": "09\/04\/2015",
+          "formattedUpdatedDate": "N\/C"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingCreateMailingListResponse": {
+    "response": {
+      "added": [
+        "%third_729852%",
+        "%third_730123%",
+        "%people_91013%",
+        "%people_91139%"
+      ],
+      "existing": [
+
+      ],
+      "id": 152
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingUpdateMailingListResponse": {
+    "response": {
+      "added": [
+
+      ],
+      "existing": [
+        "%people_91013%",
+        "%people_91139%"
+      ],
+      "removed": [
+        "729852",
+        "730123"
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingCreateCampaignResponse": {
+    "response": {
+      "campaignID": "campaignID"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingGetCampaignsResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 100,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "4"
+      },
+      "result": [
+        {
+          "id": "466",
+          "corpid": "1931",
+          "ownerid": "2952",
+          "name": "OK",
+          "fromName": "MyCorp",
+          "linkedtype": "email",
+          "linkedid": "406",
+          "step": {
+            "name": "sendinprogress",
+            "hex": "#F3AB56",
+            "label": "Envoi en cours",
+            "css": "campstep_inprogress"
+          },
+          "batRecipients": "",
+          "sendMode": "immediate",
+          "scheduleDate": "0",
+          "scheduleTimezone": "",
+          "stickyNote": "",
+          "createdDate": "1464959540",
+          "updatedDate": "1464959556",
+          "lastSyncDate": "1464959566",
+          "sentDate": "1464959602",
+          "archived": "N",
+          "status": "ok",
+          "spentQuotaLog": "17425",
+          "refundQuotaLog": "0",
+          "needSellsyCheck": "N",
+          "isSellsyCheck": "N",
+          "includeThirdContacts": "N",
+          "campaignSegmentParams": "\"\"",
+          "esid": "740804",
+          "ownerFullName": "Valentin Test",
+          "ownerEmail": "email@gmail.com",
+          "nbReciptiens": "2",
+          "type": "Email",
+          "typeIcon": "fa fa-envelope-o fa-13",
+          "formattedSendMode": "Immediat",
+          "formattedArchived": "Non",
+          "formattedCreatedDate": "03\/06\/2016",
+          "formattedSentDate": "03\/06\/2016",
+          "formattedScheduleDate": " - ",
+          "tags": [
+
+          ]
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingGetCampaignResponse": {
+    "response": {
+      "id": "532",
+      "corpid": "1931",
+      "ownerid": "2952",
+      "name": "COPY",
+      "fromName": "MyCorp",
+      "linkedtype": "email",
+      "linkedid": "472",
+      "step": "scheduled",
+      "batRecipients": [
+
+      ],
+      "sendMode": "scheduled",
+      "scheduleDate": "1472304120",
+      "scheduleTimezone": "Europe\/Paris",
+      "stickyNote": "",
+      "createdDate": "1472133297",
+      "updatedDate": "1472133329",
+      "lastSyncDate": "1472133329",
+      "sentDate": "0",
+      "archived": "N",
+      "status": "ok",
+      "spentQuotaLog": "0",
+      "refundQuotaLog": "0",
+      "needSellsyCheck": "N",
+      "isSellsyCheck": "N",
+      "includeThirdContacts": "Y",
+      "campaignSegmentParams": "",
+      "esid": "763077",
+      "camptypeid": "472",
+      "campaignid": "532",
+      "fromEmail": "vnavarrete@sellsy.com",
+      "replyEmailAddress": "",
+      "priority": "NORMAL",
+      "subject": "test",
+      "editMode": "editor",
+      "structure": "",
+      "contentHtml": "",
+      "contentText": "",
+      "embedImages": "Y",
+      "utmSource": "",
+      "utmCampaign": "",
+      "utmMedium": "",
+      "stats": [
+        {
+          "label": "D\u00e9livrabilit\u00e9",
+          "avg": "0,0000 %",
+          "total": "0 emails d\u00e9livr\u00e9s",
+          "color": "#61BE66"
+        }
+      ],
+      "recipients": [
+        {
+          "id": "1046679",
+          "corpid": "1931",
+          "campaignid": "532",
+          "linkedtype": "corporation",
+          "linkedid": "981283",
+          "civil": "",
+          "name": "Navarrete Valentin",
+          "forename": "",
+          "email": "vnavarrete@sellsy.com",
+          "mobile": "",
+          "data": "{\"company\":\"Navarrete Valentin\"}",
+          "status": "ok",
+          "delivered": "N",
+          "nbopen": "0",
+          "nbclick": "0",
+          "bounce": "N",
+          "unsub": "N",
+          "spam": "N"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingGetPrefsResponse": {
+    "response": {
+      "result": {
+        "id": "260",
+        "corpid": "2502",
+        "folderID": "53713",
+        "fromName": "RBCorp",
+        "fromEmail": "",
+        "emailsBAT": "a:0:{}",
+        "mobilesBAT": "a:0:{}",
+        "headerEmail": "",
+        "footerEmail": "",
+        "unsubscribeText": "Si vous ne souhaitez plus recevoir de messages de notre part",
+        "unsubscribeLink": "d\u00e9sabonnez-vous ici",
+        "mirrorText": "Vous ne parvenez pas \u00e0 voir ce message ?",
+        "mirrorLink": "cliquez ici",
+        "isSellsyCheck": "N",
+        "unsubscribeListID": "52210",
+        "publicLinkOptionEmail": "Y",
+        "publicLinkOptionSMS": "Y",
+        "publicLinkOptionPhone": "Y",
+        "publicLinkOptionMail": "Y",
+        "publicLinkOptionCustom": "Y",
+        "publicLinkOptionAll": "Y",
+        "campaignLabel": [
+          {
+            "langId": "fr",
+            "langName": "Fran\u00e7ais",
+            "campaign_all": "J'accepte d'\u00eatre contact\u00e9 selon les diff\u00e9rents types de campagne",
+            "campaign_email": "J'accepte d'\u00eatre contact\u00e9 par courrier",
+            "campaign_sms": "J'accepte d'\u00eatre contact\u00e9 par SMS",
+            "campaign_phone": "J'accepte d'\u00eatre contact\u00e9 par t\u00e9l\u00e9phone",
+            "campaign_mail": "J'accepte d'\u00eatre contact\u00e9 par courrier",
+            "campaign_custom": "Cochez cette case si vous souhaitez que nous personnalisions votre exp\u00e9rience avec nous en fonction de vos centres d'int\u00e9r\u00eat ou de vos habitudes d'achat (ex : communications personnalis\u00e9es). Pour davantage d'informations, veuillez lire notre Politique de vie priv\u00e9e<\/a>"
+          }
+        ]
+      }
+    },
+    "error": "",
+    "status": "success"
+  },
+  "MarketingSendCampaignResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "MarketingUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "MarketingUpdateSharingGroupsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 2,
+        "pagenum": "1",
+        "nbtotal": "13"
+      },
+      "result": [
+        {
+          "id": "30",
+          "corpid": "138",
+          "ownerid": "317",
+          "linkedtype": "third",
+          "linkedid": "36673",
+          "funnelid": "48",
+          "date": "2013-01-28 00:00:00",
+          "dueDate": "2013-01-31 00:00:00",
+          "name": "Test",
+          "ident": "#sp#OPP#sp#-00001",
+          "proba": "40",
+          "potential": "200",
+          "stepid": "338",
+          "status": "ok",
+          "signed": "open",
+          "brief": "Je test les opportunit\u00e9s pour voir comment \u00e7a marche !<\/p>",
+          "source": "5",
+          "stickyNote": "",
+          "dateFormatted": "28\/01\/2013",
+          "dueDateFormatted": "31\/01\/2013",
+          "stepLabel": "N\u00e9gociation",
+          "funnelName": "Default",
+          "potentialFormatted": "200,00 \u20ac",
+          "statusLabel": "Ouvert",
+          "statusColor": "#4484db",
+          "staffs": "Test DeTest",
+          "staffSummary": "Test DeTest",
+          "third": "A & M",
+          "canDelete": "Y",
+          "canEdit": "Y"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesGetOneResponse": {
+    "response": {
+      "id": "75",
+      "corpid": "138",
+      "ownerid": "317",
+      "linkedtype": "prospect",
+      "linkedid": "223",
+      "funnelid": "49",
+      "date": "0000-00-00 00:00:00",
+      "dueDate": "2013-02-06 00:00:00",
+      "name": "Je test qqc",
+      "ident": "OPP-00018",
+      "proba": "1",
+      "potential": "456",
+      "stepid": "342",
+      "status": "ok",
+      "signed": "open",
+      "brief": "",
+      "source": "",
+      "stickyNote": "",
+      "dateFormatted": "06\/02\/2013",
+      "dueDateFormatted": "06\/02\/2013",
+      "tags": [
+        {
+          "id": "865",
+          "corpid": "138",
+          "category": "opportunity",
+          "created": "2013-02-06 11:28:29",
+          "word": "test1"
+        }
+      ],
+      "staffs": [
+        {
+          "id": "317",
+          "fullName": "R\u00e9my Neuter",
+          "email": ""
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesCreateResponse": {
+    "response": "{{opportunityid}}",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateResponse": {
+    "response": "{{opportunityid}}",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesGetFunnelsResponse": {
+    "response": [
+      {
+        "id": "48",
+        "corpid": "138",
+        "name": "Default",
+        "description": "",
+        "status": "ok",
+        "nbSteps": "7"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesGetStepsForFunnelResponse": {
+    "response": [
+      {
+        "id": "334",
+        "corpid": "138",
+        "funnelid": "48",
+        "label": "Piste",
+        "rank": "1",
+        "proba": "0",
+        "status": "ok"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesGetSourcesResponse": {
+    "response": [
+      {
+        "id": "156",
+        "corpid": "1033",
+        "label": "interne",
+        "status": "ok"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesGetSourceResponse": {
+    "response": {
+      "id": "4",
+      "corpid": "138",
+      "label": "Google",
+      "status": "ok"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesCreateSourceResponse": {
+    "response": "sourceid",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateSourceResponse": {
+    "response": "sourceid",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesDeleteSourceResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateStatusResponse": {
+    "response": "{{opportunityid}}",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateStepResponse": {
+    "response": "{{opportunityid}}",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateLinkedDocumentsResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesGetCurrentIdentResponse": {
+    "response": "{{{prefix}-{compteur}}}",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateSharingGroupsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateDefaultDocumentResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "OpportunitiesUpdateSharingStaffsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "PaymentsGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 1,
+        "nbpages": 1,
+        "pagenum": "1",
+        "nbtotal": "1"
+      },
+      "result": [
+        {
+          "id": "6450",
+          "corpid": "1033",
+          "ownerid": "1677",
+          "linkedtype": "third",
+          "linkedid": "121580",
+          "date": "1492502094",
+          "type": "credit",
+          "amount": "100.000000000",
+          "currencyid": "1",
+          "amountRemaining": "100.000000000",
+          "mediumid": "60632",
+          "mediumTxt": "Paypal",
+          "inBank": "N",
+          "ident": "",
+          "note": "",
+          "status": "ok",
+          "bankdepositid": null,
+          "bankid": null,
+          "bankTxt": null,
+          "bankDate": "19\/04\/2017",
+          "bankName": null,
+          "staffForname": "R\u00e9my",
+          "staffName": "Neuter",
+          "nbLinkedInvoice": "0",
+          "nbLinks": "0",
+          "dateFormatted": "18\/04\/2017",
+          "currency": "EUR",
+          "amountFormatted": "100,00",
+          "amountRemainingFormatted": "100,00",
+          "linked": "212 RESTAURANT",
+          "linkedRelationType": "client",
+          "linkedAccountingCodeId": "6358",
+          "linkedAccountingCode": "411000",
+          "linkedAuxCode": "DIVERS"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PaymentsCreateResponse": {
+    "response": {
+      "id": "paymentId"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "PaymentsDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "3"
+      },
+      "result": [
+        {
+          "id": "55",
+          "name": "Nouveau Prospect",
+          "created": "2013-01-31 14:49:35",
+          "fullName": "Jean Dupond",
+          "pic": "",
+          "position": "",
+          "tel": "0123456789",
+          "fax": "0123456789",
+          "email": "dupond.jean@yopmail.com",
+          "contactName": "Dupond",
+          "contactForename": "Jean",
+          "corpid": "644",
+          "ownerid": "1174",
+          "prospectid": "55",
+          "peopleid": "32237",
+          "createdFormatted": "31\/01\/2013",
+          "canDelete": "Y",
+          "canEdit": "Y"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsGetOneResponse": {
+    "response": {
+      "corporation": {
+        "id": "55",
+        "corpid": "644",
+        "ownerid": "1174",
+        "name": "Nouveau Prospect",
+        "contactName": "",
+        "contactForename": "",
+        "tel": "0123456789",
+        "mobile": "0612345789",
+        "fax": "0123456789",
+        "email": "nouveau.prospect@yopmail.com",
+        "web": "www.sellsy.com",
+        "created": "2013-01-31 14:49:35",
+        "updated": "2013-01-31 16:41:38"
+      },
+      "contacts": [
+        {
+          "id": "44",
+          "corpid": "644",
+          "ownerid": "1174",
+          "prospectid": "55",
+          "peopleid": "32237",
+          "status": "ok",
+          "rank": "0",
+          "gender": "",
+          "civil": "",
+          "forename": "Jean",
+          "name": "Dupond",
+          "email": "dupond.jean@yopmail.com",
+          "web": "",
+          "tel": "0123456789",
+          "mobile": "0612345789",
+          "fax": "0123456789",
+          "position": "",
+          "pic": "",
+          "sign": "",
+          "birthdate": "0000-00-00"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsCreateResponse": {
+    "response": "55",
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdateResponse": {
+    "response": {
+      "prospect_id": "55",
+      "contact_id": "32237"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdateOwnerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsGetAddressResponse": {
+    "response": {
+      "id": "68348",
+      "corpid": "138",
+      "linkedtype": "third",
+      "linkedid": "47017",
+      "status": "ok",
+      "rank": "0",
+      "name": "Bureau",
+      "part1": "1 Rue Fleming",
+      "part2": "",
+      "zip": "17000",
+      "town": "La Rochelle",
+      "state": "",
+      "townid": "3834604",
+      "countrycode": "FR",
+      "originalid": "0",
+      "lat": "46.1489",
+      "lng": "-1.15522",
+      "partsToDisplay": [
+        {
+          "txt": "1 Rue Fleming"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsGetContactResponse": {
+    "response": {
+      "corpid": "138",
+      "ownerid": "317",
+      "linkedtype": "thirdcontact",
+      "linkedid": "41445",
+      "status": "ok",
+      "rank": "0",
+      "gender": "",
+      "civil": "man",
+      "forename": "Jean",
+      "name": "REGISTRE",
+      "email": "",
+      "web": "",
+      "tel": "0123456789",
+      "mobile": "",
+      "fax": "",
+      "position": "Enregistreur",
+      "pic": "",
+      "sign": "",
+      "birthdate": "0000-00-00",
+      "id": "43278",
+      "fullName": "M. Jean REGISTRE",
+      "isBillingContact": "N"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsGetBillingContactResponse": {
+    "response": {
+      "corpid": "138",
+      "ownerid": "317",
+      "linkedtype": "thirdcontact",
+      "linkedid": "41445",
+      "status": "ok",
+      "rank": "0",
+      "gender": "",
+      "civil": "man",
+      "forename": "Jean",
+      "name": "REGISTRE",
+      "email": "",
+      "web": "",
+      "tel": "0123456789",
+      "mobile": "",
+      "fax": "",
+      "position": "Enregistreur",
+      "pic": "",
+      "sign": "",
+      "birthdate": "0000-00-00",
+      "id": "43278",
+      "fullName": "M. Jean REGISTRE",
+      "isBillingContact": "Y"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsAddAddressResponse": {
+    "response": {
+      "address_id": 68366
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsAddContactResponse": {
+    "response": {
+      "contact_id": 41465
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdateAddressResponse": {
+    "response": {
+      "address_id": 68366
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdateContactResponse": {
+    "response": {
+      "contact_id": 41465
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsDeleteContactResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdatePrefsResponse": {
+    "response": {
+      "prefsId": "111294"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsDeleteAddressResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdateContactPictureResponse": {
+    "response": "?_f=file&id=JTBDJUM1UkwlMjJGJTVCViVBNyVDNiVCMXglQzIlQjQlMjglN0YlRUQlMTElNUMlMDUlOEQlQjElMEZuJUQ1JUVCJUYzJTlBJUI1JUJFcFpKbyVFQSU5RWclQzJLayVFQSUwOSU3QyUxRiVBNCU4RCt5UCUzRlUlQUElRTElREQlRTglOUQlMDglOUYlRTElRUMlMTIlMjUlMTgrJUY4eCU4MyUxQS4lRTRqRyU5NiUxRCUwNyVCOWMlRkElRUUlREElQUUlRTElMEZRUyU3RCVBRiVGOSU4NSUyMSVCNiVEMiVEMWolRURQJUFGJUJEJTI2JTkxJTNFJUUwJUY1VyVGRCVBM1ltJUFBJTkxJTA5JUVCJUQ3JTQwJUUzJUEyJTI5JTgxJTdGJTAwbCU1RWl3JTg2JTNENCVCQg==&key=8fe3022967cf1073a8aefa32f3b70248",
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsTransformToCustomerResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdateSharingGroupsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "ProspectsUpdateSharingStaffsResponse": {
+    "response": "",
+    "error": "",
+    "status": "success"
+  },
+  "StatGetSalesStatsResponse": {
+    "response": {
+      "nextLoad": "",
+      "stats": [
+        {
+          "id": "ca",
+          "modalsearch": "",
+          "unit": "Exc Tax",
+          "color": "#7AE7BF",
+          "tip": "total factures - total avoirs",
+          "label": "Sales",
+          "total": "16.797,590 $",
+          "lbl": "13 invoices - 1 credit note"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "StockGetForItemResponse": {
+    "response": [
+      {
+        "id": "109",
+        "corpid": "138",
+        "itemid": "252781",
+        "whid": "45",
+        "qt": "189.000000000",
+        "formatted_qt": "189,00"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "StockGetWarehousesResponse": {
+    "response": [
+      {
+        "id": "57",
+        "corpid": "138",
+        "status": "ok",
+        "label": "EST",
+        "addrid": "68364",
+        "isdefault": "N",
+        "address": {
+          "id": "68364",
+          "corpid": "138",
+          "linkedtype": "warehouse",
+          "linkedid": "57",
+          "status": "ok",
+          "rank": "0",
+          "name": "Entrep\u00f4t EST",
+          "part1": "1 Rue Fleming",
+          "part2": "EST COAST",
+          "zip": "17000",
+          "town": "La Rochelle",
+          "state": "",
+          "townid": "3834604",
+          "countrycode": "FR",
+          "originalid": "0",
+          "lat": null,
+          "lng": null,
+          "partsToDisplay": [
+            {
+              "txt": "1 Rue Fleming"
+            }
+          ]
+        },
+        "formatted_address": "1 Rue Fleming EST COAST 17000 La Rochelle FRANCE"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "StockGetMovesResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "2"
+      },
+      "result": [
+        {
+          "id": "6319",
+          "corpid": "1466",
+          "status": "ok",
+          "itemid": "279109",
+          "declid": "0",
+          "created": "2014-08-01 00:00:00",
+          "displayDate": "2014-08-01 00:00:00",
+          "qt": "60.000000000",
+          "valo": "6.800000000",
+          "whid_to": "154",
+          "linkedtype": "manual",
+          "linkedid": "145",
+          "rowid": "0",
+          "notes": "test 2",
+          "serialid": "0",
+          "item_name": "Tasse café",
+          "idc_name": null,
+          "idc_id": null,
+          "sw_label": "Entrep\u00f4t 8",
+          "sis_enabled": "Y",
+          "sis_valo": "CMUP",
+          "linkedIdent": null,
+          "morestock": "Y",
+          "formatted_date": "01\/08\/2014",
+          "formatted_qt": "60,00",
+          "formatted_type": "Manuel",
+          "formatted_item_url": "?_f=catalogueitem&id=279109&type=item&declid=0",
+          "formatted_valo": "6,80"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "StockCreateWarehouseResponse": {
+    "response": {
+      "warehouseid": 176
+    },
+    "error": "",
+    "status": "success"
+  },
+  "StockUpdateWarehouseResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "StockDeleteWarehouseResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "StockSetDefaultWarehouseResponse": {
+    "response": {
+      "idDefaultWarehouse": "145"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "StockGetWarehouseResponse": {
+    "response": [
+      {
+        "id": "58",
+        "corpid": "138",
+        "status": "ok",
+        "label": "OUEST",
+        "addrid": "68365",
+        "isdefault": "N",
+        "address": {
+          "id": "68365",
+          "corpid": "138",
+          "linkedtype": "warehouse",
+          "linkedid": "58",
+          "status": "ok",
+          "rank": "0",
+          "name": "Entrep\u00f4t OUEST",
+          "part1": "1 Rue Fleming",
+          "part2": "WEST COAST",
+          "zip": "17000",
+          "town": "La Rochelle",
+          "state": "",
+          "townid": "3834604",
+          "countrycode": "FR",
+          "originalid": "0",
+          "lat": null,
+          "lng": null,
+          "partsToDisplay": [
+            {
+              "txt": "1 Rue Fleming"
+            }
+          ]
+        },
+        "formatted_address": "1 Rue Fleming WEST COAST 17000 La Rochelle FRANCE"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  },
+  "StockActivateResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "StockDesactivateResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "StockReactivateResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "StockAddResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "SupportGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 25,
+        "nbpages": 1,
+        "pagenum": "1",
+        "nbtotal": "3"
+      },
+      "result": [
+        {
+          "id": "324",
+          "corpid": "1114",
+          "ownerid": null,
+          "groupid": null,
+          "staffid": "1910",
+          "thirdid": "86452",
+          "thirdcontactid": "57366",
+          "source": "phone",
+          "ident": "3",
+          "step": "pending",
+          "subject": "Question pour L'API",
+          "requesterEmail": "mpapin@activane.com",
+          "createdDate": "1393511036",
+          "updatedDate": "1393511036",
+          "status": "ok",
+          "message": "Bonjour,J'utilise votre API pour du d\u00e9veloppement interne et j'aimerais savoir si vous comptiez ajouter la gestion du support ?Je voudrais cr\u00e9er une section support dans ma solution. Tout \u00e7a en continuant \u00e0 utiliser sellsy.Merci de votre r\u00e9ponse.Cordialement.",
+          "nbResponses": 1,
+          "lastUpdate": "27\/02\/2014 15:25",
+          "snippet": "Bonjour,\r\n\r\nJ'utilise votre API pour du d\u00e9veloppement inter...",
+          "assignedTo": "Mathieu Senand",
+          "requester": "Activane",
+          "stepDetails": {
+            "name": "pending",
+            "label": "En attente"
+          }
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "StockGetPrefsResponse": {
+    "response": {
+      "id": "194",
+      "corpid": "1869",
+      "negativstock": "N",
+      "minstock": "0.000000000",
+      "addSerialToDesc": "N",
+      "destockOn": "invoice",
+      "restockOn": "purInvoice",
+      "bookStockOnOrder": "N",
+      "bookStockOnEstimate": "N",
+      "restockOnCreditNote": "N"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "StockUpdateThresHoldResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "SupportGetOneResponse": {
+    "response": {
+      "ticket": {
+        "id": "324",
+        "corpid": "1114",
+        "ownerid": null,
+        "groupid": null,
+        "staffid": "1910",
+        "thirdid": "86452",
+        "thirdcontactid": "57366",
+        "source": "phone",
+        "ident": "3",
+        "step": "pending",
+        "subject": "Question pour L'API",
+        "requesterEmail": "mpapin@activane.com",
+        "createdDate": "1393511036",
+        "updatedDate": "1393511036",
+        "status": "ok",
+        "staffName": "Mathieu Senand",
+        "staffMail": "epotin@sellsy.com",
+        "smartTags": [
+
+        ]
+      },
+      "timeline": [
+        {
+          "id": "983",
+          "ticketid": "324",
+          "linkedid": "1910",
+          "linkedtype": "staff",
+          "assignedTo": "1910",
+          "bcc": "a:0:{}",
+          "cc": "a:0:{}",
+          "email": null,
+          "type": "note",
+          "subject": null,
+          "message": "Il faut lui indiquer que le support passe dans l'api d'ici une \u00e0 deux semaines .",
+          "attachments": [
+
+          ],
+          "draft": "N",
+          "createdDate": "1393511117",
+          "updatedDate": "1393511117",
+          "status": "ok",
+          "senderLabel": "M. Mathieu Senand",
+          "assignedToLabel": "M. Mathieu Senand",
+          "formattedDate": "Aujourd'hui 15:25",
+          "eventType": "conversation"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "SupportGetConversationResponse": {
+    "response": {
+      "id": "984",
+      "ticketid": "324",
+      "linkedid": "1910",
+      "linkedtype": "staff",
+      "assignedTo": "1910",
+      "bcc": [
+
+      ],
+      "cc": [
+
+      ],
+      "email": null,
+      "type": "email",
+      "subject": null,
+      "message": "Mail \u00e0 envoyer avant la semaine du 02.Bonjour,Notre \u00e9quipe API s'en occupe en ce moment m\u00eame.CordialementMathieu Senand",
+      "attachments": "",
+      "draft": "Y",
+      "createdDate": "1393512123",
+      "updatedDate": "1393512123",
+      "status": "ok"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "SupportDeleteConversationResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "SupportCreateResponse": {
+    "response": {
+      "ticketid": 325,
+      "conversationid": 985
+    },
+    "error": "",
+    "status": "success"
+  },
+  "SupportReplyResponse": {
+    "response": 986,
+    "error": "",
+    "status": "success"
+  },
+  "SupportUpdateReplyResponse": {
+    "response": "987",
+    "error": "",
+    "status": "success"
+  },
+  "SupportUpdateAssignationResponse": {
+    "response": "1912",
+    "error": "",
+    "status": "success"
+  },
+  "SupportUpdateStepResponse": {
+    "response": "spam",
+    "error": "",
+    "status": "success"
+  },
+  "SupportUpdateThirdResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "SupportGetTemplatesResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "SmartTagsGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "5"
+      },
+      "result": [
+        {
+          "id": "1682",
+          "corpid": "1114",
+          "category": "Ticket",
+          "created": "27\/02\/2014",
+          "word": "affaires",
+          "nbLinks": "1"
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "SmartTagsAssignResponse": {
+    "response": {
+      "tags": "chronophage"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "SmartTagsUnassignResponse": {
+    "response": {
+      "tags": "chronophage"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "TimetrackingGetListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 10,
+        "nbpages": 2,
+        "pagenum": "1",
+        "nbtotal": "14"
+      },
+      "result": [
+        {
+          "id": "56418",
+          "corpid": "1869",
+          "ownerid": "2854",
+          "thirdid": "127243",
+          "serviceid": "300689",
+          "date": "2016-08-29",
+          "week": "35",
+          "nbSecondes": "11400",
+          "note": "",
+          "startTime": "2016-06-28 12:05:19",
+          "stopTime": "0000-00-00 00:00:00",
+          "cost": "0.000000000",
+          "status": "ok",
+          "billed": "N",
+          "isBillable": "Y",
+          "alertSent": "N",
+          "third_name": "ASSEDIC",
+          "staff_name": "Râ Maxime",
+          "staff_pic": "",
+          "staff_email": "m@ra.com",
+          "service_name": "Montage de pneus",
+          "service_unitAmountIsTaxesFree": "Y",
+          "service_unitAmount": "10.000000000",
+          "service_purchaseAmount": "10.000000000",
+          "service_taxrate": "19.600000000",
+          "service_taxid": "97574",
+          "service_notes": "",
+          "service_unitid": "97578",
+          "linkedid": null,
+          "linkedtype": null,
+          "docident": null,
+          "docsubject": null,
+          "ttleLinkedType": null,
+          "ttleLinkedId": null,
+          "ticketSubject": null,
+          "oppIdent": null,
+          "projectEntryIdent": null,
+          "formatted_isBillabe": "Oui",
+          "formatted_billed": "Non",
+          "staffPic": "\/ressources\/logged\/img\/common\/people.jpg",
+          "third": "test",
+          "service": "Montage de pneus",
+          "serviceNotes": "",
+          "serviceTaxid": "97574",
+          "serviceUnitid": "97578",
+          "serviceTaxrate": "19.600000000",
+          "serviceUrl": "\u003Ca href=\u0022?_f=catalogueitem\u0026id=300689\u0026type=service\u0022\u003EMontage de pneus\u003C\/a\u003E",
+          "staff": "Râ Maxime",
+          "serviceUnitAmount": "10.000000000",
+          "serviceUnitAmountTaxesInc": "11.96",
+          "servicePurchaseAmount": "10.000000000",
+          "tags": [
+
+          ],
+          "formatted_date": "29\/08\/2016",
+          "canUpdate": "Y",
+          "canDelete": "Y",
+          "linkedDocs": "",
+          "time": "3 h 10 mn 0 s.",
+          "formatted_time": "03:10:00",
+          "nbMin": 190
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "TimetrackingGetOrderedListResponse": {
+    "response": {
+      "infos": {
+        "nbperpage": 500,
+        "nbpages": 1,
+        "pagenum": 1,
+        "nbtotal": "6"
+      },
+      "result": [
+        {
+          "thirdid": "9191",
+          "thirdName": "Test 2",
+          "linkedtype": null,
+          "linkedid": null,
+          "docident": null,
+          "service": "243186",
+          "serviceName": "Nettoyage piscine",
+          "deletable": "Y",
+          "days": [
+            {
+              "id": "197",
+              "time": "01:00",
+              "billed": "N"
+            }
+          ]
+        }
+      ]
+    },
+    "error": "",
+    "status": "success"
+  },
+  "TimetrackingGetOneResponse": {
+    "response": {
+      "id": "56418",
+      "corpid": "1869",
+      "ownerid": "2854",
+      "thirdid": "127243",
+      "serviceid": "300689",
+      "date": "29\/08\/2016",
+      "week": "35",
+      "nbSecondes": "11400",
+      "note": "",
+      "startTime": "2016-06-28 12:05:19",
+      "stopTime": "0000-00-00 00:00:00",
+      "cost": "0.000000000",
+      "status": "ok",
+      "billed": "N",
+      "isBillable": "Y",
+      "alertSent": "N",
+      "service": "Montage de pneus",
+      "third": "Garage peugeot",
+      "linkedid": "",
+      "linkedtype": "",
+      "linked": "",
+      "formatted_time": "03:10:00",
+      "nbMin": "03:10"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "TimetrackingCreateResponse": {
+    "response": "ttid",
+    "error": "",
+    "status": "success"
+  },
+  "TimetrackingUpdateResponse": {
+    "response": "ttid",
+    "error": "",
+    "status": "success"
+  },
+  "TimetrackingDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "BriefcasesGetListResponse": {
+    "result": {
+      "files": [
+        {
+          "corpid": "1931",
+          "ownerid": "2952",
+          "ownertype": "staff",
+          "id": "56358",
+          "name": "AmiiboMario-SSB",
+          "size": "119561",
+          "created": "2016-07-05 16:17:03",
+          "lastSyncDropbox": null,
+          "extension": "png",
+          "directorie": "871062",
+          "attachtoestimate": "N",
+          "attachtoinvoice": "N",
+          "attachtodelivery": "N",
+          "attachtoorder": "N",
+          "attachtocreditnote": "N",
+          "attachtoproforma": "N",
+          "attachtopurOrder": "N",
+          "attachtopurDelivery": "N",
+          "attachtopurInvoice": "N",
+          "attachtopurCreditNote": "N",
+          "file_fullname": "AmiiboMario-SSB.png",
+          "public_url": "?_f=file&id=JUQ4RiVEQm0lMTIyJUNGJUVFJTlEJUNGJThBJUJEJUMwJUVCJThBJUI5JTA5JUQ1JUQzJUUzJUVGJTJBJTE0UyVFNTEyZ3MyJUIzJTlCJThDJURCJTFGaiVFRSVGMjVhJTQwJUUyJTJCZyVFQyUwRSU4RnQyJTk4MiUzRSU5NyUxQSVFRiVGQyUyOSVCQyVGRCUwMF8lRDFxbiVFRCVEMyU5RCUxMCUzRHElN0UlRjdkJTg3JUZEJUQ1JTAzJUExJUI1TCVBOSUwMkglMkYlMDglQjZ3JTE2JTFCJTIzJTdDJTAwJTVDJUI0bCVDQQ==&key=a5f751dd291cde51001d6ac95ff280ae"
+        }
+      ],
+      "folders": [
+        {
+          "id": "871062",
+          "corpid": "1931",
+          "ownertype": "staff",
+          "ownerid": "2952",
+          "parentid": "869575",
+          "system": "Y",
+          "name": "test",
+          "description": "",
+          "created": "2016-07-05 16:15:49"
+        }
+      ]
+    }
+  },
+  "BriefcasesUploadFileResponse": {
+    "response": {
+      "file_id": 90331,
+      "file_fullname": "APP STORE IPAD - Listing Contact ENG.png",
+      "extension": "png"
+    },
+    "error": "",
+    "status": "success"
+  },
+  "BriefcasesDeleteResponse": {
+    "response": null,
+    "error": "",
+    "status": "success"
+  },
+  "BriefcasesGetRootFoldersResponse": {
+    "response": [
+      {
+        "name": "Mes documents",
+        "id": "879523",
+        "editableDir": "Y"
+      }
+    ],
+    "error": "",
+    "status": "success"
+  }
+}

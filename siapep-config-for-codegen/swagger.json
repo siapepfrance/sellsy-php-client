@@ -1,0 +1,33 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a Swagger generated doc for Sellsy REST API.",
+    "version": "1.0.0",
+    "title": "Sellsy REST",
+    "termsOfService": "",
+    "contact": {
+      "email": "info@sellsy.com"
+    }
+  },
+  "host": "smsapi.free-mobile.fr",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "sms",
+      "description": "Methods for managing sms",
+      "externalDocs": {
+        "description": "",
+        "url": "http://swagger.io"
+      }
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "paths": {},
+  "definitions": {},
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

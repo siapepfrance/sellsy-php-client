@@ -1,0 +1,2974 @@
+"definitions": {
+  "AccountdatasGetTaxesRequest": {
+      "type": "object",
+      "properties": {
+        "includeEcoTax": {
+          "type": "integer"
+        },
+        "enabled": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        }
+      }
+  },
+  "AccountdatasCreateTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "taxe": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasUpdateTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "id" : {
+          "type" : "string"
+        },
+        "taxe": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasDeleteTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "id" : {
+          "type" : "string"
+        }
+      }
+  },
+  "AccountdatasGetUnitRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountdatasCreateUnitRequest": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasCreateUnitsRequest": {
+      "type": "object",
+      "properties": {
+        "unities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreatePayMediumsRequest": {
+      "type": "object",
+      "properties": {
+        "paymediums": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreateTaxesRequest": {
+      "type": "object",
+      "properties": {
+        "taxes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateTaxesRequest": {
+      "type": "object",
+      "properties": {
+        "taxes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateShippingsRequest": {
+      "type": "object",
+      "properties": {
+        "shippings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreateShippingsRequest": {
+      "type": "object",
+      "properties": {
+        "shippings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdatePackagingsRequest": {
+      "type": "object",
+      "properties": {
+        "packagings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreatePackagingsRequest": {
+      "type": "object",
+      "properties": {
+        "packagings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateUnitRequest": {
+      "type": "object",
+      "properties": {
+        "id" : {
+          "type" : "string"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasUpdatePayMediumsRequest": {
+      "type": "object",
+      "properties": {
+        "paymediums": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateUnitsRequest": {
+      "type": "object",
+      "properties": {
+        "unities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasDeleteUnitRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetPackagingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasRecordPackagingRequest": {
+      "type": "object",
+      "properties": {
+        "packaging": {
+          "type": "object",
+          "properties": {
+            "id" : {
+              "type" : "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "unitAmount": {
+              "type": "string"
+            },
+            "qt": {
+              "type": "string"
+            },
+            "unitAmountIsTaxesFree": {
+              "type": "string"
+            },
+            "taxid": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasDeletePackagingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetShippingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasRecordShippingRequest": {
+      "type": "object",
+      "properties": {
+        "shippings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "asNew": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasDeleteShippingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetPayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasCreatePayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "paymedium": {
+            "type": "object",
+            "properties": {
+                "isEnabled": {
+                  "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdatePayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "paymedium": {
+            "type": "object",
+            "properties": {
+                "isEnabled": {
+                  "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            }
+        }
+      }
+  },
+  "AccountdatasDeletePayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetRateCategoryRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountPrefsUpdateCorpInfosRequest": {
+      "type": "object",
+      "properties": {
+        "corp": {
+          "type": "object",
+          "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "tel": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "string"
+              },
+              "web": {
+                "type": "string"
+              },
+              "siret": {
+                "type": "string"
+              },
+              "vat": {
+                "type": "string"
+              },
+              "rcs": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "capital": {
+                "type": "string"
+              }
+          }
+        }
+      }
+},
+  "AccountPrefsGetAddressRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountPrefsCreateAddressRequest": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "object",
+          "properties": {
+              "name": {
+                "type": "string"
+              },
+              "part1": {
+                "type": "string"
+              },
+              "part2": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "string"
+              },
+              "town": {
+                "type": "string"
+              },
+              "countrycode": {
+                "type": "string"
+              }
+          }
+        }
+      }
+},
+  "AccountPrefsUpdateAddressRequest": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "object",
+          "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "part1": {
+                "type": "string"
+              },
+              "part2": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "string"
+              },
+              "town": {
+                "type": "string"
+              },
+              "countrycode": {
+                "type": "string"
+              }
+          }
+        }
+      }
+  },
+  "AccountPrefsDeleteAddressRequest": {
+      "type": "object",
+      "properties": {
+        "addressid": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountPrefsUpdateStaffInfosRequest": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "object",
+          "properties": {
+              "civil": {
+                "type": "string"
+              },
+              "forename": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "tel": {
+                "type": "string"
+              },
+              "mobile": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "string"
+              },
+              "position": {
+                "type": "string"
+              },
+              "uilang": {
+                "type": "string"
+              }
+          }
+        }
+      }
+},
+  "AccountPrefsSetNumberFormatRequest": {
+      "type": "object",
+      "properties": {
+            "currencyid": {
+              "type": "string"
+            },
+            "currencyposition": {
+              "type": "string"
+            },
+            "numberdecimals": {
+              "type": "string"
+            },
+            "numberthousands": {
+              "type": "string"
+            },
+            "numberprecision": {
+              "type": "string"
+            }
+      }
+  },
+  "AccountPrefsUpdateDefaultPayMediumsRequest": {
+      "type": "object",
+      "properties": {
+        "paymediumsToCheck": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountPrefsUpdateLogoRequest": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "type": "object",
+          "properties": {
+            "base64": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountPrefsSetCurrencyRequest": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountPrefsSetLanguageRequest": {
+      "type": "object",
+      "properties": {
+        "lang": {
+          "type": "object",
+          "properties": {
+            "uilang": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+    "InfosGetInfosResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "consumerdatas": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string"
+                },
+                "infos": {
+                  "type": "object",
+                  "properties": {
+                    "consumer_i_id": {
+                      "type": "string"
+                    },
+                    "consumer_i_cid": {
+                      "type": "string"
+                    },
+                    "consumer_i_app_name": {
+                      "type": "string"
+                    },
+                    "consumer_i_owner_name": {
+                      "type": "string"
+                    },
+                    "consumer_i_owner_tel": {
+                      "type": "string"
+                    },
+                    "consumer_i_owner_mail": {
+                      "type": "string"
+                    },
+                    "consumer_i_owner_web": {
+                      "type": "string"
+                    },
+                    "consumer_i_css": {
+                      "type": "string"
+                    },
+                    "consumer_i_public_image": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "traffic": {
+                  "type": "object",
+                  "properties": {
+                    "consumer_t_id": {
+                      "type": "string"
+                    },
+                    "consumer_t_cid": {
+                      "type": "string"
+                    },
+                    "consumer_t_nb_requests": {
+                      "type": "string"
+                    },
+                    "consumer_t_nb_max_request": {
+                      "type": "string"
+                    },
+                    "consumer_t_alert": {
+                      "type": "string"
+                    },
+                    "consumer_t_more": {
+                      "type": "string"
+                    },
+                    "consumer_t_start_timestamp": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "userdatas": {
+              "type": "object",
+              "properties": {
+                "accountlevel": {
+                  "type": "string"
+                },
+                "isAdmin": {
+                  "type": "string"
+                },
+                "fullName": {
+                  "type": "string"
+                },
+                "hasvat": {
+                  "type": "string"
+                },
+                "uilang": {
+                  "type": "string"
+                },
+                "setuplang": {
+                  "type": "string"
+                },
+                "corpName": {
+                  "type": "string"
+                },
+                "plugins": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "qt": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "img": {
+                        "type": "string"
+                      },
+                      "longdesc": {
+                        "type": "string"
+                      },
+                      "level": {
+                        "type": "string"
+                      },
+                      "start": {
+                        "type": "string"
+                      },
+                      "end": {
+                        "type": "string"
+                      },
+                      "rank": {
+                        "type": "string"
+                      },
+                      "isDefault": {
+                        "type": "string"
+                      },
+                      "onlyFromRetailer": {
+                        "type": "string"
+                      },
+                      "amountTaxFree": {
+                        "type": "string"
+                      },
+                      "formatted_amountTaxFree": {
+                        "type": "string"
+                      },
+                      "amountTaxInc": {
+                        "type": "string"
+                      },
+                      "currencySymbol": {
+                        "type": "string"
+                      },
+                      "currencyId": {
+                        "type": "string"
+                      },
+                      "penabled": {
+                        "type": "string"
+                      },
+                      "access": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetTaxesResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "list": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "isEnabled": {
+                "type": "string"
+              },
+              "isWriteabled": {
+                "type": "string"
+              },
+              "syscode": {
+                "type": "string"
+              },
+              "rank": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetTaxeResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "corpid": {
+              "type": "string"
+            },
+            "list": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            },
+            "isWriteabled": {
+              "type": "string"
+            },
+            "syscode": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreateTaxeResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "taxeid": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasUpdateTaxeResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasDeleteTaxeResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetUnitsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "list": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "isEnabled": {
+                "type": "string"
+              },
+              "isWriteabled": {
+                "type": "string"
+              },
+              "syscode": {
+                "type": "string"
+              },
+              "rank": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetUnitResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "corpid": {
+              "type": "string"
+            },
+            "list": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            },
+            "isWriteabled": {
+              "type": "string"
+            },
+            "syscode": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreateUnitResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "unitid": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreateUnitsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "unitid": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreatePayMediumsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "unitid": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreateTaxesResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "ids": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasUpdateTaxesResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "ids": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        }
+      }
+    },
+    "AccountdatasUpdateShippingsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "ids": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreateShippingsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "ids": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasUpdatePackagingsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "ids": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreatePackagingsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "ids": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "error": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "AccountdatasUpdateUnitResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasUpdatePayMediumsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasUpdateUnitsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasDeleteUnitResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetPackagingListResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "owwnerid": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "isEnabled": {
+                "type": "string"
+              },
+              "rank": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "notes": {
+                "type": "string"
+              },
+              "unitAmount": {
+                "type": "string"
+              },
+              "unitamountIsTaxesFree": {
+                "type": "string"
+              },
+              "unitid": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "qt": {
+                "type": "string"
+              },
+              "taxid": {
+                "type": "string"
+              },
+              "taxrate": {
+                "type": "string"
+              },
+              "purchaseAmount": {
+                "type": "string"
+              },
+              "stock": {
+                "type": "string"
+              },
+              "createAt": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "typeLabel": {
+                "type": "string"
+              },
+              "nameSample": {
+                "type": "string"
+              },
+              "notesSample": {
+                "type": "string"
+              },
+              "notesHTMLSample": {
+                "type": "string"
+              },
+              "isTaxesFree": {
+                "type": "string"
+              },
+              "unitAmountTaxesFree": {
+                "type": "string"
+              },
+              "formatted_unitAmount": {
+                "type": "string"
+              },
+              "formatted_unitAmount_ht": {
+                "type": "string"
+              },
+              "formatted_unitAmount_ttc": {
+                "type": "string"
+              },
+              "formatted_qt": {
+                "type": "string"
+              },
+              "formatted_taxrate": {
+                "type": "string"
+              },
+              "formatted_full_qt": {
+                "type": "string"
+              },
+              "formatted_full_unitAmount": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetPackagingResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "corpid": {
+              "type": "string"
+            },
+            "owwnerid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "unitAmount": {
+              "type": "string"
+            },
+            "unitamountIsTaxesFree": {
+              "type": "string"
+            },
+            "unitid": {
+              "type": "string"
+            },
+            "unit": {
+              "type": "string"
+            },
+            "qt": {
+              "type": "string"
+            },
+            "taxid": {
+              "type": "string"
+            },
+            "taxrate": {
+              "type": "string"
+            },
+            "purchaseAmount": {
+              "type": "string"
+            },
+            "stock": {
+              "type": "string"
+            },
+            "createAt": {
+              "type": "string"
+            },
+            "updatedAt": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "typeLabel": {
+              "type": "string"
+            },
+            "nameSample": {
+              "type": "string"
+            },
+            "notesSample": {
+              "type": "string"
+            },
+            "notesHTMLSample": {
+              "type": "string"
+            },
+            "isTaxesFree": {
+              "type": "string"
+            },
+            "unitAmountTaxesFree": {
+              "type": "string"
+            },
+            "formatted_unitAmount": {
+              "type": "string"
+            },
+            "formatted_unitAmount_ht": {
+              "type": "string"
+            },
+            "formatted_unitAmount_ttc": {
+              "type": "string"
+            },
+            "formatted_qt": {
+              "type": "string"
+            },
+            "formatted_taxrate": {
+              "type": "string"
+            },
+            "formatted_full_qt": {
+              "type": "string"
+            },
+            "formatted_full_unitAmount": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasRecordPackagingResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasDeletePackagingResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetShippingListResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "owwnerid": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "isEnabled": {
+                "type": "string"
+              },
+              "rank": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "notes": {
+                "type": "string"
+              },
+              "unitAmount": {
+                "type": "string"
+              },
+              "unitamountIsTaxesFree": {
+                "type": "string"
+              },
+              "unitid": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "qt": {
+                "type": "string"
+              },
+              "taxid": {
+                "type": "string"
+              },
+              "taxrate": {
+                "type": "string"
+              },
+              "purchaseAmount": {
+                "type": "string"
+              },
+              "stock": {
+                "type": "string"
+              },
+              "createAt": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "typeLabel": {
+                "type": "string"
+              },
+              "nameSample": {
+                "type": "string"
+              },
+              "notesSample": {
+                "type": "string"
+              },
+              "notesHTMLSample": {
+                "type": "string"
+              },
+              "isTaxesFree": {
+                "type": "string"
+              },
+              "unitAmountTaxesFree": {
+                "type": "string"
+              },
+              "formatted_unitAmount": {
+                "type": "string"
+              },
+              "formatted_unitAmount_ht": {
+                "type": "string"
+              },
+              "formatted_unitAmount_ttc": {
+                "type": "string"
+              },
+              "formatted_qt": {
+                "type": "string"
+              },
+              "formatted_taxrate": {
+                "type": "string"
+              },
+              "formatted_full_qt": {
+                "type": "string"
+              },
+              "formatted_full_unitAmount": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetShippingResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "corpid": {
+              "type": "string"
+            },
+            "owwnerid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "unitAmount": {
+              "type": "string"
+            },
+            "unitamountIsTaxesFree": {
+              "type": "string"
+            },
+            "unitid": {
+              "type": "string"
+            },
+            "unit": {
+              "type": "string"
+            },
+            "qt": {
+              "type": "string"
+            },
+            "taxid": {
+              "type": "string"
+            },
+            "taxrate": {
+              "type": "string"
+            },
+            "purchaseAmount": {
+              "type": "string"
+            },
+            "stock": {
+              "type": "string"
+            },
+            "createAt": {
+              "type": "string"
+            },
+            "updatedAt": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "typeLabel": {
+              "type": "string"
+            },
+            "nameSample": {
+              "type": "string"
+            },
+            "notesSample": {
+              "type": "string"
+            },
+            "notesHTMLSample": {
+              "type": "string"
+            },
+            "isTaxesFree": {
+              "type": "string"
+            },
+            "unitAmountTaxesFree": {
+              "type": "string"
+            },
+            "formatted_unitAmount": {
+              "type": "string"
+            },
+            "formatted_unitAmount_ht": {
+              "type": "string"
+            },
+            "formatted_unitAmount_ttc": {
+              "type": "string"
+            },
+            "formatted_qt": {
+              "type": "string"
+            },
+            "formatted_taxrate": {
+              "type": "string"
+            },
+            "formatted_full_qt": {
+              "type": "string"
+            },
+            "formatted_full_unitAmount": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasRecordShippingResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasDeleteShippingResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetPayMediumsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "list": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "isEnabled": {
+                "type": "string"
+              },
+              "isWriteabled": {
+                "type": "string"
+              },
+              "syscode": {
+                "type": "string"
+              },
+              "rank": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetPayMediumResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "corpid": {
+              "type": "string"
+            },
+            "list": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            },
+            "isWriteabled": {
+              "type": "string"
+            },
+            "syscode": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasCreatePayMediumResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "mediumid": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasUpdatePayMediumResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "mediumid": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasDeletePayMediumResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetRateCategoriesResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hasTaxesInc": {
+                "type": "string"
+              },
+              "isDefault": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetRateCategoryResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "corpid": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "hasTaxesInc": {
+              "type": "string"
+            },
+            "isDefault": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetDocLayoutsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "layouts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "corpid": {
+                    "type": "string"
+                  },
+                  "ownerid": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string"
+                  },
+                  "isdefault": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "headerMode": {
+                    "type": "string"
+                  },
+                  "footerMode": {
+                    "type": "string"
+                  },
+                  "logoMode": {
+                    "type": "string"
+                  },
+                  "useBg": {
+                    "type": "string"
+                  },
+                  "bgMode": {
+                    "type": "string"
+                  },
+                  "bgFile": {
+                    "type": "string"
+                  },
+                  "bgCustomFile": {
+                    "type": "string"
+                  },
+                  "hideTopPart": {
+                    "type": "string"
+                  },
+                  "hideBottomSeparator": {
+                    "type": "string"
+                  },
+                  "hideFill": {
+                    "type": "string"
+                  },
+                  "colorFill": {
+                    "type": "string"
+                  },
+                  "hideDepositRecap": {
+                    "type": "string"
+                  },
+                  "colorText": {
+                    "type": "string"
+                  },
+                  "colorHeaderRow": {
+                    "type": "string"
+                  },
+                  "colorNotes": {
+                    "type": "string"
+                  },
+                  "colorDiscreet": {
+                    "type": "string"
+                  },
+                  "colorHeaderFooter": {
+                    "type": "string"
+                  },
+                  "font": {
+                    "type": "string"
+                  },
+                  "fontsize": {
+                    "type": "string"
+                  },
+                  "language": {
+                    "type": "string"
+                  },
+                  "timeformat": {
+                    "type": "string"
+                  },
+                  "txts": {
+                    "type": "string"
+                  },
+                  "customName": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "default": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetPayDatesResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "payDates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "corpid": {
+                    "type": "string"
+                  },
+                  "list": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "isWriteabled": {
+                    "type": "string"
+                  },
+                  "syscode": {
+                    "type": "string"
+                  },
+                  "rank": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  },
+                  "more": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "default": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountdatasGetTranslationLanguagesResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "lang": {
+                "type": "string"
+              },
+              "flag": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsGetCorpInfosResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "linkedtype": {
+              "type": "string"
+            },
+            "linkedid": {
+              "type": "string"
+            },
+            "prefsid": {
+              "type": "string"
+            },
+            "accountingPrefsId": {
+              "type": "string"
+            },
+            "logo": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "web": {
+              "type": "string"
+            },
+            "tel": {
+              "type": "string"
+            },
+            "mobile": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "siret": {
+              "type": "string"
+            },
+            "vat": {
+              "type": "string"
+            },
+            "apenaf": {
+              "type": "string"
+            },
+            "rcs": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "capital": {
+              "type": "string"
+            },
+            "mainaddressid": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsUpdateCorpInfosResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsGetAddressListResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "corpid": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "rank": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "part1": {
+                "type": "string"
+              },
+              "part2": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "string"
+              },
+              "town": {
+                "type": "string"
+              },
+              "townid": {
+                "type": "string"
+              },
+              "countrycode": {
+                "type": "string"
+              },
+              "originalid": {
+                "type": "string"
+              },
+              "isMain": {
+                "type": "string"
+              },
+              "toHTML": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsGetAddressResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "corpid": {
+              "type": "string"
+            },
+            "linkedtype": {
+              "type": "string"
+            },
+            "linkedid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "part1": {
+              "type": "string"
+            },
+            "part2": {
+              "type": "string"
+            },
+            "zip": {
+              "type": "string"
+            },
+            "town": {
+              "type": "string"
+            },
+            "townid": {
+              "type": "string"
+            },
+            "countrycode": {
+              "type": "string"
+            },
+            "originalid": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "partsToDisplay": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "txt": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsCreateAddressResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "addressid": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsUpdateAddressResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "addressid": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsDeleteAddressResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsGetStaffInfosResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "corpid": {
+              "type": "string"
+            },
+            "ownerid": {
+              "type": "string"
+            },
+            "linkedtype": {
+              "type": "string"
+            },
+            "linkedid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "civil": {
+              "type": "string"
+            },
+            "forename": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "web": {
+              "type": "string"
+            },
+            "tel": {
+              "type": "string"
+            },
+            "mobile": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "position": {
+              "type": "string"
+            },
+            "pic": {
+              "type": "string"
+            },
+            "sign": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "fullName": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsUpdateStaffInfosResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "corpid": {
+              "type": "string"
+            },
+            "ownerid": {
+              "type": "string"
+            },
+            "linkedtype": {
+              "type": "string"
+            },
+            "linkedid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "civil": {
+              "type": "string"
+            },
+            "forename": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "web": {
+              "type": "string"
+            },
+            "tel": {
+              "type": "string"
+            },
+            "mobile": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "position": {
+              "type": "string"
+            },
+            "pic": {
+              "type": "string"
+            },
+            "sign": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "fullName": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsSetNumberFormatResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsUpdateDefaultPayMediumsResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsGetLogoPublicLinkResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsUpdateLogoResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsDeleteLogoResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsGetCurrenciesResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "symbol": {
+                "type": "string"
+              },
+              "rank": {
+                "type": "string"
+              },
+              "mercacode": {
+                "type": "string"
+              },
+              "enabled": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsGetCurrencyResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "symbol": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "mercacode": {
+              "type": "string"
+            },
+            "enabled": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsSetCurrencyResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "object",
+          "properties": {
+            "currency_id": {
+              "type": "string"
+            }
+          }
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "AccountPrefsSetLanguageResponse": {
+      "type": "object",
+      "properties": {
+        "response": {
+          "type": "string",
+          "format": "nullable"
+        },
+        "error": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    }
+}

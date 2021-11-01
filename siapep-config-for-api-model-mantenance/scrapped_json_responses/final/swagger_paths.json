@@ -1,0 +1,2764 @@
+
+  "paths": {
+    "/Infos.getInfos": {
+      "post": {
+        "tags": [
+          "Info"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully"
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getTaxes": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetTaxesRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetTaxesResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getTaxe": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetTaxeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetTaxeResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.createTaxe": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateTaxeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateTaxeResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updateTaxe": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateTaxeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateTaxeResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.deleteTaxeTaxe": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeleteTaxeRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeleteTaxeResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getUnits": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetUnitsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getUnit": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetUnitRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetUnitResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.createUnit": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateUnitRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateUnitResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.createUnits": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateUnitsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateUnitsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.CreatePayMediums": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreatePayMediumsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreatePayMediumsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.CreateTaxes": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateTaxesRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateTaxesResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updateTaxes": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateTaxesRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateTaxesResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updateShippings": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateShippingsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateShippingsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.createShippings": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateShippingsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreateShippingsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updatePackagings": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdatePackagingsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdatePackagingsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.createPackagings": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreatePackagingsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreatePackagingsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updateUnit": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateUnitRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateUnitResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updatePayMediums": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdatePayMediumsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdatePayMediumsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updateUnits": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateUnitsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdateUnitsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.deleteUnit": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeleteUnitRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeleteUnitResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getPackagingList": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetPackagingListResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getPackaging": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetPackagingRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetPackagingResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.recordPackaging": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasRecordPackagingRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasRecordPackagingResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.deletePackaging": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeletePackagingRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeletePackagingResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getShipping": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetShippingRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetShippingResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.recordShipping": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasRecordShippingRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasRecordShippingResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.deleteShipping": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeleteShippingRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeleteShippingResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getPayMedium": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetPayMediumRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetPayMediumResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.createPayMedium": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreatePayMediumRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasCreatePayMediumResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.updatePayMedium": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdatePayMediumRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasUpdatePayMediumResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.deletePayMedium": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeletePayMediumRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasDeletePayMediumResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getRateCategories": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetRateCategoriesResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getDocLayoutsRequest": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetDocLayoutsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getPayDates": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetPayDatesResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Accountdatas.getTranslationLanguages": {
+      "post": {
+        "tags": [
+          "AccountDatas"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountdatasGetTranslationLanguagesResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.getCorpInfos": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetCorpInfosResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.updateCorpInfos": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateCorpInfosRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateCorpInfosResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.getAddressList": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetAddressRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetAddressResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.getAddress": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetAddressRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetAddressResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.createAddress": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsCreateAddressRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsCreateAddressResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.updateAddress": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateAddressRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateAddressResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.deleteAddress": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsDeleteAddressRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsDeleteAddressResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.getStaffInfos": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetStaffInfosResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.updateStaffInfos": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateStaffInfosRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateStaffInfosResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.setNumberFormat": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsSetNumberFormatRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsSetNumberFormatResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.updateDefaultPayMediums": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateDefaultPayMediumsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateDefaultPayMediumsResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.getLogoPublicLink": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetLogoPublicLinkResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.updateLogo": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateLogoRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsUpdateLogoResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.geleteLogo": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsDeleteLogoResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.getCurrencies": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetCurrenciesResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.getCurrency": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsGetCurrencyResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.setCurrency": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsSetCurrencyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsSetCurrencyResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/AccountPrefs.setLanguage": {
+      "post": {
+        "tags": [
+          "AccountPrefs"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsSetLanguageRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/AccountPrefsSetLanguageResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    },
+    "/Purchase.XYZ": {
+      "post": {
+        "tags": [
+          "Purchase"
+        ],
+        "summary": "",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "params",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Request executed successfully",
+            "schema": {
+              "$ref": "#/definitions/PurchaseXYZResponse"
+            }
+          },
+          "400": {
+            "description": "Error : bad parameters or missing parameters"
+          },
+          "401": {
+            "description": "Error : User is not authenticated"
+          },
+          "403": {
+            "description": "Error : User has not enought rights"
+          },
+          "500": {
+            "description": "Error : account is disabled"
+          }
+        }
+      },
+    }
+  }

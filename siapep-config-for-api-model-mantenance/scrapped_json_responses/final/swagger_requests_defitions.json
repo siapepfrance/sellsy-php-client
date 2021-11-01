@@ -1,0 +1,990 @@
+"definitions": {
+  "AccountdatasGetTaxesRequest": {
+      "type": "object",
+      "properties": {
+        "includeEcoTax": {
+          "type": "integer"
+        },
+        "enabled": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        }
+      }
+  },
+  "AccountdatasCreateTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "taxe": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasUpdateTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "id" : {
+          "type" : "string"
+        },
+        "taxe": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasDeleteTaxeRequest": {
+      "type": "object",
+      "properties": {
+        "id" : {
+          "type" : "string"
+        }
+      }
+  },
+  "AccountdatasGetUnitRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountdatasCreateUnitRequest": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasCreateUnitsRequest": {
+      "type": "object",
+      "properties": {
+        "unities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreatePayMediumsRequest": {
+      "type": "object",
+      "properties": {
+        "paymediums": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreateTaxesRequest": {
+      "type": "object",
+      "properties": {
+        "taxes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateTaxesRequest": {
+      "type": "object",
+      "properties": {
+        "taxes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateShippingsRequest": {
+      "type": "object",
+      "properties": {
+        "shippings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreateShippingsRequest": {
+      "type": "object",
+      "properties": {
+        "shippings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdatePackagingsRequest": {
+      "type": "object",
+      "properties": {
+        "packagings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasCreatePackagingsRequest": {
+      "type": "object",
+      "properties": {
+        "packagings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateUnitRequest": {
+      "type": "object",
+      "properties": {
+        "id" : {
+          "type" : "string"
+        },
+        "unit": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasUpdatePayMediumsRequest": {
+      "type": "object",
+      "properties": {
+        "paymediums": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdateUnitsRequest": {
+      "type": "object",
+      "properties": {
+        "unities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasDeleteUnitRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetPackagingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasRecordPackagingRequest": {
+      "type": "object",
+      "properties": {
+        "packaging": {
+          "type": "object",
+          "properties": {
+            "id" : {
+              "type" : "string"
+            },
+            "isEnabled": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "unitAmount": {
+              "type": "string"
+            },
+            "qt": {
+              "type": "string"
+            },
+            "unitAmountIsTaxesFree": {
+              "type": "string"
+            },
+            "taxid": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountdatasDeletePackagingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetShippingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasRecordShippingRequest": {
+      "type": "object",
+      "properties": {
+        "shippings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                  "asNew": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "isEnabled": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "unitAmount": {
+                    "type": "string"
+                  },
+                  "qt": {
+                    "type": "string"
+                  },
+                  "unitAmountIsTaxesFree": {
+                    "type": "string"
+                  },
+                  "taxid": {
+                    "type": "string"
+                  }
+              }
+            }
+        }
+      }
+  },
+  "AccountdatasDeleteShippingRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetPayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasCreatePayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "paymedium": {
+            "type": "object",
+            "properties": {
+                "isEnabled": {
+                  "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            }
+        }
+      }
+  },
+  "AccountdatasUpdatePayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "paymedium": {
+            "type": "object",
+            "properties": {
+                "isEnabled": {
+                  "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            }
+        }
+      }
+  },
+  "AccountdatasDeletePayMediumRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountdatasGetRateCategoryRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+            "type": "string"
+        }
+      }
+  },
+  "AccountPrefsUpdateCorpInfosRequest": {
+      "type": "object",
+      "properties": {
+        "corp": {
+          "type": "object",
+          "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "tel": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "string"
+              },
+              "web": {
+                "type": "string"
+              },
+              "siret": {
+                "type": "string"
+              },
+              "vat": {
+                "type": "string"
+              },
+              "rcs": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "capital": {
+                "type": "string"
+              }
+          }
+        }
+      }
+},
+  "AccountPrefsGetAddressRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountPrefsCreateAddressRequest": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "object",
+          "properties": {
+              "name": {
+                "type": "string"
+              },
+              "part1": {
+                "type": "string"
+              },
+              "part2": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "string"
+              },
+              "town": {
+                "type": "string"
+              },
+              "countrycode": {
+                "type": "string"
+              }
+          }
+        }
+      }
+},
+  "AccountPrefsUpdateAddressRequest": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "object",
+          "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "part1": {
+                "type": "string"
+              },
+              "part2": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "string"
+              },
+              "town": {
+                "type": "string"
+              },
+              "countrycode": {
+                "type": "string"
+              }
+          }
+        }
+      }
+  },
+  "AccountPrefsDeleteAddressRequest": {
+      "type": "object",
+      "properties": {
+        "addressid": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountPrefsUpdateStaffInfosRequest": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "object",
+          "properties": {
+              "civil": {
+                "type": "string"
+              },
+              "forename": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "tel": {
+                "type": "string"
+              },
+              "mobile": {
+                "type": "string"
+              },
+              "fax": {
+                "type": "string"
+              },
+              "position": {
+                "type": "string"
+              },
+              "uilang": {
+                "type": "string"
+              }
+          }
+        }
+      }
+},
+  "AccountPrefsSetNumberFormatRequest": {
+      "type": "object",
+      "properties": {
+            "currencyid": {
+              "type": "string"
+            },
+            "currencyposition": {
+              "type": "string"
+            },
+            "numberdecimals": {
+              "type": "string"
+            },
+            "numberthousands": {
+              "type": "string"
+            },
+            "numberprecision": {
+              "type": "string"
+            }
+      }
+  },
+  "AccountPrefsUpdateDefaultPayMediumsRequest": {
+      "type": "object",
+      "properties": {
+        "paymediumsToCheck": {
+          "type": "string"
+        }
+      }
+  },
+  "AccountPrefsUpdateLogoRequest": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "type": "object",
+          "properties": {
+            "base64": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountPrefsSetCurrencyRequest": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "AccountPrefsSetLanguageRequest": {
+      "type": "object",
+      "properties": {
+        "lang": {
+          "type": "object",
+          "properties": {
+            "uilang": {
+              "type": "string"
+            }
+          }
+        }
+      }
+  },
+  "PurchaseGetListRequest": {},
+  "PurchaseGetOneRequest": {},
+  "PurchaseCreateRequest": {},
+  "PurchaseUpdateRequest": {},
+  "PurchaseDeleteRequest": {},
+  "PurchaseUpdateStepRequest": {},
+  "PurchaseUpdateDeliveryStepRequest": {},
+  "PurchaseUploadRelatedFileRequest": {},
+  "PurchaseUpdateOwnerRequest": {},
+  "PurchaseGetPublicLinkRequest": {},
+  "PurchaseGetNextIdentRequest": {},
+  "PurchaseGetPaymentsRequest": {},
+  "PurchaseUpdateSharingGroupsRequest": {},
+  "AddressesGetListRequest": {},
+  "AddressesGetOneRequest": {},
+  "AddressesCreateRequest": {},
+  "AddressesUpdateRequest": {},
+  "AddressesDeleteRequest": {},
+  "AgendaGetListRequest": {},
+  "AgendaGetOneRequest": {},
+  "AgendaCreateRequest": {},
+  "AgendaUpdateRequest": {},
+  "AgendaDeleteRequest": {},
+  "AgendaUpdateOwnerRequest": {},
+  "AgendaUpdateStatusRequest": {},
+  "AgendaGetAvailableRappelsRequest": {},
+  "AgendaGetAvailableLabelsRequest": {},
+  "AgendaGetLabelRequest": {},
+  "AgendaCreateLabelRequest": {},
+  "AgendaUpdateLabelRequest": {},
+  "AgendaDeleteLabelRequest": {},
+  "AnnotationsGetListRequest": {},
+  "AnnotationsGetOneRequest": {},
+  "AnnotationsCreateRequest": {},
+  "AnnotationsUpdateRequest": {},
+  "AnnotationsDeleteRequest": {},
+  "AnnotationsUpdateOwnerRequest": {},
+  "BankAccountCreateRequest": {},
+  "BankAccountUpdateRequest": {},
+  "BankAccountMassCreateRequest": {},
+  "BankAccountMassUpdateRequest": {},
+  "BankAccountDeleteRequest": {},
+  "BankDepositCreateRequest": {},
+  "CatalogueGetOneRequest": {},
+  "CatalogueGetOneByRefRequest": {},
+  "CatalogueCreateRequest": {},
+  "CatalogueUpdateOwnerRequest": {},
+  "CatalogueCreateCategoryRequest": {},
+  "CatalogueUpdateCategoryRequest": {},
+  "CatalogueDeleteCategoryRequest": {},
+  "CatalogueAddPictureToGalleryRequest": {},
+  "CatalogueUpdateTranslationsRequest": {},
+  "CatalogueUpdateSharingGroupsRequest": {},
+  "CustomFieldsGetListRequest": {},
+  "CustomFieldsGetOneRequest": {},
+  "CustomFieldsCreateRequest": {},
+  "CustomFieldsUpdateRequest": {},
+  "CustomFieldsDeleteRequest": {},
+  "CustomFieldsRecordValuesRequest": {},
+  "CustomFieldsGetGroupsListRequest": {},
+  "CustomFieldsCreateGroupRequest": {},
+  "CustomFieldsUpdateGroupRequest": {},
+  "CustomFieldsDeleteGroupRequest": {},
+  "ClientGetListRequest": {},
+  "ClientGetOneRequest": {},
+  "ClientGetAddressRequest": {},
+  "ClientGetContactRequest": {},
+  "ClientGetBillingContactRequest": {},
+  "ClientCreateRequest": {},
+  "ClientUpdateRequest": {},
+  "ClientDeleteRequest": {},
+  "ClientUpdateOwnerRequest": {},
+  "ClientAddContactRequest": {},
+  "ClientUpdateAddressRequest": {},
+  "ClientUpdateContactRequest": {},
+  "ClientDeleteAddressRequest": {},
+  "ClientTransformToProspectRequest": {},
+  "ClientGetBankAccountListRequest": {},
+  "ClientSendContactPwdRequest": {},
+  "ClientDeleteContactRequest": {},
+  "ClientUpdateContactPictureRequest": {},
+  "ClientUpdatePrefsRequest": {},
+  "ClientUpdateThirdPictureRequest": {},
+  "ClientUpdateSharingGroupsRequest": {},
+  "ClientUpdateSharingStaffsRequest": {},
+  "ClientGetMarginRequest": {},
+  "PeoplesUpdateOwnerRequest": {},
+  "PeoplesUnlinkThirdsRequest": {},
+  "PeoplesUpdateSharingGroupsRequest": {},
+  "PeoplesUpdateSharingStaffsRequest": {},
+  "DocumentGetOneRequest": {},
+  "DocumentGetPublicLinkRequest": {},
+  "DocumentGetPublicLink_v2Request": {},
+  "DocumentGetNextIdentRequest": {},
+  "DocumentCreateRequest": {},
+  "DocumentUpdateRequest": {},
+  "DocumentUpdateDeadlinesRequest": {},
+  "DocumentUpdateOwnerRequest": {},
+  "DocumentUpdateFieldsRequest": {},
+  "DocumentGetLinkedDocumentsRequest": {},
+  "DocumentGetTreeRequest": {},
+  "DocumentUpdateStepRequest": {},
+  "DocumentValidateRequest": {},
+  "DocumentUpdateDeliveryStepRequest": {},
+  "DocumentSendDocByMailRequest": {},
+  "DocumentGetPaymentListRequest": {},
+  "DocumentGetForCopyRequest": {},
+  "DocumentGetModelRequest": {},
+  "DocumentGetPaymentRequest": {},
+  "DocumentCreatePaymentRequest": {},
+  "DocumentDeletePaymentRequest": {},
+  "DocumentGetPaymentUrlRequest": {},
+  "DocumentLinkPurchaseRequest": {},
+  "DocumentUpdateSharingGroupsRequest": {},
+  "DocumentEnablePublicLinkRequest": {},
+  "DocumentDisablePublicLinkRequest": {},
+  "ElectronicSignCreateRequest": {},
+  "ElectronicSignDeleteRequest": {},
+  "ElectronicSignGetStatusRequest": {},
+  "ElectronicSignGetForDocRequest": {},
+  "MailsGetListRequest": {},
+  "MailsSendOneRequest": {},
+  "MailsGetCustomTemplatesRequest": {},
+  "MailsDeleteRequest": {},
+  "MailsGetOneRequest": {},
+  "MailsGetAttachmentsRequest": {},
+  "MailsGetCustomTagsRequest": {},
+  "MailsCreateCustomTemplateRequest": {},
+  "MailsUpdateCustomTemplateRequest": {},
+  "MailsDeleteCustomTemplateRequest": {},
+  "MailsGetCustomTemplateRequest": {},
+  "EventGetListRequest": {},
+  "ExpenseGetListRequest": {},
+  "ExpenseGetOneRequest": {},
+  "ExpenseCreateRequest": {},
+  "ExpenseUpdateRequest": {},
+  "ExpenseDeleteRequest": {},
+  "ExpenseGetNextIdentRequest": {},
+  "ExpenseUploadRelatedFileRequest": {},
+  "ListingSettingGetSavedSearchesRequest": {},
+  "MarketingGetMailingListsRequest": {},
+  "MarketingCreateMailingListRequest": {},
+  "MarketingUpdateMailingListRequest": {},
+  "MarketingCreateCampaignRequest": {},
+  "MarketingGetCampaignsRequest": {},
+  "MarketingGetCampaignRequest": {},
+  "MarketingGetPrefsRequest": {},
+  "MarketingSendCampaignRequest": {},
+  "MarketingUpdateOwnerRequest": {},
+  "MarketingUpdateSharingGroupsRequest": {},
+  "OpportunitiesGetListRequest": {},
+  "OpportunitiesGetOneRequest": {},
+  "OpportunitiesCreateRequest": {},
+  "OpportunitiesUpdateRequest": {},
+  "OpportunitiesDeleteRequest": {},
+  "OpportunitiesGetFunnelsRequest": {},
+  "OpportunitiesGetStepsForFunnelRequest": {},
+  "OpportunitiesGetSourcesRequest": {},
+  "OpportunitiesGetSourceRequest": {},
+  "OpportunitiesCreateSourceRequest": {},
+  "OpportunitiesUpdateSourceRequest": {},
+  "OpportunitiesDeleteSourceRequest": {},
+  "OpportunitiesUpdateStatusRequest": {},
+  "OpportunitiesUpdateStepRequest": {},
+  "OpportunitiesUpdateOwnerRequest": {},
+  "OpportunitiesUpdateLinkedDocumentsRequest": {},
+  "OpportunitiesGetCurrentIdentRequest": {},
+  "OpportunitiesUpdateSharingGroupsRequest": {},
+  "OpportunitiesUpdateDefaultDocumentRequest": {},
+  "OpportunitiesUpdateSharingStaffsRequest": {},
+  "PaymentsGetListRequest": {},
+  "PaymentsCreateRequest": {},
+  "PaymentsDeleteRequest": {},
+  "ProspectsGetListRequest": {},
+  "ProspectsGetOneRequest": {},
+  "ProspectsCreateRequest": {},
+  "ProspectsUpdateRequest": {},
+  "ProspectsDeleteRequest": {},
+  "ProspectsUpdateOwnerRequest": {},
+  "ProspectsGetAddressRequest": {},
+  "ProspectsGetContactRequest": {},
+  "ProspectsGetBillingContactRequest": {},
+  "ProspectsAddAddressRequest": {},
+  "ProspectsAddContactRequest": {},
+  "ProspectsUpdateAddressRequest": {},
+  "ProspectsUpdateContactRequest": {},
+  "ProspectsDeleteContactRequest": {},
+  "ProspectsUpdatePrefsRequest": {},
+  "ProspectsDeleteAddressRequest": {},
+  "ProspectsUpdateContactPictureRequest": {},
+  "ProspectsTransformToCustomerRequest": {},
+  "ProspectsUpdateSharingGroupsRequest": {},
+  "ProspectsUpdateSharingStaffsRequest": {},
+  "StatGetSalesStatsRequest": {},
+  "StockGetForItemRequest": {},
+  "StockGetWarehousesRequest": {},
+  "StockGetMovesRequest": {},
+  "StockCreateWarehouseRequest": {},
+  "StockUpdateWarehouseRequest": {},
+  "StockDeleteWarehouseRequest": {},
+  "StockSetDefaultWarehouseRequest": {},
+  "StockGetWarehouseRequest": {},
+  "StockActivateRequest": {},
+  "StockDesactivateRequest": {},
+  "StockReactivateRequest": {},
+  "StockAddRequest": {},
+  "SupportGetListRequest": {},
+  "StockGetPrefsRequest": {},
+  "StockUpdateThresHoldRequest": {},
+  "SupportGetOneRequest": {},
+  "SupportGetConversationRequest": {},
+  "SupportDeleteConversationRequest": {},
+  "SupportCreateRequest": {},
+  "SupportReplyRequest": {},
+  "SupportUpdateReplyRequest": {},
+  "SupportUpdateAssignationRequest": {},
+  "SupportUpdateStepRequest": {},
+  "SupportUpdateThirdRequest": {},
+  "SupportGetTemplatesRequest": {},
+  "SmartTagsGetListRequest": {},
+  "SmartTagsAssignRequest": {},
+  "SmartTagsUnassignRequest": {},
+  "TimetrackingGetListRequest": {},
+  "TimetrackingGetOrderedListRequest": {},
+  "TimetrackingGetOneRequest": {},
+  "TimetrackingCreateRequest": {},
+  "TimetrackingUpdateRequest": {},
+  "TimetrackingDeleteRequest": {},
+  "BriefcasesGetListRequest": {},
+  "BriefcasesUploadFileRequest": {},
+  "BriefcasesDeleteRequest": {},
+  "BriefcasesGetRootFoldersRequest": {}
+}
