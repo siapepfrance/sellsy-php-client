@@ -87,7 +87,7 @@
 					return str_replace('}}\'"', '}}\',"', str_replace("}}''",  "}}','", $string));
 					break;
 				case 'removeWhiteSpaces':
-					return str_replace('	', '', str_replace(' ',  '', $string));
+					return str_replace(' ', '', str_replace('	', '', str_replace(' ',  '', $string)));
 					break;
 				case 'removeLineBreaks':
 					return str_replace("\n",  '', $string);
