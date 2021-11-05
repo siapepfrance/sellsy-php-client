@@ -272,12 +272,17 @@
 							)
 						)
 					);
-				case 'ignoreDocCreate':
-					if (
-						stripos($string, "Document.create'") != false ||
-						stripos($string, "Document.update'") != false
-					) {
-							return '';
+				case 'fixDocumentCreateEndpoint':
+					if (stripos($string, "Document.create'") != false) {
+						  // Remove &nbsp; caracter from the string
+							return str_replace("\xc2\xa0",' ',$string);
+					}
+					return $string;
+					break;
+				case 'fixDocumentUpdateEndpoint':
+					if (stripos($string, "Document.update'") != false) {
+						  // Remove &nbsp; caracter from the string
+							return str_replace("\xc2\xa0",' ',$string);
 					}
 					return $string;
 					break;
@@ -310,6 +315,8 @@
 						$inputFixed = applyFixes($inputFixed, 'addMissingComaBetweenArrays');
 						$inputFixed = applyFixes($inputFixed, 'lowercaseArrays');
 						$inputFixed = applyFixes($inputFixed, 'fixElectronicSignCreateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixDocumentCreateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixDocumentUpdateEndpoint');
 						$inputFixed = applyFixes($inputFixed, 'fixPaymentsGetListEndpoint');
 						$inputFixed = applyFixes($inputFixed, 'fixPaymentsCreateEndpoint');
 						$inputFixed = applyFixes($inputFixed, 'fixPaymentsDeleteEndpoint');
