@@ -42,44 +42,50 @@
 		echo "\t" . HTTP::ConvertRelativeToAbsoluteURL($baseurl, $row->href) . "\n";
 	}
 
+	// Function definitions
 
-	// Find all table rows that have 'th' tags.
-	$rows = $root->Find("section")->Filter("pre");
+	function getOneSectionInformation($section) {
+		 $information = [
+			 'blockTitle' => '',
+			 'methodName' => '',
+			 'requestModel' => '',
+			 'responseModel' => '',
+			 'responseModelName' => '',
+			 'requestModelName' => '',
+			 'pathName' => ''
+		 ];
 
+		 // 1 - extract the title
+	   $sectionTitle = $section->Find("div.page-header");
+	   $blockTitle = '';
+		 foreach ($sectionTitle as $key => $value) {$blockTitle = $value->GetPlainText();}
+		 $blockTitle = applyFixes($blockTitle, 'fixAccountdatasTags');
+		 $information['blockTitle'] = $blockTitle;
 
-  function buildSwaggerResponses($rows, &$models, $outputFileName) {
-	  $responseOutPut = '{';
-		foreach ($rows as $row)
-		{
-	    $sectionTitle = $row->Find("div.page-header");
-	    $title = '';
-	    $ResponseClassName = '';
-	    foreach ($sectionTitle as $key => $value) {$title = $value->GetPlainText();}
-			$title = applyFixes($title, 'fixAccountdatasTags');
-			$endpointNameBasedOnTitleSplitted =  explode(".", trim($title));
-			$BaseClassName =  implode("", array_map(function($word){ return ucfirst($word); }, $endpointNameBasedOnTitleSplitted));
-			$ResponseClassName =  $BaseClassName . 'Response';
-	    echo "\t <b>Route</b>: \n\n" . $title . "<br/><br/>";
-			echo "\t <b>Model de sortie</b>: \n\n" . $ResponseClassName . "<br/><br/>";
+		 // 2 - extract the method name and model
+		 $requestBlock = $section->Find("pre.lang-php");
+		 foreach ($requestBlock as $key => $value) {
+			 	$requestTextToEval = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
+			 	// Fix : This remove the json code which are written in php block
+			 	$requestTextToEval = stripos($requestTextToEval, '$request') != false ? $requestTextToEval : '';
+			 	$transformResult = getRequestPathAndName($requestTextToEval, $requestAsArray);
+				$information['methodName'] = $transformResult['name'];
+				$information['requestModel'] = $transformResult['model'];
+		 }
 
-			// Get the JSON Responses for each request
-	    $output = $row->Find("pre.lang-js");
-	    foreach ($output as $key => $value) {
-	      $formattedOutput = "\n\n\"" . $ResponseClassName . '" : ' .$value->GetPlainText() . "\n\n";
-	      if($responseOutPut == '{') {
-	        $responseOutPut .=  $formattedOutput;
-	      } else {
-	        $responseOutPut .= ",\n\n" . $formattedOutput;
-	      }
-	      //echo "\t <b>Ouput</b>: \n\n" . $formattedOutput . " <br/>";
-	    }
-
-			echo '------------------------------<br/><br/>';
-		}
-		$responseOutPut .=  '}';
-
-		file_put_contents($outputFileName, $responseOutPut);
+		 return $information;
 	}
+
+	function getSectionsInformations($sections) {
+		 $informations = [];
+		 foreach ($sections as $section)
+ 		 {
+				$informations[] = getOneSectionInformation($section);
+		 }
+		 return $informations;
+	}
+
+	// Util functions
 
 	function applyFixes($string, $case, $extraData = []) {
 			switch ($case) {
@@ -320,35 +326,32 @@
 				return $inputFixed;
 	}
 
-  function transformToRequest($inputToEval, $methodTitle, $requestAsArray) {
-		$data = null;
+  function getRequestPathAndName($requestTextToEval, $requestAsArray) {
+		$data = ['name' => '', 'model' => []];
 		$path = '';
 		$inputFixed = '';
 		try {
-			  $inputToEval = trim($inputToEval);
-			  if(stripos($inputToEval, 'method') != false) {
-						$inputFixed = fixEndpoint($inputToEval, $requestAsArray);
-						echo '$inputFixed : ' . $inputFixed . '<br/><br/>';
+			  $requestTextToEval = trim($requestTextToEval);
+			  if(stripos($requestTextToEval, 'method') != false) {
+						$inputFixed = fixEndpoint($requestTextToEval, $requestAsArray);
 						eval($inputFixed);
 						$data = [];
-						$formattedTitle = generatePathTitle($methodTitle, $methodTitle);
-						$requestKey = sprintf('%s%sRequest', $formattedTitle['modelName'], $formattedTitle['endpointNameBasedOnTitlePascalCase']);
-						$data[$requestKey] = [];
+						$data['name'] = $request['method'];
 						if (isset($request['params']) and count($request['params']) > 0) {
 							foreach ($request['params'] as $key => $value) {
 								 if(is_array($value)) {
-								 	 $data[$requestKey][$key] = [
+								 	 $data['model'][$key] = [
 										 'type' => 'object',
 										 'properties' => []
 									 ];
 									 foreach ($value as $attributeKey => $attribute) {
-			                $data[$requestKey][$key]['properties'][$attributeKey] = [
+			                $data['model'][$key]['properties'][$attributeKey] = [
 													'type' => 'string',
 				 								 'required' => false
 											];
 									 }
 								 } else {
-								 	 $data[$requestKey][$key] = [
+								 	 $data['model'][$key] = [
 										 'type' => 'string',
 										 'required' => false
 									 ];
@@ -358,145 +361,32 @@
 			  }
 		} catch(\Exception $e) {}
 
-		if(isset($request['params']) and count($request['params']) == 0) {
-				return null;
-		}
 		return $data;
 	}
 
-  function buildSwaggerRequests($rows, &$models, $outputFileName) {
-	  $responseOutPut = '';
-		$requestAsJson = '';
-		$requestAsArray = [];
-		foreach ($rows as $row)
-		{
-	    $sectionTitle = $row->Find("div.page-header");
-	    $title = '';
-	    $ResponseClassName = '';
-	    foreach ($sectionTitle as $key => $value) {$title = $value->GetPlainText();}
-			$title = applyFixes($title, 'fixAccountdatasTags');
-			$endpointNameBasedOnTitleSplitted =  explode(".", trim($title));
-			$BaseClassName =  implode("", array_map(function($word){ return ucfirst($word); }, $endpointNameBasedOnTitleSplitted));
-			$ResponseClassName =  $BaseClassName . 'Response';
-			$RequestClassName =  $BaseClassName . 'Request';
+  // Execution
 
-			// Get the JSON Responses for each request
-	    $output = $row->Find("pre.lang-php");
-	    foreach ($output as $key => $value) {
-				$formattedOutput = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
-				// Fix : This remove the json code which are written in php block
-				$formattedOutput = stripos($formattedOutput, '$request') != false ? $formattedOutput : '';
-				$transformResult = transformToRequest($formattedOutput, $title, $requestAsArray);
-				if($transformResult != null) {
-					  $requestAsArray = array_merge($requestAsArray, $transformResult);
-						$responseOutPut .= "\n\n\"" . $ResponseClassName . '" :\n\n ' . $formattedOutput;
-				}
-	    }
-		}
-		$requestAsJson .= json_encode($requestAsArray);
 
-		file_put_contents($outputFileName, $requestAsJson);
+
+	// 1 - Get website sections
+	$rows = $root->Find("section")->Filter("pre");
+
+	echo count($rows) . ' sections found<br/><br/>';
+
+	// 2 - Show each row
+
+	$sections = getSectionsInformations($rows);
+
+	foreach ($sections as $key => $value) {
+		echo '<b>' . $value['blockTitle'] . '</b>: <br/>';
+		echo '- blockTitle :' . $value['blockTitle'] . '<br/>';
+		echo '- methodName :' . $value['methodName'] . '<br/>';
+		echo '- requestModel :' . json_encode($value['requestModel']) . '<br/>';
+		echo '- responseModel :' . $value['responseModel'] . '<br/>';
+		echo '- requestModelName :' . $value['requestModelName'] . '<br/>';
+		echo '- responseModelName :' . $value['responseModelName'] . '<br/>';
+		echo '- pathName :' . $value['pathName'] . '<br/><br/>';
 	}
 
-	function generatePathTitle($title, $methodTitle) {
-		$endpointNameBasedOnTitleSplitted =  explode(".", trim($title));
-		$endpointNameBasedOnMethodSplitted =  explode(".", trim($title));
-		return [
-			'modelName' => $endpointNameBasedOnTitleSplitted[0],
-			'endpointNameBasedOnTitleCamelCase' => isset($endpointNameBasedOnTitleSplitted[1]) ? $endpointNameBasedOnTitleSplitted[1] : '',
-			'endpointNameBasedOnTitlePascalCase' => ucfirst(isset($endpointNameBasedOnTitleSplitted[1]) ? $endpointNameBasedOnTitleSplitted[1] : ''),
-			'endpointNameBasedOnMethodCamelCase' => isset($endpointNameBasedOnMethodSplitted[1]) ? $endpointNameBasedOnMethodSplitted[1] : '',
-			'endpointNameBasedOnMethodPascalCase' => ucfirst(isset($endpointNameBasedOnMethodSplitted[1]) ? $endpointNameBasedOnMethodSplitted[1] : ''),
-		];
-	}
 
-	function generateModels($rows) {
-		foreach ($rows as $row)
-		{
-	    $sectionTitle = $row->Find("div.page-header");
-	    $title = '';
-			$methodTitle = '';
-
-			// Set title based on title bock
-			foreach ($sectionTitle as $key => $value) {$title = $value->GetPlainText();}
-			$title = applyFixes($title, 'fixAccountdatasTags');
-
-			// Set title based on request bock
-			$requestBlock = $row->Find("pre.lang-php");
-			$requestBlockOutput = '';
-			foreach ($requestBlock as $key => $value) {
-				$requestBlockOutput = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
-				$requestBlockOutput = trim($requestBlockOutput);
-			  if(stripos($requestBlockOutput, 'method') != false) {
-						$requestBlockOutput = fixEndpoint($requestBlockOutput, []);
-						eval($requestBlockOutput);
-						$methodTitle = $request['method'];
-				}
-			}
-			$methodTitle = applyFixes($methodTitle, 'fixAccountdatasTags');
-			$formattedTitle = generatePathTitle($title, $methodTitle);
-			$model = [
-				'modelName' => $formattedTitle['modelName'],
-				'endpointNameBasedOnTitleCamelCase' => $formattedTitle['endpointNameBasedOnTitleCamelCase'],
-				'endpointNameBasedOnTitlePascalCase' => $formattedTitle['endpointNameBasedOnTitlePascalCase'],
-				'endpointNameBasedOnMethodCamelCase' => $formattedTitle['endpointNameBasedOnMethodCamelCase'],
-				'endpointNameBasedOnMethodPascalCase' => $formattedTitle['endpointNameBasedOnMethodPascalCase'],
-				'hasRequest' => true
-			];
-			// Check if there are parameters or not ( to include Request block or not )
-			$alertBlocks = $row->Find("div.alert-block");
-			$noParametersText = 'no parameter';
-	    foreach ($alertBlocks as $alertBlock) {
-				if(strpos(strtolower($alertBlock->GetPlainText()), $noParametersText) != false) {
-						$model['hasRequest'] = false;
-				}
-	    }
-			$models[] = $model;
-		}
-		return $models;
-	}
-
-  function buildSwaggerPaths($models, $outputFileName) {
-			$pathModel = file_get_contents('./pathModel.tpl');
-			$pathModelWithRequest = file_get_contents('./pathModelWithRequest.tpl');
-			$pathModelWithComa = file_get_contents('./pathModelWithComa.tpl');
-			$pathModelWithComaAndRequest = file_get_contents('./pathModelWithComaAndRequest.tpl');
-			$output = "{\n";
-			foreach ($models as $key => $model) {
-				$modelName = $model['modelName'];
-				$endpointNameBasedOnTitleCamelCase = $model['endpointNameBasedOnTitleCamelCase'];
-				$endpointNameBasedOnTitlePascalCase = $model['endpointNameBasedOnTitlePascalCase'];
-				$endpointNameBasedOnTitlePascalCase = $model['endpointNameBasedOnTitlePascalCase'];
-				$hasRequest = $model['hasRequest'];
-				if($key == (count($models) - 1)) {
-						if($hasRequest === true) {
-							$matchedPathModel =  $pathModelWithRequest;
-						} else {
-							$matchedPathModel =  $pathModel;
-						}
-				} else {
-						if($hasRequest === true) {
-							$matchedPathModel =  $pathModelWithComaAndRequest;
-						} else {
-							$matchedPathModel =  $pathModelWithComa;
-						}
-				}
-				$generatedPathModel = str_replace("{ModelName}", $modelName, $matchedPathModel);
-				$generatedPathModel = str_replace("{endpointNameBasedOnTitleCamelCase}", $endpointNameBasedOnTitleCamelCase, $generatedPathModel);
-				$generatedPathModel = str_replace("{endpointNameBasedOnTitlePascalCase}", $endpointNameBasedOnTitlePascalCase, $generatedPathModel);
-				$output .=  $generatedPathModel;
-			}
-			$output .= "\n}";
-			file_put_contents($outputFileName, $output);
-	}
-
-	$models = generateModels($rows);
-
-	buildSwaggerResponses($rows, $models, '../scrapping_outputs/swagger_generated_responses.json');
-
-	buildSwaggerRequests($rows, $models, '../scrapping_outputs/swagger_generated_requests.json');
-
-	buildSwaggerPaths($models, '../scrapping_outputs/swagger_generated_paths.json');
-
-	file_put_contents('json_responses.json', $responseOutPut);
 ?>
