@@ -84,7 +84,9 @@
 	function applyFixes($string, $case, $extraData = []) {
 			switch ($case) {
 				case 'commaAfterKeyValue':
-					return str_replace('}}\'"', '}}\',"', str_replace("}}''",  "}}','", $string));
+					$formattedOutput = str_replace('}}\'"', '}}\',"', str_replace("}}''",  "}}','", $string));
+					$formattedOutput = str_replace("'}", "'", $formattedOutput);
+					return $formattedOutput;
 					break;
 				case 'removeWhiteSpaces':
 					return str_replace(' ', '', str_replace('	', '', str_replace(' ',  '', $string)));
@@ -93,10 +95,51 @@
 					return str_replace("\n",  '', $string);
 					break;
 				case 'fixAccountdatasCreateEndpoint':
-					return str_replace("'params'=>array('unit'=>'value'=>'{{unit_value}}','isEnabled'=>'{{unit_enabled}}'))", "'params'=>array('unit'=>array('value'=>'{{unit_value}}','isEnabled'=>'{{unit_enabled}}')))", $string);
+					return strpos($string, 'Accountdatas.create') != false ? str_replace("'params'=>array('unit'=>'value'=>'{{unit_value}}','isEnabled'=>'{{unit_enabled}}'))", "'params'=>array('unit'=>array('value'=>'{{unit_value}}','isEnabled'=>'{{unit_enabled}}')))", $string) : $string;
+					break;
+				case 'fixPaymentsGetListEndpoint':
+					return strpos($string, 'Payments.getList') != false ? str_replace("]]);",  ']]];', $string) : $string;
+					break;
+				case 'fixPaymentsCreateEndpoint':
+					return strpos($string, 'Payments.create') != false && strlen($string) > 70 ? str_replace("']]);",  "']]];", $string) : $string;
+					break;
+				case 'fixPaymentsDeleteEndpoint':
+					return strpos($string, 'Payments.create') != false && strlen($string) < 70 ?
+					str_replace(
+						");",  "];",
+						str_replace(
+							'create', 'delete',
+							$string
+						)
+					)
+					:
+					$string;
+					break;
+				case 'fixPOSReceiptCreateEndpoint':
+					return strpos($string, 'POSReceipt.create') != false ?
+					str_replace(
+						"#Commononce/item",  "",
+						str_replace(
+							'#Item', '',
+							$string
+						)
+					)
+					:
+					$string;
+					break;
+				case 'fixTimetrackingGetListEndpoint':
+					return strpos($string, 'Timetracking.getList') != false ?
+					str_replace(
+						"{{periodecreated_end}",  "{{periodecreated_end}}'",
+						$string
+					)
+					:
+					$string;
 					break;
 				case 'fixPurchaseCreateEndpoint':
-					return str_replace(
+					return
+					strpos($string, 'Purchase.create') != false ?
+					str_replace(
 						array(
 							applyFixes('# Common for all line types #', 'removeWhiteSpaces'),
 							applyFixes('# Applicable for next row types  :  ‘once‘, ‘item‘, ‘shipping‘ et ‘packaging‘ #', 'removeWhiteSpaces'),
@@ -108,16 +151,57 @@
 							applyFixes('# Applicable for ‘packaging‘ row type #', 'removeWhiteSpaces')
 						),
 						array('', '', '', '', '', '', '', ''),
-						$string);
+						$string)
+						:
+						$string;
 					break;
 				case 'fixBankAccountCreateEndpoint':
-					return str_replace(
-						array(
-							applyFixes("# hasiban == 'Y'", 'removeWhiteSpaces'),
-							applyFixes("# hasiban == 'N'", 'removeWhiteSpaces')
-						),
-						array('', ''),
-						$string);
+					return strpos($string, 'BankAccount.create') != false ?
+					str_replace(
+							array(
+								applyFixes("# hasiban == 'Y'", 'removeWhiteSpaces'),
+								applyFixes("# hasiban == 'N'", 'removeWhiteSpaces')
+							),
+							array('', ''),
+							$string)
+							:
+							$string;
+					break;
+				case 'fixBankAccountUpdateEndpoint':
+					return strpos($string, 'BankAccount.update') != false ?
+					str_replace(
+							array(
+								applyFixes("# hasiban == 'Y'", 'removeWhiteSpaces'),
+								applyFixes("# hasiban == 'N'", 'removeWhiteSpaces')
+							),
+							array('', ''),
+							$string)
+							:
+							$string;
+					break;
+				case 'fixBankAccountMassCreateEndpoint':
+					return strpos($string, 'BankAccount.massCreate') != false ?
+					str_replace(
+							array(
+								applyFixes("# hasiban == 'Y'", 'removeWhiteSpaces'),
+								applyFixes("# hasiban == 'N'", 'removeWhiteSpaces')
+							),
+							array('', ''),
+							$string)
+							:
+							$string;
+					break;
+				case 'fixBankAccountMassUpdateEndpoint':
+					return strpos($string, 'BankAccount.massUpdate') != false ?
+					str_replace(
+							array(
+								applyFixes("# hasiban == 'Y'", 'removeWhiteSpaces'),
+								applyFixes("# hasiban == 'N'", 'removeWhiteSpaces')
+							),
+							array('', ''),
+							$string)
+							:
+							$string;
 					break;
 				case 'fixAccountdatasTags':
 					return str_replace("Accoundatas",  "Accountdatas", $string);
@@ -135,7 +219,7 @@
 					return $string;
 					break;
 				case 'addMissingEndInstructionSign':
-					$stringLength = count($string);
+					$stringLength = strlen($string);
 					if($string[($stringLength - 1)] != ';') {
 						return str_replace(';;', ';', ($string . ';'));
 					}
@@ -168,7 +252,7 @@
 					return $string;
 					break;
 				case 'sanitizeRequestBlock':
-				  $formattedOutput = str_replace('&gt;', '>', $string) . "\n\n";
+				  $formattedOutput = str_replace('&gt;', '>', $string);
 					$formattedOutput = str_replace('$response = sellsyConnect::load()->requestApi($request);', '', $formattedOutput);
 					$formattedOutput = str_replace('sellsyConnect::load()->requestApi($request);', '', $formattedOutput);
 					$formattedOutput = str_replace('invokitConnect_curl::load()->requestApi($request, false, $file);', '', $formattedOutput);
@@ -176,6 +260,26 @@
 					$formattedOutput = str_replace('{{', '\'{{', $formattedOutput);
 					$formattedOutput = str_replace('}}', '}}\'', $formattedOutput);
 					return $formattedOutput;
+					break;
+				case 'fixElectronicSignCreateEndpoint':
+					return str_replace(
+						"':'", "','",
+						str_replace(
+							"':array", "', array",
+							str_replace(
+								",'{{peopleId}}',...", "",
+								$string
+							)
+						)
+					);
+				case 'ignoreDocCreate':
+					if (
+						stripos($string, "Document.create'") != false ||
+						stripos($string, "Document.update'") != false
+					) {
+							return '';
+					}
+					return $string;
 					break;
 				default:
 					return $string;
@@ -186,6 +290,7 @@
   function transformToRequest($inputToEval, $requestAsArray) {
 		$data = [];
 		$path = '';
+		$inputFixed = '';
 		try {
 			  $inputToEval = trim($inputToEval);
 			  if(stripos($inputToEval, 'method') != false) {
@@ -195,13 +300,23 @@
 						$inputFixed = applyFixes($inputFixed, 'fixAccountdatasCreateEndpoint');
 						$inputFixed = applyFixes($inputFixed, 'fixPurchaseCreateEndpoint');
 						$inputFixed = applyFixes($inputFixed, 'fixBankAccountCreateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixBankAccountMassCreateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixBankAccountUpdateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixBankAccountMassUpdateEndpoint');
 						$inputFixed = applyFixes($inputFixed, 'fixClientUpdateEndpoint', $requestAsArray);
 						$inputFixed = applyFixes($inputFixed, 'addMissingEndParenthese');
 						$inputFixed = applyFixes($inputFixed, 'removeTooMuchEndParenthese');
 						$inputFixed = applyFixes($inputFixed, 'addMissingEndInstructionSign');
 						$inputFixed = applyFixes($inputFixed, 'addMissingComaBetweenArrays');
 						$inputFixed = applyFixes($inputFixed, 'lowercaseArrays');
-						echo '$inputFixed :' . $inputFixed . '<br/><br/>';
+						$inputFixed = applyFixes($inputFixed, 'fixElectronicSignCreateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixPaymentsGetListEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixPaymentsCreateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixPaymentsDeleteEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixPOSReceiptCreateEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'fixTimetrackingGetListEndpoint');
+						$inputFixed = applyFixes($inputFixed, 'ignoreDocCreate');
+						echo '$inputFixed : ' . $inputFixed . '<br/><br/>';
 						eval($inputFixed);
 						if (isset($request['params']) and count($request['params']) > 0) {
 							foreach ($request['params'] as $key => $value) {
@@ -285,15 +400,15 @@
 			$EndpointNameSplitted =  explode(".", trim($title));
 			$model = [
 				'modelName' => $EndpointNameSplitted[0],
-				'endpointNameCamelCase' => $EndpointNameSplitted[1],
-				'endpointNamePascalCase' => ucfirst($EndpointNameSplitted[1]),
+				'endpointNameCamelCase' => isset($EndpointNameSplitted[1]) ? $EndpointNameSplitted[1] : '',
+				'endpointNamePascalCase' => ucfirst(isset($EndpointNameSplitted[1]) ? $EndpointNameSplitted[1] : ''),
 				'hasRequest' => true
 			];
 			// Check if there are parameters or not ( to include Request block or not )
 			$alertBlocks = $row->Find("div.alert-block");
 			$noParametersText = 'no parameter';
 	    foreach ($alertBlocks as $alertBlock) {
-				if(strpos(strtolower($alertBlock->GetPlainText()), $noParametersText)) {
+				if(strpos(strtolower($alertBlock->GetPlainText()), $noParametersText) != false) {
 						$model['hasRequest'] = false;
 				}
 	    }
