@@ -842,7 +842,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -1579,7 +1579,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4221,7 +4221,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4383,7 +4383,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4416,7 +4416,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4492,7 +4492,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4525,7 +4525,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4558,7 +4558,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4591,7 +4591,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4624,7 +4624,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4657,7 +4657,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4690,7 +4690,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4723,7 +4723,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4756,7 +4756,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4789,7 +4789,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4822,7 +4822,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4855,7 +4855,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4931,7 +4931,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4964,7 +4964,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4997,7 +4997,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -5030,7 +5030,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -5063,7 +5063,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -5956,7 +5956,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -6244,22 +6244,32 @@
 					}
 				},
 		},
-		"/": {
+		"/Client.update": {
 				"post": {
 					"tags": [
-						""
+						"Client"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/ClientUpdateRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/ClientUpdateResponse"
 							}
 						},
 						"400": {
@@ -6366,7 +6376,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7001,7 +7011,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7034,7 +7044,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7067,7 +7077,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7348,7 +7358,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7381,7 +7391,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7414,7 +7424,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7447,7 +7457,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7480,7 +7490,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7556,7 +7566,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7718,7 +7728,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -8869,7 +8879,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -9874,7 +9884,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",

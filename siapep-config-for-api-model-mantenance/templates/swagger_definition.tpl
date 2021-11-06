@@ -11,7 +11,9 @@
   },
   "host": "api.sellsy.com",
   "basePath": "/",
-  "tags": {Tags},
+  "tags": [
+      {Tags}
+  ],
   "schemes": [
     "https"
   ],

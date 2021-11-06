@@ -44,7 +44,7 @@
 
 	// Function definitions
 
-	function getOneSectionInformation($section) {
+	function getOneSectionInformation($section, $storedSections = []) {
 		 $information = [
 			 'blockTitle' => '',
 			 'blockTitleFixed' => '',
@@ -55,7 +55,8 @@
 			 'responseModel' => '',
 			 'responseModelName' => '',
 			 'requestModelName' => '',
-			 'pathName' => ''
+			 'pathName' => '',
+			 'requestAsString' => ''
 		 ];
 
 		 // 1 - extract the title
@@ -75,7 +76,7 @@
 			 	$requestTextToEval = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
 			 	// Fix : This remove the json code which are written in php block
 			 	$requestTextToEval = stripos($requestTextToEval, '$request') != false ? $requestTextToEval : '';
-			 	$transformResult = getRequestModelTagAndName($requestTextToEval, $requestAsArray);
+			 	$transformResult = getRequestModelTagAndName($requestTextToEval, $storedSections);
 				$requestModel = $transformResult['model'];
 				$information['methodName'] = $transformResult['name'];
 				$information['tagName'] = $transformResult['tag'];
@@ -83,6 +84,7 @@
 				$information['requestModelName'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? getModelName($information['methodName'], 'Request') : null;
 				$information['responseModelName'] = getModelName($information['methodName'], 'Response');
 				$information['pathName'] = $information['methodName'];
+				$information['requestAsString'] = $requestTextToEval;
 		 }
 
 
@@ -95,7 +97,7 @@
 		 $informations = [];
 		 foreach ($sections as $section)
  		 {
-				$informations[] = getOneSectionInformation($section);
+				$informations[] = getOneSectionInformation($section, $informations);
 		 }
 		 return $informations;
 	}
@@ -230,12 +232,23 @@
 				case 'fixClientUpdateEndpoint':
 				  $isClientUpdateEndpoint = stripos($string, "Client.update'");
 					if ($isClientUpdateEndpoint != false) {
-							$finalString = str_replace(
-								'Client.create',
-								'Client.Client.update',
-								str_replace("'third'", "'clientid' => '{{clientid}}', 'third'", $extraData['Client.create']['blockContent'])
-							);
-							return $finalString;
+							function searchByMethod($id, $array) {
+									 foreach ($array as $key => $val) {
+											 if ($val['pathName'] === $id) {
+													 return $array[$key];
+											 }
+									 }
+									 return null;
+							}
+							$clientCreateEndpoint = searchByMethod('Client.create', $extraData);
+							if($clientCreateEndpoint) {
+									$finalString = str_replace(
+											['Client.create', "'third'"],
+											['Client.update', "'clientid' => '{{clientid}}', 'third'"],
+											$clientCreateEndpoint['requestAsString']
+									);
+									return $finalString;
+							}
 					}
 					return $string;
 					break;
@@ -313,7 +326,7 @@
 			}
 	}
 
-	function fixEndpoint($endpointString, $requestAsArray) {
+	function fixEndpoint($endpointString, $extraData) {
 				$inputFixed = applyFixes($endpointString, 'removeWhiteSpaces');
 				$inputFixed = applyFixes($inputFixed, 'removeLineBreaks');
 				$inputFixed = applyFixes($inputFixed, 'commaAfterKeyValue');
@@ -323,7 +336,7 @@
 				$inputFixed = applyFixes($inputFixed, 'fixBankAccountMassCreateEndpoint');
 				$inputFixed = applyFixes($inputFixed, 'fixBankAccountUpdateEndpoint');
 				$inputFixed = applyFixes($inputFixed, 'fixBankAccountMassUpdateEndpoint');
-				$inputFixed = applyFixes($inputFixed, 'fixClientUpdateEndpoint', $requestAsArray);
+				$inputFixed = applyFixes($inputFixed, 'fixClientUpdateEndpoint', $extraData);
 				$inputFixed = applyFixes($inputFixed, 'addMissingEndParenthese');
 				$inputFixed = applyFixes($inputFixed, 'removeTooMuchEndParenthese');
 				$inputFixed = applyFixes($inputFixed, 'addMissingEndInstructionSign');
@@ -342,7 +355,7 @@
 	}
 
   function getRequestModelTagAndName($requestTextToEval, $requestAsArray) {
-		$data = ['name' => '', 'tag' => [], 'model' => []];
+		$data = ['name' => '', 'tag' => '', 'model' => []];
 		$path = '';
 		$inputFixed = '';
 		try {
@@ -352,7 +365,8 @@
 						eval($inputFixed);
 						$data = [];
 						$data['name'] = $request['method'];
-						$data['tag'] = explode(".", trim($request['method']))[0];
+						$explodedMethodName = explode(".", trim($request['method']));
+						$data['tag'] = $explodedMethodName[0];
 						if (isset($request['params']) and count($request['params']) > 0) {
 							 $data['model'] = getRequestModel($request['params']);
 					  }
@@ -431,11 +445,16 @@
 	$sections = getSectionsInformations($rows);
 	$requests = [];
 	$pathsAsJson = "{\n";
+	$tagsNames = [];
+	$tags = [];
+	$tagsAsJson = [];
 	$pathModel = file_get_contents('../templates/swagger_path_with_response.tpl');
 	$pathModelWithRequest = file_get_contents('../templates/swagger_path_with_response_request.tpl');
 	$pathModelWithComa = file_get_contents('../templates/swagger_path_with_response_coma.tpl');
 	$pathModelWithComaAndRequest = file_get_contents('../templates/swagger_path_with_response_request_coma.tpl');
 	$definitionTemplate = file_get_contents('../templates/swagger_definition.tpl');
+	$tagTemplate = file_get_contents('../templates/swagger_tag.tpl');
+	$tagWithComaTemplate = file_get_contents('../templates/swagger_tag_with_coma.tpl');
 	$definition = '';
 
 	foreach ($sections as $key => $value) {
@@ -478,12 +497,30 @@
 				[$value['pathName'], $value['tagName'], $value['requestModelName'], $value['responseModelName']],
 				$matchedPathModel
 		);
+
+		// tags
+		$tagsNames[]= $value['tagName'];
 	}
+
+	$tagsNames = array_unique($tagsNames);
+
+	foreach($tagsNames as $index => $tagName) {
+			if($index == (count($tagsNames) - 1)) {
+					$template = $tagTemplate;
+			} else {
+				  $template = $tagWithComaTemplate;
+			}
+			if(!is_array($tagName) && !is_array($template)) {
+				$tagsAsJson .= str_replace('{tagName}', $tagName, $template);
+			}
+	};
+
 	$pathsAsJson .= "\n}";
+
 	// generate definition
 	$definition = str_replace(
 			['{SwaggerPaths}', '{Tags}', '{SwaggerDefinitions}'],
-			[$pathsAsJson, '[]', '{}'],
+			[$pathsAsJson, $tagsAsJson, '{}'],
 			$definitionTemplate
 	);
 

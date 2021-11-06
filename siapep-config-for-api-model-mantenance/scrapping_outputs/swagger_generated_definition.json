@@ -11,7 +11,281 @@
   },
   "host": "api.sellsy.com",
   "basePath": "/",
-  "tags": [],
+  "tags": [
+      Array				{
+						"name": "Infos",
+						"description": "Methods for managing Infos API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Accountdatas",
+						"description": "Methods for managing Accountdatas API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "",
+						"description": "Methods for managing  API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "AccountPrefs",
+						"description": "Methods for managing AccountPrefs API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Purchase",
+						"description": "Methods for managing Purchase API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Addresses",
+						"description": "Methods for managing Addresses API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Agenda",
+						"description": "Methods for managing Agenda API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Annotations",
+						"description": "Methods for managing Annotations API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "BankAccount",
+						"description": "Methods for managing BankAccount API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "BankDeposit",
+						"description": "Methods for managing BankDeposit API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Catalogue",
+						"description": "Methods for managing Catalogue API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "CustomFields",
+						"description": "Methods for managing CustomFields API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Client",
+						"description": "Methods for managing Client API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Accounting",
+						"description": "Methods for managing Accounting API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Peoples",
+						"description": "Methods for managing Peoples API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Document",
+						"description": "Methods for managing Document API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Mails",
+						"description": "Methods for managing Mails API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Event",
+						"description": "Methods for managing Event API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Expense",
+						"description": "Methods for managing Expense API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "ListingSetting",
+						"description": "Methods for managing ListingSetting API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Marketing",
+						"description": "Methods for managing Marketing API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Opportunities",
+						"description": "Methods for managing Opportunities API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Payments",
+						"description": "Methods for managing Payments API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Prospects",
+						"description": "Methods for managing Prospects API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Stat",
+						"description": "Methods for managing Stat API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Stock",
+						"description": "Methods for managing Stock API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Support",
+						"description": "Methods for managing Support API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "SmartTags",
+						"description": "Methods for managing SmartTags API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "POSCashtill",
+						"description": "Methods for managing POSCashtill API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "POSReceipt",
+						"description": "Methods for managing POSReceipt API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "POSMove",
+						"description": "Methods for managing POSMove API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Tracking",
+						"description": "Methods for managing Tracking API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Timetracking",
+						"description": "Methods for managing Timetracking API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+				{
+						"name": "Briefcases",
+						"description": "Methods for managing Briefcases API endpoints",
+						"externalDocs": {
+								"description": "",
+								"url": "https://api.sellsy.com/documentation/methodes"
+						}
+				},
+
+  ],
   "schemes": [
     "https"
   ],
@@ -859,7 +1133,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -1596,7 +1870,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4238,7 +4512,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4400,7 +4674,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4433,7 +4707,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4509,7 +4783,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4542,7 +4816,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4575,7 +4849,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4608,7 +4882,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4641,7 +4915,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4674,7 +4948,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4707,7 +4981,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4740,7 +5014,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4773,7 +5047,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4806,7 +5080,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4839,7 +5113,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4872,7 +5146,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4948,7 +5222,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -4981,7 +5255,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -5014,7 +5288,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -5047,7 +5321,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -5080,7 +5354,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -5973,7 +6247,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -6261,22 +6535,32 @@
 					}
 				},
 		},
-		"/": {
+		"/Client.update": {
 				"post": {
 					"tags": [
-						""
+						"Client"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/ClientUpdateRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/ClientUpdateResponse"
 							}
 						},
 						"400": {
@@ -6383,7 +6667,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7018,7 +7302,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7051,7 +7335,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7084,7 +7368,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7365,7 +7649,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7398,7 +7682,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7431,7 +7715,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7464,7 +7748,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7497,7 +7781,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7573,7 +7857,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -7735,7 +8019,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -8886,7 +9170,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
@@ -9891,7 +10175,7 @@
 		"/": {
 				"post": {
 					"tags": [
-						"Array"
+						""
 					],
 					"summary": "",
 					"description": "",
