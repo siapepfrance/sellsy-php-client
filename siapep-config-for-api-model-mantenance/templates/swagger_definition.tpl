@@ -9,7 +9,7 @@
       "email": "info@sellsy.com"
     }
   },
-  "host": "smsapi.free-mobile.fr",
+  "host": "api.sellsy.com",
   "basePath": "/",
   "tags": {Tags},
   "schemes": [

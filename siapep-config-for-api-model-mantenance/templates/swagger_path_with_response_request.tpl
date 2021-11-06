@@ -1,4 +1,4 @@
-		"/{ModelName}.{EndpointNameCamelCase}": {
+		"/{pathName}": {
 				"post": {
 					"tags": [
 						"{ModelName}"
@@ -15,7 +15,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/{ModelName}{EndpointNamePascalCase}Request"
+								"$ref": "#/definitions/{requestModelName}"
 							}
 						}
 					],
@@ -23,7 +23,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/{ModelName}{EndpointNamePascalCase}Response"
+								"$ref": "#/definitions/{responseModelName}"
 							}
 						},
 						"400": {

@@ -47,6 +47,8 @@
 	function getOneSectionInformation($section) {
 		 $information = [
 			 'blockTitle' => '',
+			 'blockTitleFixed' => '',
+			 'isBlockTitleFixed' => false,
 			 'methodName' => '',
 			 'requestModel' => '',
 			 'responseModel' => '',
@@ -59,19 +61,30 @@
 	   $sectionTitle = $section->Find("div.page-header");
 	   $blockTitle = '';
 		 foreach ($sectionTitle as $key => $value) {$blockTitle = $value->GetPlainText();}
-		 $blockTitle = applyFixes($blockTitle, 'fixAccountdatasTags');
+		 $blockTitle = $blockTitle;
 		 $information['blockTitle'] = $blockTitle;
+		 $information['blockTitleFixed'] = applyFixes($blockTitle, 'fixAccountdatasTags');
+		 $information['isBlockTitleFixed'] = $information['blockTitle'] != $information['blockTitleFixed'];
 
-		 // 2 - extract the method name and model
+		 //fixAccountdatasTags
+
+		 // 2 - extract the method name, request model, request model name and response model name
 		 $requestBlock = $section->Find("pre.lang-php");
 		 foreach ($requestBlock as $key => $value) {
 			 	$requestTextToEval = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
 			 	// Fix : This remove the json code which are written in php block
 			 	$requestTextToEval = stripos($requestTextToEval, '$request') != false ? $requestTextToEval : '';
-			 	$transformResult = getRequestPathAndName($requestTextToEval, $requestAsArray);
+			 	$transformResult = getRequestModelAndName($requestTextToEval, $requestAsArray);
+				$requestModel = ['properties' => $transformResult['model']];
 				$information['methodName'] = $transformResult['name'];
-				$information['requestModel'] = $transformResult['model'];
+				$information['requestModel'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? $requestModel : null;
+				$information['requestModelName'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? getModelName($information['methodName'], 'Request') : null;
+				$information['responseModelName'] = getModelName($information['methodName'], 'Response');
+				$information['pathName'] = $information['methodName'];
 		 }
+
+
+		 //requestModelName
 
 		 return $information;
 	}
@@ -326,7 +339,7 @@
 				return $inputFixed;
 	}
 
-  function getRequestPathAndName($requestTextToEval, $requestAsArray) {
+  function getRequestModelAndName($requestTextToEval, $requestAsArray) {
 		$data = ['name' => '', 'model' => []];
 		$path = '';
 		$inputFixed = '';
@@ -338,34 +351,59 @@
 						$data = [];
 						$data['name'] = $request['method'];
 						if (isset($request['params']) and count($request['params']) > 0) {
-							foreach ($request['params'] as $key => $value) {
-								 if(is_array($value)) {
-								 	 $data['model'][$key] = [
-										 'type' => 'object',
-										 'properties' => []
-									 ];
-									 foreach ($value as $attributeKey => $attribute) {
-			                $data['model'][$key]['properties'][$attributeKey] = [
-													'type' => 'string',
-				 								 'required' => false
-											];
-									 }
-								 } else {
-								 	 $data['model'][$key] = [
-										 'type' => 'string',
-										 'required' => false
-									 ];
-								 }
-							}
-					}
+							 $data['model'] = getRequestModel($request['params']);
+					  }
 			  }
 		} catch(\Exception $e) {}
-
 		return $data;
 	}
 
-  // Execution
+	function mergeProperties($properties) {
+			$unifiedProperties = array_unique($properties);
+			return isset($unifiedProperties[0]) ? $unifiedProperties[0] : [];
+	}
 
+	function getRequestModel($params) {
+		$data = [];
+		foreach ($params as $key => $value) {
+      if(is_array($value)) {
+				$isArray = (count($value) > 0 and is_array($value[array_key_first($value)]));
+				$isObject = !$isArray;
+				if ($isObject) {
+						// object
+						$data[$key] = getRequestModel($value);
+				} else {
+					  // array
+						$data[$key] = [
+								'type' => 'array',
+								'items' => [
+									'type' => 'object',
+									'properties' => mergeProperties(getRequestModel($value))
+								]
+						];
+				}
+			} else {
+				// Simple string
+ 				 $data[$key] = [
+ 					 'type' => 'string',
+ 					 'required' => false
+ 				 ];
+			}
+		}
+		return $data;
+	}
+
+	function getModelName($title, $modelSuffix) {
+		$titleSplitted =  explode(".", trim($title));
+		$baseClassName =  implode("", array_map(function($word){ return ucfirst($word); }, $titleSplitted));
+		return sprintf('%s%s', $baseClassName, $modelSuffix);
+	}
+
+	function writeFile($name, $content) {
+		file_put_contents($name, $content);
+	}
+
+  // Execution
 
 
 	// 1 - Get website sections
@@ -376,17 +414,26 @@
 	// 2 - Show each row
 
 	$sections = getSectionsInformations($rows);
+	$requests = [];
 
 	foreach ($sections as $key => $value) {
-		echo '<b>' . $value['blockTitle'] . '</b>: <br/>';
-		echo '- blockTitle :' . $value['blockTitle'] . '<br/>';
-		echo '- methodName :' . $value['methodName'] . '<br/>';
-		echo '- requestModel :' . json_encode($value['requestModel']) . '<br/>';
-		echo '- responseModel :' . $value['responseModel'] . '<br/>';
-		echo '- requestModelName :' . $value['requestModelName'] . '<br/>';
-		echo '- responseModelName :' . $value['responseModelName'] . '<br/>';
-		echo '- pathName :' . $value['pathName'] . '<br/><br/>';
+		// Display
+		echo '<b>' . $value['blockTitle'] . ' ' . ($value['isBlockTitleFixed'] ? (' -> fixed -> ' . $value['blockTitleFixed']) : ('')) . '</b>: <br/><br/>';
+		echo '- blockTitleFixed : ' . $value['blockTitleFixed'] . '<br/>';
+		echo '- methodName : ' . $value['methodName'] . '<br/>';
+		echo '- requestModel : ' . json_encode($value['requestModel']) . '<br/>';
+		echo '- responseModel : ' . $value['responseModel'] . '<br/>';
+		echo '- requestModelName : ' . ($value['requestModelName'] != null ? $value['requestModelName'] : 'null') . '<br/>';
+		echo '- responseModelName : ' . $value['responseModelName'] . '<br/>';
+		echo '- pathName : ' . $value['pathName'] . '<br/><br/>';
+
+		// File generation
+		if($value['requestModel'] && isset($value['requestModel']['properties']) && $value['requestModel']['properties'] != null) {
+			$requests[$value['requestModelName']] = $value['requestModel'];
+		}
 	}
+
+	writeFile('../scrapping_outputs/swagger_generated_requests.json', json_encode($requests));
 
 
 ?>

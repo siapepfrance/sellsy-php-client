@@ -1,4 +1,4 @@
-		"/{ModelName}.{EndpointNameCamelCase}": {
+		"/{pathName}": {
 				"post": {
 					"tags": [
 						"{ModelName}"
@@ -8,22 +8,12 @@
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/{ModelName}{EndpointNamePascalCase}Request"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/{ModelName}{EndpointNamePascalCase}Response"
+								"$ref": "#/definitions/{responseModelName}"
 							}
 						},
 						"400": {
