@@ -435,6 +435,8 @@
 	$pathModelWithRequest = file_get_contents('../templates/swagger_path_with_response_request.tpl');
 	$pathModelWithComa = file_get_contents('../templates/swagger_path_with_response_coma.tpl');
 	$pathModelWithComaAndRequest = file_get_contents('../templates/swagger_path_with_response_request_coma.tpl');
+	$definitionTemplate = file_get_contents('../templates/swagger_definition.tpl');
+	$definition = '';
 
 	foreach ($sections as $key => $value) {
 		// Display
@@ -478,9 +480,16 @@
 		);
 	}
 	$pathsAsJson .= "\n}";
+	// generate definition
+	$definition = str_replace(
+			['{SwaggerPaths}', '{Tags}', '{SwaggerDefinitions}'],
+			[$pathsAsJson, '[]', '{}'],
+			$definitionTemplate
+	);
 
 	writeFile('../scrapping_outputs/swagger_generated_requests.json', json_encode($requests));
 	writeFile('../scrapping_outputs/swagger_generated_paths.json', $pathsAsJson);
+	writeFile('../scrapping_outputs/swagger_generated_definition.json', $definition);
 
 
 ?>

@@ -1,4 +1,21 @@
 {
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a Swagger doc for Sellsy REST API.",
+    "version": "1.0.0",
+    "title": "Sellsy REST",
+    "termsOfService": "",
+    "contact": {
+      "email": "info@sellsy.com"
+    }
+  },
+  "host": "api.sellsy.com",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "https"
+  ],
+  "paths": {
 		"/Infos.getInfos": {
 				"post": {
 					"tags": [
@@ -14575,4 +14592,10 @@
 				},
 		}
 
+},
+  "definitions": {},
+  "externalDocs": {
+      "description": "Find out more about Sellsy",
+      "url": "https://api.sellsy.com"
+  }
 }
