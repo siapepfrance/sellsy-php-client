@@ -39,5 +39,5 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},

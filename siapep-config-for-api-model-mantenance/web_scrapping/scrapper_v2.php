@@ -73,18 +73,20 @@
 		 // 2 - extract the method name, request model, request model name and response model name
 		 $requestBlock = $section->Find("pre.lang-php");
 		 foreach ($requestBlock as $key => $value) {
-			 	$requestTextToEval = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
-			 	// Fix : This remove the json code which are written in php block
-			 	$requestTextToEval = stripos($requestTextToEval, '$request') != false ? $requestTextToEval : '';
-			 	$transformResult = getRequestModelTagAndName($requestTextToEval, $storedSections);
-				$requestModel = $transformResult['model'];
-				$information['methodName'] = $transformResult['name'];
-				$information['tagName'] = $transformResult['tag'];
-				$information['requestModel'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? $requestModel : null;
-				$information['requestModelName'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? getModelName($information['methodName'], 'Request') : null;
-				$information['responseModelName'] = getModelName($information['methodName'], 'Response');
-				$information['pathName'] = $information['methodName'];
-				$information['requestAsString'] = $requestTextToEval;
+					 	$requestTextToEval = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
+					 	// Fix : This remove the json code which are written in php block
+						if (stripos($requestTextToEval, '$request') != false) {
+							 	$requestTextToEval = stripos($requestTextToEval, '$request') != false ? $requestTextToEval : '';
+							 	$transformResult = getRequestModelTagAndName($requestTextToEval, $storedSections);
+								$requestModel = isset($transformResult['model']) ? $transformResult['model'] : '';
+								$information['methodName'] = isset($transformResult['name']) ? $transformResult['name'] : '';
+								$information['tagName'] = isset($transformResult['tag']) ? $transformResult['tag'] : '';
+								$information['requestModel'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? $requestModel : null;
+								$information['requestModelName'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? getModelName($information['methodName'], 'Request') : null;
+								$information['responseModelName'] = getModelName($information['methodName'], 'Response');
+								$information['pathName'] = $information['methodName'];
+								$information['requestAsString'] = $requestTextToEval;
+						}
 		 }
 
 
@@ -232,14 +234,6 @@
 				case 'fixClientUpdateEndpoint':
 				  $isClientUpdateEndpoint = stripos($string, "Client.update'");
 					if ($isClientUpdateEndpoint != false) {
-							function searchByMethod($id, $array) {
-									 foreach ($array as $key => $val) {
-											 if ($val['pathName'] === $id) {
-													 return $array[$key];
-											 }
-									 }
-									 return null;
-							}
 							$clientCreateEndpoint = searchByMethod('Client.create', $extraData);
 							if($clientCreateEndpoint) {
 									$finalString = str_replace(
@@ -249,6 +243,19 @@
 									);
 									return $finalString;
 							}
+					}
+					return $string;
+					break;
+				case 'fixAccountdatasUpdateTaxesEndpoint':
+					$splaceLessString = applyFixes($string, 'removeWhiteSpaces');
+				  $isAccountdatasUpdateEndpoint = stripos($splaceLessString, "Accountdatas.createTaxes") != false && stripos($splaceLessString, "'id'") != false;
+					if ($isAccountdatasUpdateEndpoint != false) {
+							$finalString = str_replace(
+									['Accountdatas.createTaxes'],
+									['Accountdatas.updateTaxes'],
+									$string
+							);
+							return $finalString;
 					}
 					return $string;
 					break;
@@ -326,6 +333,15 @@
 			}
 	}
 
+	function searchByMethod($id, $requestsArray) {
+			 foreach ($requestsArray as $key => $val) {
+					 if ($val['pathName'] === $id) {
+							 return $requestsArray[$key];
+					 }
+			 }
+			 return null;
+	}
+
 	function fixEndpoint($endpointString, $extraData) {
 				$inputFixed = applyFixes($endpointString, 'removeWhiteSpaces');
 				$inputFixed = applyFixes($inputFixed, 'removeLineBreaks');
@@ -337,6 +353,7 @@
 				$inputFixed = applyFixes($inputFixed, 'fixBankAccountUpdateEndpoint');
 				$inputFixed = applyFixes($inputFixed, 'fixBankAccountMassUpdateEndpoint');
 				$inputFixed = applyFixes($inputFixed, 'fixClientUpdateEndpoint', $extraData);
+				$inputFixed = applyFixes($inputFixed, 'fixAccountdatasUpdateTaxesEndpoint');
 				$inputFixed = applyFixes($inputFixed, 'addMissingEndParenthese');
 				$inputFixed = applyFixes($inputFixed, 'removeTooMuchEndParenthese');
 				$inputFixed = applyFixes($inputFixed, 'addMissingEndInstructionSign');
@@ -364,14 +381,14 @@
 						$inputFixed = fixEndpoint($requestTextToEval, $requestAsArray);
 						eval($inputFixed);
 						$data = [];
-						$data['name'] = $request['method'];
-						$explodedMethodName = explode(".", trim($request['method']));
+						$data['name'] = isset($request['method']) ? $request['method'] : '';
+						$explodedMethodName = explode(".", trim($data['name']));
 						$data['tag'] = $explodedMethodName[0];
 						if (isset($request['params']) and count($request['params']) > 0) {
 							 $data['model'] = getRequestModel($request['params']);
 					  }
 			  }
-		} catch(\Exception $e) {}
+		} catch(\Throwable $e) {}
 		return $data;
 	}
 
@@ -447,7 +464,7 @@
 	$pathsAsJson = "{\n";
 	$tagsNames = [];
 	$tags = [];
-	$tagsAsJson = [];
+	$tagsAsJson = '';
 	$pathModel = file_get_contents('../templates/swagger_path_with_response.tpl');
 	$pathModelWithRequest = file_get_contents('../templates/swagger_path_with_response_request.tpl');
 	$pathModelWithComa = file_get_contents('../templates/swagger_path_with_response_coma.tpl');

@@ -30,7 +30,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getTaxes": {
 				"post": {
@@ -73,7 +73,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getTaxe": {
 				"post": {
@@ -116,7 +116,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createTaxe": {
 				"post": {
@@ -159,7 +159,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.updateTaxe": {
 				"post": {
@@ -202,7 +202,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.deleteTaxe": {
 				"post": {
@@ -245,7 +245,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getUnits": {
 				"post": {
@@ -278,7 +278,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getUnit": {
 				"post": {
@@ -321,7 +321,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createUnit": {
 				"post": {
@@ -364,7 +364,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createUnities": {
 				"post": {
@@ -407,7 +407,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createPayMediums": {
 				"post": {
@@ -450,7 +450,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createTaxes": {
 				"post": {
@@ -493,9 +493,9 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/Accountdatas.createTaxes": {
+		"/Accountdatas.updateTaxes": {
 				"post": {
 					"tags": [
 						"Accountdatas"
@@ -512,7 +512,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/AccountdatasCreateTaxesRequest"
+								"$ref": "#/definitions/AccountdatasUpdateTaxesRequest"
 							}
 						}
 					],
@@ -520,7 +520,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/AccountdatasCreateTaxesResponse"
+								"$ref": "#/definitions/AccountdatasUpdateTaxesResponse"
 							}
 						},
 						"400": {
@@ -536,7 +536,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.updateShippings": {
 				"post": {
@@ -579,7 +579,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createShippings": {
 				"post": {
@@ -622,7 +622,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.updatePackagings": {
 				"post": {
@@ -665,7 +665,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createPackagings": {
 				"post": {
@@ -708,7 +708,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.updateUnit": {
 				"post": {
@@ -751,7 +751,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.updatePayMediums": {
 				"post": {
@@ -794,7 +794,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.updateUnities": {
 				"post": {
@@ -837,7 +837,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/": {
 				"post": {
@@ -854,7 +854,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/"
 							}
 						},
 						"400": {
@@ -870,7 +870,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getPackagingList": {
 				"post": {
@@ -903,7 +903,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getPackaging": {
 				"post": {
@@ -946,7 +946,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.recordPackaging": {
 				"post": {
@@ -989,7 +989,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.deletePackaging": {
 				"post": {
@@ -1032,7 +1032,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getShippingList": {
 				"post": {
@@ -1065,7 +1065,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getShipping": {
 				"post": {
@@ -1108,7 +1108,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.recordShipping": {
 				"post": {
@@ -1151,7 +1151,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.deleteShipping": {
 				"post": {
@@ -1194,7 +1194,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getPayMediums": {
 				"post": {
@@ -1227,7 +1227,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getPayMedium": {
 				"post": {
@@ -1270,7 +1270,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.createPayMedium": {
 				"post": {
@@ -1313,7 +1313,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.updatePayMedium": {
 				"post": {
@@ -1356,7 +1356,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.deletePayMedium": {
 				"post": {
@@ -1399,7 +1399,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getRateCategories": {
 				"post": {
@@ -1432,7 +1432,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getRateCategory": {
 				"post": {
@@ -1475,7 +1475,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getDocLayouts": {
 				"post": {
@@ -1508,7 +1508,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getPayDates": {
 				"post": {
@@ -1541,7 +1541,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accountdatas.getTranslationLanguages": {
 				"post": {
@@ -1574,24 +1574,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/AccountingJournal.getList": {
 				"post": {
 					"tags": [
-						""
+						"AccountingJournal"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/AccountingJournalGetListRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/AccountingJournalGetListResponse"
 							}
 						},
 						"400": {
@@ -1607,7 +1617,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.getCorpInfos": {
 				"post": {
@@ -1640,7 +1650,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.updateCorpInfos": {
 				"post": {
@@ -1683,7 +1693,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.getAddressList": {
 				"post": {
@@ -1716,7 +1726,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.getAddress": {
 				"post": {
@@ -1759,7 +1769,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.createAddress": {
 				"post": {
@@ -1802,7 +1812,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.updateAddress": {
 				"post": {
@@ -1845,7 +1855,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.deleteAddress": {
 				"post": {
@@ -1888,7 +1898,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.getStaffInfos": {
 				"post": {
@@ -1921,7 +1931,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.updateStaffInfos": {
 				"post": {
@@ -1964,7 +1974,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.setNumberFormat": {
 				"post": {
@@ -2007,7 +2017,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.updateDefaultPayMediums": {
 				"post": {
@@ -2050,7 +2060,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.getLogoPublicLink": {
 				"post": {
@@ -2083,7 +2093,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.updateLogo": {
 				"post": {
@@ -2126,7 +2136,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.deleteLogo": {
 				"post": {
@@ -2159,7 +2169,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.getCurrencies": {
 				"post": {
@@ -2192,7 +2202,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.getCurrency": {
 				"post": {
@@ -2225,7 +2235,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.setCurrency": {
 				"post": {
@@ -2268,7 +2278,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/AccountPrefs.setLanguage": {
 				"post": {
@@ -2311,7 +2321,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.getList": {
 				"post": {
@@ -2354,7 +2364,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.getOne": {
 				"post": {
@@ -2397,7 +2407,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.create": {
 				"post": {
@@ -2440,7 +2450,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/": {
 				"post": {
@@ -2473,7 +2483,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.delete": {
 				"post": {
@@ -2516,7 +2526,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.updateStep": {
 				"post": {
@@ -2559,7 +2569,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.updateDeliveryStep": {
 				"post": {
@@ -2602,7 +2612,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.uploadRelatedFile": {
 				"post": {
@@ -2645,7 +2655,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.updateOwner": {
 				"post": {
@@ -2688,7 +2698,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.getPublicLink": {
 				"post": {
@@ -2731,7 +2741,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.getNextIdent": {
 				"post": {
@@ -2774,7 +2784,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.getPayments": {
 				"post": {
@@ -2817,7 +2827,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Purchase.updateSharingGroups": {
 				"post": {
@@ -2860,7 +2870,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Addresses.getList": {
 				"post": {
@@ -2903,7 +2913,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Addresses.getOne": {
 				"post": {
@@ -2946,7 +2956,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Addresses.create": {
 				"post": {
@@ -2989,7 +2999,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Addresses.update": {
 				"post": {
@@ -3032,7 +3042,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Addresses.delete": {
 				"post": {
@@ -3075,7 +3085,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.getList": {
 				"post": {
@@ -3118,7 +3128,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.getOne": {
 				"post": {
@@ -3161,7 +3171,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.create": {
 				"post": {
@@ -3204,7 +3214,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.update": {
 				"post": {
@@ -3247,7 +3257,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.delete": {
 				"post": {
@@ -3290,7 +3300,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.updateOwner": {
 				"post": {
@@ -3333,7 +3343,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.updateStatus": {
 				"post": {
@@ -3376,7 +3386,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.getAvailableRappels": {
 				"post": {
@@ -3409,7 +3419,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.getAvailableLabels": {
 				"post": {
@@ -3442,7 +3452,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.getLabel": {
 				"post": {
@@ -3485,7 +3495,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.createLabel": {
 				"post": {
@@ -3528,7 +3538,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.updateLabel": {
 				"post": {
@@ -3571,7 +3581,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Agenda.deleteLabel": {
 				"post": {
@@ -3614,7 +3624,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Annotations.getList": {
 				"post": {
@@ -3657,7 +3667,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Annotations.getOne": {
 				"post": {
@@ -3700,7 +3710,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Annotations.create": {
 				"post": {
@@ -3743,7 +3753,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Annotations.update": {
 				"post": {
@@ -3786,7 +3796,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Annotations.delete": {
 				"post": {
@@ -3829,7 +3839,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Annotations.updateOwner": {
 				"post": {
@@ -3872,7 +3882,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankAccount.getList": {
 				"post": {
@@ -3915,7 +3925,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankAccount.getOne": {
 				"post": {
@@ -3958,7 +3968,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankAccount.create": {
 				"post": {
@@ -4001,7 +4011,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankAccount.update": {
 				"post": {
@@ -4044,7 +4054,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankAccount.massCreate": {
 				"post": {
@@ -4087,7 +4097,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankAccount.massUpdate": {
 				"post": {
@@ -4130,7 +4140,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankAccount.delete": {
 				"post": {
@@ -4173,7 +4183,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/BankDeposit.create": {
 				"post": {
@@ -4216,24 +4226,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.getList": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueGetListRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueGetListResponse"
 							}
 						},
 						"400": {
@@ -4249,7 +4269,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.getOne": {
 				"post": {
@@ -4292,7 +4312,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.getOneByRef": {
 				"post": {
@@ -4335,7 +4355,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.create": {
 				"post": {
@@ -4378,24 +4398,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.update": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueUpdateRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueUpdateResponse"
 							}
 						},
 						"400": {
@@ -4411,24 +4441,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.delete": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueDeleteRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueDeleteResponse"
 							}
 						},
 						"400": {
@@ -4444,7 +4484,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.updateOwner": {
 				"post": {
@@ -4487,24 +4527,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.getVariations": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueGetVariationsRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueGetVariationsResponse"
 							}
 						},
 						"400": {
@@ -4520,24 +4570,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.getVariation": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueGetVariationRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueGetVariationResponse"
 							}
 						},
 						"400": {
@@ -4553,12 +4613,12 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.getVariationFields": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
@@ -4570,7 +4630,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueGetVariationFieldsResponse"
 							}
 						},
 						"400": {
@@ -4586,24 +4646,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.getVariationFieldsItem": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueGetVariationFieldsItemRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueGetVariationFieldsItemResponse"
 							}
 						},
 						"400": {
@@ -4619,24 +4689,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.createVariationField": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueCreateVariationFieldRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueCreateVariationFieldResponse"
 							}
 						},
 						"400": {
@@ -4652,24 +4732,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.updateVariationField": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueUpdateVariationFieldRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueUpdateVariationFieldResponse"
 							}
 						},
 						"400": {
@@ -4685,24 +4775,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.deleteVariationFields": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueDeleteVariationFieldsRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueDeleteVariationFieldsResponse"
 							}
 						},
 						"400": {
@@ -4718,24 +4818,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.deleteVariationCollection": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueDeleteVariationCollectionRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueDeleteVariationCollectionResponse"
 							}
 						},
 						"400": {
@@ -4751,24 +4861,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.activateVariations": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueActivateVariationsRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueActivateVariationsResponse"
 							}
 						},
 						"400": {
@@ -4784,24 +4904,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.createVariations": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueCreateVariationsRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueCreateVariationsResponse"
 							}
 						},
 						"400": {
@@ -4817,24 +4947,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.updateVariation": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueUpdateVariationRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueUpdateVariationResponse"
 							}
 						},
 						"400": {
@@ -4850,24 +4990,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.deleteVariation": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueDeleteVariationRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueDeleteVariationResponse"
 							}
 						},
 						"400": {
@@ -4883,7 +5033,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.getPrices": {
 				"post": {
@@ -4926,24 +5076,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.updatePrice": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueUpdatePriceRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueUpdatePriceResponse"
 							}
 						},
 						"400": {
@@ -4959,24 +5119,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.getBarCodes": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueGetBarCodesRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueGetBarCodesResponse"
 							}
 						},
 						"400": {
@@ -4992,24 +5162,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.createBarCode": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueCreateBarCodeRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueCreateBarCodeResponse"
 							}
 						},
 						"400": {
@@ -5025,24 +5205,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.updateBarCode": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueUpdateBarCodeRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueUpdateBarCodeResponse"
 							}
 						},
 						"400": {
@@ -5058,24 +5248,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Catalogue.deleteBarCode": {
 				"post": {
 					"tags": [
-						""
+						"Catalogue"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/CatalogueDeleteBarCodeRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/CatalogueDeleteBarCodeResponse"
 							}
 						},
 						"400": {
@@ -5091,7 +5291,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.getCategories": {
 				"post": {
@@ -5134,7 +5334,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.getCategory": {
 				"post": {
@@ -5177,7 +5377,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.getParentCategories": {
 				"post": {
@@ -5220,7 +5420,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.getChildrenFromParentId": {
 				"post": {
@@ -5263,7 +5463,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.createCategory": {
 				"post": {
@@ -5306,7 +5506,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.updateCategory": {
 				"post": {
@@ -5349,7 +5549,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.deleteCategory": {
 				"post": {
@@ -5392,7 +5592,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.addPictureToGallery": {
 				"post": {
@@ -5435,7 +5635,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.updateTranslations": {
 				"post": {
@@ -5478,7 +5678,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Catalogue.updateSharingGroups": {
 				"post": {
@@ -5521,7 +5721,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.getList": {
 				"post": {
@@ -5564,7 +5764,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.getOne": {
 				"post": {
@@ -5607,7 +5807,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.create": {
 				"post": {
@@ -5650,7 +5850,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.update": {
 				"post": {
@@ -5693,7 +5893,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.delete": {
 				"post": {
@@ -5736,7 +5936,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.recordValues": {
 				"post": {
@@ -5779,7 +5979,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.getGroupsList": {
 				"post": {
@@ -5822,7 +6022,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.createGroup": {
 				"post": {
@@ -5865,7 +6065,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.updateGroup": {
 				"post": {
@@ -5908,7 +6108,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/CustomFields.deleteGroup": {
 				"post": {
@@ -5951,7 +6151,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/": {
 				"post": {
@@ -5984,7 +6184,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.getList": {
 				"post": {
@@ -6027,7 +6227,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.getOne": {
 				"post": {
@@ -6070,7 +6270,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.getAddress": {
 				"post": {
@@ -6113,7 +6313,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.getContact": {
 				"post": {
@@ -6156,7 +6356,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.getBillingContact": {
 				"post": {
@@ -6199,7 +6399,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.create": {
 				"post": {
@@ -6242,7 +6442,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.update": {
 				"post": {
@@ -6285,7 +6485,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.delete": {
 				"post": {
@@ -6328,7 +6528,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updateOwner": {
 				"post": {
@@ -6371,24 +6571,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Client.addAddress": {
 				"post": {
 					"tags": [
-						""
+						"Client"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/ClientAddAddressRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/ClientAddAddressResponse"
 							}
 						},
 						"400": {
@@ -6404,7 +6614,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.addContact": {
 				"post": {
@@ -6447,7 +6657,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updateAddress": {
 				"post": {
@@ -6490,7 +6700,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updateContact": {
 				"post": {
@@ -6533,7 +6743,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.deleteAddress": {
 				"post": {
@@ -6576,7 +6786,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.transformToProspect": {
 				"post": {
@@ -6619,7 +6829,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.getBankAccountList": {
 				"post": {
@@ -6662,7 +6872,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.sendContactPwd": {
 				"post": {
@@ -6705,7 +6915,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.deleteContact": {
 				"post": {
@@ -6748,7 +6958,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updateContactPicture": {
 				"post": {
@@ -6791,7 +7001,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updatePrefs": {
 				"post": {
@@ -6834,7 +7044,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updateThirdPicture": {
 				"post": {
@@ -6877,7 +7087,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updateSharingGroups": {
 				"post": {
@@ -6920,7 +7130,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.updateSharingStaffs": {
 				"post": {
@@ -6963,7 +7173,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Client.getMargin": {
 				"post": {
@@ -7006,24 +7216,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Staffs.getList": {
 				"post": {
 					"tags": [
-						""
+						"Staffs"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/StaffsGetListRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/StaffsGetListResponse"
 							}
 						},
 						"400": {
@@ -7039,24 +7259,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Staffs.getOne": {
 				"post": {
 					"tags": [
-						""
+						"Staffs"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/StaffsGetOneRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/StaffsGetOneResponse"
 							}
 						},
 						"400": {
@@ -7072,24 +7302,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Staffs.getGroups": {
 				"post": {
 					"tags": [
-						""
+						"Staffs"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/StaffsGetGroupsRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/StaffsGetGroupsResponse"
 							}
 						},
 						"400": {
@@ -7105,7 +7345,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accounting.getList": {
 				"post": {
@@ -7148,7 +7388,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accounting.getOne": {
 				"post": {
@@ -7191,7 +7431,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accounting.create": {
 				"post": {
@@ -7234,7 +7474,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accounting.update": {
 				"post": {
@@ -7277,7 +7517,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accounting.delete": {
 				"post": {
@@ -7320,7 +7560,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Accounting.getPrefs": {
 				"post": {
@@ -7353,24 +7593,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Peoples.getList": {
 				"post": {
 					"tags": [
-						""
+						"Peoples"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/PeoplesGetListRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/PeoplesGetListResponse"
 							}
 						},
 						"400": {
@@ -7386,24 +7636,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Peoples.getOne": {
 				"post": {
 					"tags": [
-						""
+						"Peoples"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/PeoplesGetOneRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/PeoplesGetOneResponse"
 							}
 						},
 						"400": {
@@ -7419,24 +7679,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Peoples.create": {
 				"post": {
 					"tags": [
-						""
+						"Peoples"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/PeoplesCreateRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/PeoplesCreateResponse"
 							}
 						},
 						"400": {
@@ -7452,24 +7722,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Peoples.update": {
 				"post": {
 					"tags": [
-						""
+						"Peoples"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/PeoplesUpdateRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/PeoplesUpdateResponse"
 							}
 						},
 						"400": {
@@ -7485,24 +7765,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Peoples.delete": {
 				"post": {
 					"tags": [
-						""
+						"Peoples"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/PeoplesDeleteRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/PeoplesDeleteResponse"
 							}
 						},
 						"400": {
@@ -7518,7 +7808,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Peoples.updateOwner": {
 				"post": {
@@ -7561,24 +7851,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Peoples.getAddresses": {
 				"post": {
 					"tags": [
-						""
+						"Peoples"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/PeoplesGetAddressesRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/PeoplesGetAddressesResponse"
 							}
 						},
 						"400": {
@@ -7594,7 +7894,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Peoples.unlinkThirds": {
 				"post": {
@@ -7637,7 +7937,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Peoples.updateSharingGroups": {
 				"post": {
@@ -7680,7 +7980,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Peoples.updateSharingStaffs": {
 				"post": {
@@ -7723,24 +8023,34 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
-		"/": {
+		"/Document.getList": {
 				"post": {
 					"tags": [
-						""
+						"Document"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/DocumentGetListRequest"
+							}
+						}
+					],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Response"
+								"$ref": "#/definitions/DocumentGetListResponse"
 							}
 						},
 						"400": {
@@ -7756,7 +8066,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getOne": {
 				"post": {
@@ -7799,7 +8109,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getPublicLink": {
 				"post": {
@@ -7842,7 +8152,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getPublicLink_v2": {
 				"post": {
@@ -7885,7 +8195,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getNextIdent": {
 				"post": {
@@ -7928,7 +8238,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.create": {
 				"post": {
@@ -7971,7 +8281,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.update": {
 				"post": {
@@ -8014,7 +8324,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.updateDeadlines": {
 				"post": {
@@ -8057,7 +8367,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.updateOwner": {
 				"post": {
@@ -8100,7 +8410,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.updateFields": {
 				"post": {
@@ -8143,7 +8453,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getLinkedDocuments": {
 				"post": {
@@ -8186,7 +8496,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getTree": {
 				"post": {
@@ -8229,7 +8539,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.updateStep": {
 				"post": {
@@ -8272,7 +8582,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.validate": {
 				"post": {
@@ -8315,7 +8625,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.updateDeliveryStep": {
 				"post": {
@@ -8358,7 +8668,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.sendDocByMail": {
 				"post": {
@@ -8401,7 +8711,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getPaymentList": {
 				"post": {
@@ -8444,7 +8754,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getForCopy": {
 				"post": {
@@ -8487,7 +8797,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getModel": {
 				"post": {
@@ -8530,7 +8840,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getPayment": {
 				"post": {
@@ -8573,7 +8883,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.createPayment": {
 				"post": {
@@ -8616,7 +8926,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.deletePayment": {
 				"post": {
@@ -8659,7 +8969,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.getPaymentUrl": {
 				"post": {
@@ -8702,7 +9012,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.linkPurchase": {
 				"post": {
@@ -8745,7 +9055,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.updateSharingGroups": {
 				"post": {
@@ -8788,7 +9098,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.enablePublicLink": {
 				"post": {
@@ -8831,7 +9141,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Document.diasblePublicLink": {
 				"post": {
@@ -8874,7 +9184,50 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
+		},
+		"/DocRows.getList": {
+				"post": {
+					"tags": [
+						"DocRows"
+					],
+					"summary": "",
+					"description": "",
+					"produces": [
+						"application/json"
+					],
+					"parameters": [
+						{
+							"in": "body",
+							"name": "body",
+							"description": "params",
+							"required": true,
+							"schema": {
+								"$ref": "#/definitions/DocRowsGetListRequest"
+							}
+						}
+					],
+					"responses": {
+						"200": {
+							"description": "Request executed successfully",
+							"schema": {
+								"$ref": "#/definitions/DocRowsGetListResponse"
+							}
+						},
+						"400": {
+							"description": "Error : bad parameters or missing parameters"
+						},
+						"401": {
+							"description": "Error : User is not authenticated"
+						},
+						"403": {
+							"description": "Error : User has not enought rights"
+						},
+						"500": {
+							"description": "Error : account is disabled"
+						}
+					}
+				}
 		},
 		"/": {
 				"post": {
@@ -8907,7 +9260,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/": {
 				"post": {
@@ -8940,7 +9293,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/": {
 				"post": {
@@ -8973,7 +9326,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/": {
 				"post": {
@@ -9006,40 +9359,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
-		},
-		"/": {
-				"post": {
-					"tags": [
-						""
-					],
-					"summary": "",
-					"description": "",
-					"produces": [
-						"application/json"
-					],
-					"parameters": [],
-					"responses": {
-						"200": {
-							"description": "Request executed successfully",
-							"schema": {
-								"$ref": "#/definitions/Response"
-							}
-						},
-						"400": {
-							"description": "Error : bad parameters or missing parameters"
-						},
-						"401": {
-							"description": "Error : User is not authenticated"
-						},
-						"403": {
-							"description": "Error : User has not enought rights"
-						},
-						"500": {
-							"description": "Error : account is disabled"
-						}
-					}
-				},
+				}
 		},
 		"/Mails.getList": {
 				"post": {
@@ -9082,7 +9402,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.sendOne": {
 				"post": {
@@ -9125,7 +9445,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.getCustomTemplates": {
 				"post": {
@@ -9168,7 +9488,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.delete": {
 				"post": {
@@ -9211,7 +9531,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.getOne": {
 				"post": {
@@ -9254,7 +9574,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.getAttachments": {
 				"post": {
@@ -9297,7 +9617,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.getCustomTags": {
 				"post": {
@@ -9330,7 +9650,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.createCustomTemplate": {
 				"post": {
@@ -9373,7 +9693,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.updateCustomTemplate": {
 				"post": {
@@ -9416,7 +9736,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.deleteCustomTemplate": {
 				"post": {
@@ -9459,7 +9779,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Mails.getCustomTemplate": {
 				"post": {
@@ -9502,7 +9822,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Event.getList": {
 				"post": {
@@ -9545,7 +9865,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Expense.getList": {
 				"post": {
@@ -9588,7 +9908,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Expense.getOne": {
 				"post": {
@@ -9631,7 +9951,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Expense.create": {
 				"post": {
@@ -9674,7 +9994,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Expense.update": {
 				"post": {
@@ -9717,7 +10037,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Expense.delete": {
 				"post": {
@@ -9760,7 +10080,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Expense.getNextIdent": {
 				"post": {
@@ -9793,7 +10113,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Expense.uploadRelatedFile": {
 				"post": {
@@ -9836,7 +10156,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/ListingSetting.getSavedSearches": {
 				"post": {
@@ -9879,7 +10199,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/": {
 				"post": {
@@ -9912,7 +10232,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.getMailingLists": {
 				"post": {
@@ -9955,7 +10275,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.createMailingList": {
 				"post": {
@@ -9998,7 +10318,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.updateMailingList": {
 				"post": {
@@ -10041,7 +10361,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.createCampaign": {
 				"post": {
@@ -10084,7 +10404,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.getCampaigns": {
 				"post": {
@@ -10127,7 +10447,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.getCampaign": {
 				"post": {
@@ -10170,7 +10490,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.getPrefs": {
 				"post": {
@@ -10203,7 +10523,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.sendCampaign": {
 				"post": {
@@ -10246,7 +10566,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.updateOwner": {
 				"post": {
@@ -10289,7 +10609,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Marketing.updateSharingGroups": {
 				"post": {
@@ -10332,7 +10652,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.getList": {
 				"post": {
@@ -10375,7 +10695,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.getOne": {
 				"post": {
@@ -10418,7 +10738,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.create": {
 				"post": {
@@ -10461,7 +10781,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.update": {
 				"post": {
@@ -10504,7 +10824,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.delete": {
 				"post": {
@@ -10547,7 +10867,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.getFunnels": {
 				"post": {
@@ -10580,7 +10900,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.getStepsForFunnel": {
 				"post": {
@@ -10623,7 +10943,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.getSources": {
 				"post": {
@@ -10656,7 +10976,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.getSource": {
 				"post": {
@@ -10699,7 +11019,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.createSource": {
 				"post": {
@@ -10742,7 +11062,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateSource": {
 				"post": {
@@ -10785,7 +11105,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.deleteSource": {
 				"post": {
@@ -10828,7 +11148,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateStatus": {
 				"post": {
@@ -10871,7 +11191,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateStep": {
 				"post": {
@@ -10914,7 +11234,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateOwner": {
 				"post": {
@@ -10957,7 +11277,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateLinkedDocuments": {
 				"post": {
@@ -11000,7 +11320,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.getCurrentIdent": {
 				"post": {
@@ -11033,7 +11353,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateSharingGroups": {
 				"post": {
@@ -11076,7 +11396,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateDefaultDocument": {
 				"post": {
@@ -11119,7 +11439,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Opportunities.updateSharingStaffs": {
 				"post": {
@@ -11162,7 +11482,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Payments.getList": {
 				"post": {
@@ -11205,7 +11525,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Payments.create": {
 				"post": {
@@ -11248,7 +11568,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Payments.delete": {
 				"post": {
@@ -11291,7 +11611,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.getList": {
 				"post": {
@@ -11334,7 +11654,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.getOne": {
 				"post": {
@@ -11377,7 +11697,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.create": {
 				"post": {
@@ -11420,7 +11740,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.update": {
 				"post": {
@@ -11463,7 +11783,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.delete": {
 				"post": {
@@ -11506,7 +11826,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updateOwner": {
 				"post": {
@@ -11549,7 +11869,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.getAddress": {
 				"post": {
@@ -11592,7 +11912,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.getContact": {
 				"post": {
@@ -11635,7 +11955,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.getBillingContact": {
 				"post": {
@@ -11678,7 +11998,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.addAddress": {
 				"post": {
@@ -11721,7 +12041,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.addContact": {
 				"post": {
@@ -11764,7 +12084,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updateAddress": {
 				"post": {
@@ -11807,7 +12127,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updateContact": {
 				"post": {
@@ -11850,7 +12170,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.deleteContact": {
 				"post": {
@@ -11893,7 +12213,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updatePrefs": {
 				"post": {
@@ -11936,7 +12256,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.deleteAddress": {
 				"post": {
@@ -11979,7 +12299,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updateContactPicture": {
 				"post": {
@@ -12022,7 +12342,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.transformToCustomer": {
 				"post": {
@@ -12065,7 +12385,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updateThirdPicture": {
 				"post": {
@@ -12108,7 +12428,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updateSharingGroups": {
 				"post": {
@@ -12151,7 +12471,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Prospects.updateSharingStaffs": {
 				"post": {
@@ -12194,7 +12514,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stat.getSalesStats": {
 				"post": {
@@ -12237,7 +12557,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.getForItem": {
 				"post": {
@@ -12280,7 +12600,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.getWarehouses": {
 				"post": {
@@ -12323,7 +12643,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.getMoves": {
 				"post": {
@@ -12366,7 +12686,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.createWarehouse": {
 				"post": {
@@ -12409,7 +12729,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.updateWarehouse": {
 				"post": {
@@ -12452,7 +12772,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.deleteWarehouse": {
 				"post": {
@@ -12495,7 +12815,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.setDefaultWarehouse": {
 				"post": {
@@ -12538,7 +12858,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.getWarehouse": {
 				"post": {
@@ -12581,7 +12901,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.activate": {
 				"post": {
@@ -12624,7 +12944,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.desactivate": {
 				"post": {
@@ -12667,7 +12987,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.reactivate": {
 				"post": {
@@ -12710,7 +13030,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.add": {
 				"post": {
@@ -12753,7 +13073,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.getList": {
 				"post": {
@@ -12796,7 +13116,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.getPrefs": {
 				"post": {
@@ -12829,7 +13149,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Stock.updateThresHold": {
 				"post": {
@@ -12872,7 +13192,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.getOne": {
 				"post": {
@@ -12915,7 +13235,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.getConversation": {
 				"post": {
@@ -12958,7 +13278,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.deleteConversation": {
 				"post": {
@@ -13001,7 +13321,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.create": {
 				"post": {
@@ -13044,7 +13364,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.reply": {
 				"post": {
@@ -13087,7 +13407,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.updateReply": {
 				"post": {
@@ -13130,7 +13450,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.updateAssignation": {
 				"post": {
@@ -13173,7 +13493,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.updateStep": {
 				"post": {
@@ -13216,7 +13536,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.updateThird": {
 				"post": {
@@ -13259,7 +13579,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Support.getTemplates": {
 				"post": {
@@ -13302,7 +13622,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/SmartTags.getList": {
 				"post": {
@@ -13345,7 +13665,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/SmartTags.assign": {
 				"post": {
@@ -13388,7 +13708,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/SmartTags.unassign": {
 				"post": {
@@ -13431,7 +13751,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSCashtill.getList": {
 				"post": {
@@ -13474,7 +13794,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSCashtill.open": {
 				"post": {
@@ -13517,7 +13837,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSCashtill.close": {
 				"post": {
@@ -13560,7 +13880,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSCashtill.getX": {
 				"post": {
@@ -13603,7 +13923,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSCashtill.getPayMediums": {
 				"post": {
@@ -13646,7 +13966,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSCashtill.getStaffs": {
 				"post": {
@@ -13689,7 +14009,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSCashtill.updateLastSync": {
 				"post": {
@@ -13732,7 +14052,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSReceipt.getList": {
 				"post": {
@@ -13775,7 +14095,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSReceipt.getOne": {
 				"post": {
@@ -13818,7 +14138,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSReceipt.create": {
 				"post": {
@@ -13861,7 +14181,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSReceipt.sendToClient": {
 				"post": {
@@ -13904,7 +14224,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSReceipt.assignThird": {
 				"post": {
@@ -13947,7 +14267,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSReceipt.unassignThird": {
 				"post": {
@@ -13990,7 +14310,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSMove.getList": {
 				"post": {
@@ -14033,7 +14353,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/POSMove.create": {
 				"post": {
@@ -14076,7 +14396,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Tracking.getfor": {
 				"post": {
@@ -14119,7 +14439,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Tracking.record": {
 				"post": {
@@ -14162,7 +14482,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Timetracking.getList": {
 				"post": {
@@ -14205,7 +14525,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Timetracking.getOrderedList": {
 				"post": {
@@ -14248,7 +14568,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Timetracking.getOne": {
 				"post": {
@@ -14291,7 +14611,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Timetracking.create": {
 				"post": {
@@ -14334,7 +14654,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Timetracking.update": {
 				"post": {
@@ -14377,7 +14697,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Timetracking.delete": {
 				"post": {
@@ -14420,7 +14740,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Briefcases.getList": {
 				"post": {
@@ -14463,7 +14783,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Briefcases.uploadFile": {
 				"post": {
@@ -14506,7 +14826,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Briefcases.delete": {
 				"post": {
@@ -14549,7 +14869,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		},
 		"/Briefcases.getRootFolders": {
 				"post": {
@@ -14582,7 +14902,7 @@
 							"description": "Error : account is disabled"
 						}
 					}
-				},
+				}
 		}
 
 }

@@ -12,7 +12,7 @@
   "host": "api.sellsy.com",
   "basePath": "/",
   "tags": [
-      {Tags}
+  {Tags}
   ],
   "schemes": [
     "https"
