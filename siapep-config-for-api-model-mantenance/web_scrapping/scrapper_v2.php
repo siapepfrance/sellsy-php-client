@@ -50,6 +50,7 @@
 			 'blockTitleFixed' => '',
 			 'isBlockTitleFixed' => false,
 			 'methodName' => '',
+			 'tagName' => '',
 			 'requestModel' => '',
 			 'responseModel' => '',
 			 'responseModelName' => '',
@@ -74,9 +75,10 @@
 			 	$requestTextToEval = applyFixes($value->GetPlainText(), 'sanitizeRequestBlock');
 			 	// Fix : This remove the json code which are written in php block
 			 	$requestTextToEval = stripos($requestTextToEval, '$request') != false ? $requestTextToEval : '';
-			 	$transformResult = getRequestModelAndName($requestTextToEval, $requestAsArray);
+			 	$transformResult = getRequestModelTagAndName($requestTextToEval, $requestAsArray);
 				$requestModel = $transformResult['model'];
 				$information['methodName'] = $transformResult['name'];
+				$information['tagName'] = $transformResult['tag'];
 				$information['requestModel'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? $requestModel : null;
 				$information['requestModelName'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? getModelName($information['methodName'], 'Request') : null;
 				$information['responseModelName'] = getModelName($information['methodName'], 'Response');
@@ -339,8 +341,8 @@
 				return $inputFixed;
 	}
 
-  function getRequestModelAndName($requestTextToEval, $requestAsArray) {
-		$data = ['name' => '', 'model' => []];
+  function getRequestModelTagAndName($requestTextToEval, $requestAsArray) {
+		$data = ['name' => '', 'tag' => [], 'model' => []];
 		$path = '';
 		$inputFixed = '';
 		try {
@@ -350,6 +352,7 @@
 						eval($inputFixed);
 						$data = [];
 						$data['name'] = $request['method'];
+						$data['tag'] = explode(".", trim($request['method']))[0];
 						if (isset($request['params']) and count($request['params']) > 0) {
 							 $data['model'] = getRequestModel($request['params']);
 					  }
@@ -427,12 +430,18 @@
 
 	$sections = getSectionsInformations($rows);
 	$requests = [];
+	$pathsAsJson = "{\n";
+	$pathModel = file_get_contents('../templates/swagger_path_with_response.tpl');
+	$pathModelWithRequest = file_get_contents('../templates/swagger_path_with_response_request.tpl');
+	$pathModelWithComa = file_get_contents('../templates/swagger_path_with_response_coma.tpl');
+	$pathModelWithComaAndRequest = file_get_contents('../templates/swagger_path_with_response_request_coma.tpl');
 
 	foreach ($sections as $key => $value) {
 		// Display
 		echo '<b>' . $value['blockTitle'] . ' ' . ($value['isBlockTitleFixed'] ? (' -> fixed -> ' . $value['blockTitleFixed']) : ('')) . '</b>: <br/><br/>';
 		echo '- blockTitleFixed : ' . $value['blockTitleFixed'] . '<br/>';
 		echo '- methodName : ' . $value['methodName'] . '<br/>';
+		echo '- tagName : ' . $value['tagName'] . '<br/>';
 		echo '- requestModel : ' . json_encode($value['requestModel']) . '<br/>';
 		echo '- responseModel : ' . $value['responseModel'] . '<br/>';
 		echo '- requestModelName : ' . ($value['requestModelName'] != null ? $value['requestModelName'] : 'null') . '<br/>';
@@ -440,12 +449,38 @@
 		echo '- pathName : ' . $value['pathName'] . '<br/><br/>';
 
 		// File generation
-		if($value['requestModel'] && isset($value['requestModel']['properties']) && $value['requestModel']['properties'] != null) {
+		$hasRequestModel = ($value['requestModel'] && isset($value['requestModel']['properties']) && $value['requestModel']['properties'] != null);
+
+		// 1 - Requests Models
+		if($hasRequestModel) {
 			$requests[$value['requestModelName']] = $value['requestModel'];
 		}
+		// 2 - Paths
+		// Last section
+		if($key == (count($sections) - 1)) {
+				if($hasRequestModel === true) {
+					$matchedPathModel =  $pathModelWithRequest;
+				} else {
+					$matchedPathModel =  $pathModel;
+				}
+		} else {
+		// Other sections
+				if($hasRequestModel === true) {
+					$matchedPathModel =  $pathModelWithComaAndRequest;
+				} else {
+					$matchedPathModel =  $pathModelWithComa;
+				}
+		}
+		$pathsAsJson .= str_replace(
+				['{pathName}', '{tagName}', '{requestModelName}', '{responseModelName}'],
+				[$value['pathName'], $value['tagName'], $value['requestModelName'], $value['responseModelName']],
+				$matchedPathModel
+		);
 	}
+	$pathsAsJson .= "\n}";
 
 	writeFile('../scrapping_outputs/swagger_generated_requests.json', json_encode($requests));
+	writeFile('../scrapping_outputs/swagger_generated_paths.json', $pathsAsJson);
 
 
 ?>

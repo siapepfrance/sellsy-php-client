@@ -366,7 +366,7 @@
 					}
 				},
 		},
-		"/Accountdatas.createUnits": {
+		"/Accountdatas.createUnities": {
 				"post": {
 					"tags": [
 						"Accountdatas"
@@ -383,7 +383,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/AccountdatasCreateUnitsRequest"
+								"$ref": "#/definitions/AccountdatasCreateUnitiesRequest"
 							}
 						}
 					],
@@ -391,7 +391,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/AccountdatasCreateUnitsResponse"
+								"$ref": "#/definitions/AccountdatasCreateUnitiesResponse"
 							}
 						},
 						"400": {
@@ -495,7 +495,7 @@
 					}
 				},
 		},
-		"/Accountdatas.updateTaxes": {
+		"/Accountdatas.createTaxes": {
 				"post": {
 					"tags": [
 						"Accountdatas"
@@ -512,7 +512,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/AccountdatasUpdateTaxesRequest"
+								"$ref": "#/definitions/AccountdatasCreateTaxesRequest"
 							}
 						}
 					],
@@ -520,7 +520,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/AccountdatasUpdateTaxesResponse"
+								"$ref": "#/definitions/AccountdatasCreateTaxesResponse"
 							}
 						},
 						"400": {
@@ -796,7 +796,7 @@
 					}
 				},
 		},
-		"/Accountdatas.updateUnits": {
+		"/Accountdatas.updateUnities": {
 				"post": {
 					"tags": [
 						"Accountdatas"
@@ -813,7 +813,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/AccountdatasUpdateUnitsRequest"
+								"$ref": "#/definitions/AccountdatasUpdateUnitiesRequest"
 							}
 						}
 					],
@@ -821,7 +821,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/AccountdatasUpdateUnitsResponse"
+								"$ref": "#/definitions/AccountdatasUpdateUnitiesResponse"
 							}
 						},
 						"400": {
@@ -839,32 +839,22 @@
 					}
 				},
 		},
-		"/Accountdatas.deleteUnit": {
+		"/": {
 				"post": {
 					"tags": [
-						"Accountdatas"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/AccountdatasDeleteUnitRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/AccountdatasDeleteUnitResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -1586,32 +1576,22 @@
 					}
 				},
 		},
-		"/AccountingJournal.getList": {
+		"/": {
 				"post": {
 					"tags": [
-						"AccountingJournal"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/AccountingJournalGetListRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/AccountingJournalGetListResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -2462,32 +2442,22 @@
 					}
 				},
 		},
-		"/Purchase.update": {
+		"/": {
 				"post": {
 					"tags": [
-						"Purchase"
+						""
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/PurchaseUpdateRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/PurchaseUpdateResponse"
+								"$ref": "#/definitions/"
 							}
 						},
 						"400": {
@@ -4248,32 +4218,22 @@
 					}
 				},
 		},
-		"/Catalogue.getList": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueGetListRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueGetListResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4420,32 +4380,22 @@
 					}
 				},
 		},
-		"/Catalogue.update": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4463,32 +4413,22 @@
 					}
 				},
 		},
-		"/Catalogue.delete": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4549,32 +4489,22 @@
 					}
 				},
 		},
-		"/Catalogue.getVariations": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationsResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4592,32 +4522,22 @@
 					}
 				},
 		},
-		"/Catalogue.getVariation": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4635,32 +4555,22 @@
 					}
 				},
 		},
-		"/Catalogue.getVariationFields": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationFieldsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationFieldsResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4678,32 +4588,22 @@
 					}
 				},
 		},
-		"/Catalogue.getVariationFieldsItem": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationFieldsItemRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueGetVariationFieldsItemResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4721,32 +4621,22 @@
 					}
 				},
 		},
-		"/Catalogue.createVariationField": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueCreateVariationFieldRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueCreateVariationFieldResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4764,32 +4654,22 @@
 					}
 				},
 		},
-		"/Catalogue.updateVariationField": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateVariationFieldRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateVariationFieldResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4807,32 +4687,22 @@
 					}
 				},
 		},
-		"/Catalogue.deleteVariationFields": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteVariationFieldsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteVariationFieldsResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4850,32 +4720,22 @@
 					}
 				},
 		},
-		"/Catalogue.deleteVariationCollection": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteVariationCollectionRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteVariationCollectionResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4893,32 +4753,22 @@
 					}
 				},
 		},
-		"/Catalogue.activateVariations": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueActivateVariationsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueActivateVariationsResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4936,32 +4786,22 @@
 					}
 				},
 		},
-		"/Catalogue.createVariations": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueCreateVariationsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueCreateVariationsResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -4979,32 +4819,22 @@
 					}
 				},
 		},
-		"/Catalogue.updateVariation": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateVariationRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateVariationResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -5022,32 +4852,22 @@
 					}
 				},
 		},
-		"/Catalogue.deleteVariation": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteVariationRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteVariationResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -5108,32 +4928,22 @@
 					}
 				},
 		},
-		"/Catalogue.updatePrice": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueUpdatePriceRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueUpdatePriceResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -5151,32 +4961,22 @@
 					}
 				},
 		},
-		"/Catalogue.getBarCodes": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueGetBarCodesRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueGetBarCodesResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -5194,32 +4994,22 @@
 					}
 				},
 		},
-		"/Catalogue.createBarCode": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueCreateBarCodeRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueCreateBarCodeResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -5237,32 +5027,22 @@
 					}
 				},
 		},
-		"/Catalogue.updateBarCode": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateBarCodeRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueUpdateBarCodeResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -5280,32 +5060,22 @@
 					}
 				},
 		},
-		"/Catalogue.deleteBarCode": {
+		"/": {
 				"post": {
 					"tags": [
-						"Catalogue"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteBarCodeRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/CatalogueDeleteBarCodeResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -6183,32 +5953,22 @@
 					}
 				},
 		},
-		"/Search on listing.": {
+		"/": {
 				"post": {
 					"tags": [
-						"Search on listing"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/Search on listingRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Search on listingResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -6484,32 +6244,22 @@
 					}
 				},
 		},
-		"/Client.update": {
+		"/": {
 				"post": {
 					"tags": [
-						"Client"
+						""
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/ClientUpdateRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/ClientUpdateResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -6613,32 +6363,22 @@
 					}
 				},
 		},
-		"/Client.addAddress": {
+		"/": {
 				"post": {
 					"tags": [
-						"Client"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/ClientAddAddressRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/ClientAddAddressResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7258,32 +6998,22 @@
 					}
 				},
 		},
-		"/Staffs.getList": {
+		"/": {
 				"post": {
 					"tags": [
-						"Staffs"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/StaffsGetListRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/StaffsGetListResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7301,32 +7031,22 @@
 					}
 				},
 		},
-		"/Staffs.getOne": {
+		"/": {
 				"post": {
 					"tags": [
-						"Staffs"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/StaffsGetOneRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/StaffsGetOneResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7344,32 +7064,22 @@
 					}
 				},
 		},
-		"/Staffs.getGroups": {
+		"/": {
 				"post": {
 					"tags": [
-						"Staffs"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/StaffsGetGroupsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/StaffsGetGroupsResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7635,32 +7345,22 @@
 					}
 				},
 		},
-		"/Peoples.getList": {
+		"/": {
 				"post": {
 					"tags": [
-						"Peoples"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/PeoplesGetListRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/PeoplesGetListResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7678,32 +7378,22 @@
 					}
 				},
 		},
-		"/Peoples.getOne": {
+		"/": {
 				"post": {
 					"tags": [
-						"Peoples"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/PeoplesGetOneRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/PeoplesGetOneResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7721,32 +7411,22 @@
 					}
 				},
 		},
-		"/Peoples.create": {
+		"/": {
 				"post": {
 					"tags": [
-						"Peoples"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/PeoplesCreateRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/PeoplesCreateResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7764,32 +7444,22 @@
 					}
 				},
 		},
-		"/Peoples.update": {
+		"/": {
 				"post": {
 					"tags": [
-						"Peoples"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/PeoplesUpdateRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/PeoplesUpdateResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7807,32 +7477,22 @@
 					}
 				},
 		},
-		"/Peoples.delete": {
+		"/": {
 				"post": {
 					"tags": [
-						"Peoples"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/PeoplesDeleteRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/PeoplesDeleteResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -7893,32 +7553,22 @@
 					}
 				},
 		},
-		"/Peoples.getAddresses": {
+		"/": {
 				"post": {
 					"tags": [
-						"Peoples"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/PeoplesGetAddressesRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/PeoplesGetAddressesResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -8065,32 +7715,22 @@
 					}
 				},
 		},
-		"/Document.getList": {
+		"/": {
 				"post": {
 					"tags": [
-						"Document"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/DocumentGetListRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/DocumentGetListResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -9183,7 +8823,7 @@
 					}
 				},
 		},
-		"/Document.disablePublicLink": {
+		"/Document.diasblePublicLink": {
 				"post": {
 					"tags": [
 						"Document"
@@ -9200,7 +8840,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/DocumentDisablePublicLinkRequest"
+								"$ref": "#/definitions/DocumentDiasblePublicLinkRequest"
 							}
 						}
 					],
@@ -9208,7 +8848,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/DocumentDisablePublicLinkResponse"
+								"$ref": "#/definitions/DocumentDiasblePublicLinkResponse"
 							}
 						},
 						"400": {
@@ -9226,32 +8866,22 @@
 					}
 				},
 		},
-		"/Docrows.getList": {
+		"/": {
 				"post": {
 					"tags": [
-						"Docrows"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/DocrowsGetListRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/DocrowsGetListResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -9269,32 +8899,22 @@
 					}
 				},
 		},
-		"/ElectronicSign.create": {
+		"/": {
 				"post": {
 					"tags": [
-						"ElectronicSign"
+						""
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/ElectronicSignCreateRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/ElectronicSignCreateResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -9312,32 +8932,22 @@
 					}
 				},
 		},
-		"/ElectronicSign.delete": {
+		"/": {
 				"post": {
 					"tags": [
-						"ElectronicSign"
+						""
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/ElectronicSignDeleteRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/ElectronicSignDeleteResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -9355,32 +8965,22 @@
 					}
 				},
 		},
-		"/ElectronicSign.getStatus": {
+		"/": {
 				"post": {
 					"tags": [
-						"ElectronicSign"
+						""
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/ElectronicSignGetStatusRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/ElectronicSignGetStatusResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -9398,32 +8998,22 @@
 					}
 				},
 		},
-		"/ElectronicSign.getForDoc": {
+		"/": {
 				"post": {
 					"tags": [
-						"ElectronicSign"
+						""
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/ElectronicSignGetForDocRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/ElectronicSignGetForDocResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -9709,17 +9299,7 @@
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/MailsGetCustomTagsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
@@ -10291,32 +9871,22 @@
 					}
 				},
 		},
-		"/Search on listing with a saved search ID.": {
+		"/": {
 				"post": {
 					"tags": [
-						"Search on listing with a saved search ID"
+						"Array"
 					],
 					"summary": "",
 					"description": "",
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/Search on listing with a saved search IDRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/Search on listing with a saved search IDResponse"
+								"$ref": "#/definitions/Response"
 							}
 						},
 						"400": {
@@ -10602,17 +10172,7 @@
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/MarketingGetPrefsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
@@ -12497,10 +12057,10 @@
 					}
 				},
 		},
-		"/Client.updateThirdPicture": {
+		"/Prospects.updateThirdPicture": {
 				"post": {
 					"tags": [
-						"Client"
+						"Prospects"
 					],
 					"summary": "",
 					"description": "",
@@ -12514,7 +12074,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/ClientUpdateThirdPictureRequest"
+								"$ref": "#/definitions/ProspectsUpdateThirdPictureRequest"
 							}
 						}
 					],
@@ -12522,7 +12082,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/ClientUpdateThirdPictureResponse"
+								"$ref": "#/definitions/ProspectsUpdateThirdPictureResponse"
 							}
 						},
 						"400": {
@@ -13238,17 +12798,7 @@
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/StockGetPrefsRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",
@@ -14518,7 +14068,7 @@
 					}
 				},
 		},
-		"/Tracking.getFor": {
+		"/Tracking.getfor": {
 				"post": {
 					"tags": [
 						"Tracking"
@@ -14535,7 +14085,7 @@
 							"description": "params",
 							"required": true,
 							"schema": {
-								"$ref": "#/definitions/TrackingGetForRequest"
+								"$ref": "#/definitions/TrackingGetforRequest"
 							}
 						}
 					],
@@ -14543,7 +14093,7 @@
 						"200": {
 							"description": "Request executed successfully",
 							"schema": {
-								"$ref": "#/definitions/TrackingGetForResponse"
+								"$ref": "#/definitions/TrackingGetforResponse"
 							}
 						},
 						"400": {
@@ -15001,17 +14551,7 @@
 					"produces": [
 						"application/json"
 					],
-					"parameters": [
-						{
-							"in": "body",
-							"name": "body",
-							"description": "params",
-							"required": true,
-							"schema": {
-								"$ref": "#/definitions/BriefcasesGetRootFoldersRequest"
-							}
-						}
-					],
+					"parameters": [],
 					"responses": {
 						"200": {
 							"description": "Request executed successfully",

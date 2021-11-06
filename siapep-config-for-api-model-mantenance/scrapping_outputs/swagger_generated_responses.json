@@ -18,101 +18,101 @@
 
 
 
-"AccountdatasCreateTaxeResponse" : 
+"AccountdatasCreateTaxeResponse" :
 {"response":{"taxeid":4892},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasUpdateTaxeResponse" : 
+"AccountdatasUpdateTaxeResponse" :
 {"response":null,"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasDeleteTaxeResponse" : 
+"AccountdatasDeleteTaxeResponse" :
 {"response":null,"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasGetUnitsResponse" : 
+"AccountdatasGetUnitsResponse" :
 {"response":{"70":{"id":"70","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"forfaitaire"},"71":{"id":"71","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"m2"},"72":{"id":"72","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"3","value":"m3"},"73":{"id":"73","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"4","value":"kg"},"74":{"id":"74","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"5","value":"tonne"},"_xml_childtag":"unit"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetUnitResponse" : 
+"AccountdatasGetUnitResponse" :
 {"response":{"id":"70","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"forfaitaire"},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasCreateUnitResponse" : 
+"AccountdatasCreateUnitResponse" :
 {"response":{"unitid":4893},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasCreateUnitsResponse" : 
+"AccountdatasCreateUnitsResponse" :
 {"response":{"unitid":4893},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasCreatePayMediumsResponse" : 
+"AccountdatasCreatePayMediumsResponse" :
 {"response":{"unitid":4893},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasCreateTaxesResponse" : 
+"AccountdatasCreateTaxesResponse" :
 {"response":{'ids' : [1, 2]}},"error":"","status":"success"}
-            
+
 
 ,
 
 
 
-"AccountdatasUpdateTaxesResponse" : 
+"AccountdatasUpdateTaxesResponse" :
 {"response":{'ids' : [1, 2]}},"error":"","status":"success"}
-            
+
 
 ,
 
 
 
-"AccountdatasUpdateShippingsResponse" : 
+"AccountdatasUpdateShippingsResponse" :
 {"response":{"ids":[123, 1234]},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasCreateShippingsResponse" : 
+"AccountdatasCreateShippingsResponse" :
 {"response":{"ids":{[4893,4894]},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasUpdatePackagingsResponse" : 
+"AccountdatasUpdatePackagingsResponse" :
 {"response":{"ids":[123, 1234]},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasCreatePackagingsResponse" : 
+"AccountdatasCreatePackagingsResponse" :
 {"response":{"ids":{[4893,4894]},"error":"","status":"success"}
 
 ,
@@ -125,158 +125,158 @@
 
 
 
-"AccountdatasUpdatePayMediumsResponse" : 
+"AccountdatasUpdatePayMediumsResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasUpdateUnitsResponse" : 
+"AccountdatasUpdateUnitsResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasDeleteUnitResponse" : 
+"AccountdatasDeleteUnitResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetPackagingListResponse" : 
+"AccountdatasGetPackagingListResponse" :
     {"response":{"139596":{"type":"packaging","corpid":"138","owwnerid":"317","status":"ok","isEnabled":"Y","rank":"1","name":"packaging","notes":"packaging","unitAmount":"3.990000000","unitamountIsTaxesFree":"Y","unitid":"4728","unit":"","qt":"4.000000000","taxid":"4724","taxrate":"0.000000000","purchaseAmount":"0.00000000","stock":"0","createAt":"0000-00-00 00:00:00","updatedAt":"2012-06-19 10:40:26","id":"139596","typeLabel":"emballage","nameSample":"packaging","notesSample":"packaging","notesHTMLSample":"packaging","isTaxesFree":"HT","unitAmountTaxesFree":"3.990000000","formatted_unitAmount":"3.990000000","formatted_unitAmount_ht":"3.990000000","formatted_unitAmount_ttc":"3.99","formatted_qt":"4.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"4.000000000","formatted_full_unitAmount":"3.990000000"},{"139597":{"type":"packaging","corpid":"138","owwnerid":"317","status":"ok","isEnabled":"Y","rank":"2","name":"pack","notes":"packaging","unitAmount":"29.990000000","unitamountIsTaxesFree":"Y","unitid":"4728","unit":"","qt":"1.000000000","taxid":"4724","taxrate":"0.000000000","purchaseAmount":"0.00000000","stock":"0","createAt":"0000-00-00 00:00:00","updatedAt":"2012-06-19 10:27:38","id":"139597","typeLabel":"emballage","nameSample":"pack","notesSample":"packaging","notesHTMLSample":"packaging","isTaxesFree":"HT","unitAmountTaxesFree":"29.990000000","formatted_unitAmount":"29.990000000","formatted_unitAmount_ht":"29.990000000","formatted_unitAmount_ttc":"29.99","formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000","formatted_full_unitAmount":"29.990000000"},"_xml_childtag":"packaging"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetPackagingResponse" : 
+"AccountdatasGetPackagingResponse" :
     {"response":{"type":"packaging","corpid":"138","owwnerid":"317","status":"ok","isEnabled":"Y","rank":"1","name":"packaging","notes":"packaging","unitAmount":"3.990000000","unitamountIsTaxesFree":"Y","unitid":"4728","unit":"","qt":"4.000000000","taxid":"4724","taxrate":"0.000000000","purchaseAmount":"0.00000000","stock":"0","createAt":"0000-00-00 00:00:00","updatedAt":"2012-06-19 10:40:26","id":"139596","typeLabel":"emballage","nameSample":"packaging","notesSample":"packaging","notesHTMLSample":"packaging","isTaxesFree":"HT","unitAmountTaxesFree":"3.990000000","formatted_unitAmount":"3.990000000","formatted_unitAmount_ht":"3.990000000","formatted_unitAmount_ttc":"3.99","formatted_qt":"4.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"4.000000000","formatted_full_unitAmount":"3.990000000"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasRecordPackagingResponse" : 
+"AccountdatasRecordPackagingResponse" :
     {"response":{"id":"139596"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasDeletePackagingResponse" : 
+"AccountdatasDeletePackagingResponse" :
     {"response":{null},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetShippingListResponse" : 
+"AccountdatasGetShippingListResponse" :
     {"response":{"139654":{"type":"shipping","corpid":"138","owwnerid":"317","status":"ok","isEnabled":"Y","rank":"0","name":"shipping","notes":"shipping","unitAmount":"20.000000000","unitamountIsTaxesFree":"Y","unitid":"0","unit":"","qt":"1.000000000","taxid":"4724","taxrate":"0.000000000","purchaseAmount":"0.00000000","stock":"0","createAt":"2012-06-18 17:57:40","updatedAt":"2012-06-19 10:43:19","id":"139654","typeLabel":"transport","nameSample":"shipping","notesSample":"shipping","notesHTMLSample":"shipping","isTaxesFree":"HT","unitAmountTaxesFree":"20.000000000","formatted_unitAmount":"20.000000000","formatted_unitAmount_ht":"20.000000000","formatted_unitAmount_ttc":"20","formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000","formatted_full_unitAmount":"20.000000000"},{"139655":{"type":"shipping","corpid":"138","owwnerid":"317","status":"ok","isEnabled":"Y","rank":"2","name":"ship","notes":"shipping","unitAmount":"1.000000000","unitamountIsTaxesFree":"Y","unitid":"0","unit":"","qt":"1.000000000","taxid":"4724","taxrate":"0.000000000","purchaseAmount":"0.00000000","stock":"0","createAt":"2012-06-18 18:04:19","updatedAt":"2012-06-18 18:04:19","id":"139655","typeLabel":"transport","nameSample":"","notesSample":"","notesHTMLSample":"","isTaxesFree":"HT","unitAmountTaxesFree":"1.000000000","formatted_unitAmount":"1.000000000","formatted_unitAmount_ht":"1.000000000","formatted_unitAmount_ttc":"1","formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000","formatted_full_unitAmount":"1.000000000"},"_xml_childtag":"shipping"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetShippingResponse" : 
+"AccountdatasGetShippingResponse" :
     {"response":{"type":"shipping","corpid":"138","owwnerid":"317","status":"ok","isEnabled":"Y","rank":"0","name":"shipping","notes":"shipping","unitAmount":"20.000000000","unitamountIsTaxesFree":"Y","unitid":"0","unit":"","qt":"1.000000000","taxid":"4724","taxrate":"0.000000000","purchaseAmount":"0.00000000","stock":"0","createAt":"2012-06-18 17:57:40","updatedAt":"2012-06-19 10:43:19","id":"139654","typeLabel":"transport","nameSample":"shipping","notesSample":"shipping","notesHTMLSample":"shipping","isTaxesFree":"HT","unitAmountTaxesFree":"20.000000000","formatted_unitAmount":"20.000000000","formatted_unitAmount_ht":"20.000000000","formatted_unitAmount_ttc":"20","formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000","formatted_full_unitAmount":"20.000000000"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasRecordShippingResponse" : 
+"AccountdatasRecordShippingResponse" :
     {"response":"id":"139654","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasDeleteShippingResponse" : 
+"AccountdatasDeleteShippingResponse" :
     {"response":{null},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetPayMediumsResponse" : 
+"AccountdatasGetPayMediumsResponse" :
     {"response":{"4744":{"id":"4744","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"check","rank":"1","value":"ch\u00e8que"},"4745":{"id":"4745","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"transfer","rank":"2","value":"virement bancaire"},"4746":{"id":"4746","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"cash","rank":"3","value":"esp\u00e8ces"},"4747":{"id":"4747","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"cb","rank":"4","value":"carte bancaire"},"4748":{"id":"4748","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"pick","rank":"5","value":"pr\u00e9l\u00e8vement"},"4749":{"id":"4749","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"bor","rank":"6","value":"Billet \u00e0 Ordre Relev\u00e9 (BOR)"},"4750":{"id":"4750","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"tip","rank":"7","value":"Titre Interbancaire de Paiement (TIP)"},"4751":{"id":"4751","corpid":"138","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"lcr","rank":"8","value":"Lettre de Change Relev\u00e9 (LCR)"},"_xml_childtag":"paymedium"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetPayMediumResponse" : 
+"AccountdatasGetPayMediumResponse" :
     {"response":{"id":"4744","corpid":"138","list":"paymediums":"status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"check","rank":"1","value":"chèque"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasCreatePayMediumResponse" : 
+"AccountdatasCreatePayMediumResponse" :
     {"response":{"mediumid":"5881"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasUpdatePayMediumResponse" : 
+"AccountdatasUpdatePayMediumResponse" :
     {"response":{"mediumid":"5881"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasDeletePayMediumResponse" : 
+"AccountdatasDeletePayMediumResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetRateCategoriesResponse" : 
+"AccountdatasGetRateCategoriesResponse" :
     {"response":{"10":{"id":"10","corpid":"138","name":"Autres","hasTaxesInc":"N","isDefault":"N","status":"ok"},"50":{"id":"50","corpid":"138","name":"Particuliers","hasTaxesInc":"Y","isDefault":"Y","status":"ok"},"9":{"id":"9","corpid":"138","name":"Professionnels","hasTaxesInc":"N","isDefault":"N","status":"ok"}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetRateCategoryResponse" : 
+"AccountdatasGetRateCategoryResponse" :
     {"response":{"id":"50","corpid":"138","name":"Particuliers","hasTaxesInc":"Y","isDefault":"Y","status":"ok"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountdatasGetDocLayoutsResponse" : 
+"AccountdatasGetDocLayoutsResponse" :
 {"response":{"layouts":{"1550":{"corpid":"1033","ownerid":"1677","status":"ok","isdefault":"Y","name":"Mod\u00e8le 2","headerMode":"all","footerMode":"all","logoMode":"first","useBg":"custom","bgMode":"all","bgFile":"custom","bgCustomFile":"","hideTopPart":"N","hideBottomSeparator":"N","hideFill":"N","colorFill":"000000","hideDepositRecap":"N","colorText":"000000","colorHeaderRow":"000000","colorNotes":"000000","colorDiscreet":"000000","colorHeaderFooter":"000000","font":"opensans","fontsize":"10","language":"FR","timeformat":"dmy","txts":"a:67:{s:3:\"tel\";s:5:\"Tel.:\";s:3:\"fax\";s:5:\"Fax.:\";s:6:\"mobile\";s:8:\"Mobile.:\";s:5:\"email\";s:7:\"Email.:\";s:15:\"document-parent\";s:15:\"Document parent\";s:8:\"term-ref\";s:19:\"R\u00e9f\u00e9rence interne\";s:10:\"en-date-du\";s:10:\"En date du\";s:9:\"tva-intra\";s:22:\"TVA Intracommunautaire\";s:10:\"ref-client\";s:12:\"R\u00e9f. client\";s:6:\"object\";s:5:\"Objet\";s:5:\"image\";s:5:\"Image\";s:8:\"nom-code\";s:10:\"Nom \/ Code\";s:11:\"description\";s:11:\"Description\";s:8:\"quantite\";s:3:\"Qte\";s:2:\"pu\";s:2:\"PU\";s:12:\"remise-ligne\";s:6:\"Remise\";s:5:\"pu-ht\";s:5:\"PU HT\";s:6:\"pu-ttc\";s:6:\"PU TTC\";s:3:\"tax\";s:3:\"TVA\";s:4:\"tax2\";s:3:\"TVA\";s:8:\"total-ht\";s:8:\"Total HT\";s:9:\"total-ttc\";s:9:\"Total TTC\";s:5:\"total\";s:5:\"Total\";s:9:\"en-option\";s:9:\"En option\";s:16:\"nb-item-document\";s:30:\"Nombre de produits du document\";s:10:\"sous-total\";s:10:\"Sous total\";s:14:\"sous-total-ttc\";s:14:\"Sous total TTC\";s:15:\"frais-emballage\";s:17:\"Frais d'emballage\";s:10:\"frais-port\";s:13:\"Frais de port\";s:17:\"adresse-livraison\";s:20:\"Adresse de livraison\";s:5:\"notes\";s:5:\"Notes\";s:11:\"tax-deposit\";s:34:\"R\u00e9capitulatif des TVA d\u2018acompte\";s:27:\"signature-cachet-entreprise\";s:35:\"Signature et cachet de l'entreprise\";s:28:\"signature-client-lu-approuve\";s:80:\"Signature du client pr\u00e9c\u00e9d\u00e9e de la mention 'Lu et approuv\u00e9, bon pour accord'\";s:15:\"moyen-reglement\";s:19:\"Moyen de r\u00e8glement\";s:15:\"delai-reglement\";s:20:\"D\u00e9lai de r\u00e8glement\";s:1:\"a\";s:2:\"\u00e0\";s:11:\"fin-de-mois\";s:11:\"fin de mois\";s:13:\"date-validite\";s:17:\"Date de validit\u00e9\";s:20:\"coordonnes-bancaires\";s:22:\"Coordonn\u00e9es bancaires\";s:24:\"coordonnes-bancaires-bic\";s:3:\"BIC\";s:25:\"coordonnes-bancaires-iban\";s:4:\"IBAN\";s:21:\"date-limite-reglement\";s:25:\"Date limite de r\u00e8glement\";s:9:\"url-suivi\";s:12:\"Url de suivi\";s:12:\"numero-suivi\";s:16:\"Num\u00e9ro de suivi\";s:12:\"nombre-colis\";s:15:\"Nombre de colis\";s:10:\"poid-total\";s:10:\"Poid total\";s:6:\"volume\";s:6:\"Volume\";s:14:\"libelle-cheque\";s:19:\"Libell\u00e9 du ch\u00e8que\";s:14:\"prochaine-date\";s:28:\"Date de la prochaine facture\";s:9:\"total-net\";s:9:\"Total Net\";s:12:\"total-net-ht\";s:12:\"Total net HT\";s:13:\"total-net-ttc\";s:13:\"Total net TTC\";s:12:\"reduction-ht\";s:12:\"Reduction HT\";s:9:\"reduction\";s:10:\"R\u00e9duction\";s:25:\"total-net-apres-reduction\";s:27:\"Total net apr\u00e8s r\u00e9duction\";s:9:\"remise-ht\";s:9:\"Remise HT\";s:10:\"remise-ttc\";s:10:\"Remise TTC\";s:6:\"remise\";s:6:\"Remise\";s:22:\"total-net-apres-remise\";s:23:\"Total net apr\u00e8s remise\";s:9:\"tax-total\";s:9:\"Total Tva\";s:17:\"montant-total-ttc\";s:17:\"Montant total TTC\";s:16:\"montant-total-ht\";s:16:\"Montant total HT\";s:13:\"montant-total\";s:13:\"Montant total\";s:22:\"total-frais-emaballage\";s:23:\"Total frais d'emballage\";s:16:\"total-frais-port\";s:19:\"Total frais de port\";s:14:\"total-a-regler\";s:16:\"Total \u00e0 r\u00e9gler\";}","customName":"","id":"1550"},"1158":{"corpid":"1033","ownerid":"1675","status":"ok","isdefault":"N","name":"Mod\u00e8le par d\u00e9faut","headerMode":"all","footerMode":"all","logoMode":"first","useBg":"system","bgMode":"all","bgFile":"","bgCustomFile":"","hideTopPart":"N","hideBottomSeparator":"N","hideFill":"N","colorFill":"000000","hideDepositRecap":"N","colorText":"000000","colorHeaderRow":"000000","colorNotes":"000000","colorDiscreet":"000000","colorHeaderFooter":"000000","font":"helvetica","fontsize":"10","language":"FR","timeformat":"dmy","txts":"","customName":"","id":"1158"}},"default":"1550"},"error":"","status":"success"}
 
 ,
 
 
 
-"AccountdatasGetPayDatesResponse" : 
+"AccountdatasGetPayDatesResponse" :
 {"response":{"payDates":{"60623":{"id":"60623","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"custom","rank":"1","value":"capouet","more":""},"60624":{"id":"60624","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"onorder","rank":"3","value":"\u00e0 la commande","more":""},"60625":{"id":"60625","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"endmonth","rank":"5","value":"fin de mois","more":""},"60626":{"id":"60626","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"30days","rank":"7","value":"\u00e0 30 jours","more":""},"60627":{"id":"60627","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"45days","rank":"9","value":"\u00e0 45 jours","more":""},"60628":{"id":"60628","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"60days","rank":"11","value":"\u00e0 60 jours","more":""},"60629":{"id":"60629","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"90days","rank":"13","value":"\u00e0 90 jours","more":""},"60630":{"id":"60630","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"xdays","rank":"15","value":"saisir un nombre de jours","more":""},"60631":{"id":"60631","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"scaled","rank":"17","value":"paiement \u00e9chelonn\u00e9","more":""},"78963":{"id":"78963","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"onorder","rank":"19","value":"test","more":""},"78964":{"id":"78964","corpid":"1033","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"custom","rank":"21","value":"test 2","more":""}},"default":"60624"},"error":"","status":"success"}
 
 ,
@@ -289,157 +289,157 @@
 
 
 
-"AccountPrefsGetCorpInfosResponse" : 
+"AccountPrefsGetCorpInfosResponse" :
     {"response":{"linkedtype":"corp","linkedid":"138","prefsid":"15287","accountingPrefsId":"0","logo":"","name":"Activane","email":"contact@activane.com","web":"http://api.sellsy.com","tel":"01234564789","mobile":"0612345678","fax":"0123456789","siret":"123 456 789 00001","vat":"FR 17 123 456 789","apenaf":"52.11Z","rcs":"La Rochelle 123 456 789","type":"SARL","capital":"30000","mainaddressid":"36834","id":"2918"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsUpdateCorpInfosResponse" : 
+"AccountPrefsUpdateCorpInfosResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsGetAddressListResponse" : 
+"AccountPrefsGetAddressListResponse" :
     {"response":{"36834":{"id":"36834","corpid":"138","status":"ok","rank":"0","name":"EASYBILL","part1":"1 Rue Flemming","part2":"","zip":"17000","town":"La Rochelle","townid":"3834604","countrycode":"FR","originalid":"0","isMain":"Y","toHTML":"1 Rue Flemming 17000 - La Rochelle France"}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsGetAddressResponse" : 
+"AccountPrefsGetAddressResponse" :
     {"response":{"corpid":"138","linkedtype":"corp","linkedid":"138","status":"ok","rank":"0","name":"EASYBILL","part1":"1 Rue Flemming","part2":"","zip":"17000","town":"La Rochelle","townid":"3834604","countrycode":"FR","originalid":"0","id":"36834","partsToDisplay":{"_xml_childtag":"part","0":{"txt":"1 Rue Flemming"},"1":{"txt":""},"2":{"txt":"17000 - La Rochelle"},"3":{"txt":"France"}}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsCreateAddressResponse" : 
+"AccountPrefsCreateAddressResponse" :
     {"response":"{{addressid}}","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsUpdateAddressResponse" : 
+"AccountPrefsUpdateAddressResponse" :
     {"response":"{{addressid}}","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsDeleteAddressResponse" : 
+"AccountPrefsDeleteAddressResponse" :
     {"response":"null","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsGetStaffInfosResponse" : 
+"AccountPrefsGetStaffInfosResponse" :
     {"response":{"corpid":"138","ownerid":"0","linkedtype":"staff","linkedid":"317","status":"ok","rank":"0","gender":"","civil":"man","forename":"Jacques","name":"Dupont","email":"contact@activane.com","web":"","tel":"0123456789","mobile":"0612345678","fax":"0123456789","position":"","pic":"","sign":"","birthdate":"0000-00-00","id":"3328","fullName":"M. Jacques Dupont"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsUpdateStaffInfosResponse" : 
+"AccountPrefsUpdateStaffInfosResponse" :
     {"response":{"corpid":"138","ownerid":"0","linkedtype":"staff","linkedid":"317","status":"ok","rank":"0","gender":"","civil":"man","forename":"Jacques","name":"Dupont","email":"contact@activane.com","web":"","tel":"0123456789","mobile":"0612345678","fax":"0123456789","position":"","pic":"","sign":"","birthdate":"0000-00-00","id":"3328","fullName":"M. Jacques Dupont"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsSetNumberFormatResponse" : 
+"AccountPrefsSetNumberFormatResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsUpdateDefaultPayMediumsResponse" : 
+"AccountPrefsUpdateDefaultPayMediumsResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsGetLogoPublicLinkResponse" : 
+"AccountPrefsGetLogoPublicLinkResponse" :
     {"response":"?_f=file&id={{hash_public_link}}","error":"","status":"success"}}
-                
+
 
 ,
 
 
 
-"AccountPrefsUpdateLogoResponse" : 
+"AccountPrefsUpdateLogoResponse" :
     $file = fopen($_FILES['logo']['tmp_name'], 'r');
     $size = filesize($_FILES['logo']['tmp_name']);
     $content = fread($file, $size);
     fclose($file);
     $encoded_image = base64_encode($content);
-                
+
 
 ,
 
 
 
-"AccountPrefsUpdateLogoResponse" : 
+"AccountPrefsUpdateLogoResponse" :
     {"response":null,"error":"","status":"success"}}
-                
+
 
 ,
 
 
 
-"AccountPrefsDeleteLogoResponse" : 
+"AccountPrefsDeleteLogoResponse" :
     {"response":null,"error":"","status":"success"}}
-                
+
 
 ,
 
 
 
-"AccountPrefsGetCurrenciesResponse" : 
+"AccountPrefsGetCurrenciesResponse" :
     {"response":{"1":{"name":"EUR","symbol":"\u20ac","rank":"1","mercacode":"978","enabled":"Y","id":"1"},"2":{"name":"USD","symbol":"$","rank":"2","mercacode":"840","enabled":"Y","id":"2"},"4":{"name":"PND","symbol":"\u00a3","rank":"3","mercacode":"826","enabled":"Y","id":"4"},"3":{"name":"YEN","symbol":"\u00a5","rank":"4","mercacode":"","enabled":"Y","id":"3"},"5":{"name":"CFA","symbol":"CFA","rank":"9","mercacode":"","enabled":"Y","id":"5"}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsGetCurrencyResponse" : 
+"AccountPrefsGetCurrencyResponse" :
     {"response":{"name":"EUR","symbol":"\u20ac","rank":"1","mercacode":"978","enabled":"Y","id":"1"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsSetCurrencyResponse" : 
+"AccountPrefsSetCurrencyResponse" :
     {"response":{"currency_id":"1"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AccountPrefsSetLanguageResponse" : 
+"AccountPrefsSetLanguageResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
@@ -517,9 +517,9 @@
 
 
 
-"PurchaseUpdateSharingGroupsResponse" : 
+"PurchaseUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
@@ -555,7 +555,7 @@
 
 
 
-"AgendaGetListResponse" : 
+"AgendaGetListResponse" :
 {"response":{"result":{"today":{"id":"14240","status":"ok","type":"event","corpid":"2502","ownertype":"staff","ownerid":"4119","created":"2017-03-27 10:29:36","updated":"2017-03-27 11:02:56","start":"2017-03-14 00:00:00","end":"2017-03-14 00:00:00","timestampStart":"1489446000","timestampEnd":"1489446000","title":"","description":"Modification de la note","relatedtype":"agenda","relatedid":"0","isPrivate":"N","allDay":"Y","labelid":"0","recurring":"Y","recurring_start":"1489446000","recurring_end":"0","recurring_params":"{\"frequency\":\"daily\",\"periodicity\":\"1\",\"week_mode\":[\"2\"],\"month_mode\":\"numDay\",\"start_date\":1489485776,\"end_mode\":\"occurences\",\"end_value\":\"4\",\"exceptions\":[\"1489532400\"]}","ownername":"Boudot","ownerforename":"Romain","owneremail":"rboudot@sellsy.com","isOwner":"Y","editable":"Y","ownerfullname":"Boudot","ownerEmail":"rboudot@sellsy.com","startFormatted":"03\/14\/2017","endFormatted":"","state":"","linkedCleanUrl":"\/home","thirdurl":"","nbAnnotations":{"main":0,"sub":0},"descriptionHtml":"Modification de la note","rrule":"FREQ=daily;INTERVAL=1;WKST=MO;EXDATE=20170315T000000Z;COUNT=4;"},"error":"","status":"success"}
 {"response":{"result":{"today":{"id":"135","corpid":"191","ownerid":"400","created":"2012-09-26 11:54:30","type":"event","datefrom":"2012-09-26 00:00:00","dateto":"2012-09-26 00:00:00","title":"Alerte","description":"Salon des entrepreneurs","alerttype":"none","alertdatetime":"0000-00-00 00:00:00","status":"ok","receiver":"","linked":"http:\/\/kevin-v2.myfacture.typhon.net\/api\/client\/0\/index.php?do=agenda","relatedtype":"none","relatedid":"0","isPrivate":"Y","allDay":"Y","labelid":"6447","isStaffLinked":"N","labelname":"D\u00e9placement","labelcolor":"FFB8F5","hasEmailAlert":"Y","tags":[],"collab":[],"icon":"\/img\/common\/people.jpg","ownerfullname":"R\u00e9my Neuter (Admin)","datefromFormated":"le 26\/09\/2012"},{"id":"136","corpid":"191","ownerid":"400","created":"2012-09-26 11:55:17","type":"task","datefrom":"2012-09-26 15:00:00","dateto":"2012-09-26 16:00:00","title":"Alerte","description":"API","alerttype":"none","alertdatetime":"0000-00-00 00:00:00","status":"ok","receiver":"","linked":"http:\/\/kevin-v2.myfacture.typhon.net\/api\/client\/0\/index.php?do=agenda","relatedtype":"none","relatedid":"0","isPrivate":"Y","allDay":"N","labelid":"6444","isStaffLinked":"N","labelname":"R\u00e9union","labelcolor":"B1F0AF","hasEmailAlert":"Y","tags":[],"collab":[],"icon":"\/img\/common\/people.jpg","ownerfullname":"R\u00e9my Neuter (Admin)","datefromFormated":"le 26\/09\/2012, de 15:00 \u00e0 16:00"}]}},"error":"","status":"success"}
 
@@ -563,33 +563,33 @@
 
 
 
-"AgendaGetOneResponse" : 
+"AgendaGetOneResponse" :
     {"response":{"result":{"id":"136","corpid":"191","ownerid":"400","created":"2012-09-26 11:55:17","type":"task","datefrom":"2012-09-26 15:00:00","dateto":"2012-09-26 16:00:00","title":"Alerte","description":"API","alerttype":"none","alertdatetime":"0000-00-00 00:00:00","status":"ok","receiver":"","linked":"http:\/\/kevin-v2.myfacture.typhon.net\/api\/client\/0\/index.php?do=agenda","relatedtype":"none","relatedid":"0","isPrivate":"Y","allDay":"N","labelid":"6444","labelname":"R\u00e9union","labelcolor":"B1F0AF","isStaffLinked":"N","hasEmailAlert":"Y","tags":[],"collab":[],"icon":"\/img\/common\/people.jpg","ownerfullname":"R\u00e9my Neuter (Admin)","datefromFormated":"le 26\/09\/2012, de 15:00 \u00e0 16:00","timestatus":"today","rappels":[{"id":"169","agendataskid":"136","datetime":"2012-09-26 15:00:00","alerttype":"instant","formated":"#sp#Le jour m\u00eame#sp# (_full_1)"}}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaCreateResponse" : 
+"AgendaCreateResponse" :
     {"response":{"taskid":140},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaUpdateResponse" : 
+"AgendaUpdateResponse" :
     {"response":{"taskid":140},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaDeleteResponse" : 
+"AgendaDeleteResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
@@ -601,63 +601,63 @@
 
 
 
-"AgendaUpdateStatusResponse" : 
+"AgendaUpdateStatusResponse" :
     {"response":{"taskid":"142","newstatus":"complete"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaGetAvailableRappelsResponse" : 
+"AgendaGetAvailableRappelsResponse" :
     {"response":{"instant":"Le jour m\u00eame","prevHour":"Une heure","prevDay":"Un jour","prevWeek":"Une semaine","prevMonth":"Un mois"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaGetAvailableLabelsResponse" : 
+"AgendaGetAvailableLabelsResponse" :
 {"response":{"11685":{"id":"11685","corpid":"138","list":"labels","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"D\u00e9jeuner","more":"1B87E0"},"11686":{"id":"11686","corpid":"138","list":"labels","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"R\u00e9union","more":"FF0808"},"34240":{"id":"34240","corpid":"138","list":"labels","status":"ok","isEnabled":"N","isWriteabled":"Y","syscode":"","rank":"3","value":"TEST 2","more":"FFFFFF"}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaGetLabelResponse" : 
+"AgendaGetLabelResponse" :
 {"response":{"corpid":"138","list":"labels","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"D\u00e9jeuner","more":"1B87E0","id":"11685"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaCreateLabelResponse" : 
+"AgendaCreateLabelResponse" :
  {"response":"11685","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaUpdateLabelResponse" : 
+"AgendaUpdateLabelResponse" :
  {"response":"11685","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AgendaDeleteLabelResponse" : 
+"AgendaDeleteLabelResponse" :
 {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"AnnotationsGetListResponse" : 
+"AnnotationsGetListResponse" :
 {"response":{"result":{"1728":{"datas":{"ownerid":"317","id":"1728","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"06\/11\/2012, 14h41","title":"R\u00e9my Neut'","annotation":"http:\/\/www.sellsy.com","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"http:\/\/www.sellsy.com","relatedname":""},"subannots":{"1729":{"ownerid":"317","id":"1729","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"1728","date":"06\/11\/2012, 14h42","title":"R\u00e9my Neut'","annotation":"test","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"test"}}},"1327":{"datas":{"ownerid":"317","id":"1327","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"20\/07\/2012, 17h53","title":"R\u00e9my Neut'","annotation":"Test new","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"Test new","relatedname":""},"subannots":{"1328":{"ownerid":"317","id":"1328","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"1327","date":"20\/07\/2012, 17h53","title":"R\u00e9my Neut'","annotation":"blablabla","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"blablabla"}}},"1294":{"datas":{"ownerid":"317","id":"1294","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"20\/07\/2012, 15h45","title":"R\u00e9my Neut'","annotation":"Checked","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"Checked","relatedname":""}},"1288":{"datas":{"ownerid":"317","id":"1288","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"20\/07\/2012, 11h35","title":"R\u00e9my Neut'","annotation":"test\r\n","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"test\r\n","relatedname":""}},"1281":{"datas":{"ownerid":"317","id":"1281","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"19\/07\/2012, 15h16","title":"R\u00e9my Neut'","annotation":"New test","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"New test","relatedname":""}},"1279":{"datas":{"ownerid":"317","id":"1279","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"19\/07\/2012, 15h04","title":"R\u00e9my Neut'","annotation":"La suppression de commentaires \u00e0 l'air d'\u00eatre plut\u00f4t ok !","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"La suppression de commentaires \u00e0 l'air d'\u00eatre plut\u00f4t ok !","relatedname":""},"subannots":{"1280":{"ownerid":"317","id":"1280","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"1279","date":"19\/07\/2012, 15h16","title":"R\u00e9my Neut'","annotation":"Test sous comment via le btn +","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"Test sous comment via le btn +"}}},"1231":{"datas":{"ownerid":"317","id":"1231","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"18\/07\/2012, 17h46","title":"R\u00e9my Neut'","annotation":"C'est cool !","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"C'est cool !","relatedname":""}},"1203":{"datas":{"ownerid":"317","id":"1203","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"0","date":"18\/07\/2012, 11h31","title":"R\u00e9my Neut'","annotation":"Je test les commentaires","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"Je test les commentaires","relatedname":""},"subannots":{"1230":{"ownerid":"317","id":"1230","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"1203","date":"18\/07\/2012, 17h39","title":"R\u00e9my Neut'","annotation":"Et leurs sous-commentaires","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"Et leurs sous-commentaires"},"1232":{"ownerid":"317","id":"1232","relatedtype":"dashboard","relatedid":"1","canEdit":"Y","parentid":"1203","date":"18\/07\/2012, 18h01","title":"R\u00e9my Neut'","annotation":"Pour les int\u00e9grer dans l'API ;)","icon":"\/img\/common\/people.jpg","embedurl":"","embedthumb":"","embedtitle":"","embeddesc":"","embed":"","isMine":"Y","annotationHtmlFormated":"Pour les int\u00e9grer dans l'API ;)"}}}}"alerts":{},"error":"","status":"success"}}
 
 ,
@@ -706,17 +706,17 @@
 
 
 
-"BankAccountMassCreateResponse" : 
+"BankAccountMassCreateResponse" :
 {"response":{'ids' : [1, 2]}},"error":"","status":"success"}
-            
+
 
 ,
 
 
 
-"BankAccountMassUpdateResponse" : 
+"BankAccountMassUpdateResponse" :
 {"response":{'ids' : [1, 2]}},"error":"","status":"success"}
-            
+
 
 ,
 
@@ -788,9 +788,9 @@
 
 
 
-"CatalogueUpdateSharingGroupsResponse" : 
+"CatalogueUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
@@ -886,25 +886,25 @@
 
 
 
-"ClientCreateResponse" : 
+"ClientCreateResponse" :
     {"response":{"client_id":{{id_new_client}}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"ClientUpdateResponse" : 
+"ClientUpdateResponse" :
     {"response":{"id":{{id_client}}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"ClientDeleteResponse" : 
+"ClientDeleteResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
@@ -922,25 +922,25 @@
 
 
 
-"ClientUpdateAddressResponse" : 
+"ClientUpdateAddressResponse" :
     {"response":{"address_id":"{{addressid}}"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"ClientUpdateContactResponse" : 
+"ClientUpdateContactResponse" :
          {"response":{"contact_id":"{{contactid}}"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"ClientDeleteAddressResponse" : 
+"ClientDeleteAddressResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
@@ -952,7 +952,7 @@
 
 
 
-"ClientGetBankAccountListResponse" : 
+"ClientGetBankAccountListResponse" :
 {"response":null,"error":"","status":"success"}
 
 ,
@@ -965,17 +965,17 @@
 
 
 
-"ClientDeleteContactResponse" : 
+"ClientDeleteContactResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"ClientUpdateContactPictureResponse" : 
+"ClientUpdateContactPictureResponse" :
     {"response":"?_f=file&id=JTBDJUM1UkwlMjJGJTVCViVBNyVDNiVCMXglQzIlQjQlMjglN0YlRUQlMTElNUMlMDUlOEQlQjElMEZuJUQ1JUVCJUYzJTlBJUI1JUJFcFpKbyVFQSU5RWclQzJLayVFQSUwOSU3QyUxRiVBNCU4RCt5UCUzRlUlQUElRTElREQlRTglOUQlMDglOUYlRTElRUMlMTIlMjUlMTgrJUY4eCU4MyUxQS4lRTRqRyU5NiUxRCUwNyVCOWMlRkElRUUlREElQUUlRTElMEZRUyU3RCVBRiVGOSU4NSUyMSVCNiVEMiVEMWolRURQJUFGJUJEJTI2JTkxJTNFJUUwJUY1VyVGRCVBM1ltJUFBJTkxJTA5JUVCJUQ3JTQwJUUzJUEyJTI5JTgxJTdGJTAwbCU1RWl3JTg2JTNENCVCQg==&key=8fe3022967cf1073a8aefa32f3b70248","error":"","status":"success"}
-                
+
 
 ,
 
@@ -987,17 +987,17 @@
 
 
 
-"ClientUpdateThirdPictureResponse" : 
+"ClientUpdateThirdPictureResponse" :
 		{"response":{"name":"1-apple-desk-designer-display-1.jpg","public_path":"?_f=file&id=JUQ4RiVEQm0lMTIyJUNGJUVFJTlEJUNGJThBJUJEJUMwJUVCJThBJUI5JTA5JUQ1JUQzJUUzJUVGJTJBJTE0UyVFNTEyZ3MyJUIzJTlCJUZBdCVGQyVBNXglRTIlMjklRjMlQUMlNUQ0JTdGJUU0JUNFJTYwJUM2JTg4JTdDJUE1JTI5JTA0JTFGJUUwJUMzcCVDMSVGMyU3RiVDNiU5NiU4RCVBQyU5NCVDOSU1REwlNUUlNjAlRTMlQkElREQlM0FaOCVCME9pJTg2SiVFQiUxMyVENyU5MiUxMCVGRCU5MSUzQyVCRiUxRSUwRXAlQjYlOTUlRDQ==&key=ad49d4d6a54e1a722c7946f27c200554","extension":"image\/jpeg"},"error":"","status":"success"}
-	
+
 
 ,
 
 
 
-"ClientUpdateSharingGroupsResponse" : 
+"ClientUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
@@ -1009,7 +1009,7 @@
 
 
 
-"ClientGetMarginResponse" : 
+"ClientGetMarginResponse" :
     {
     "response": {
         "globalMarge": 70,
@@ -1018,7 +1018,7 @@
     "error": "",
     "status": "success"
     }
-	
+
 
 ,
 
@@ -1036,9 +1036,9 @@
 
 
 
-"PeoplesUpdateSharingGroupsResponse" : 
+"PeoplesUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
@@ -1050,7 +1050,7 @@
 
 
 
-"DocumentGetOneResponse" : 
+"DocumentGetOneResponse" :
     {
         "response": {
             "id": "11027",
@@ -1932,15 +1932,15 @@
         "error": "",
         "status": "success"
         }
-    
+
 
 ,
 
 
 
-"DocumentGetPublicLinkResponse" : 
+"DocumentGetPublicLinkResponse" :
     {"response":"?_f=file&id={{hash_public_link}}","error":"","status":"success"}}
-                
+
 
 ,
 
@@ -1952,9 +1952,9 @@
 
 
 
-"DocumentGetNextIdentResponse" : 
+"DocumentGetNextIdentResponse" :
     {"response":"DEV-20160428-00179","error":"","status":"success"}}
-                
+
 
 ,
 
@@ -2008,7 +2008,7 @@
 
 
 
-"DocumentValidateResponse" : 
+"DocumentValidateResponse" :
         {
             "response":{
                 "ident":"FACT-OOO1"
@@ -2016,7 +2016,7 @@
             "error":"",
             "status":"success"
         }
-    
+
 
 ,
 
@@ -2028,57 +2028,57 @@
 
 
 
-"DocumentSendDocByMailResponse" : 
+"DocumentSendDocByMailResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"DocumentGetPaymentListResponse" : 
+"DocumentGetPaymentListResponse" :
     {"response":{"_xml_childtag":"payment","0":{"relatedId":"7793","relatedType":"payment","relatedDate":"2012-07-04","relatedAmount":"1250.000000000","relatedMedium":"4744","relatedMediumTxt":"ch\u00e8que","relatedIdent":"0156489","relatedNotes":"il a pay\u00e9 cher","formatted_relatedAmount":"1 250,00 \u20ac","formatted_relatedDate":"04\/07\/2012","html_relatedNotes":"il a pay\u00e9 cher","relatedTypeText":"Paiement","relatedFullLabel":"Paiement N\u00b0 0156489"},"1":{"relatedId":"7794","relatedType":"payment","relatedDate":"2012-07-04","relatedAmount":"1001.000000000","relatedMedium":"4745","relatedMediumTxt":"virement bancaire","relatedIdent":"12345","relatedNotes":"1001\u20ac","formatted_relatedAmount":"1 001,00 \u20ac","formatted_relatedDate":"04\/07\/2012","html_relatedNotes":"1001\u20ac","relatedTypeText":"Paiement","relatedFullLabel":"Paiement N\u00b0 12345"},"2":{"relatedId":"7803","relatedType":"payment","relatedDate":"2012-07-04","relatedAmount":"100.000000000","relatedMedium":"4746","relatedMediumTxt":"esp\u00e8ces","relatedIdent":"0156489","relatedNotes":"il a pay\u00e9","formatted_relatedAmount":"100,00 \u20ac","formatted_relatedDate":"04\/07\/2012","html_relatedNotes":"il a pay\u00e9","relatedTypeText":"Paiement","relatedFullLabel":"Paiement N\u00b0 0156489"},"3":{"relatedId":"7804","relatedType":"payment","relatedDate":"2012-07-04","relatedAmount":"100.000000000","relatedMedium":"4746","relatedMediumTxt":"test","relatedIdent":"01","relatedNotes":"","formatted_relatedAmount":"100,00 \u20ac","formatted_relatedDate":"04\/07\/2012","html_relatedNotes":"","relatedTypeText":"Paiement","relatedFullLabel":"Paiement N\u00b0 01"},"dueAmount":"380500.680000000","formatted_dueAmount":"380500,68"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"DocumentGetForCopyResponse" : 
+"DocumentGetForCopyResponse" :
     {"response":{"id":"11027","ownerFullName":"M. Antoine Loux","status":"ok","filename":"FACT-20120321-00098_1333530803.5021","fileid":"2157","nbpages":"1","ident":"FACT-20120321-00098","thirdident":"","thirdid":"2655","contactId":"0","contactName":"","displayedDate":"04\/04\/2012","currencysymbol":"\u20ac","subject":"test objet","corpaddressid":"36059","thirdaddressid":"36060","shipaddressid":"36061","rowsAmount":"191.725000000","discountPercent":"0.000000000","discountAmount":"0.000000000","rowsAmountDiscounted":"191.725000000","offerAmount":"0.000000000","rowsAmountAllInc":"191.725000000","packagingsAmount":"49.900000000","shippingsAmount":"60.000000000","totalAmountTaxesFree":"301.625000000","taxesAmountSum":"59.118500000","taxesAmountDetails":"a:1:{s:12:\"19.600000000\";s:12:\"59.118500000\";}","totalAmount":"360.743500000","shippingNbParcels":"0","shippingWeight":"0.000000000","shippingWeightUnit":"g","shippingVolume":"0.000000000","shippingTrackingNumber":"","shippingTrackingUrl":"","saveThirdPrefs":"N","displayShipAddress":"N","corpid":"2","ownerid":"2","linkedtype":"invoice","linkedid":"9516","created":"2012-03-21 14:43:18","prefsid":"14683","parentid":"0","docmapid":"11603","hasVat":"Y","doctypeid":"9516","step":"draft","isDeposit":"N","dueAmount":"360.743500000","countrycode":"FR","globalDiscount":"0.000000000","globalDiscountUnit":"percent","globalOffer":"0.000000000","useDeposit":"N","deposit":"0.000000000","depositUnit":"percent","discountByRows":"N","addPdfToEmail":"Y","addGtuToEmail":"Y","addSenderToEmail":"N","hideColumnName":"N","hideColumnNotes":"N","hideColumnUnit":"N","hideColumnTaxFree":"N","hideColumnTax":"N","hideColumnTaxInc":"N","hideColumnQt":"N","hideTotalTaxesFree":"N","hideTotal":"N","hidePayment":"N","hideTaxes":"N","hasPenaltyRetardWarning":"Y","penaltyRetardWarningText":"La loi n\u00b092\/1442 du 31 d\u00e9cembre 1992 nous fait l'obligation de vous indiquer que le non respect des conditions de paiement entra\u00eene des int\u00e9r\u00eats de retard suivant modalit\u00e9s et taux minima d\u00e9finis par la loi.","showContactOnPdf":"N","hasCorpAgree":"N","hasThirdAgree":"N","notes":"test note","nbExpireDays":"30","displayAmounts":"Y","display_footer":"Y","display_ident":"Y","display_email":"Y","display_tel":"Y","display_mobile":"Y","display_fax":"Y","displayBankAccount":"Y","displayIBAN":"Y","displayBIC":"Y","hideTips":"N","hideOrdersDocs":"N","hideDeliveriesDocs":"N","hideProformaDocs":"N","emailsSentFromCorp":"Y","isdefault":"Y","name":"default","headerMode":"all","footerMode":"all","logoMode":"first","useBg":"custom","bgMode":"all","bgFile":"custom","bgCustomFile":"","hideTopPart":"N","hideFill":"N","colorFill":"000000","colorText":"000000","colorHeaderRow":"000000","colorNotes":"000000","colorDiscreet":"000000","colorHeaderFooter":"000000","font":"helvetica","type":"invoice","map":{"docid":"11027","id":"11603","rows":{"_xml_childtag":"row","16562":{"parentid":"0","status":"ok","rank":"1","type":"packaging","linkedid":"0","name":"","notes":"","unitAmount":"4.990000000","unitid":"2750","unitText":"","qt":"10.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"49.900000000","taxAmount":"9.780400000","purchaseAmount":"0.000000000","id":"16562","discountPercent":"0.000000000","formatted_unitAmount":"4,99","formatted_qt":"10,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"49,90 \u20ac","formatted_taxAmount":"9,78","formatted_discountPercent":"0,00"},"16563":{"parentid":"0","status":"ok","rank":"2","type":"shipping","linkedid":"0","name":"","notes":"","unitAmount":"5.000000000","unitid":"2751","unitText":"","qt":"12.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"60.000000000","taxAmount":"11.760000000","purchaseAmount":"0.000000000","id":"16563","discountPercent":"0.000000000","formatted_unitAmount":"5,00","formatted_qt":"12,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"60,00 \u20ac","formatted_taxAmount":"11,76","formatted_discountPercent":"0,00"},"16648":{"parentid":"0","status":"ok","rank":"3","type":"item","linkedid":"13","name":"item","notes":"item","unitAmount":"41.800000000","unitid":"70","unitText":"forfaitaire","qt":"1.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"41.800000000","taxAmount":"8.192800000","purchaseAmount":"0.000000000","id":"16648","discountPercent":"0.000000000","formatted_unitAmount":"41,80","formatted_qt":"1,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"41,80 \u20ac","formatted_taxAmount":"8,19","formatted_discountPercent":"0,00"},"16649":{"parentid":"0","status":"ok","rank":"4","type":"item","linkedid":"14","name":"service","notes":"service","unitAmount":"19.990000000","unitid":"70","unitText":"forfaitaire","qt":"7.500000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"149.925000000","taxAmount":"29.385300000","purchaseAmount":"0.000000000","id":"16649","discountPercent":"0.000000000","formatted_unitAmount":"19,99","formatted_qt":"7,50","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"149,93 \u20ac","formatted_taxAmount":"29,39","formatted_discountPercent":"0,00"},"16650":{"parentid":"0","status":"ok","rank":"5","type":"item","linkedid":"2619","name":"test","notes":"test","unitAmount":"0.000000000","unitid":"71","unitText":"m2","qt":"1.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"Y","totalAmount":"0.000000000","taxAmount":"0.000000000","purchaseAmount":"0.000000000","id":"16650","discountPercent":"0.000000000","formatted_unitAmount":"0,00","formatted_qt":"1,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"0,00 \u20ac","formatted_taxAmount":"0,00","formatted_discountPercent":"0,00"}}},"relateds_amount":"0.000000000","relateds":{"_xml_childtag":"related"},"corpAddress":{"name":"Rue du four","part1":"10 rue du four","part2":"","zip":"79200","town":"Adilly","townid":"3835224","countrycode":"FR","originalid":"0","id":"36059","partsToDisplay":{"_xml_childtag":"part","0":{"txt":"10 rue du four"},"1":{"txt":"79200 - Adilly"},"2":{"txt":"France"}}},"hasThird":"Y","thirdType":"corporation","thirdAddress":{"name":"test2","part1":"2 rue du moulin","part2":"","zip":"17000","town":"la rochelle","townid":"0","countrycode":"FR","originalid":"0","id":"36060","partsToDisplay":{"_xml_childtag":"part","0":{"txt":"2 rue du moulin"},"1":{"txt":"17000 - la rochelle"},"2":{"txt":"France"}}},"shipAddress":{"name":"","part1":"","part2":"","zip":"","town":"","townid":"0","countrycode":"FR","originalid":"0","id":"36061","partsToDisplay":{"_xml_childtag":"part","0":{"txt":""},"1":{"txt":" - "},"2":{"txt":"France"}}},"canWriteDocNamespace":"Y","logoFile":"","logoFile_system":"","logoHeight":0,"logoWidth":0,"label":"Facture","fullIdent":"Facture N\u00b0 FACT-20120321-00098","numformat":{"name":"fr","decimals":",","thousands":" ","currencypos":"right","currencysymbol":"\u20ac","precision":"2"},"numformats":{"_xml_childtag":"format","0":{"label":"fran\u00e7ais [1 234,57 #]","decimals":",","thousands":" ","currencypos":"right","name":"fr"},"1":{"label":"anglais [# 1,234.57]","decimals":".","thousands":",","currencypos":"left","name":"en"}},"precisions":{"_xml_childtag":"precision","0":{"value":0},"1":{"value":1},"2":{"value":2},"3":{"value":3},"4":{"value":4},"5":{"value":5},"6":{"value":6},"7":{"value":7},"8":{"value":8},"9":{"value":9}},"currencies":{"1":{"name":"EUR","symbol":"\u20ac","rank":"1","enabled":"Y","id":"1"},"2":{"name":"USD","symbol":"$","rank":"2","enabled":"Y","id":"2"},"4":{"name":"PND","symbol":"\u00a3","rank":"3","enabled":"Y","id":"4"},"3":{"name":"YEN","symbol":"\u00a5","rank":"4","enabled":"Y","id":"3"},"5":{"name":"CFA","symbol":"CFA","rank":"9","enabled":"Y","id":"5"},"_xml_childtag":"currency"},"currencypositions":{"_xml_childtag":"currencypos","0":{"value":"both","label":"gauche et droite"},"1":{"value":"left","label":"gauche"},"2":{"value":"right","label":"droite"},"3":{"value":"none","label":"masqu\u00e9e"}},"hasRelateds":"Y","corpName":"Antoine Loux","thirdName":"Alain","thirdVatNum":"","docspeaker_text":"Votre contact","paydate_text":"\u00e0 90 jours","paydate_custom":"03\/07\/2012","paymediums_text":"a:1:{i:0;s:7:\"ch\u00e8que\";}","paycheckorder_text":"Service comptabilit\u00e9","paybankaccount_text":"","currency":"1","num_currencypos":"right","docspeaker":"95","doclayout":"2","num_name":"fr","num_decimals":",","num_thousands":" ","num_precision":"2","defaultTax":"66","defaultUnit":"70","defaultShipping":"17","defaultPackaging":"15","paydate":"81","paydate_xdays":"0","paydate_endmonth":"N","paydate_scaledDetails":"","paymediums":{"86":{"id":"86","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"check","rank":"1","value":"ch\u00e8que","checked":"Y"},"87":{"id":"87","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"transfer","rank":"2","value":"virement bancaire"},"88":{"id":"88","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"cash","rank":"3","value":"esp\u00e8ces"},"89":{"id":"89","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"cb","rank":"4","value":"carte bancaire"},"90":{"id":"90","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"pick","rank":"5","value":"pr\u00e9l\u00e8vement"},"91":{"id":"91","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"bor","rank":"6","value":"Billet \u00e0 Ordre Relev\u00e9 (BOR)"},"92":{"id":"92","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"tip","rank":"7","value":"Titre Interbancaire de Paiement (TIP)"},"93":{"id":"93","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"lcr","rank":"8","value":"Lettre de Change Relev\u00e9 (LCR)"},"_xml_childtag":"paymedium"},"paymedium_other":"","paycheckorder":"94","paybankaccount":"0","weightUnits":{"_xml_childtag":"weightUnit","0":{"value":"mg"},"1":{"value":"g"},"2":{"value":"kg"}},"hideableColumns":{"_xml_childtag":"column","0":{"id":"name","name":"hideColumnName","label":"Masquer la colonne \"Nom\/Code\"","checked":"N"},"1":{"id":"notes","name":"hideColumnNotes","label":"Masquer la colonne \"Libell\u00e9\"","checked":"N"},"2":{"id":"unit","name":"hideColumnUnit","label":"Masquer la colonne \"Co\u00fbt unitaire HT\"","checked":"N"},"3":{"id":"tax","name":"hideColumnTax","label":"Masquer la colonne \"TVA\"","checked":"N"},"4":{"id":"qt","name":"hideColumnQt","label":"Masquer la colonne \"Qt\"","checked":"N"},"5":{"id":"amount","name":"hideColumnTaxFree","label":"Masquer la colonne \"Montant HT\"","checked":"N"},"6":{"id":"listTotal","name":"hideTotal","label":"Masquer les totaux","checked":"N"},"7":{"id":"payment","name":"hidePayment","label":"Masquer infos paiement","checked":"N"}},"doclayouts":{"_xml_childtag":"doclayout","2":{"corpid":"2","ownerid":"2","status":"ok","isdefault":"Y","name":"default","headerMode":"all","footerMode":"all","logoMode":"first","useBg":"custom","bgMode":"all","bgFile":"custom","bgCustomFile":"","hideTopPart":"N","hideFill":"N","colorFill":"000000","colorText":"000000","colorHeaderRow":"000000","colorNotes":"000000","colorDiscreet":"000000","colorHeaderFooter":"000000","font":"helvetica","id":"2"}},"currencyleft":"","currencyright":"\u20ac","discountUnits":{"_xml_childtag":"discountUnit","0":{"value":"percent","label":"%"},"1":{"value":"amount","label":"\u20ac"}},"taxes":{"66":{"id":"66","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"19,60"},"67":{"id":"67","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"5,50"},"68":{"id":"68","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"3","value":"2,10"},"69":{"id":"69","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"4","value":"0,00"},"_xml_childtag":"tax"},"shippings":{"17":{"type":"shipping","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"1","name":"shipping","notes":"shipping","unitAmount":"13.900000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"1.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"17","typeLabel":"transport","nameSample":"shipping","notesSample":"shipping","notesHTMLSample":"shipping","isTaxesFree":"HT","unitAmountTaxesFree":"13.900000000","formatted_unitAmount":"13.900000000","formatted_unitAmount_ht":"13.900000000","formatted_unitAmount_ttc":13.9,"formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000 ","formatted_full_unitAmount":"13.900000000"},"18":{"type":"shipping","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"2","name":"shipping","notes":"shipping","unitAmount":"4.990000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"1.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"18","typeLabel":"transport","nameSample":"shipping","notesSample":"shipping","notesHTMLSample":"shipping","isTaxesFree":"HT","unitAmountTaxesFree":"4.990000000","formatted_unitAmount":"4.990000000","formatted_unitAmount_ht":"4.990000000","formatted_unitAmount_ttc":4.99,"formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000 ","formatted_full_unitAmount":"4.990000000"},"2751":{"type":"shipping","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"3","name":"sApi","notes":"","unitAmount":"0.000000000","unitAmountIsTaxesFree":"Y","unitid":"0","unit":"","qt":"0.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"2751","typeLabel":"transport","nameSample":"sApi","notesSample":"","notesHTMLSample":"","isTaxesFree":"HT","unitAmountTaxesFree":"0.000000000","formatted_unitAmount":"0.000000000","formatted_unitAmount_ht":"0.000000000","formatted_unitAmount_ttc":0,"formatted_qt":"0.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"0.000000000 ","formatted_full_unitAmount":"0.000000000"},"_xml_childtag":"shipping"},"packagings":{"15":{"type":"packaging","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"1","name":"packaging","notes":"packaging","unitAmount":"3.990000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"4.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"15","typeLabel":"emballage","nameSample":"packaging","notesSample":"packaging","notesHTMLSample":"packaging","isTaxesFree":"HT","unitAmountTaxesFree":"3.990000000","formatted_unitAmount":"3.990000000","formatted_unitAmount_ht":"3.990000000","formatted_unitAmount_ttc":3.99,"formatted_qt":"4.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"4.000000000 ","formatted_full_unitAmount":"3.990000000"},"16":{"type":"packaging","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"2","name":"packaging","notes":"packaging","unitAmount":"29.990000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"1.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"16","typeLabel":"emballage","nameSample":"packaging","notesSample":"packaging","notesHTMLSample":"packaging","isTaxesFree":"HT","unitAmountTaxesFree":"29.990000000","formatted_unitAmount":"29.990000000","formatted_unitAmount_ht":"29.990000000","formatted_unitAmount_ttc":29.99,"formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000 ","formatted_full_unitAmount":"29.990000000"},"2750":{"type":"packaging","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"3","name":"pApi","notes":"","unitAmount":"0.000000000","unitAmountIsTaxesFree":"Y","unitid":"0","unit":"","qt":"0.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"2750","typeLabel":"emballage","nameSample":"pApi","notesSample":"","notesHTMLSample":"","isTaxesFree":"HT","unitAmountTaxesFree":"0.000000000","formatted_unitAmount":"0.000000000","formatted_unitAmount_ht":"0.000000000","formatted_unitAmount_ttc":0,"formatted_qt":"0.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"0.000000000 ","formatted_full_unitAmount":"0.000000000"},"_xml_childtag":"packaging"},"units":{"70":{"id":"70","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"forfaitaire"},"71":{"id":"71","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"m2"},"72":{"id":"72","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"3","value":"m3"},"73":{"id":"73","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"4","value":"kg"},"74":{"id":"74","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"5","value":"tonne"},"_xml_childtag":"unit"},"canWriteShippings":"Y","canWritePackagings":"Y","canWriteUnits":"Y","canWriteTaxes":"Y","canWritePaydates":"Y","paydates":{"75":{"id":"75","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"custom","rank":"1","value":"\u00e0 date"},"76":{"id":"76","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"onorder","rank":"3","value":"\u00e0 la commande"},"77":{"id":"77","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"endmonth","rank":"4","value":"fin de mois"},"78":{"id":"78","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"30days","rank":"5","value":"\u00e0 30 jours"},"79":{"id":"79","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"45days","rank":"6","value":"\u00e0 45 jours"},"80":{"id":"80","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"60days","rank":"7","value":"\u00e0 60 jours"},"81":{"id":"81","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"90days","rank":"8","value":"\u00e0 90 jours"},"82":{"id":"82","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"xdays","rank":"9","value":"saisir un nombre de jours"},"83":{"id":"83","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"scaled","rank":"10","value":"paiement \u00e9chelonn\u00e9"},"84":{"id":"84","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"received","rank":"11","value":"\u00e0 r\u00e9ception"},"85":{"id":"85","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"none","rank":"11","value":"aucun"},"_xml_childtag":"paydate"},"canWritePaymediums":"Y","canWritePayCheckOrders":"Y","paycheckorders":{"94":{"id":"94","corpid":"2","list":"paycheckorders","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"Service comptabilit\u00e9"},"_xml_childtag":"paycheckorder"},"bankaccounts":{"_xml_childtag":"bankaccount"},"canWriteDocSpeakers":"Y","docspeakers":{"95":{"id":"95","corpid":"2","list":"docspeakers","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"Votre contact"},"96":{"id":"96","corpid":"2","list":"docspeakers","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"Votre r\u00e9f\u00e9rent"},"_xml_childtag":"docspeaker"},"formatted_rowsAmount":"191,73 \u20ac","formatted_discountPercent":"0,00","formatted_discountAmount":"0,00 \u20ac","formatted_rowsAmountDiscounted":"191,73 \u20ac","formatted_offerAmount":"0,00 \u20ac","formatted_rowsAmountAllInc":"191,73 \u20ac","formatted_packagingsAmount":"49,90 \u20ac","formatted_shippingsAmount":"60,00 \u20ac","formatted_totalAmountTaxesFree":"301,63 \u20ac","formatted_taxesAmountSum":"59,12 \u20ac","formatted_totalAmount":"360,74 \u20ac","formatted_shippingWeight":"0,00 \u20ac","formatted_shippingVolume":"0,00 \u20ac","formatted_globalDiscount":"0,00 \u20ac","formatted_globalOffer":"0,00","formatted_deposit":"0,00 \u20ac","formatted_dueAmount":"360,74 \u20ac","tel":"0620365895","fax":"","email":"aloux@myfacture.com","mobile":"","formatted_taxesAmountDetails":"a:1:{s:5:\"19,60\";s:9:\"59,12 \u20ac\";}","corpFooter":"Antoine Louxaloux@myfacture.comLoux","tags":[{"id":"112","corpid":"2","category":"doc","created":"2012-04-04 11:13:29","word":"tags_test"}]},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"DocumentGetModelResponse" : 
+"DocumentGetModelResponse" :
     {"response":{"id":"11027","ownerFullName":"M. Antoine Loux","status":"ok","filename":"FACT-20120321-00098_1333530803.5021","fileid":"2157","nbpages":"1","ident":"FACT-20120321-00098","thirdident":"","thirdid":"2655","contactId":"0","contactName":"","displayedDate":"04\/04\/2012","currencysymbol":"\u20ac","subject":"test objet","corpaddressid":"36059","thirdaddressid":"36060","shipaddressid":"36061","rowsAmount":"191.725000000","discountPercent":"0.000000000","discountAmount":"0.000000000","rowsAmountDiscounted":"191.725000000","offerAmount":"0.000000000","rowsAmountAllInc":"191.725000000","packagingsAmount":"49.900000000","shippingsAmount":"60.000000000","totalAmountTaxesFree":"301.625000000","taxesAmountSum":"59.118500000","taxesAmountDetails":"a:1:{s:12:\"19.600000000\";s:12:\"59.118500000\";}","totalAmount":"360.743500000","shippingNbParcels":"0","shippingWeight":"0.000000000","shippingWeightUnit":"g","shippingVolume":"0.000000000","shippingTrackingNumber":"","shippingTrackingUrl":"","saveThirdPrefs":"N","displayShipAddress":"N","corpid":"2","ownerid":"2","linkedtype":"invoice","linkedid":"9516","created":"2012-03-21 14:43:18","prefsid":"14683","parentid":"0","docmapid":"11603","hasVat":"Y","doctypeid":"9516","step":"draft","isDeposit":"N","dueAmount":"360.743500000","countrycode":"FR","globalDiscount":"0.000000000","globalDiscountUnit":"percent","globalOffer":"0.000000000","useDeposit":"N","deposit":"0.000000000","depositUnit":"percent","discountByRows":"N","addPdfToEmail":"Y","addGtuToEmail":"Y","addSenderToEmail":"N","hideColumnName":"N","hideColumnNotes":"N","hideColumnUnit":"N","hideColumnTaxFree":"N","hideColumnTax":"N","hideColumnTaxInc":"N","hideColumnQt":"N","hideTotalTaxesFree":"N","hideTotal":"N","hidePayment":"N","hideTaxes":"N","hasPenaltyRetardWarning":"Y","penaltyRetardWarningText":"La loi n\u00b092\/1442 du 31 d\u00e9cembre 1992 nous fait l'obligation de vous indiquer que le non respect des conditions de paiement entra\u00eene des int\u00e9r\u00eats de retard suivant modalit\u00e9s et taux minima d\u00e9finis par la loi.","showContactOnPdf":"N","hasCorpAgree":"N","hasThirdAgree":"N","notes":"test note","nbExpireDays":"30","displayAmounts":"Y","display_footer":"Y","display_ident":"Y","display_email":"Y","display_tel":"Y","display_mobile":"Y","display_fax":"Y","displayBankAccount":"Y","displayIBAN":"Y","displayBIC":"Y","hideTips":"N","hideOrdersDocs":"N","hideDeliveriesDocs":"N","hideProformaDocs":"N","emailsSentFromCorp":"Y","isdefault":"Y","name":"default","headerMode":"all","footerMode":"all","logoMode":"first","useBg":"custom","bgMode":"all","bgFile":"custom","bgCustomFile":"","hideTopPart":"N","hideFill":"N","colorFill":"000000","colorText":"000000","colorHeaderRow":"000000","colorNotes":"000000","colorDiscreet":"000000","colorHeaderFooter":"000000","font":"helvetica","type":"invoice","map":{"docid":"11027","id":"11603","rows":{"_xml_childtag":"row","16562":{"parentid":"0","status":"ok","rank":"1","type":"packaging","linkedid":"0","name":"","notes":"","unitAmount":"4.990000000","unitid":"2750","unitText":"","qt":"10.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"49.900000000","taxAmount":"9.780400000","purchaseAmount":"0.000000000","id":"16562","discountPercent":"0.000000000","formatted_unitAmount":"4,99","formatted_qt":"10,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"49,90 \u20ac","formatted_taxAmount":"9,78","formatted_discountPercent":"0,00"},"16563":{"parentid":"0","status":"ok","rank":"2","type":"shipping","linkedid":"0","name":"","notes":"","unitAmount":"5.000000000","unitid":"2751","unitText":"","qt":"12.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"60.000000000","taxAmount":"11.760000000","purchaseAmount":"0.000000000","id":"16563","discountPercent":"0.000000000","formatted_unitAmount":"5,00","formatted_qt":"12,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"60,00 \u20ac","formatted_taxAmount":"11,76","formatted_discountPercent":"0,00"},"16648":{"parentid":"0","status":"ok","rank":"3","type":"item","linkedid":"13","name":"item","notes":"item","unitAmount":"41.800000000","unitid":"70","unitText":"forfaitaire","qt":"1.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"41.800000000","taxAmount":"8.192800000","purchaseAmount":"0.000000000","id":"16648","discountPercent":"0.000000000","formatted_unitAmount":"41,80","formatted_qt":"1,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"41,80 \u20ac","formatted_taxAmount":"8,19","formatted_discountPercent":"0,00"},"16649":{"parentid":"0","status":"ok","rank":"4","type":"item","linkedid":"14","name":"service","notes":"service","unitAmount":"19.990000000","unitid":"70","unitText":"forfaitaire","qt":"7.500000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"N","totalAmount":"149.925000000","taxAmount":"29.385300000","purchaseAmount":"0.000000000","id":"16649","discountPercent":"0.000000000","formatted_unitAmount":"19,99","formatted_qt":"7,50","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"149,93 \u20ac","formatted_taxAmount":"29,39","formatted_discountPercent":"0,00"},"16650":{"parentid":"0","status":"ok","rank":"5","type":"item","linkedid":"2619","name":"test","notes":"test","unitAmount":"0.000000000","unitid":"71","unitText":"m2","qt":"1.000000000","discount":"0.000000000","discountUnit":"percent","taxid":"66","taxrate":"19.600000000","isOption":"Y","totalAmount":"0.000000000","taxAmount":"0.000000000","purchaseAmount":"0.000000000","id":"16650","discountPercent":"0.000000000","formatted_unitAmount":"0,00","formatted_qt":"1,00","formatted_discount":"0,00","formatted_taxrate":"19,60","formatted_totalAmount":"0,00 \u20ac","formatted_taxAmount":"0,00","formatted_discountPercent":"0,00"}}},"relateds_amount":"0.000000000","relateds":{"_xml_childtag":"related"},"corpAddress":{"name":"Rue du four","part1":"10 rue du four","part2":"","zip":"79200","town":"Adilly","townid":"3835224","countrycode":"FR","originalid":"0","id":"36059","partsToDisplay":{"_xml_childtag":"part","0":{"txt":"10 rue du four"},"1":{"txt":"79200 - Adilly"},"2":{"txt":"France"}}},"hasThird":"Y","thirdType":"corporation","thirdAddress":{"name":"test2","part1":"2 rue du moulin","part2":"","zip":"17000","town":"la rochelle","townid":"0","countrycode":"FR","originalid":"0","id":"36060","partsToDisplay":{"_xml_childtag":"part","0":{"txt":"2 rue du moulin"},"1":{"txt":"17000 - la rochelle"},"2":{"txt":"France"}}},"shipAddress":{"name":"","part1":"","part2":"","zip":"","town":"","townid":"0","countrycode":"FR","originalid":"0","id":"36061","partsToDisplay":{"_xml_childtag":"part","0":{"txt":""},"1":{"txt":" - "},"2":{"txt":"France"}}},"canWriteDocNamespace":"Y","logoFile":"","logoFile_system":"","logoHeight":0,"logoWidth":0,"label":"Facture","fullIdent":"Facture N\u00b0 FACT-20120321-00098","numformat":{"name":"fr","decimals":",","thousands":" ","currencypos":"right","currencysymbol":"\u20ac","precision":"2"},"numformats":{"_xml_childtag":"format","0":{"label":"fran\u00e7ais [1 234,57 #]","decimals":",","thousands":" ","currencypos":"right","name":"fr"},"1":{"label":"anglais [# 1,234.57]","decimals":".","thousands":",","currencypos":"left","name":"en"}},"precisions":{"_xml_childtag":"precision","0":{"value":0},"1":{"value":1},"2":{"value":2},"3":{"value":3},"4":{"value":4},"5":{"value":5},"6":{"value":6},"7":{"value":7},"8":{"value":8},"9":{"value":9}},"currencies":{"1":{"name":"EUR","symbol":"\u20ac","rank":"1","enabled":"Y","id":"1"},"2":{"name":"USD","symbol":"$","rank":"2","enabled":"Y","id":"2"},"4":{"name":"PND","symbol":"\u00a3","rank":"3","enabled":"Y","id":"4"},"3":{"name":"YEN","symbol":"\u00a5","rank":"4","enabled":"Y","id":"3"},"5":{"name":"CFA","symbol":"CFA","rank":"9","enabled":"Y","id":"5"},"_xml_childtag":"currency"},"currencypositions":{"_xml_childtag":"currencypos","0":{"value":"both","label":"gauche et droite"},"1":{"value":"left","label":"gauche"},"2":{"value":"right","label":"droite"},"3":{"value":"none","label":"masqu\u00e9e"}},"hasRelateds":"Y","corpName":"Antoine Loux","thirdName":"Alain","thirdVatNum":"","docspeaker_text":"Votre contact","paydate_text":"\u00e0 90 jours","paydate_custom":"03\/07\/2012","paymediums_text":"a:1:{i:0;s:7:\"ch\u00e8que\";}","paycheckorder_text":"Service comptabilit\u00e9","paybankaccount_text":"","currency":"1","num_currencypos":"right","docspeaker":"95","doclayout":"2","num_name":"fr","num_decimals":",","num_thousands":" ","num_precision":"2","defaultTax":"66","defaultUnit":"70","defaultShipping":"17","defaultPackaging":"15","paydate":"81","paydate_xdays":"0","paydate_endmonth":"N","paydate_scaledDetails":"","paymediums":{"86":{"id":"86","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"check","rank":"1","value":"ch\u00e8que","checked":"Y"},"87":{"id":"87","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"transfer","rank":"2","value":"virement bancaire"},"88":{"id":"88","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"cash","rank":"3","value":"esp\u00e8ces"},"89":{"id":"89","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"cb","rank":"4","value":"carte bancaire"},"90":{"id":"90","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"pick","rank":"5","value":"pr\u00e9l\u00e8vement"},"91":{"id":"91","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"bor","rank":"6","value":"Billet \u00e0 Ordre Relev\u00e9 (BOR)"},"92":{"id":"92","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"tip","rank":"7","value":"Titre Interbancaire de Paiement (TIP)"},"93":{"id":"93","corpid":"2","list":"paymediums","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"lcr","rank":"8","value":"Lettre de Change Relev\u00e9 (LCR)"},"_xml_childtag":"paymedium"},"paymedium_other":"","paycheckorder":"94","paybankaccount":"0","weightUnits":{"_xml_childtag":"weightUnit","0":{"value":"mg"},"1":{"value":"g"},"2":{"value":"kg"}},"hideableColumns":{"_xml_childtag":"column","0":{"id":"name","name":"hideColumnName","label":"Masquer la colonne \"Nom\/Code\"","checked":"N"},"1":{"id":"notes","name":"hideColumnNotes","label":"Masquer la colonne \"Libell\u00e9\"","checked":"N"},"2":{"id":"unit","name":"hideColumnUnit","label":"Masquer la colonne \"Co\u00fbt unitaire HT\"","checked":"N"},"3":{"id":"tax","name":"hideColumnTax","label":"Masquer la colonne \"TVA\"","checked":"N"},"4":{"id":"qt","name":"hideColumnQt","label":"Masquer la colonne \"Qt\"","checked":"N"},"5":{"id":"amount","name":"hideColumnTaxFree","label":"Masquer la colonne \"Montant HT\"","checked":"N"},"6":{"id":"listTotal","name":"hideTotal","label":"Masquer les totaux","checked":"N"},"7":{"id":"payment","name":"hidePayment","label":"Masquer infos paiement","checked":"N"}},"doclayouts":{"_xml_childtag":"doclayout","2":{"corpid":"2","ownerid":"2","status":"ok","isdefault":"Y","name":"default","headerMode":"all","footerMode":"all","logoMode":"first","useBg":"custom","bgMode":"all","bgFile":"custom","bgCustomFile":"","hideTopPart":"N","hideFill":"N","colorFill":"000000","colorText":"000000","colorHeaderRow":"000000","colorNotes":"000000","colorDiscreet":"000000","colorHeaderFooter":"000000","font":"helvetica","id":"2"}},"currencyleft":"","currencyright":"\u20ac","discountUnits":{"_xml_childtag":"discountUnit","0":{"value":"percent","label":"%"},"1":{"value":"amount","label":"\u20ac"}},"taxes":{"66":{"id":"66","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"19,60"},"67":{"id":"67","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"5,50"},"68":{"id":"68","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"3","value":"2,10"},"69":{"id":"69","corpid":"2","list":"taxes","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"4","value":"0,00"},"_xml_childtag":"tax"},"shippings":{"17":{"type":"shipping","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"1","name":"shipping","notes":"shipping","unitAmount":"13.900000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"1.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"17","typeLabel":"transport","nameSample":"shipping","notesSample":"shipping","notesHTMLSample":"shipping","isTaxesFree":"HT","unitAmountTaxesFree":"13.900000000","formatted_unitAmount":"13.900000000","formatted_unitAmount_ht":"13.900000000","formatted_unitAmount_ttc":13.9,"formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000 ","formatted_full_unitAmount":"13.900000000"},"18":{"type":"shipping","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"2","name":"shipping","notes":"shipping","unitAmount":"4.990000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"1.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"18","typeLabel":"transport","nameSample":"shipping","notesSample":"shipping","notesHTMLSample":"shipping","isTaxesFree":"HT","unitAmountTaxesFree":"4.990000000","formatted_unitAmount":"4.990000000","formatted_unitAmount_ht":"4.990000000","formatted_unitAmount_ttc":4.99,"formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000 ","formatted_full_unitAmount":"4.990000000"},"2751":{"type":"shipping","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"3","name":"sApi","notes":"","unitAmount":"0.000000000","unitAmountIsTaxesFree":"Y","unitid":"0","unit":"","qt":"0.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"2751","typeLabel":"transport","nameSample":"sApi","notesSample":"","notesHTMLSample":"","isTaxesFree":"HT","unitAmountTaxesFree":"0.000000000","formatted_unitAmount":"0.000000000","formatted_unitAmount_ht":"0.000000000","formatted_unitAmount_ttc":0,"formatted_qt":"0.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"0.000000000 ","formatted_full_unitAmount":"0.000000000"},"_xml_childtag":"shipping"},"packagings":{"15":{"type":"packaging","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"1","name":"packaging","notes":"packaging","unitAmount":"3.990000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"4.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"15","typeLabel":"emballage","nameSample":"packaging","notesSample":"packaging","notesHTMLSample":"packaging","isTaxesFree":"HT","unitAmountTaxesFree":"3.990000000","formatted_unitAmount":"3.990000000","formatted_unitAmount_ht":"3.990000000","formatted_unitAmount_ttc":3.99,"formatted_qt":"4.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"4.000000000 ","formatted_full_unitAmount":"3.990000000"},"16":{"type":"packaging","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"2","name":"packaging","notes":"packaging","unitAmount":"29.990000000","unitAmountIsTaxesFree":"Y","unitid":"70","unit":"","qt":"1.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"16","typeLabel":"emballage","nameSample":"packaging","notesSample":"packaging","notesHTMLSample":"packaging","isTaxesFree":"HT","unitAmountTaxesFree":"29.990000000","formatted_unitAmount":"29.990000000","formatted_unitAmount_ht":"29.990000000","formatted_unitAmount_ttc":29.99,"formatted_qt":"1.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"1.000000000 ","formatted_full_unitAmount":"29.990000000"},"2750":{"type":"packaging","corpid":"2","ownerid":"2","status":"ok","isEnabled":"Y","rank":"3","name":"pApi","notes":"","unitAmount":"0.000000000","unitAmountIsTaxesFree":"Y","unitid":"0","unit":"","qt":"0.000000000","taxid":"66","taxrate":"0.000000000","purchaseAmount":"0.000000000","stock":"0","createdAt":"0000-00-00 00:00:00","updatedAt":"0000-00-00 00:00:00","id":"2750","typeLabel":"emballage","nameSample":"pApi","notesSample":"","notesHTMLSample":"","isTaxesFree":"HT","unitAmountTaxesFree":"0.000000000","formatted_unitAmount":"0.000000000","formatted_unitAmount_ht":"0.000000000","formatted_unitAmount_ttc":0,"formatted_qt":"0.000000000","formatted_taxrate":"0.000000000","formatted_full_qt":"0.000000000 ","formatted_full_unitAmount":"0.000000000"},"_xml_childtag":"packaging"},"units":{"70":{"id":"70","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"forfaitaire"},"71":{"id":"71","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"m2"},"72":{"id":"72","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"3","value":"m3"},"73":{"id":"73","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"4","value":"kg"},"74":{"id":"74","corpid":"2","list":"units","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"5","value":"tonne"},"_xml_childtag":"unit"},"canWriteShippings":"Y","canWritePackagings":"Y","canWriteUnits":"Y","canWriteTaxes":"Y","canWritePaydates":"Y","paydates":{"75":{"id":"75","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"custom","rank":"1","value":"\u00e0 date"},"76":{"id":"76","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"onorder","rank":"3","value":"\u00e0 la commande"},"77":{"id":"77","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"endmonth","rank":"4","value":"fin de mois"},"78":{"id":"78","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"30days","rank":"5","value":"\u00e0 30 jours"},"79":{"id":"79","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"45days","rank":"6","value":"\u00e0 45 jours"},"80":{"id":"80","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"60days","rank":"7","value":"\u00e0 60 jours"},"81":{"id":"81","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"90days","rank":"8","value":"\u00e0 90 jours"},"82":{"id":"82","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"xdays","rank":"9","value":"saisir un nombre de jours"},"83":{"id":"83","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"scaled","rank":"10","value":"paiement \u00e9chelonn\u00e9"},"84":{"id":"84","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"received","rank":"11","value":"\u00e0 r\u00e9ception"},"85":{"id":"85","corpid":"2","list":"paydates","status":"ok","isEnabled":"Y","isWriteabled":"N","syscode":"none","rank":"11","value":"aucun"},"_xml_childtag":"paydate"},"canWritePaymediums":"Y","canWritePayCheckOrders":"Y","paycheckorders":{"94":{"id":"94","corpid":"2","list":"paycheckorders","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"Service comptabilit\u00e9"},"_xml_childtag":"paycheckorder"},"bankaccounts":{"_xml_childtag":"bankaccount"},"canWriteDocSpeakers":"Y","docspeakers":{"95":{"id":"95","corpid":"2","list":"docspeakers","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"1","value":"Votre contact"},"96":{"id":"96","corpid":"2","list":"docspeakers","status":"ok","isEnabled":"Y","isWriteabled":"Y","syscode":"","rank":"2","value":"Votre r\u00e9f\u00e9rent"},"_xml_childtag":"docspeaker"},"formatted_rowsAmount":"191,73 \u20ac","formatted_discountPercent":"0,00","formatted_discountAmount":"0,00 \u20ac","formatted_rowsAmountDiscounted":"191,73 \u20ac","formatted_offerAmount":"0,00 \u20ac","formatted_rowsAmountAllInc":"191,73 \u20ac","formatted_packagingsAmount":"49,90 \u20ac","formatted_shippingsAmount":"60,00 \u20ac","formatted_totalAmountTaxesFree":"301,63 \u20ac","formatted_taxesAmountSum":"59,12 \u20ac","formatted_totalAmount":"360,74 \u20ac","formatted_shippingWeight":"0,00 \u20ac","formatted_shippingVolume":"0,00 \u20ac","formatted_globalDiscount":"0,00 \u20ac","formatted_globalOffer":"0,00","formatted_deposit":"0,00 \u20ac","formatted_dueAmount":"360,74 \u20ac","tel":"0620365895","fax":"","email":"aloux@myfacture.com","mobile":"","formatted_taxesAmountDetails":"a:1:{s:5:\"19,60\";s:9:\"59,12 \u20ac\";}","corpFooter":"Antoine Louxaloux@myfacture.comLoux","tags":[{"id":"112","corpid":"2","category":"doc","created":"2012-04-04 11:13:29","word":"tags_test"}]},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"DocumentGetPaymentResponse" : 
+"DocumentGetPaymentResponse" :
     {"response":{"status":"ok","date":"2012-07-04","amount":"380951.680000000","medium":"4744","mediumTxt":"ch\u00e8que","ident":"0156489","notes":"il a pay\u00e9 cher","corpid":"138","ownerid":"317","docid":"11359","id":"7793","formatted_displayedDate":"04\/07\/2012","dueAmount":"381850.680000000"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"DocumentCreatePaymentResponse" : 
+"DocumentCreatePaymentResponse" :
     {"response":{{payid}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"DocumentDeletePaymentResponse" : 
+"DocumentDeletePaymentResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 
@@ -2096,31 +2096,31 @@
 
 
 
-"DocumentUpdateSharingGroupsResponse" : 
+"DocumentUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
 
 
-"DocumentEnablePublicLinkResponse" : 
+"DocumentEnablePublicLinkResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
 
 
-"DocumentDisablePublicLinkResponse" : 
+"DocumentDisablePublicLinkResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
 
 
-"ElectronicSignCreateResponse" : 
+"ElectronicSignCreateResponse" :
 {
     "response": {
         "created": true,
@@ -2146,25 +2146,25 @@
     "error": "",
     "status": "success"
 }
-    
+
 
 ,
 
 
 
-"ElectronicSignDeleteResponse" : 
+"ElectronicSignDeleteResponse" :
 {
     "response": null,
     "error": "",
     "status": "success"
 }
-    
+
 
 ,
 
 
 
-"ElectronicSignGetStatusResponse" : 
+"ElectronicSignGetStatusResponse" :
 {
     "response": {
         "status": "pending" || "processing" || "partially_signed" || "signed" || "cancelled"
@@ -2172,7 +2172,7 @@
     "error": "",
     "status": "success"
 }
-    
+
 
 ,
 
@@ -2237,7 +2237,7 @@
 
 
 
-"MailsGetAttachmentsResponse" : 
+"MailsGetAttachmentsResponse" :
 {
     "response": [
         {
@@ -2268,7 +2268,7 @@
 
 
 
-"MailsGetCustomTagsResponse" : 
+"MailsGetCustomTagsResponse" :
     {
         "response":[
         {
@@ -2286,13 +2286,13 @@
         "error":"",
         "status":"success"
     }
-    
+
 
 ,
 
 
 
-"MailsCreateCustomTemplateResponse" : 
+"MailsCreateCustomTemplateResponse" :
     {
         "response": {
             "template_id": {{ id }}
@@ -2305,7 +2305,7 @@
 
 
 
-"MailsUpdateCustomTemplateResponse" : 
+"MailsUpdateCustomTemplateResponse" :
     {
         "response": null,
         "error": "",
@@ -2316,7 +2316,7 @@
 
 
 
-"MailsDeleteCustomTemplateResponse" : 
+"MailsDeleteCustomTemplateResponse" :
     {
         "response": null,
         "error": "",
@@ -2327,7 +2327,7 @@
 
 
 
-"MailsGetCustomTemplateResponse" : 
+"MailsGetCustomTemplateResponse" :
     {
         "response": {
             "id": "",
@@ -2350,8 +2350,8 @@
 
 
 
-"EventGetListResponse" : 
-{"response":{"infos":{"nbperpage":20,"pagenum":1},"result":[{"id":"97643","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426589009","date":"17\/03\/2015, 11:43","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97642","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426589008","date":"17\/03\/2015, 11:43","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97641","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588952","date":"17\/03\/2015, 11:42","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97640","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588951","date":"17\/03\/2015, 11:42","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97639","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588893","date":"17\/03\/2015, 11:41","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97638","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588892","date":"17\/03\/2015, 11:41","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97636","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588773","date":"17\/03\/2015, 11:39","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97637","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588773","date":"17\/03\/2015, 11:39","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97634","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588716","date":"17\/03\/2015, 11:38","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97635","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588716","date":"17\/03\/2015, 11:38","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97632","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426584909","date":"17\/03\/2015, 10:35","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97631","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426584907","date":"17\/03\/2015, 10:35","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97630","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426583336","date":"17\/03\/2015, 10:08","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97629","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426583335","date":"17\/03\/2015, 10:08","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97627","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426582771","date":"17\/03\/2015, 09:59","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-plus","action":"a cr\u00e9\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"}]},"error":"","status":"success"}             
+"EventGetListResponse" :
+{"response":{"infos":{"nbperpage":20,"pagenum":1},"result":[{"id":"97643","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426589009","date":"17\/03\/2015, 11:43","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97642","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426589008","date":"17\/03\/2015, 11:43","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97641","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588952","date":"17\/03\/2015, 11:42","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97640","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588951","date":"17\/03\/2015, 11:42","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97639","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588893","date":"17\/03\/2015, 11:41","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97638","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588892","date":"17\/03\/2015, 11:41","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97636","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588773","date":"17\/03\/2015, 11:39","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97637","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588773","date":"17\/03\/2015, 11:39","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97634","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588716","date":"17\/03\/2015, 11:38","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97635","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426588716","date":"17\/03\/2015, 11:38","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97632","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426584909","date":"17\/03\/2015, 10:35","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97631","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426584907","date":"17\/03\/2015, 10:35","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97630","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426583336","date":"17\/03\/2015, 10:08","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97629","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426583335","date":"17\/03\/2015, 10:08","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-repeat","action":"a modifi\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"},{"id":"97627","logType":"peopleLog","relatedtype":"people","relatedid":"90817","timestamp":"1426582771","date":"17\/03\/2015, 09:59","avatar":"","owner":"Valentin Navarrete","related":"212 RESTAURANT&lt;\/a&gt;","relatedLabel":"contact","relatedFa":" fa-user ","fa":"fa-plus","action":"a cr\u00e9\u00e9 le contact","relatedNoLink":"212 RESTAURANT","upperRelatedLabel":"Contact"}]},"error":"","status":"success"}
 
 ,
 
@@ -2459,25 +2459,25 @@
 
 
 
-"MarketingUpdateSharingGroupsResponse" : 
+"MarketingUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
 
 
-"OpportunitiesGetListResponse" : 
+"OpportunitiesGetListResponse" :
     {"response":{"infos":{"nbperpage":10,"nbpages":2,"pagenum":"1","nbtotal":"13"},"result":{"30":{"id":"30","corpid":"138","ownerid":"317","linkedtype":"third","linkedid":"36673","funnelid":"48","date":"2013-01-28 00:00:00","dueDate":"2013-01-31 00:00:00","name":"Test","ident":"#sp#OPP#sp#-00001","proba":"40","potential":"200","stepid":"338","status":"ok","signed":"open","brief":"Je test les opportunit\u00e9s pour voir comment \u00e7a marche !&lt;\/p&gt;","source":"5","stickyNote":"","dateFormatted":"28\/01\/2013","dueDateFormatted":"31\/01\/2013","stepLabel":"N\u00e9gociation","funnelName":"Default","potentialFormatted":"200,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"Test DeTest","staffSummary":"Test DeTest","third":"A & M","canDelete":"Y","canEdit":"Y"},"31":{"id":"31","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"19","funnelid":"48","date":"2013-01-28 00:00:00","dueDate":"2013-01-31 00:00:00","name":"Test Again","ident":"#sp#OPP#sp#-00002","proba":"40","potential":"4899","stepid":"338","status":"ok","signed":"open","brief":"Je commence \u00e0 comprendre le truc&lt;\/p&gt;","source":"4","stickyNote":"","dateFormatted":"28\/01\/2013","dueDateFormatted":"31\/01\/2013","stepLabel":"N\u00e9gociation","funnelName":"Default","potentialFormatted":"4 899,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"","staffSummary":"","third":"(prospect supprim\u00e9)","canDelete":"Y","canEdit":"Y"},"41":{"id":"41","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"19","funnelid":"48","date":"2013-01-29 00:00:00","dueDate":"2013-01-29 00:00:00","name":"TEST","ident":"#sp#OPP#sp#-00005","proba":"0","potential":"0","stepid":"334","status":"ok","signed":"open","brief":"","source":"4","stickyNote":"","dateFormatted":"29\/01\/2013","dueDateFormatted":"29\/01\/2013","stepLabel":"Piste","funnelName":"Default","potentialFormatted":"0,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"","staffSummary":"","third":"(prospect supprim\u00e9)","canDelete":"Y","canEdit":"Y"},"42":{"id":"42","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"28","funnelid":"48","date":"2013-01-29 00:00:00","dueDate":"2013-01-29 00:00:00","name":"TEST 2","ident":"#sp#OPP#sp#-00006","proba":"0","potential":"0","stepid":"334","status":"ok","signed":"lost","brief":"","source":"4","stickyNote":"","dateFormatted":"29\/01\/2013","dueDateFormatted":"29\/01\/2013","stepLabel":"Piste","funnelName":"Default","potentialFormatted":"0,00 \u20ac","statusLabel":"Perdue","statusColor":"#ad0000","staffs":"","staffSummary":"","third":"(prospect supprim\u00e9)","canDelete":"Y","canEdit":"Y"},"53":{"id":"53","corpid":"138","ownerid":"317","linkedtype":"third","linkedid":"38484","funnelid":"48","date":"2013-01-29 00:00:00","dueDate":"2013-01-30 00:00:00","name":"OPP","ident":"#sp#OPP#sp#-00008","proba":"30","potential":"1.23457e+08","stepid":"337","status":"ok","signed":"open","brief":"grgrdgsgdxg&lt;\/p&gt;","source":"5","stickyNote":"","dateFormatted":"29\/01\/2013","dueDateFormatted":"30\/01\/2013","stepLabel":"Envoi de devis","funnelName":"Default","potentialFormatted":"123 457 000,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"Test DeTest","staffSummary":"Test DeTest","third":"Test from API (MAJ)","canDelete":"Y","canEdit":"Y"},"54":{"id":"54","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"19","funnelid":"48","date":"2013-01-29 00:00:00","dueDate":"2013-01-29 00:00:00","name":"TEST","ident":"OPP-00015","proba":"53","potential":"123","stepid":"334","status":"ok","signed":"open","brief":"&lt;\/p&gt;","source":"5","stickyNote":"","dateFormatted":"29\/01\/2013","dueDateFormatted":"29\/01\/2013","stepLabel":"Piste","funnelName":"Default","potentialFormatted":"123,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"","staffSummary":"","third":"(prospect supprim\u00e9)","canDelete":"Y","canEdit":"Y"},"73":{"id":"73","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"223","funnelid":"49","date":"0000-00-00 00:00:00","dueDate":"2013-02-06 00:00:00","name":"TEST Collab","ident":"OPP-00016","proba":"5","potential":"456","stepid":"342","status":"ok","signed":"open","brief":"","source":"","stickyNote":"","dateFormatted":"06\/02\/2013","dueDateFormatted":"06\/02\/2013","stepLabel":"1st step","funnelName":"New Pipeline","potentialFormatted":"456,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"","staffSummary":"","third":"TEST","canDelete":"Y","canEdit":"Y"},"74":{"id":"74","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"223","funnelid":"49","date":"0000-00-00 00:00:00","dueDate":"2013-02-06 00:00:00","name":"Je test qqc","ident":"OPP-00017","proba":"1","potential":"456","stepid":"342","status":"ok","signed":"open","brief":"","source":"","stickyNote":"","dateFormatted":"06\/02\/2013","dueDateFormatted":"06\/02\/2013","stepLabel":"1st step","funnelName":"New Pipeline","potentialFormatted":"456,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"","staffSummary":"","third":"TEST","canDelete":"Y","canEdit":"Y"},"75":{"id":"75","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"223","funnelid":"49","date":"0000-00-00 00:00:00","dueDate":"2013-02-06 00:00:00","name":"Je test qqc","ident":"OPP-00018","proba":"1","potential":"456","stepid":"342","status":"ok","signed":"open","brief":"","source":"","stickyNote":"","dateFormatted":"06\/02\/2013","dueDateFormatted":"06\/02\/2013","stepLabel":"1st step","funnelName":"New Pipeline","potentialFormatted":"456,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"R\u00e9my Neuter","staffSummary":"R\u00e9my Neuter","third":"TEST","canDelete":"Y","canEdit":"Y"},"76":{"id":"76","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"223","funnelid":"49","date":"0000-00-00 00:00:00","dueDate":"2013-02-06 00:00:00","name":"Je test qqc","ident":"OPP-00019","proba":"1","potential":"456","stepid":"342","status":"ok","signed":"open","brief":"","source":"","stickyNote":"","dateFormatted":"06\/02\/2013","dueDateFormatted":"06\/02\/2013","stepLabel":"1st step","funnelName":"New Pipeline","potentialFormatted":"456,00 \u20ac","statusLabel":"Ouvert","statusColor":"#4484db","staffs":"Test DeTest","staffSummary":"Test DeTest","third":"TEST","canDelete":"Y","canEdit":"Y"}}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"OpportunitiesGetOneResponse" : 
+"OpportunitiesGetOneResponse" :
     {"response":{"id":"75","corpid":"138","ownerid":"317","linkedtype":"prospect","linkedid":"223","funnelid":"49","date":"0000-00-00 00:00:00","dueDate":"2013-02-06 00:00:00","name":"Je test qqc","ident":"OPP-00018","proba":"1","potential":"456","stepid":"342","status":"ok","signed":"open","brief":"","source":"","stickyNote":"","dateFormatted":"06\/02\/2013","dueDateFormatted":"06\/02\/2013","tags":[{"id":"865","corpid":"138","category":"opportunity","created":"2013-02-06 11:28:29","word":"test1"},{"id":"867","corpid":"138","category":"opportunity","created":"2013-02-06 11:32:13","word":"test2"}],"staffs":[{"id":"317","fullName":"R\u00e9my Neuter","email":""}]},"error":"","status":"success"}
-                
+
 
 ,
 
@@ -2567,17 +2567,17 @@
 
 
 
-"OpportunitiesGetCurrentIdentResponse" : 
+"OpportunitiesGetCurrentIdentResponse" :
     {"response":"{{{prefix}-{compteur}}}","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"OpportunitiesUpdateSharingGroupsResponse" : 
+"OpportunitiesUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
@@ -2709,33 +2709,33 @@
 
 
 
-"ProspectsUpdateContactPictureResponse" : 
+"ProspectsUpdateContactPictureResponse" :
     {"response":"?_f=file&id=JTBDJUM1UkwlMjJGJTVCViVBNyVDNiVCMXglQzIlQjQlMjglN0YlRUQlMTElNUMlMDUlOEQlQjElMEZuJUQ1JUVCJUYzJTlBJUI1JUJFcFpKbyVFQSU5RWclQzJLayVFQSUwOSU3QyUxRiVBNCU4RCt5UCUzRlUlQUElRTElREQlRTglOUQlMDglOUYlRTElRUMlMTIlMjUlMTgrJUY4eCU4MyUxQS4lRTRqRyU5NiUxRCUwNyVCOWMlRkElRUUlREElQUUlRTElMEZRUyU3RCVBRiVGOSU4NSUyMSVCNiVEMiVEMWolRURQJUFGJUJEJTI2JTkxJTNFJUUwJUY1VyVGRCVBM1ltJUFBJTkxJTA5JUVCJUQ3JTQwJUUzJUEyJTI5JTgxJTdGJTAwbCU1RWl3JTg2JTNENCVCQg==&key=8fe3022967cf1073a8aefa32f3b70248","error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"ProspectsTransformToCustomerResponse" : 
+"ProspectsTransformToCustomerResponse" :
 {"response":null,"error":"","status":"success"}
-    
+
 
 ,
 
 
 
-"ClientUpdateThirdPictureResponse" : 
+"ClientUpdateThirdPictureResponse" :
 		{"response":{"name":"1-apple-desk-designer-display-1.jpg","public_path":"?_f=file&id=JUQ4RiVEQm0lMTIyJUNGJUVFJTlEJUNGJThBJUJEJUMwJUVCJThBJUI5JTA5JUQ1JUQzJUUzJUVGJTJBJTE0UyVFNTEyZ3MyJUIzJTlCJUZBdCVGQyVBNXglRTIlMjklRjMlQUMlNUQ0JTdGJUU0JUNFJTYwJUM2JTg4JTdDJUE1JTI5JTA0JTFGJUUwJUMzcCVDMSVGMyU3RiVDNiU5NiU4RCVBQyU5NCVDOSU1REwlNUUlNjAlRTMlQkElREQlM0FaOCVCME9pJTg2SiVFQiUxMyVENyU5MiUxMCVGRCU5MSUzQyVCRiUxRSUwRXAlQjYlOTUlRDQ==&key=ad49d4d6a54e1a722c7946f27c200554","extension":"image\/jpeg"},"error":"","status":"success"}
-	
+
 
 ,
 
 
 
-"ProspectsUpdateSharingGroupsResponse" : 
+"ProspectsUpdateSharingGroupsResponse" :
 		{"response":"","error":"","status":"success"}
-	
+
 
 ,
 
@@ -2891,7 +2891,7 @@
 
 
 
-"SupportUpdateReplyResponse" : 
+"SupportUpdateReplyResponse" :
     {"response":"987","error":"","status":"success"}
 
 ,
@@ -2904,21 +2904,21 @@
 
 
 
-"SupportUpdateStepResponse" : 
+"SupportUpdateStepResponse" :
 {"response":"spam","error":"","status":"success"}
 
 ,
 
 
 
-"SupportUpdateThirdResponse" : 
+"SupportUpdateThirdResponse" :
 {"response":null,"error":"","status":"success"}
 
 ,
 
 
 
-"SupportGetTemplatesResponse" : 
+"SupportGetTemplatesResponse" :
 {"response":null,"error":"","status":"success"}
 
 ,
@@ -2943,7 +2943,7 @@
 
 
 
-"TimetrackingGetListResponse" : 
+"TimetrackingGetListResponse" :
     {"response":{"infos":{"nbperpage":10,"nbpages":2,"pagenum":"1","nbtotal":"14"},"result":{
    "56418_":{
       "id":"56418",
@@ -3009,47 +3009,47 @@
       "nbMin":190
    }
 }},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"TimetrackingGetOrderedListResponse" : 
+"TimetrackingGetOrderedListResponse" :
     {"response":{"infos":{"nbperpage":500,"nbpages":1,"pagenum":1,"nbtotal":"6"},"result":{"6292243186N12430invoice":{"thirdid":"6292","thirdName":"Air Neuter","linkedtype":"invoice","linkedid":"12430","docident":"FACT-20121211-00154","service":"243186","serviceName":"Nettoyage piscine","deletable":"Y","days":{"2012-12-11":{"id":"198","time":"01:00","billed":"N"},"2012-12-10":{"id":"199","time":"01:00","billed":"N"}}},"6292243186Y12415estimate":{"thirdid":"6292","thirdName":"Air Neuter","linkedtype":"estimate","linkedid":"12415","docident":"DEV-20121207-00013","service":"243186","serviceName":"Nettoyage piscine","deletable":"N","days":{"2012-12-07":{"id":"174","time":"02:00","billed":"Y"}}},"9191243186N":{"thirdid":"9191","thirdName":"Test 2","linkedtype":null,"linkedid":null,"docident":null,"service":"243186","serviceName":"Nettoyage piscine","deletable":"Y","days":{"2012-12-07":{"id":"197","time":"01:00","billed":"N"},"2012-12-06":{"id":"147","time":"02:00","billed":"N"}}},"6292243186N12352invoice":{"thirdid":"6292","thirdName":"Air Neuter","linkedtype":"invoice","linkedid":"12352","docident":"FACT-20121130-00149","service":"243186","serviceName":"Nettoyage piscine","deletable":"Y","days":{"2012-12-06":{"id":"149","time":"01:00","billed":"N"}}}}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"TimetrackingGetOneResponse" : 
+"TimetrackingGetOneResponse" :
     {"response":{"id":"56418","corpid":"1869","ownerid":"2854","thirdid":"127243","serviceid":"300689","date":"29\/08\/2016","week":"35","nbSecondes":"11400","note":"","startTime":"2016-06-28 12:05:19","stopTime":"0000-00-00 00:00:00","cost":"0.000000000","status":"ok","billed":"N","isBillable":"Y","alertSent":"N","service":"Montage de pneus","third":"Garage peugeot","linkedid":"","linkedtype":"","linked":"","formatted_time":"03:10:00","nbMin":"03:10"},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"TimetrackingCreateResponse" : 
+"TimetrackingCreateResponse" :
     {"response":{{ttid}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"TimetrackingUpdateResponse" : 
+"TimetrackingUpdateResponse" :
     {"response":{{ttid}},"error":"","status":"success"}
-                
+
 
 ,
 
 
 
-"TimetrackingDeleteResponse" : 
+"TimetrackingDeleteResponse" :
     {"response":null,"error":"","status":"success"}
-                
+
 
 ,
 

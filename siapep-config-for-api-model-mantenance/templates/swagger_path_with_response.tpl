@@ -1,7 +1,7 @@
 		"/{pathName}": {
 				"post": {
 					"tags": [
-						"{ModelName}"
+						"{tagName}"
 					],
 					"summary": "",
 					"description": "",
