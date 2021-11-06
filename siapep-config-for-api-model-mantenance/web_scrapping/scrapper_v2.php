@@ -75,7 +75,7 @@
 			 	// Fix : This remove the json code which are written in php block
 			 	$requestTextToEval = stripos($requestTextToEval, '$request') != false ? $requestTextToEval : '';
 			 	$transformResult = getRequestModelAndName($requestTextToEval, $requestAsArray);
-				$requestModel = ['properties' => $transformResult['model']];
+				$requestModel = $transformResult['model'];
 				$information['methodName'] = $transformResult['name'];
 				$information['requestModel'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? $requestModel : null;
 				$information['requestModelName'] = (is_array($requestModel) && count($requestModel) > 0) || ($requestModel != null && trim($requestModel) != 'null') ? getModelName($information['methodName'], 'Request') : null;
@@ -358,37 +358,49 @@
 		return $data;
 	}
 
-	function mergeProperties($properties) {
-			$unifiedProperties = array_unique($properties);
-			return isset($unifiedProperties[0]) ? $unifiedProperties[0] : [];
-	}
-
-	function getRequestModel($params) {
-		$data = [];
-		foreach ($params as $key => $value) {
-      if(is_array($value)) {
-				$isArray = (count($value) > 0 and is_array($value[array_key_first($value)]));
-				$isObject = !$isArray;
-				if ($isObject) {
-						// object
-						$data[$key] = getRequestModel($value);
+	function getRequestModel($params, $firstLoop = true, $merged = false) {
+		if ($firstLoop === true || $merged === true) {
+			$data = ['type' => 'object', 'properties' => []];
+		} else {
+				$isArray = (is_array($params) && count($params) > 0 and is_array($params[array_key_first($params)]));
+				if ($isArray) {
+					$data = ['type' => 'array', 'items' => []];
 				} else {
-					  // array
-						$data[$key] = [
-								'type' => 'array',
-								'items' => [
-									'type' => 'object',
-									'properties' => mergeProperties(getRequestModel($value))
-								]
-						];
+					$data = ['type' => 'object', 'properties' => []];
 				}
-			} else {
-				// Simple string
- 				 $data[$key] = [
- 					 'type' => 'string',
- 					 'required' => false
- 				 ];
+		}
+
+		if ($data['type'] == 'object') {
+				foreach ($params as $key => $value) {
+						$isArray = (is_array($value) && count($value) > 0 and is_array($value[array_key_first($value)]));
+						$isObject = (is_array($value) && count($value) > 0 and !is_array($value[array_key_first($value)]));
+						$isAttribute = !$isArray && !$isArray;
+						if($isArray) {
+							// Treat Array
+							$data['properties'][$key] = [
+									'type' => 'array',
+									'items' => getRequestModel($value, false)
+							];
+						} elseif($isObject) {
+							// Treat Object
+			 				 $data['properties'][$key] = getRequestModel($value, true);
+						} elseif($isAttribute) {
+							// Treat Attribute
+			 				 $data['properties'][$key] = [
+			 					 'type' => 'string',
+			 					 'required' => false
+			 				 ];
+						}
+				}
+		}
+		else {
+			$mergedProperties = [];
+			foreach ($params as $key => $param) {
+				$mergedProperties = array_merge($mergedProperties, $param);
 			}
+			unset($data['type']);
+			unset($data['items']);
+			$data = getRequestModel($mergedProperties, false, count($params) > 1);
 		}
 		return $data;
 	}
